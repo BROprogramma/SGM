@@ -11,17 +11,17 @@ var respecConfig = {
   ],
   authors: [
     {
-      name: "Nanny Heidema",
-      company: "Wageningen University & Research",
-      companyURL: "https://www.wur.nl",
-    },
-    {
-      name: "Gilbert Maas",
-      company: "Wageningen University & Research",
-      companyURL: "https://www.wur.nl",
-    },
-    {
       name: "Folkert de Vries",
+      company: "Wageningen University & Research",
+      companyURL: "https://www.wur.nl",
+    },
+    {
+      name: "Fokke Brouwer",
+      company: "Wageningen University & Research",
+      companyURL: "https://www.wur.nl",
+    },
+    {
+      name: "Nanny Heidema",
       company: "Wageningen University & Research",
       companyURL: "https://www.wur.nl",
     },
