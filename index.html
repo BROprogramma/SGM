@@ -7,8 +7,8 @@
   <link rel='shortcut icon' type='image/x-icon' href='https://tools.geostandaarden.nl/respec/media/logos/Geonovum.ico' />
   <link rel="stylesheet" type="text/css" href="localstyle.css" />
   <title>BRO Gegevenscatalogus Bodem- en grondwatertrappenkaart</title>
-  <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
   <script class="remove" src="config.js"></script>
+  <script class='remove' src='https://tools.geostandaarden.nl/respec/builds/respec-geonovum.js' async></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <section id='samenhang-met-andere-documentatie' class='generic' data-include='https://docs.geostandaarden.nl/bro/gen/samenhang-met-andere-documentatie.html'></section>
     <section id="inleiding-specifiek">
       <p>Deze documenten hangen samen zoals hieronder afgebeeld.</p>
-      <figure id='image001'><img src='media/fig1.svg' width="600" />
+      <figure id='image001'><img src='media/fig1smg.png' width="600" />
         <figcaption>Samenhang tussen documentatie
         </figcaption>
       </figure>
@@ -35,8 +35,8 @@
       <h3>Leeswijzer</h3>
       <p>Hoofdstuk 1 geeft het doel en de doelgroep, de samenhang met andere documenten en de versiehistorie van deze catalogus.</p>
       <p>Hoofdstuk 2 behandelt enkele algemene aspecten van het BRO-systeem en behandelt begrippen van algemene aard.</p>
-      <p>Hoofdstuk 3 legt uit wat het model geomorfologie is, wat de plaats is van het object in de gegevenssystematiek van
-        de BRO en vertelt wat de benadering is geweest bij het opstellen van de gegevensdefinitie.</p>
+      <p>Hoofdstuk 3 legt uit wat het model bodem- en grondwater-trappenkaart is, wat de plaats is van het object in de gegevenssystematiek
+        van de BRO en vertelt wat de benadering is geweest bij het opstellen van de gegevensdefinitie.</p>
       <p>Hoofdstuk 4 geeft de definitie van het registratieobject, van de delen waaruit het is opgebouwd, de entiteiten, en
         van de eigenschappen van die delen, de attributen.</p>
       <p>Hoofdstuk 5 ten slotte geeft de definitie van de codelijsten waarnaar in hoofdstuk 4 verwezen wordt.</p>
@@ -44,8 +44,316 @@
   </section>
   <section id='algemene-kenmerken-en-begrippen' data-include='https://docs.geostandaarden.nl/bro/gen/algemene-kenmerken-en-begrippen.html'
     class='generic'></section>
-  <section id="bodemkaart">
-    <h2>bodemkaart</h2>
+  <section id="bodemkundig-model-nl">
+    <h2>Bodemkundig model van Nederland</h2>
+    <section id="bodem-en-bodemkartering">
+      <h3>Bodem en bodemkartering</h3>
+      <p>De bodem is het buitenste deel van de aarde. Het materiaal waaruit de bodem bestaat (het moedermateriaal of uitgangsmateriaal)
+        is in ons land grotendeels van elders aangevoerd, o.a. door de wind (löss, dekzand, stuifzand, duinzand), de rivieren
+        (rivierklei en –zand), de zee (zeeklei en –zand) en door het landijs (smeltwaterafzettingen, keileem), soms is het
+        ter plaatse ontstaan (veen).</p>
+      <figure id="fig2">
+        <img src="media/fig2.png" width="600" />
+        <figcaption>Drie bodemeenheden in hun landschappelijk verband. De eenheden op de rug, op de helling en in het dal zijn verschillend.
+          Elke eenheid (I, II en III) wordt op de bodemkaart onderscheiden met een eigen code en kleur. Onder het diagram
+          een schematische voorstelling van de bodemprofielen van de drie eenheden.</figcaption>
+      </figure>
+      <p>Door veranderingen in de sedimentatie vertoont het moedermateriaal vaak een zekere gelaagdheid. Onder invloed van uitwendige
+        omstandigheden treedt bodemvorming op, waarbij veranderingen in het moedermateriaal ontstaan door omzetting, uitspoeling
+        en ophoping van minerale en organische stoffen . Elke grond heeft dus als gevolg van de afzetting en van de bodemvorming
+        een opeenvolging van min of meer horizontale lagen, die verschillen in samenstelling en eigenschappen. Deze lagen
+        heten horizonten. Samenstelling, dikte en opeenvolging van horizonten –het bodemprofiel- verschillen per grond. Gronden
+        met een ongeveer gelijk bodemprofiel beschouwt men als een eenheid (Simonson, 1968). Bij de bodemkartering stelt
+        men door boringen de bodemeenheden vast en bepaalt op basis van overeenkomsten en verschillen tussen (groepen van)
+        bodemprofielen de grenzen van die eenheden. Verschillen in bodemgesteldheid en landschap gaan vaak samen, omdat beide
+        zijn ontstaan onder invloed van dezelfde uitwendige omstandigheden (fig. 1). Dit is bij de bodemkartering van groot
+        belang, omdat het daardoor mogelijk is met betrekkelijk weinig boringen de grenzen tussen de verschillende gronden
+        op te sporen en in kaart te brengen (Schelling et al., 1975).</p>
+    </section>
+    <section id="bodemkaart-als-bodemkundig-model">
+      <h3>De bodemkaart als bodemkundig model</h3>
+      <p>De Bodemkaart van Nederland, schaal 1 : 50 000 vormt de basis voor het bodemkundig model in de Basisregistratie Ondergrond.
+        De kaart geeft voor het landelijk gebied door middel van kaartvlakken informatie over de bodemopbouw en bodemkenmerken
+        tot een diepte van ca. 1,2 m-mv. (Steur en Heijink, 1991). Elk kaartvlak of object bevat een code voor de bodemeenheid
+        en een code voor de grondwatertrap. De bodemkaart is een 2-dimensionaal model dat de bodem als profile tot 1,2 m
+        –mv beschrijft, waarmee het impliciet voor een deel 3D eigenschappen meekrijgt.</p>
+      <section id="indeling-bodemeenheden">
+        <h4>Indeling bodemeenheden</h4>
+        <p>Een bodemeenheid verstrekt informatie over belangrijke kenmerken van het bodemprofiel tot een diepte van ca. 1,2
+          m-mv. De hoofdindeling van de bodemeenheden is in hoofdlijnen een indeling naar grondsoort. De verdere onderverdeling
+          in hoofdklassen sluit nauw aan bij die van het Systeem van Bodemclassificatie voor Nederland (De Bakker en Schelling,
+          1989) tot en met het niveau van de subgroep. Dit niveau is in de legenda naamgevend. De hoofdklassen worden op
+          de bodemkaart gecodeerd met één of twee hoofdletters. De volgende hoofdklassen worden onderscheiden:</p>
+        <ul>
+          <li>Veengronden (code V);</li>
+          <li>Moerige gronden (code W);</li>
+          <li>Podzolgronden (codes Y en H);</li>
+          <li>Brikgronden (code B);</li>
+          <li>Dikke eerdgronden (codes EZ, EL en EK);</li>
+          <li>Kalkloze zandgronden (code Z...);</li>
+          <li>Kalkhoudende zandgronden (code Z...A);</li>
+          <li>Kalkhoudende bijzonder lutumarme gronden (code S...A);</li>
+          <li>Niet-gerijpte minerale gronden (code MO-zeeklei; RO-rivierklei);</li>
+          <li>Zeekleigronden (code M);</li>
+          <li>Rivierkleigronden (code R);</li>
+          <li>Oude rivierkleigronden (code KR);</li>
+          <li>Leemgronden (code L);</li>
+          <li>Mariene afzettingen ouder dan pleistoceen (code MA, MK, MZ);</li>
+          <li>Fluviatiele afzettingen ouder dan pleistoceen (code FG, FK);</li>
+          <li>Kalksteenverweringsgronden (code KM, KK, KS);</li>
+          <li>Ondiepe keileemgronden (code KX);</li>
+          <li>Overige oude kleigronden (code KT);</li>
+          <li>Grindgronden (code G).</li>
+        </ul>
+        <p>De gronden worden in de legenda verder onderverdeeld naar o.a. aard en textuur van de bovengrond, de gelaagdheid
+          in het bodemprofiel, veensoort bij veengronden, voorkomen van hydromorfe kenmerken en de aanwezigheid van kalk
+          in het profiel. Deze onderverdeling wordt in de code aangegeven met letters en cijfers (bijvoorbeeld Hn21: veldpodzolgronden
+          in leemarm en zwak lemig fijn zand, of Zn23: vlakvaaggronden in lemig fijn zand). Met lettertoevoegingen aan het
+          begin en aan het eind van de code worden specifieke kenmerken van de bovengrond en ondergrond aangeduid (bijvoorbeeld
+          kHn21: veldpodzolgronden met een kleidek (k...) of Hn21x: veldpodzolgronden met keileem in de ondergrond, beginnend
+          tussen 40 en 120 cm (...x).</p>
+      </section>
+      <section id="indeling-grondwatertrappen">
+        <h4>Indeling grondwatertrappen</h4>
+        <p>De diepte en fluctuatie van het grondwater wordt aangegeven met grondwatertrappen (Gt). De indeling is gebaseerd
+          op de gemiddeld hoogste (GHG) en de gemiddeld laagste (GLG) grondwaterstand. Deze grootheden geven de hoogte beneden
+          maaiveld tot waar, onder gemiddelde weersomstandigheden, de grondwaterstand in de winter stijgt en in de zomer
+          daalt. De grondwaterstand heeft gedurende het jaar een golfvormig verloop, met meestal in de winter de hoogste
+          en aan het eind van de zomer de laagste standen. Jaarlijkse verschillen in neerslag en verdamping en hun verdeling
+          over het jaar veroorzaken jaarlijkse verschillen in grootte van de fluctuatie en in het tijdstip waarop de grondwaterstand
+          begint te dalen of te stijgen. Behalve het weer zijn ook de hydrologische situatie (af- en ontwatering, kwel en
+          wegzijging) en de bodemgesteldheid (doorlatendheid en bergend vermogen) mede bepalend voor de grootte van de fluctuatie
+          (Steur en Heijink, 1991).</p>
+        <p>Bij de start van de karteringen voor de Bodemkaart, schaal 1 : 50 000, in 1960, werden zeven Gt’s onderscheiden (Gt
+          I – VII). Nadien is de indeling geleidelijk geëvolueerd. In 1977 kwam er een onderverdeling bij de Gt II, III,
+          V en VII (tabel#). En in 1988 is de legenda uitgebreid met een aantal toevoegingen (Ten Cate et al, 1995). Met
+          deze toevoegingen voor de Gt-code worden specifieke situaties aangegeven, zoals Gt’s bij gronden in uiterwaarden
+          (b...). Deze gronden hebben gedurende lange perioden een ‘normaal’ grondwaterstandsverloop, maar raken bij hoge
+          rivierstanden periodiek overstroomd. Ook situaties met langdurige plasvorming (w...) en schijnspiegels (s...) door
+          de aanwezigheid van slecht doorlatende lagen in het bodemprofiel worden met toevoegingen apart onderscheiden.</p>
+        <table>
+          <caption>Overzicht van de grondwatertrappenindeling voor de bodemkaart van Nederland, schaal 1 : 50 000 in 1960, 1977 en
+            1988. De letters bij de indeling van 1988 hebben de volgende betekenis: b = buitendijks; s = schijnspiegels en
+            w = langdurige plasvorming.</caption>
+          <colgroup>
+            <col width="20%"></col>
+            <col width="20%"></col>
+            <col width="20%"></col>
+            <col width="20%"></col>
+            <col width="20%"></col>
+          </colgroup>
+          <tr>
+            <th colspan="3" style="text-align: center;">Code grondwatertrap</th>
+            <th>GHG</th>
+            <th>GLG</th>
+          </tr>
+          <tr>
+            <th>1960</th>
+            <th>1977</th>
+            <th>1988</th>
+            <th>cm-mv.</th>
+            <th>cm-mv.</th>
+          </tr>
+          <tr>
+            <td>I</td>
+            <td>I</td>
+            <td>(b,w) I</td>
+            <td>&lt; 40</td>
+            <td>&lt; 50</td>
+          </tr>
+          <tr>
+            <td>II</td>
+            <td>II</td>
+            <td>(b,w) II</td>
+            <td>&lt; 40</td>
+            <td>50 - 80</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>IIb</td>
+            <td>(b) IIb</td>
+            <td>25 - 40</td>
+            <td>50 - 80</td>
+          </tr>
+          <tr>
+            <td>III</td>
+            <td>III</td>
+            <td>(b,w) III</td>
+            <td>&lt; 40</td>
+            <td>80 - 120</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>IIIb</td>
+            <td>(b) IIIb</td>
+            <td>25 - 40</td>
+            <td>80 - 120</td>
+          </tr>
+          <tr>
+            <td>IV</td>
+            <td>IV</td>
+            <td>(b) IV</td>
+            <td>40 - 80</td>
+            <td>80 - 120</td>
+          </tr>
+          <tr>
+            <td>V</td>
+            <td>V</td>
+            <td>(b,s,w) V</td>
+            <td>&lt; 40</td>
+            <td>&gt; 120</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>Vb</td>
+            <td>(b,s) Vb</td>
+            <td>25 - 40</td>
+            <td>&gt; 120</td>
+          </tr>
+          <tr>
+            <td>VI</td>
+            <td>VI</td>
+            <td>(b,s) VI</td>
+            <td>40 - 80</td>
+            <td>&gt; 120</td>
+          </tr>
+          <tr>
+            <td>VII</td>
+            <td>VII</td>
+            <td>(b,s) VII</td>
+            <td>80 - 140</td>
+            <td>&gt; 120</td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>VIII</td>
+            <td>(b,s) VIII</td>
+            <td>&lt; 140</td>
+            <td>&gt; 160</td>
+          </tr>
+        </table>
+        <p>Elk object in het bodemkundige model heeft een opnamedatum. Aan de hand daarvan kan worden nagegaan welke Gt-indeling
+          geldt. De Gt is als eigenschap van ieder bodemkaartvlak opgenomen.</p>
+      </section>
+      <section id="inventarisatiemethoden">
+        <h4>Inventarisatiemethoden</h4>
+        <p>Rond 1960 is Stiboka in Zeeland gestart met de landelijke kartering van de bodem op schaal 1 : 50 000. De kaart is
+          uitgegeven per kaartblad van de topografische kaart, schaal 1 : 50 000, met daarbij een toelichting in boekvorm.
+          Door de aanpak per kaartblad verschilt de periode van opname van blad tot blad (fig. 2). Het veldwerk voor het
+          laatste kaartblad is in 1995 afgerond. De bodemkaart is als GIS-bestand beschikbaar (versie 1). Hiervoor zijn de
+          analoge kaarten gedigitaliseerd. Na de eerste opname zijn vanaf 2010 fragmenten van de kaart geactualiseerd. De
+          inventarisatiemethode bij de actualisatie wijkt af van de methode die bij de eerste opname is gehanteerd.</p>
+        <section id="uitgebreide-veldverkenning">
+          <h5>Uitgebreide veldverkenning voor de eerste opname van de bodemkaart</h5>
+          <p>Voor de eerste opname van de bodemkaart is een uitgebreide veldverkenning uitgevoerd. Afhankelijk van de ingewikkeldheid
+            van het bodempatroon, zijn voor de kaartschaal 1 : 50 000 10 tot 25 grondboringen per 100 ha verricht. Bij elke
+            boring is een zgn. boormonsterbeschrijving opgesteld. Daarbij beschrijft de karteerder kenmerken die ontstaan
+            zijn door bodemvorming en schat hij van elke laag o.a. het gehalte aan organische stof en koolzure kalk, het
+            lutumgehalte en leemgehalte en de grofheid van het zand. De schattingen worden geijkt en gevalideerd door grondmonsteronderzoek.
+            Aan de hand van deze boormonsterbeschrijvingen en allerlei landschappelijke kenmerken (o.a. reliëf en verschillen
+            in vegetatie) zijn de eenheden op kaart ingetekend. De kaartschaal bepaalt mede de mate van detail waarmee de
+            bodemgesteldheid kan worden weergegeven. Om druktechnische redenen en vanwege de leesbaarheid van de kaart zijn
+            de afmetingen van kaartvlakken aan minimumgrenzen gebonden. Voor de kaartschaal 1 : 50 000 gold bij de eerste
+            uitgave ca. 10 ha aanvankelijk als kleinste afmeting (1 cm2 op de kaart = 25 ha in het terrein). Later is de
+            minimum oppervlakte verminderd naar ca. 5 ha. De beschrijving van de eenheden op de bodemkaart, schaal 1 : 50
+            000, is daarom ruim van inhoud.</p>
+          <p>Bij de eerste opname van de bodemeenheden zijn gelijktijdig ook grondwatertrappen in kaart gebracht. Hiervoor worden
+            bij de voorbereiding uit grondwaterstandsgegevens van de in het karteringsgebied gelegen grondwaterstandsbuizen
+            met een voldoend representatieve ligging de GHG’s en GLG’s berekend. Zij vormen het referentieniveau voor de
+            schatting van deze grootheden bij de boorlocaties. De schattingen bij de boorlocaties zijn mogelijk met behulp
+            van profiel- en veldkenmerken (van Heesen, 1971; Van Wallenburg, 1973). Voorbeelden van profielkenmerken zijn:
+            profielopbouw (gelaagdheid), bodemvorming (vooral gleyverschijnselen, zoals roest en grijze vlekken), structuurverloop,
+            rijping, doorlatendheid van de ondergrond en de grondwaterstand op het tijdstip van de kartering. </p>
+          <p>Veldkenmerken zijn o.a. natuurlijke vegetatie, bodemgebruik, (micro)reliëf, afwaterings- en ontwateringstoestand
+            en aanwezigheid van greppels en drains. De schattingen worden verder ondersteund met zgn. gerichte opnames van
+            grondwaterstanden. Daartoe wordt in een groot aantal boorgaten verspreid over het karteringsgebied, de grondwaterstand
+            gemeten op het moment dat op de referentiepunten de grondwaterstand het GHG- of GLG-niveau bereikt. De op dat
+            zelfde tijdstip gemeten grondwaterstand is een benadering van de GHG of de GLG op dat punt. De begrenzing van
+            de grondwatertrappen valt vaak samen met de begrenzing van een bodemobject. </p>
+          <p>De basis waarop het kaartbeeld werd vastgelegd werd gevormd door de topografische kaart, schaal 1 : 50 000, verstrekt
+            door de Topografische Dienst. Voor de eerste uitgave is deze basiskaart vereenvoudigd. Rond 1980 is gestart met
+            proeven voor het digitaliseren van de kaartbeelden. Er was toen nog geen GIS-bestand met de topografische kaart
+            beschikbaar, zodat bij het digitaliseren niet gecontroleerd kon worden op de juiste afstemming met de topografie,
+            zoals die later in GIS-bestanden beschikbaar kwam. Hierdoor kan de aansluiting van de begrenzing van oppervlaktewater
+            in het bodemkundige model lokaal afwijken van de begrenzing in GIS-bestanden met de topografie.</p>
+          <figure id="fig3">
+            <figcaption>Overzicht van jaar van opname eerste uitgave van de bodemkaart en van de actualisaties</figcaption>
+            <img src="media/fig3.png" width="600" />
+          </figure>
+        </section>
+        <section id="digitale-bodemkartering">
+          <h5>Digitale bodemkartering voor de actualisatie van de bodemeenheden</h5>
+          <p>In 2010 is gestart met de actualisatie van de informatie op de bodemkaart. Deze activiteit richt zich vooral op
+            bodemtypen en gegevens die door het landgebruik en de daarbij behorende ontwatering aan verandering onderhevig
+            zijn. Bij veengronden bijvoorbeeld is sprake van geleidelijke oxidatie en afbraak van het organische materiaal,
+            waardoor de veenlagen slinken of zelfs geheel verdwijnen. De actualisatie richt zich daarom op specifieke bodemtypen.</p>
+          <p>In de periode 2010 – 2014 is de bodemkaart van de gebieden met veengronden geactualiseerd (de Vries, et al, 2014)en
+            in 2016 in Noord- en Zuid-Holland de bodemkaart van de gebieden met kleigronden die een slappe, ongerijpte ondergrond
+            hebben (fig. 2). De actualisatie wordt steeds uitgevoerd met behulp van ‘Digitale Bodemkartering’ (DBK). Dit
+            is een methode waarin met statistische modellen bodemkaarten worden gemaakt, gebruikmakend van veldwaarnemingen
+            van de bodem op punten en gebied dekkende kaarten van hulpvariabelen, zoals reliëf, grondwaterstanddiepte en
+            landgebruik. Vanwege de kosten en de doorlooptijd is voor deze methode gekozen in plaats van de karteringsmethode
+            die gehanteerd is bij de eerste opname van de bodemkaart. Bij DBK is het benodigde aantal boringen per oppervlakte-eenheid
+            geringer en worden de patronen via ruimtelijke interpolatie verkregen. Dit bespaart tijd en kosten.</p>
+          <p>Op hoofdlijnen omvat de werkwijze bij DBK de volgende onderdelen:</p>
+          <ul>
+            <li>Analyse van de beschikbare gegevens in het Bodemkundig InformatieSysteem (BIS) van WenR (Alterra). Hierbij gaat
+              het vooral om recente boorbeschrijvingen. In de toekomst worden de boorbeschrijvingen beschikbaar in de BRO
+              hier eveneens bij betrokken;</li>
+            <li>Dataverzameling. Na het opstellen van een dataverzamelingsplan worden in het veld aanvullende grondboringen verricht
+              voor het opstellen van boorbeschrijvingen;</li>
+            <li>Creëren GIS-bestanden met hulpvariabelen. Om met behulp van DBK bodemkaarten te vervaardigen, zijn GIS-bestanden
+              nodig met gebiedskenmerken die gerelateerd kunnen zijn aan de bodemkenmerken die in kaart gebracht worden;</li>
+            <li>Fitten model voor de ruimtelijke voorspelling van bodemkenmerken. Hierbij wordt naar de beste relatie gezocht
+              tussen kenmerken ter plekke van de boorlocaties en één of meer hulpvariabelen;</li>
+            <li>Creëren ruimtelijke verbreiding van de kenmerken;</li>
+            <li>Valideren voorspellingen;</li>
+            <li>Toekennen bodemtype op basis van de ruimtelijke voorspellingen van bodemkenmerken;</li>
+            <li>Geactualiseerde fragmenten toevoegen aan het landelijke bestand van de bodemkaart.</li>
+          </ul>
+        </section>
+        <section id="werkwijze-actualisatie">
+          <h5>Werkwijze bij de actualisatie van de Gt-informatie</h5>
+          <p>Het grondwaterstandsverloop is, net als de informatie over de aanwezigheid en dikte van veen, aan verandering onderhevig.
+            Door cultuurtechnische ingrepen wordt in gebieden de ontwatering aangepast aan de eisen voor het landgebruik.
+            Veelal wil men hiermee de perioden met te natte omstandigheden voor landbouwkundig gebruik beperken. In gebieden
+            met natuur gaat het juist vaak om ingrepen voor vernatting. In de afgelopen jaren is vanwege deze ingrepen ook
+            de Gt-informatie geactualiseerd. Dit is in twee projecten gerealiseerd. Een project voor de zandgebieden, aangegeven
+            met ‘hoog Nederland’ en project voor de klei en veengebieden, aangeduid met ‘laag-Nederland’. Bij beide projecten
+            zijn bij de actualisatie de begrenzing van de kaartvlakken niet aangepast.</p>
+          <p>Voor de zangronden in hoog Nederland is in 2004 een methodiek ontwikkeld om de G×G (GHG, GVG en GLG) te voorspellen
+            (en daarmee de grondwatertrap) op locaties die deel uitmaken van een fijn grid met een ruimtelijk resolutie van
+            25 bij 25 meter (De Gruijter et al., 2004). Deze voorspellingen zijn gebaseerd op een groot aantal grondwaterstandsmetingen,
+            zie ook Van Kekem et al. (2005). Voor elk gridpunt zijn niet één maar 300 mogelijke G×G's voorspeld met geostatistische
+            simulatie. Deze voorspellingen worden realisaties genoemd. De realisaties weerspiegelen onze onzekerheid over
+            de G×G op de gridpunten. Hoe groter de variatie in G×G tussen de realisaties des te groter onze onzekerheid over
+            de werkelijke G×G. De vlakken van de bodemkaart 1:50.000 bevatten veelal verouderde grondwatertrapinformatie.
+            Om de Gt-kaart te actualiseren naar de periode van de Gd-kartering is per kaartvlak van de bodemkaart de meest
+            voorkomende Gt bepaald (Stuyt, et al, 2016).</p>
+          <p>In laag-Nederland waarvoor nog geen Gd-kaart beschikbaar was is in 2014 de Gt geactualiseerd door middel van een
+            gestratificeerde steekproef (Hoogland, et al, 2014). Het gebied is onderverdeeld in deelgebieden, dat noemen
+            we stratificatie. We stratificeren omdat we voor deelgebieden afzonderlijk informatie willen verstrekken. De
+            actualisatie richt zich op het kwantificeren van de actuele inhoud van de kaarteenheden van de bestaande grondwatertrappenkaart,
+            schaal 1:50.000. We onderscheiden daarbinnen gebieden met stagnerende lagen en gebieden waar na uitvoering van
+            de landelijke bodemkartering is ingegrepen in de waterhuishouding in het kader van een landinrichtingsproject.
+            Na samenvoeging van kleine ruimtelijke eenheden bedraagt het totaal aantal strata 59. Per stratum is met een
+            steekproef informatie verzameld over GHG en GLG, waarmee de grondwatertrappen zijn bepaald.</p>
+          <p>literatuur - literatuurlijst volgt nog</p>
+        </section>
+      </section>
+    </section>
+  </section>
+  <section id="domeinmodel">
+    <h3>Domeinmodel</h3>
+    <section data-include="https://docs.geostandaarden.nl/bro/gen/domeinmodel-gen.html" class="generic">
+    </section>
+    <section id="domeinmodel-smg">
+      <h4>Domeinmodel Bodem- en grondwatertrappenkaart</h4>
+      <figure id="domeinmodel-smg" class="scalable">
+        <img src="data/uml.svg">
+        <figcaption>Domeinmodel Bodem- en grondwatertrappenkaart</figcaption>
+      </figure>
+    </section>
   </section>
   <!--<section id="catalogus" data-include="data/bro-gmm-cat.html" class="normative"></section>-->
 </body>
