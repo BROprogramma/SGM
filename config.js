@@ -111,6 +111,58 @@ var respecConfig = {
       date: "1968",
       publisher: "Advances in Agronomy 20, 1-47",
     },
+    "Schelling-etal1975": {
+      title: "Indeling van Nederlandse gronden. 3e druk.",
+      authors: ["Schelling, J.", "Bakker, H. de", "Steur, G.G.L"],
+      date: "1975",
+      publisher: "Wageningen, Stichting voor Bodemkartering",
+    },
+    "Steur-Heijink1991": {
+      title:
+        "Bodemkaart van Nederland, schaal 1 : 50 000. Algemene begrippen en indelingen. 4e uitgave. ",
+      authors: ["Steur, G.G.L.", "W. Heijink"],
+      date: "1991",
+      publisher: "Wageningen, Staring Centrum",
+    },
+    "Stuyt-etal2016": {
+      title:
+        "Basis Registratie Ondergrond (BRO) Actualisatie Gt/Gd; Beschrijving grondwaterkarakteristieken per Gt-klasse voor hoog Nederland. ",
+      authors: [
+        "Stuyt, L.C.P.M.",
+        "Knotters, M.",
+        "Walvoort, D.J.J.",
+        "Hoogland, T.",
+        "Brus, D.J.",
+        "Vries, F. de",
+        "Heidema, A.H.",
+        "Okx, J.P.",
+      ],
+      date: "2016",
+      publisher: "Wageningen, Wageningen Environmental Research",
+      id: "Rapport 2797",
+    },
+    "Vries-etal2014": {
+      title:
+        "Actualisatie bodemkaart veengebieden; Deelgebied 1 en 2 in Noord Nederland. ",
+      authors: [
+        "Vries, F. de",
+        "Brus, D.J.",
+        "Kempen, B.",
+        "Brouwer, F.",
+        "Heidema, A.H.",
+      ],
+      date: "2014",
+      publisher: "Wageningen, Alterra Wageningen UR",
+      id: "rapport 2556",
+    },
+    Wallenburg1973: {
+      title:
+        "Hydromorphic soil characteristics in alluvial soils in connection with soil drainage. ",
+      authors: ["Wallenburg, C. van"],
+      date: "1973",
+      publisher:
+        "Pseudogley & Gley, Transact. Comm. V& VI. Int. Soc. Soil Sci. Stuttgart, 393-403. ",
+    },
   },
   //  "ISO19136": {
   //    "href": "https://www.iso.org/standard/32554.html",
