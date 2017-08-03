@@ -1,0 +1,4093 @@
+<h2>Catalogus</h2>
+<p class="note" title="Over deze catalogus">
+   Deze catalogus is automatisch samengesteld op basis van het UML model 
+   "Bodem- en grondwatertrappenkaart (SGM)" door Imvertor OS 1.27.4.20170731 op August 3, 2017 at 13:10:41.
+   <br>
+   Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i>arjan@linkedmatter.com</i> en geef de code 
+   <i>"Domeinmodel-Bodem-engrondwatertrappenkaartSGM-0.4-1-20170701-20170803-151043"</i> door. 
+   Voor inhoudelijke fouten neem contact op met het modellenteam: <i>github@basisregistratieondergrond.nl</i>.
+   
+</p>
+<section id="">
+   <h1>Objecttypen </h1>
+   
+   <section id="global_d6426e349">
+      <h2>Objecttype AfgeleidBodemprofiel</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>AfgeleidBodemprofiel</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>Schematische beschrijving van de profielopbouw van een bodemGtKaartEenheid, verkregen
+                  uit de informatie van verschillende boorbeschrijvingen.\u00a0
+               </td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Unieke aanduiding</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Populatie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie kwaliteit</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie abstract object</th>
+               <td>Nee</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <h3>Overzicht relaties</h3>
+      
+      
+      <table>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Rol naam met kardinaliteiten</th>
+               <th>Definitie</th>
+            </tr>
+            <tr>
+               <td>
+                  AfgeleidBodemprofiel
+                  [ 1 .. * ]
+                  
+                  <a class="link" href="#detail_d6426e420">afgeleid_van: profiel</a>
+                  
+                  
+                  <a class="link" href="#global_d6426e6245">WaargenomenBodemprofiel</a>
+                  
+                  [ 1 ]
+                  
+               </td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </section>
+   
+   <section id="global_d6426e573">
+      <h2>Objecttype BodemEnGrondwatertrappenKaart</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>BodemEnGrondwatertrappenKaart</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td>Bodem- en grondwatertrappenkaart</td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>model (kaart) met informatie over de bodemopbouw en het grondwaterstandsverloop in
+                  Nederland 1 : 50.000.
+               </td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td>De specificaties voor de Bodemkaart van Nederland, schaal 1 : 50. 000. (referentie
+                  nog toevoegen)
+               </td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Unieke aanduiding</th>
+               <td>id</td>
+            </tr>
+            <tr>
+               <th>Populatie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie kwaliteit</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie abstract object</th>
+               <td>Nee</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <h3>Overzicht attributen</h3>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Attribuutnaam</th>
+               <th>Definitie</th>
+               <th>Formaat</th>
+               <th>Card</th>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e650">id</a>
+                  
+               </td>
+               <td>unieke identificatie van het model (kaart)</td>
+               <td>
+                  <a class="external-link" href="http://www.opengeospatial.org/standards/gml#Identifier">Identifier</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e796">extent</a>
+                  
+               </td>
+               <td>de omhullende begrenzing van het gebied waar het model geheel binnen valt</td>
+               <td>
+                  <a class="external-link" href="">EX_Extent</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e955">schaal</a>
+                  
+               </td>
+               <td>de schaal waarop de gegevens zijn ingewonnen</td>
+               <td>
+                  Integer
+                  
+               </td>
+               <td>1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <h3>Overzicht relaties</h3>
+      
+      
+      <table>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Rol naam met kardinaliteiten</th>
+               <th>Definitie</th>
+            </tr>
+            <tr>
+               <td>
+                  BodemEnGrondwatertrappenKaart
+                  [ 1 ]
+                  
+                  <a class="link" href="#detail_d6426e1108">heeft_vlakken: vlak</a>
+                  
+                  
+                  <a class="link" href="#global_d6426e2382">BodemEnGrondwatertrappenKaartvlak</a>
+                  
+                  [ 1 .. * ]
+                  
+               </td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>
+                  BodemEnGrondwatertrappenKaart
+                  [ 1 ]
+                  
+                  <a class="link" href="#detail_d6426e1239">heeft documentatie: document</a>
+                  
+                  
+                  <a class="external-link" href="">CI_Citation</a>
+                  
+                  [ 1 ]
+                  
+               </td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </section>
+   
+   <section id="global_d6426e2382">
+      <h2>Objecttype BodemEnGrondwatertrappenKaartvlak</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>BodemEnGrondwatertrappenKaartvlak</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td>bodem Gt kaartvkak</td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>een begrensd gebied met overeenkomstige bodemkundige en hydrologische kenmerken</td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Unieke aanduiding</th>
+               <td>id</td>
+            </tr>
+            <tr>
+               <th>Populatie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie kwaliteit</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie abstract object</th>
+               <td>Nee</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <h3>Overzicht attributen</h3>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Attribuutnaam</th>
+               <th>Definitie</th>
+               <th>Formaat</th>
+               <th>Card</th>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e2466">id</a>
+                  
+               </td>
+               <td>External object identifier of the profile element.</td>
+               <td>
+                  <a class="external-link" href="http://www.opengeospatial.org/standards/gml#Identifier">Identifier</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e2628">geometry</a>
+                  
+               </td>
+               <td>de geometrie bepaald voor het BodemGtKaartvlak</td>
+               <td>
+                  <a class="external-link" href="http://www.opengeospatial.org/standards/gml#Polygon">GM_Polygon</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e2787">helling</a>
+                  
+               </td>
+               <td>de overheersende helling in het BodemGtkaartvlak in klassen \u00a0&amp;lt;?? nog checken&amp;gt;</td>
+               <td>
+                  <a class="link" href="#global_d6426e3996">BodemHellingWaarde</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <h3>Overzicht relaties</h3>
+      
+      
+      <table>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Rol naam met kardinaliteiten</th>
+               <th>Definitie</th>
+            </tr>
+            <tr>
+               <td>
+                  BodemEnGrondwatertrappenKaartvlak
+                  [ 1 ]
+                  
+                  <a class="link" href="#detail_d6426e2930">heeft_bodemobject: inkaartGebrachtObject</a>
+                  
+                  
+                  <a class="link" href="#global_d6426e4500">BodemObject</a>
+                  
+                  [ 1 ]
+                  
+               </td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <section id="" class="notoc">
+         <h5>Toelichting</h5>de begrenzing is de 2D afbeelding van het 3D bodemobject (soil body in INSPIRE) op
+         het aardoppervlak (maaiveld), zodat het als kaart is te gebruiken
+      </section>
+      
+   </section>
+   
+   <section id="global_d6426e3101">
+      <h2>Objecttype BodemEnGrondwatertrappenKaartvlakCollectie</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>BodemEnGrondwatertrappenKaartvlakCollectie</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td>bodem Gt kaartvlak collectie</td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>de documentatie van een verzameling bij elkaar horende bodemkaartvlakken</td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Unieke aanduiding</th>
+               <td>id</td>
+            </tr>
+            <tr>
+               <th>Populatie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie kwaliteit</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie abstract object</th>
+               <td>Nee</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <h3>Overzicht attributen</h3>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Attribuutnaam</th>
+               <th>Definitie</th>
+               <th>Formaat</th>
+               <th>Card</th>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e3185">id</a>
+                  
+               </td>
+               <td>unieke identificatie van een deelverzameling van het model (kaart)</td>
+               <td>
+                  <a class="external-link" href="http://www.opengeospatial.org/standards/gml#Identifier">Identifier</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e3331">naam</a>
+                  
+               </td>
+               <td>de naam van de deelverzameling</td>
+               <td>
+                  CHARACTERSTRING
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e3481">type</a>
+                  
+               </td>
+               <td>de soort deelverzameling van het model</td>
+               <td>
+                  <a class="link" href="#global_d6426e3938">BodemEnGrondwatertrappenKaartvlakCollectieTypeWaarde</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <h3>Overzicht relaties</h3>
+      
+      
+      <table>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Rol naam met kardinaliteiten</th>
+               <th>Definitie</th>
+            </tr>
+            <tr>
+               <td>
+                  BodemEnGrondwatertrappenKaartvlakCollectie
+                  [ 1 ]
+                  
+                  <a class="link" href="#detail_d6426e3640">beschrijft_vlakken: vlak</a>
+                  
+                  
+                  <a class="link" href="#global_d6426e2382">BodemEnGrondwatertrappenKaartvlak</a>
+                  
+                  [ 1 .. * ]
+                  
+               </td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>
+                  BodemEnGrondwatertrappenKaartvlakCollectie
+                  [ 1 ]
+                  
+                  <a class="link" href="#detail_d6426e3767">heeft documentatie: document</a>
+                  
+                  
+                  <a class="external-link" href="">CI_Citation</a>
+                  
+                  [ 1 ]
+                  
+               </td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <section id="" class="notoc">
+         <h5>Toelichting</h5>Dit zijn de gele boekjes die bij kaartbladen horen of de beschrijvende rapportages
+         bij actualisaties
+      </section>
+      
+   </section>
+   
+   <section id="global_d6426e4500">
+      <h2>Objecttype BodemObject</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>BodemObject</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td>Bodemobject</td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>Afgegrensd gebied met gelijke bodemkenmerken</td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Unieke aanduiding</th>
+               <td>id</td>
+            </tr>
+            <tr>
+               <th>Populatie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie kwaliteit</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie abstract object</th>
+               <td>Nee</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <h3>Overzicht attributen</h3>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Attribuutnaam</th>
+               <th>Definitie</th>
+               <th>Formaat</th>
+               <th>Card</th>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e4577">id</a>
+                  
+               </td>
+               <td>External object identifier of the profile element.</td>
+               <td>
+                  <a class="external-link" href="http://www.opengeospatial.org/standards/gml#Identifier">Identifier</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e4858">geometry</a>
+                  
+               </td>
+               <td>de geometrie bepaald voor het bodemobject</td>
+               <td>
+                  <a class="link" href="#global_d6426e5853">GM_MultiSurface</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  
+                  <a class="link" href="#detail_d6426e1411">bodemkenmerken</a>
+                  
+                  :
+               </td>
+               <td>
+                  de bodemkundige typering van de Bodem
+                  
+               </td>
+               <td></td>
+               <td>
+                  1 .. 3
+                  
+               </td>
+            </tr>
+            <tr>
+               <td>- 
+                  <a class="link" href="#detail_d6426e1507">bodemHoofdklasse</a>
+                  
+               </td>
+               <td>indeling van bodemtypen op generiek niveau</td>
+               <td>
+                  <a class="link" href="#global_d6426e4119">BodemHoofdklasseWaarde</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>- 
+                  <a class="link" href="#detail_d6426e1647">bodemlegendaEenheid</a>
+                  
+               </td>
+               <td>indeling van de bodemtypen op specifiek niveau</td>
+               <td>
+                  <a class="link" href="#global_d6426e4377">BodemLegendaEenheidWaarde</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>- 
+                  <a class="link" href="#detail_d6426e1787">bodemkenmerkenBovenlaag</a>
+                  
+               </td>
+               <td>eigenschappen van de bovenlaag van de bodem</td>
+               <td>
+                  <a class="link" href="#global_d6426e4227">BodemKenmerkenBovenlaagWaarde</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>- 
+                  <a class="link" href="#detail_d6426e1927">bodemkenmerkenOnderlaag</a>
+                  
+               </td>
+               <td>eigenschappen van de onderlaag van de bodem</td>
+               <td>
+                  <a class="link" href="#global_d6426e4302">BodemKenmerkenOnderlaagWaarde</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>- 
+                  <a class="link" href="#detail_d6426e2067">grondwatertrap</a>
+                  
+               </td>
+               <td>de waarde van de grondwatertrap volgens de grondwatertrapclassificatie</td>
+               <td>
+                  <a class="link" href="#global_d6426e5933">GrondwatertrapWaarde</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>- 
+                  <a class="link" href="#detail_d6426e2217">bodemHelling</a>
+                  
+               </td>
+               <td></td>
+               <td>
+                  <a class="link" href="#global_d6426e3996">BodemHellingWaarde</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <h3>Overzicht relaties</h3>
+      
+      
+      <table>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Rol naam met kardinaliteiten</th>
+               <th>Definitie</th>
+            </tr>
+            <tr>
+               <td>
+                  BodemObject
+                  [ 1 ]
+                  
+                  <a class="link" href="#detail_d6426e5017">is_gebaseerd_op: profiel</a>
+                  
+                  
+                  <a class="link" href="#global_d6426e349">AfgeleidBodemprofiel</a>
+                  
+                  [ 1 .. * ]
+                  
+               </td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+   </section>
+   
+   <section id="global_d6426e5179">
+      <h2>Objecttype Bodemprofiel</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>Bodemprofiel</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td>bodemprofiel</td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>description of the soil that is characterized by a vertical succession of profile
+                  elements (horizons and layers).
+               </td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td>INSPIRE data specification Soil </td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Unieke aanduiding</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Populatie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie kwaliteit</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie abstract object</th>
+               <td>Nee</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <h3>Overzicht attributen</h3>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Attribuutnaam</th>
+               <th>Definitie</th>
+               <th>Formaat</th>
+               <th>Card</th>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e5263">bodemprofiel id</a>
+                  
+               </td>
+               <td>Unique identifier of the soil profile given by the data provider of the dataset.</td>
+               <td>
+                  <a class="external-link" href="http://www.opengeospatial.org/standards/gml#Identifier">Identifier</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e5373">WRBSoilName</a>
+                  
+               </td>
+               <td>Identification of the soil profile.
+                  NOTE: The structure of the WRBSoilNameType was based on the World reference base for
+                  soil resources 2006, first update 2007.
+                  World Soil Resources Reports no 103.
+                  Food and Agriculture Organization of the United Nations, Rome 2007. EXAMPLE Lixic
+                  Vertic Ferralsol (Ferric, Rhodic); WRB version 2006 (update 2007) or 2010.
+               </td>
+               <td>
+                  <a class="link" href="#global_d6426e6166">WRBSoilNameType</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e5489">otherSoilName</a>
+                  
+               </td>
+               <td>Identification of the soil profile according to a specific classification scheme.</td>
+               <td>
+                  <a class="link" href="#global_d6426e6008">OtherSoilNameType</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e5596">validFrom</a>
+                  
+               </td>
+               <td>The time when the phenomenon started to exist in the real world.</td>
+               <td>
+                  Datum
+                  
+               </td>
+               <td>1</td>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e5697">validTo</a>
+                  
+               </td>
+               <td>The time from which the phenomenon no longer exists in the real world.</td>
+               <td>
+                  DatumTijd
+                  
+               </td>
+               <td>1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <section id="" class="notoc">
+         <h5>Toelichting</h5>NOTE The soil profile is abstracted from observations in a trial pit or a boring,
+         or derived from expert knowledge using other soil profiles.
+      </section>
+      
+   </section>
+   
+   <section id="global_d6426e6245">
+      <h2>Objecttype WaargenomenBodemprofiel</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>WaargenomenBodemprofiel</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td>waargenomen bodemprofiel</td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>beschrijving van het bodemprofiel op de aangegeven locatie</td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Unieke aanduiding</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Populatie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie kwaliteit</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Indicatie abstract object</th>
+               <td>Nee</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <h3>Overzicht attributen</h3>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="50%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <colgroup width="10%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Attribuutnaam</th>
+               <th>Definitie</th>
+               <th>Formaat</th>
+               <th>Card</th>
+            </tr>
+            <tr>
+               <td>
+                  <a class="link" href="#detail_d6426e6344">BRO_RO_Booronderzoek</a>
+                  
+               </td>
+               <td>verwijzing naar de identificatie van het registratie object (RO) booronderzoek in
+                  de BRO
+               </td>
+               <td>
+                  <a class="link" href="#global_d6426e6087">Registratieobjectcode</a>
+                  
+               </td>
+               <td>1</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <h3>Overzicht relaties</h3>
+      
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Rol naam met kardinaliteiten</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+      
+      <section id="" class="notoc">
+         <h5>Toelichting</h5>de beschrijving wordt door een bodemkundige gedaan op basis van waarnemingen in een
+         boorgat of profielkuil.\u00a0
+      </section>
+      
+   </section>
+   
+</section>
+<section id="">
+   <h1>Codelists </h1>
+   
+   <tr>
+      <th><a class="link" href="#detail_d6426e3938">BodemEnGrondwatertrappenKaartvlakCollectieTypeWaarde</a></th>
+      <td></td>
+   </tr>
+   
+   <tr>
+      <th><a class="link" href="#detail_d6426e3996">BodemHellingWaarde</a></th>
+      <td>de indeling voor de overheersende helling in het BodemGTkaartvlak in procenten</td>
+   </tr>
+   
+   <tr>
+      <th><a class="link" href="#detail_d6426e4119">BodemHoofdklasseWaarde</a></th>
+      <td>generalisatie van bodemtypen op basis van grondsoort en bodemvorming</td>
+   </tr>
+   
+   <tr>
+      <th><a class="link" href="#detail_d6426e4227">BodemKenmerkenBovenlaagWaarde</a></th>
+      <td>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper
+         dan 40 cm. Dit zijn aanvullingen op de bodemLegendaEenheidWaarde. Elke mogelijke waarde
+         bestaat uit een code geplaatst achter de bodemLegendaEenheidWaarde en een bij code
+         horende omschrijving.
+      </td>
+   </tr>
+   
+   <tr>
+      <th><a class="link" href="#detail_d6426e4302">BodemKenmerkenOnderlaagWaarde</a></th>
+      <td>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van
+         het bodemprofiel. Dit zijn aanvullingen op de bodemLegendaEenheidWaarde. Elke mogelijke
+         waarde bestaat uit een code geplaatst voor de bodemLegendaEenheidWaarde en een bij
+         code horende omschrijving.
+      </td>
+   </tr>
+   
+   <tr>
+      <th><a class="link" href="#detail_d6426e4377">BodemLegendaEenheidWaarde</a></th>
+      <td>aanduiding van de bodemtypen</td>
+   </tr>
+   
+   <tr>
+      <th><a class="link" href="#detail_d6426e5933">GrondwatertrapWaarde</a></th>
+      <td>Opsomming van de toegestane waarden voor het aanduiden van de grondwatertrap. Elke
+         waarde bestaat uit een codering en een bij de codering behorende omschrijving. De
+         codering geeft een klassificatie van de grondwatertrap, op basis van de gemiddeld
+         hoogste grondwaterstand (in cm) en de gemiddeld laagste grondwaterstand (in cm).
+      </td>
+   </tr>
+   
+</section>
+<section id="">
+   <h1>Primitieve datatypen </h1>
+   
+   <section id="global_d6426e5853" class="notoc">
+      <h2>Primitief datatype GM_MultiSurface</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>GM_MultiSurface</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>DUMMY type, moet ISO19107 type zijn.</td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="global_d6426e6008" class="notoc">
+      <h2>Primitief datatype OtherSoilNameType</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>OtherSoilNameType</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>DUMMY type, moet INSPIRE type zijn.</td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="global_d6426e6087" class="notoc">
+      <h2>Primitief datatype Registratieobjectcode</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>Registratieobjectcode</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>DUMMY type, nog in te vullen.</td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="global_d6426e6166" class="notoc">
+      <h2>Primitief datatype WRBSoilNameType</h2>
+      
+      <table>
+         <colgroup width="30%"></colgroup>
+         <colgroup width="70%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Naam</th>
+               <td>WRBSoilNameType</td>
+            </tr>
+            <tr>
+               <th>Alternatieve naam</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Herkomst</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Definitie</th>
+               <td>DUMMY type, moet INSPIRE type zijn.</td>
+            </tr>
+            <tr>
+               <th>Herkomst definitie</th>
+               <td></td>
+            </tr>
+            <tr>
+               <th>Datum opname</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+</section>
+<section id="">
+   <h1>Enumeraties </h1>
+   
+   <table>
+      <colgroup width="30%"></colgroup>
+      <colgroup width="70%"></colgroup>
+      <tbody>
+         <tr>
+            <th><a class="link" href="#detail_d6426e3938">BodemEnGrondwatertrappenKaartvlakCollectieTypeWaarde</a></th>
+            <td></td>
+         </tr>
+         <tr>
+            <th><a class="link" href="#detail_d6426e3996">BodemHellingWaarde</a></th>
+            <td>de indeling voor de overheersende helling in het BodemGTkaartvlak in procenten</td>
+         </tr>
+         <tr>
+            <th><a class="link" href="#detail_d6426e4119">BodemHoofdklasseWaarde</a></th>
+            <td>generalisatie van bodemtypen op basis van grondsoort en bodemvorming</td>
+         </tr>
+         <tr>
+            <th><a class="link" href="#detail_d6426e4227">BodemKenmerkenBovenlaagWaarde</a></th>
+            <td>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper
+               dan 40 cm. Dit zijn aanvullingen op de bodemLegendaEenheidWaarde. Elke mogelijke waarde
+               bestaat uit een code geplaatst achter de bodemLegendaEenheidWaarde en een bij code
+               horende omschrijving.
+            </td>
+         </tr>
+         <tr>
+            <th><a class="link" href="#detail_d6426e4302">BodemKenmerkenOnderlaagWaarde</a></th>
+            <td>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van
+               het bodemprofiel. Dit zijn aanvullingen op de bodemLegendaEenheidWaarde. Elke mogelijke
+               waarde bestaat uit een code geplaatst voor de bodemLegendaEenheidWaarde en een bij
+               code horende omschrijving.
+            </td>
+         </tr>
+         <tr>
+            <th><a class="link" href="#detail_d6426e4377">BodemLegendaEenheidWaarde</a></th>
+            <td>aanduiding van de bodemtypen</td>
+         </tr>
+         <tr>
+            <th><a class="link" href="#detail_d6426e5933">GrondwatertrapWaarde</a></th>
+            <td>Opsomming van de toegestane waarden voor het aanduiden van de grondwatertrap. Elke
+               waarde bestaat uit een codering en een bij de codering behorende omschrijving. De
+               codering geeft een klassificatie van de grondwatertrap, op basis van de gemiddeld
+               hoogste grondwaterstand (in cm) en de gemiddeld laagste grondwaterstand (in cm).
+            </td>
+         </tr>
+      </tbody>
+   </table>
+   
+</section>
+<section id="">
+   <h1>Attribuut- en relatiesoort details</h1>
+   
+   
+   <section id="detail_d6426e349">
+      <h3>Objecttype AfgeleidBodemprofiel</h3>
+      
+      <section id="detail_d6426e420" class="notoc">
+         <h4>Relatiesoort details <a href="#global_d6426e349">AfgeleidBodemprofiel</a> afgeleid_van: profiel
+         </h4>
+         
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>afgeleid_van: profiel</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Gerelateerd obecttype</th>
+                  <td>
+                     <a class="link" href="#global_d6426e6245">WaargenomenBodemprofiel</a>
+                     
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+   </section>
+   
+   <section id="detail_d6426e573">
+      <h3>Objecttype BodemEnGrondwatertrappenKaart</h3>
+      
+      <section id="detail_d6426e650" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e573">BodemEnGrondwatertrappenKaart</a> id
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>id</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>unieke identificatie van het model (kaart)</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Identifier</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      <section id="detail_d6426e796" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e573">BodemEnGrondwatertrappenKaart</a> extent
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>extent</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>de omhullende begrenzing van het gebied waar het model geheel binnen valt</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>EX_Extent</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>de begrenzing is aangegeven door een rechthoek met de linker bovenhoek en rechter
+            onderhoek
+         </section>
+         
+      </section>
+      
+      <section id="detail_d6426e955" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e573">BodemEnGrondwatertrappenKaart</a> schaal
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>schaal</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>de schaal waarop de gegevens zijn ingewonnen</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Integer</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>de kaartschaal van de bodemkaart is 1:50.000, waarop de karteermethode en nauwkeurigheid
+            (detaillering van de gebruikte classificatie) is afgestemd
+         </section>
+         
+      </section>
+      
+      <section id="detail_d6426e1108" class="notoc">
+         <h4>Relatiesoort details <a href="#global_d6426e573">BodemEnGrondwatertrappenKaart</a> heeft_vlakken: vlak
+         </h4>
+         
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>heeft_vlakken: vlak</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1 .. *</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Gerelateerd obecttype</th>
+                  <td>
+                     <a class="link" href="#global_d6426e2382">BodemEnGrondwatertrappenKaartvlak</a>
+                     
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      <section id="detail_d6426e1239" class="notoc">
+         <h4>Relatiesoort details <a href="#global_d6426e573">BodemEnGrondwatertrappenKaart</a> heeft documentatie: document
+         </h4>
+         
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>heeft documentatie: document</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Gerelateerd obecttype</th>
+                  <td>
+                     <a class="external-link" href="">CI_Citation</a>
+                     
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+   </section>
+   
+   <section id="detail_d6426e2382">
+      <h3>Objecttype BodemEnGrondwatertrappenKaartvlak</h3>
+      
+      <section id="detail_d6426e2466" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e2382">BodemEnGrondwatertrappenKaartvlak</a> id
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>id</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>External object identifier of the profile element.</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Identifier</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>An external object identifier is a unique object identifier published by the responsible
+            body, which may be used by external applications to reference the spatial object.
+            The identifier is an identifier of the spatial object, not an identifier of the real-world
+            phenomenon.
+         </section>
+         
+      </section>
+      
+      <section id="detail_d6426e2628" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e2382">BodemEnGrondwatertrappenKaartvlak</a> geometry
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>geometry</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>de geometrie bepaald voor het BodemGtKaartvlak</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>GM_Polygon</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>A spatial representation of soil information becomes spatially explicit by delineating
+            areas with similar values according to the soil (or other) property that is represented.
+         </section>
+         
+      </section>
+      
+      <section id="detail_d6426e2787" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e2382">BodemEnGrondwatertrappenKaartvlak</a> helling
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>helling</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>de overheersende helling in het BodemGtkaartvlak in klassen \u00a0&amp;lt;?? nog checken&amp;gt;</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Ja</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>BodemHellingWaarde</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      <section id="detail_d6426e2930" class="notoc">
+         <h4>Relatiesoort details <a href="#global_d6426e2382">BodemEnGrondwatertrappenKaartvlak</a> heeft_bodemobject: inkaartGebrachtObject
+         </h4>
+         
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>heeft_bodemobject: inkaartGebrachtObject</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Gerelateerd obecttype</th>
+                  <td>
+                     <a class="link" href="#global_d6426e4500">BodemObject</a>
+                     
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+   </section>
+   
+   <section id="detail_d6426e3101">
+      <h3>Objecttype BodemEnGrondwatertrappenKaartvlakCollectie</h3>
+      
+      <section id="detail_d6426e3185" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e3101">BodemEnGrondwatertrappenKaartvlakCollectie</a> id
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>id</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>unieke identificatie van een deelverzameling van het model (kaart)</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Identifier</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      <section id="detail_d6426e3331" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e3101">BodemEnGrondwatertrappenKaartvlakCollectie</a> naam
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>naam</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>de naam van de deelverzameling</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>CHARACTERSTRING</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>bijv hetkaartbladnummer of naam van het project: bijv\u00a0
+         </section>
+         
+      </section>
+      
+      <section id="detail_d6426e3481" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e3101">BodemEnGrondwatertrappenKaartvlakCollectie</a> type
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>type</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>de soort deelverzameling van het model</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>BodemEnGrondwatertrappenKaartvlakCollectieTypeWaarde</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>bijvoorbeeld kaartbladnummer of actualisatieproject
+         </section>
+         
+      </section>
+      
+      <section id="detail_d6426e3640" class="notoc">
+         <h4>Relatiesoort details <a href="#global_d6426e3101">BodemEnGrondwatertrappenKaartvlakCollectie</a> beschrijft_vlakken: vlak
+         </h4>
+         
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>beschrijft_vlakken: vlak</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1 .. *</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Gerelateerd obecttype</th>
+                  <td>
+                     <a class="link" href="#global_d6426e2382">BodemEnGrondwatertrappenKaartvlak</a>
+                     
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      <section id="detail_d6426e3767" class="notoc">
+         <h4>Relatiesoort details <a href="#global_d6426e3101">BodemEnGrondwatertrappenKaartvlakCollectie</a> heeft documentatie: document
+         </h4>
+         
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>heeft documentatie: document</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Gerelateerd obecttype</th>
+                  <td>
+                     <a class="external-link" href="">CI_Citation</a>
+                     
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+   </section>
+   
+   <section id="detail_d6426e4500">
+      <h3>Objecttype BodemObject</h3>
+      
+      <section id="detail_d6426e4577" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e4500">BodemObject</a> id
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>id</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>External object identifier of the profile element.</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Identifier</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>An external object identifier is a unique object identifier published by the responsible
+            body, which may be used by external applications to reference the spatial object.
+            The identifier is an identifier of the spatial object, not an identifier of the real-world
+            phenomenon.
+         </section>
+         
+      </section>
+      
+      <section id="detail_d6426e1411" class="notoc">
+         <h4>Gegevensgroeptype details <a href="#global_d6426e4500">BodemObject</a> BodemEnGrondwatertrappenKaarteenheid
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>BodemEnGrondwatertrappenKaarteenheid</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>de bodemkundige typering van de Bodem</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Unieke aanduiding</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Populatie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kwaliteit</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>de typering is een samenvoeging van de codering voor kenmerken bodemKenmerkBovenlaagWaarde,
+            BodemLegendaEenheidWaarde en bodemKenmerkOnderlaagWaarde.
+            NOTE
+            SOURCE
+            EXAMPLE &amp;lt;geef een voorbeeld&amp;gt;
+            Volledige bodemkundige typering van het Bodemlichaam door samenvoeging van de codering
+            voor kenmerken bodemKenmerkBovenlaagWaarde, BodemLegendaEenheidWaarde en bodemKenmerkOnderlaagWaarde.
+         </section>
+         
+         <section id="detail_d6426e1507" class="notoc">
+            <h6>Attribuutsoort bodemHoofdklasse  BodemEnGrondwatertrappenKaarteenheid</h6>
+            
+            <table>
+               <tbody>
+                  <tr></tr>
+                  <tr>
+                     <th>Naam</th>
+                     <td>bodemHoofdklasse</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>indeling van bodemtypen op generiek niveau</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie in onderzoek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Aanduiding strijdigheid/nietigheid</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Patroon</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>BodemHoofdklasseWaarde</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+         <section id="detail_d6426e1647" class="notoc">
+            <h6>Attribuutsoort bodemlegendaEenheid  BodemEnGrondwatertrappenKaarteenheid</h6>
+            
+            <table>
+               <tbody>
+                  <tr></tr>
+                  <tr>
+                     <th>Naam</th>
+                     <td>bodemlegendaEenheid</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>indeling van de bodemtypen op specifiek niveau</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie in onderzoek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Aanduiding strijdigheid/nietigheid</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Patroon</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>BodemLegendaEenheidWaarde</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+         <section id="detail_d6426e1787" class="notoc">
+            <h6>Attribuutsoort bodemkenmerkenBovenlaag  BodemEnGrondwatertrappenKaarteenheid</h6>
+            
+            <table>
+               <tbody>
+                  <tr></tr>
+                  <tr>
+                     <th>Naam</th>
+                     <td>bodemkenmerkenBovenlaag</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>eigenschappen van de bovenlaag van de bodem</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie in onderzoek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Aanduiding strijdigheid/nietigheid</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Patroon</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>BodemKenmerkenBovenlaagWaarde</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+         <section id="detail_d6426e1927" class="notoc">
+            <h6>Attribuutsoort bodemkenmerkenOnderlaag  BodemEnGrondwatertrappenKaarteenheid</h6>
+            
+            <table>
+               <tbody>
+                  <tr></tr>
+                  <tr>
+                     <th>Naam</th>
+                     <td>bodemkenmerkenOnderlaag</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>eigenschappen van de onderlaag van de bodem</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie in onderzoek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Aanduiding strijdigheid/nietigheid</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Patroon</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>BodemKenmerkenOnderlaagWaarde</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+         <section id="detail_d6426e2067" class="notoc">
+            <h6>Attribuutsoort grondwatertrap  BodemEnGrondwatertrappenKaarteenheid</h6>
+            
+            <table>
+               <tbody>
+                  <tr></tr>
+                  <tr>
+                     <th>Naam</th>
+                     <td>grondwatertrap</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td>de waarde van de grondwatertrap volgens de grondwatertrapclassificatie</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie in onderzoek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Aanduiding strijdigheid/nietigheid</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Patroon</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>GrondwatertrapWaarde</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+         <section id="detail_d6426e2217" class="notoc">
+            <h6>Attribuutsoort bodemHelling  BodemEnGrondwatertrappenKaarteenheid</h6>
+            
+            <table>
+               <tbody>
+                  <tr></tr>
+                  <tr>
+                     <th>Naam</th>
+                     <td>bodemHelling</td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Definitie</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Herkomst definitie</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Datum opname</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Mogelijk geen waarde</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie materiële historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie formele historie</th>
+                     <td>Nee</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie in onderzoek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Aanduiding strijdigheid/nietigheid</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie authentiek</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Regels</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Patroon</th>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <th>Formaat</th>
+                     <td>BodemHellingWaarde</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         
+      </section>
+      
+      <section id="detail_d6426e4858" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e4500">BodemObject</a> geometry
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>geometry</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>de geometrie bepaald voor het bodemobject</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Ja</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>GM_MultiSurface</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>A spatial representation of soil information becomes spatially explicit by delineating
+            areas with similar values according to the soil (or other) property that is represented.
+         </section>
+         
+      </section>
+      
+      <section id="detail_d6426e5017" class="notoc">
+         <h4>Relatiesoort details <a href="#global_d6426e4500">BodemObject</a> is_gebaseerd_op: profiel
+         </h4>
+         
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>is_gebaseerd_op: profiel</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1 .. *</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Gerelateerd obecttype</th>
+                  <td>
+                     <a class="link" href="#global_d6426e349">AfgeleidBodemprofiel</a>
+                     
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+   </section>
+   
+   <section id="detail_d6426e5179">
+      <h3>Objecttype Bodemprofiel</h3>
+      
+      <section id="detail_d6426e5263" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e5179">Bodemprofiel</a> bodemprofiel id
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>bodemprofiel id</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Unique identifier of the soil profile given by the data provider of the dataset.</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Identifier</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      <section id="detail_d6426e5373" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e5179">Bodemprofiel</a> WRBSoilName
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>WRBSoilName</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Identification of the soil profile.
+                     NOTE: The structure of the WRBSoilNameType was based on the World reference base for
+                     soil resources 2006, first update 2007.
+                     World Soil Resources Reports no 103.
+                     Food and Agriculture Organization of the United Nations, Rome 2007. EXAMPLE Lixic
+                     Vertic Ferralsol (Ferric, Rhodic); WRB version 2006 (update 2007) or 2010.
+                  </td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>WRBSoilNameType</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      <section id="detail_d6426e5489" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e5179">Bodemprofiel</a> otherSoilName
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>otherSoilName</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Identification of the soil profile according to a specific classification scheme.</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>OtherSoilNameType</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      <section id="detail_d6426e5596" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e5179">Bodemprofiel</a> validFrom
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>validFrom</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>The time when the phenomenon started to exist in the real world.</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Ja</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Datum</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+      <section id="detail_d6426e5697" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e5179">Bodemprofiel</a> validTo
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>validTo</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>The time from which the phenomenon no longer exists in the real world.</td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Ja</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>DatumTijd</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      
+   </section>
+   
+   <section id="detail_d6426e6245">
+      <h3>Objecttype WaargenomenBodemprofiel</h3>
+      
+      <section id="detail_d6426e6344" class="notoc">
+         <h4>Attribuutsoort details <a href="#global_d6426e6245">WaargenomenBodemprofiel</a> BRO_RO_Booronderzoek
+         </h4>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>BRO_RO_Booronderzoek</td>
+               </tr>
+               <tr>
+                  <th>Herkomst</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>verwijzing naar de identificatie van het registratie object (RO) booronderzoek in
+                     de BRO
+                  </td>
+               </tr>
+               <tr>
+                  <th>Herkomst definitie</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Datum opname</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Mogelijk geen waarde</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie materiële historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie formele historie</th>
+                  <td>Nee</td>
+               </tr>
+               <tr>
+                  <th>Indicatie in onderzoek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Aanduiding strijdigheid/nietigheid</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Indicatie kardinaliteit</th>
+                  <td>1</td>
+               </tr>
+               <tr>
+                  <th>Indicatie authentiek</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Regels</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Patroon</th>
+                  <td></td>
+               </tr>
+               <tr>
+                  <th>Formaat</th>
+                  <td>Registratieobjectcode</td>
+               </tr>
+               <tr>
+                  <th>Indicatie afleidbaar</th>
+                  <td>Nee</td>
+               </tr>
+            </tbody>
+         </table>
+         
+         <section id="" class="notoc">
+            <h5>Toelichting</h5>Algemeen BRO-attribuut zie BRO-catalogus
+         </section>
+         
+      </section>
+      
+   </section>
+   
+   
+   
+   <section id="detail_d6426e3938" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemEnGrondwatertrappenKaartvlakCollectieTypeWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e3996" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemHellingWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>de indeling voor de overheersende helling in het BodemGTkaartvlak in procenten</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e4119" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemHoofdklasseWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>generalisatie van bodemtypen op basis van grondsoort en bodemvorming</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e4227" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemKenmerkenBovenlaagWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper
+                  dan 40 cm. Dit zijn aanvullingen op de bodemLegendaEenheidWaarde. Elke mogelijke waarde
+                  bestaat uit een code geplaatst achter de bodemLegendaEenheidWaarde en een bij code
+                  horende omschrijving.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e4302" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemKenmerkenOnderlaagWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van
+                  het bodemprofiel. Dit zijn aanvullingen op de bodemLegendaEenheidWaarde. Elke mogelijke
+                  waarde bestaat uit een code geplaatst voor de bodemLegendaEenheidWaarde en een bij
+                  code horende omschrijving.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e4377" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemLegendaEenheidWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>aanduiding van de bodemtypen</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e5933" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> GrondwatertrapWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>Opsomming van de toegestane waarden voor het aanduiden van de grondwatertrap. Elke
+                  waarde bestaat uit een codering en een bij de codering behorende omschrijving. De
+                  codering geeft een klassificatie van de grondwatertrap, op basis van de gemiddeld
+                  hoogste grondwaterstand (in cm) en de gemiddeld laagste grondwaterstand (in cm).
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   
+   
+   
+   <section id="detail_d6426e3938" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemEnGrondwatertrappenKaartvlakCollectieTypeWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td></td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e3996" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemHellingWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>de indeling voor de overheersende helling in het BodemGTkaartvlak in procenten</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e4119" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemHoofdklasseWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>generalisatie van bodemtypen op basis van grondsoort en bodemvorming</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e4227" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemKenmerkenBovenlaagWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper
+                  dan 40 cm. Dit zijn aanvullingen op de bodemLegendaEenheidWaarde. Elke mogelijke waarde
+                  bestaat uit een code geplaatst achter de bodemLegendaEenheidWaarde en een bij code
+                  horende omschrijving.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e4302" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemKenmerkenOnderlaagWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van
+                  het bodemprofiel. Dit zijn aanvullingen op de bodemLegendaEenheidWaarde. Elke mogelijke
+                  waarde bestaat uit een code geplaatst voor de bodemLegendaEenheidWaarde en een bij
+                  code horende omschrijving.
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e4377" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> BodemLegendaEenheidWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>aanduiding van de bodemtypen</td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   <section id="detail_d6426e5933" class="notoc">
+      <h3>Enumeratie details <a href="#"></a> GrondwatertrapWaarde
+      </h3>
+      
+      <table>
+         <colgroup width="40%"></colgroup>
+         <colgroup width="60%"></colgroup>
+         <tbody>
+            <tr>
+               <th>Definitie</th>
+               <td>Opsomming van de toegestane waarden voor het aanduiden van de grondwatertrap. Elke
+                  waarde bestaat uit een codering en een bij de codering behorende omschrijving. De
+                  codering geeft een klassificatie van de grondwatertrap, op basis van de gemiddeld
+                  hoogste grondwaterstand (in cm) en de gemiddeld laagste grondwaterstand (in cm).
+               </td>
+            </tr>
+         </tbody>
+      </table>
+      
+      <table>
+         <tbody>
+            <tr>
+               <th>Code</th>
+               <th>Naam</th>
+               <th>Definitie</th>
+            </tr>
+         </tbody>
+      </table>
+      
+   </section>
+   
+   
+</section>
