@@ -7,6 +7,11 @@ var respecConfig = {
       company: "Geonovum",
       companyURL: "https://www.geonovum.nl",
     },
+     {
+      name: "Arnoud de Boer",
+      company: "Geonovum",
+      companyURL: "https://www.geonovum.nl",
+    }
   ],
   authors: [
     {
