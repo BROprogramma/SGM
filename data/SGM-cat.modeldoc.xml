@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.47.2"
-      generator-date="2018-09-25T09:28:13Z">
+      generator-date="2018-09-25T09:32:04Z">
    <section type="DOMAIN" name="Model" id="global_package_Model"><!--removed empty content-->
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Bodemkaart"
@@ -114,7 +114,7 @@
                         <item>
                            <item type="global" idref="global_class_Model_Grondwatertrapvlak">Grondwatertrapvlak</item>
                         </item>
-                        <item>[ 1 ]</item>
+                        <item>[ 1 .. * ]</item>
                      </item>
                      <item>Een bodemkaart bestaat uit ï¿½ï¿½n grondwatertrapvlak.</item>
                   </part>
@@ -160,7 +160,7 @@
                         <item>
                            <item type="global" idref="global_class_Model_Grondwatertrapvlak">Grondwatertrapvlak</item>
                         </item>
-                        <item>[ 1 ]</item>
+                        <item>[ 1 .. * ]</item>
                      </item>
                      <item>De unieke aanduiding van een Grondwatertrapvlak waaruit de bodemkaart bestaat.</item>
                   </part>
@@ -736,7 +736,7 @@ An external object identifier is a unique object identifier published by the res
                                  idref="detail_association_Model_Bodemkaart_gerelateerdeGrondwatertrapvlak">bestaat uit: gerelateerdeGrondwatertrapvlak</item>
                         </item>
                         <item>Grondwatertrapvlak</item>
-                        <item>[ 1 ]</item>
+                        <item>[ 1 .. * ]</item>
                      </item>
                      <item>Een bodemkaart bestaat uit ï¿½ï¿½n grondwatertrapvlak.</item>
                   </part>
@@ -767,7 +767,7 @@ An external object identifier is a unique object identifier published by the res
                                  idref="detail_association_Model_Bodemkaart_gerelateerdeGrondwatertrapvlak">bestaat uit: gerelateerdeGrondwatertrapvlak</item>
                         </item>
                         <item>Grondwatertrapvlak</item>
-                        <item>[ 1 ]</item>
+                        <item>[ 1 .. * ]</item>
                      </item>
                      <item>De unieke aanduiding van een Grondwatertrapvlak waaruit de bodemkaart bestaat.</item>
                   </part>
@@ -1954,7 +1954,7 @@ An external object identifier is a unique object identifier published by the res
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
+                        <item>1 .. *</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEAUTHENTIEK">
                         <item>Indicatie authentiek</item>
@@ -1986,7 +1986,7 @@ An external object identifier is a unique object identifier published by the res
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
+                        <item>1 .. *</item>
                      </part>
                      <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
                         <item>Gerelateerd objecttype</item>
