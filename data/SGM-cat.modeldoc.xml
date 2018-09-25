@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.47.2"
-      generator-date="2018-09-25T09:41:19Z">
+      generator-date="2018-09-25T09:50:55Z">
    <section type="DOMAIN" name="Model" id="global_package_Model"><!--removed empty content-->
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Bodemkaart"
@@ -86,7 +86,7 @@
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -132,7 +132,7 @@
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -410,7 +410,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -441,7 +441,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -530,7 +530,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -591,7 +591,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -722,7 +722,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -753,7 +753,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -844,7 +844,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -890,7 +890,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -981,9 +981,17 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <item>Naam</item>
                   <item>Profiellaag</item>
                </part>
+               <part type="CFG-DOC-HERKOMST">
+                  <item>Herkomst</item>
+                  <item>BRO</item>
+               </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
                   <item>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</item>
+               </part>
+               <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                  <item>Herkomst definitie</item>
+                  <item>BRO</item>
                </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
@@ -1019,7 +1027,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -1050,7 +1058,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                                  idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>Registratieobject.</item>
                   </part>
                   <part>
                      <item>
@@ -1179,6 +1187,18 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <part type="CFG-DOC-NAAM">
                   <item>Naam</item>
                   <item>Bodem en grondwatertrap registratie-object</item>
+               </part>
+               <part type="CFG-DOC-HERKOMST">
+                  <item>Herkomst</item>
+                  <item>BRO</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Registratieobject.</item>
+               </part>
+               <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                  <item>Herkomst definitie</item>
+                  <item>BRO</item>
                </part>
             </content>
          </section>
@@ -1675,13 +1695,13 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <item id="global_class_Model_BodemvlakcollectieSoort"
                      uuid="EAID_5E3D75B5_CE9E_49f3_8210_6B864BF1D2C8"
                      idref="detail_class_Model_BodemvlakcollectieSoort">BodemvlakcollectieSoort</item>
-               <item/>
+               <item>Aanduiding van de soorten Bodemvlakcollecties.</item>
             </part>
             <part>
                <item id="global_class_Model_Veensoort"
                      uuid="EAID_9B888E35_97C1_4f8e_A68A_9712DC99F487"
                      idref="detail_class_Model_Veensoort">Veensoort</item>
-               <item/>
+               <item>Aanduiding van de soorten Veensoort.</item>
             </part>
             <part>
                <item id="global_class_Model_BodemLegendaEenheid"
@@ -1693,7 +1713,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <item id="global_class_Model_StaringreeksBouwsteen"
                      uuid="EAID_A917BA6F_0EC3_4fc7_80D5_2F204F61DA5A"
                      idref="detail_class_Model_StaringreeksBouwsteen">StaringreeksBouwsteen</item>
-               <item/>
+               <item>Aanduiding van de soorten StaringsreeksBouwstaan.</item>
             </part>
             <part>
                <item id="global_class_Model_Grondwatertrapklasse"
@@ -1705,7 +1725,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <item id="global_class_Model_Landgebruik"
                      uuid="EAID_E6891C10_4381_49af_88F6_76AB00B3EC38"
                      idref="detail_class_Model_Landgebruik">Landgebruik</item>
-               <item/>
+               <item>Aanduiding van de soorten Landgebruik.</item>
             </part>
          </content>
       </section>
@@ -2095,6 +2115,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1 .. 3</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
@@ -3406,6 +3430,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>minimum organische stofgehalte</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Minimum waarde (p10) voor de variatie in het organische stofgehalte in massaprocenten van de totale massa grond.</item>
@@ -3428,6 +3456,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>maximum organische stofgehalte</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
@@ -3452,6 +3484,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>veensoort</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Een nadere typering van het als veen omschreven bestanddeel van grond.</item>
@@ -3474,6 +3510,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>lutumgehalte</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
@@ -3498,6 +3538,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>minimum lutumgehalte</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Minimum waarde (p10) voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 2 ï¿½m.</item>
@@ -3520,6 +3564,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>maximum lutumgehalte</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
@@ -3544,6 +3592,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>siltgehalte</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Veel voorkomend (modus) gehalte aan minerale delen met een korrelgrootte tussen 2 en 50 ï¿½m.</item>
@@ -3566,6 +3618,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>zandmediaan</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
@@ -3590,6 +3646,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>minimum zandmediaan</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Minimum waarde (p10) voor de variatie in zandmediaan (uitgedrukt in ï¿½m).</item>
@@ -3613,6 +3673,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>maximum zandmediaan</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Maximum waarde (p90) voor de variatie in zandmediaan (uitgedrukt in ï¿½m).</item>
@@ -3635,6 +3699,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>dichtheid</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
@@ -3664,6 +3732,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>bodemhoofdklasse</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>indeling van bodemtypen op generiek niveau</item>
@@ -3686,6 +3758,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>legenda eenheid</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
@@ -3710,6 +3786,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>kenmerken bovenlaag</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>De eigenschappen van de bovenlaag van de bodem.</item>
@@ -3733,6 +3813,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>kenmerken onderlaag</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>eigenschappen van de onderlaag van de bodem</item>
@@ -3755,6 +3839,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>helling</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
@@ -3980,7 +4068,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item/>
+                     <item>Aanduiding van de soorten Bodemvlakcollecties.</item>
                   </part>
                </content>
                <content>
@@ -3997,7 +4085,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item/>
+                     <item>Aanduiding van de soorten Veensoort.</item>
                   </part>
                </content>
                <content>
@@ -4031,7 +4119,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item/>
+                     <item>Aanduiding van de soorten StaringsreeksBouwstaan.</item>
                   </part>
                </content>
                <content>
@@ -4065,7 +4153,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item/>
+                     <item>Aanduiding van de soorten Landgebruik.</item>
                   </part>
                </content>
                <content>
