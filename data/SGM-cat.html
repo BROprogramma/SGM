@@ -1,17 +1,17 @@
 <h2>Catalogus</h2>
 <p class="note" title="Over deze catalogus">
    Deze catalogus is automatisch samengesteld op basis van het UML model 
-   "Bodem- en Grondwatertrappenkaart (SGM)" door Imvertor 1.47.2 op September 25, 2018 at 10:04:19.
+   "Bodem- en Grondwatertrappenkaart (SGM)" door Imvertor 1.47.2 op September 25, 2018 at 19:03:19.
    <br>
    Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i></i> en geef de code 
-   <i>"Conceptualmodel-Bodem-enGrondwatertrappenkaartSGM-1.0-1-20180806-20180925-120421"</i> door. 
+   <i>"Conceptualmodel-Bodem-enGrondwatertrappenkaartSGM-1.0-1-20180806-20180925-210321"</i> door. 
    
 </p><a class="anchor" name="global_package_Model"></a><section id="global_package_Model">
    <h3>Domein Model</h3>
    <div class="imageinfo overview"><img src="data/Images/EAID_6F1DEB4D_0857_407f_96D1_68CEB4BA18C6.png" usemap="#imagemap-EAID_6F1DEB4D_0857_407f_96D1_68CEB4BA18C6"><map name="imagemap-EAID_6F1DEB4D_0857_407f_96D1_68CEB4BA18C6">
          <area shape="rect" coords="712,673,826,593" alt="" href="#graph_EAID_0A1B4464_10D3_4b80_8F56_64ECFF79B2BF">
-         <area shape="rect" coords="613,1143,790,924" alt="" href="#graph_EAID_7487B6E9_2821_4136_A6BD_45BCC55D08C4">
-         <area shape="rect" coords="418,1028,561,913" alt="" href="#graph_EAID_E7CD7773_A9F8_46e0_87D3_D98930256054">
+         <area shape="rect" coords="499,1140,676,921" alt="" href="#graph_EAID_7487B6E9_2821_4136_A6BD_45BCC55D08C4">
+         <area shape="rect" coords="333,1028,476,913" alt="" href="#graph_EAID_E7CD7773_A9F8_46e0_87D3_D98930256054">
          <area shape="rect" coords="70,947,308,819" alt="" href="#graph_EAID_851EC4B0_D56E_4be9_A97B_2603C79F70A0">
          <area shape="rect" coords="611,120,813,50" alt="" href="#graph_EAID_5403E30C_F3F4_4c09_907F_D48BE501C19C">
          <area shape="rect" coords="48,1118,148,1081" alt="" href="#graph_EAID_155A6898_3C52_4f50_BEEA_5E0FCA823AEB">
@@ -24,7 +24,7 @@
          <area shape="rect" coords="35,534,314,419" alt="" href="#graph_EAID_2F5C99E2_C8D7_4c0d_B6C3_7292ACD90AEE">
          <area shape="rect" coords="222,330,430,212" alt="" href="#graph_EAID_6C32C465_2A2D_4ebd_8809_CFA672B233B2">
          <area shape="rect" coords="797,341,1130,239" alt="" href="#graph_EAID_F7554868_9447_4c85_91F2_85A060A04221">
-         <area shape="rect" coords="1207,723,1496,631" alt="" href="#graph_EAID_A1837B5E_AAEC_4abd_AD4E_490E18AC9B51">
+         <area shape="rect" coords="1309,326,1598,234" alt="" href="#graph_EAID_A1837B5E_AAEC_4abd_AD4E_490E18AC9B51">
          <area shape="rect" coords="50,800,394,664" alt="" href="#graph_EAID_937AC71F_F454_49a3_8257_4ED3B68B25F1">
          <area shape="rect" coords="1185,558,1578,400" alt="" href="#graph_EAID_D299245E_D76A_4628_9E60_A0D563127253">
          <area shape="rect" coords="390,528,666,425" alt="" href="#graph_EAID_1A0B021D_CECB_4888_896B_045EDB9287FB"></map><p><b>Bodem- en Grondwatertrappenkaart 1:50.000 - overzicht</b></p>
@@ -1167,6 +1167,21 @@
                   </td>
                   <td>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</td>
                </tr>
+               <tr>
+                  <td>
+                     Bodemhorizont
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Model_Bodemhorizont">is een</a>
+                     
+                     
+                     <a class="link" href="#global_class_INSPIRE_SoilHorizon">SoilHorizon</a>
+                     
+                     [ 1 ]
+                     
+                  </td>
+                  <td></td>
+               </tr>
             </tbody>
          </table>
          
@@ -1276,6 +1291,21 @@
                      
                   </td>
                   <td>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</td>
+               </tr>
+               <tr>
+                  <td>
+                     Bodemlaag
+                     [ 1 ]
+                     
+                     <a class="link" href="#detail_association_Model_Bodemlaag">is een</a>
+                     
+                     
+                     <a class="link" href="#global_class_INSPIRE_SoilLayer">SoilLayer</a>
+                     
+                     [ 1 ]
+                     
+                  </td>
+                  <td></td>
                </tr>
             </tbody>
          </table>
@@ -1687,6 +1717,47 @@
    </section>
    <section id="">
       <h4>Primitieve datatypen </h4>
+      <a class="anchor" name="graph_EAID_9DCF7520_5839_4b8a_A2B7_C4090A8DB3A3"></a><a class="anchor" name="global_class_Model_Identifier"></a><section id="global_class_Model_Identifier">
+         <h5>Primitief datatype Identifier</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>Identifier</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Externe unieke object-identifier gepubliceerd door de verantwoordelijke instantie,
+                     die kan worden gebruikt door externe toepassingen om te verwijzen naar het ruimtelijke
+                     object. (bron: INSPIRE)
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
+      <a class="anchor" name="graph_EAID_CB527581_F329_49f9_9CB7_FBAA4B62837D"></a><a class="anchor" name="global_class_Model_EX_Extent"></a><section id="global_class_Model_EX_Extent">
+         <h5>Primitief datatype EX_Extent</h5>
+         
+         <table>
+            <colgroup width="30%"></colgroup>
+            <colgroup width="70%"></colgroup>
+            <tbody>
+               <tr>
+                  <th>Naam</th>
+                  <td>EX_Extent</td>
+               </tr>
+               <tr>
+                  <th>Definitie</th>
+                  <td>Information about spatial, vertical, and temporal extent. (bron: INSPIRE)</td>
+               </tr>
+            </tbody>
+         </table>
+         
+      </section>
       <a class="anchor" name="graph_EAID_08C404B5_1D49_47b9_B711_D4BD75A29803"></a><a class="anchor" name="global_class_Model_GM_MultiSolid"></a><section id="global_class_Model_GM_MultiSolid">
          <h5>Primitief datatype GM_MultiSolid</h5>
          
@@ -1724,47 +1795,6 @@
                   <td>Multivlak. Verzameling van vlakken die gezamenlijk één object vormen (instanties van
                      GM_Surface). (bron: ISO 19107:2003 Spatial Schema)
                   </td>
-               </tr>
-            </tbody>
-         </table>
-         
-      </section>
-      <a class="anchor" name="graph_EAID_9DCF7520_5839_4b8a_A2B7_C4090A8DB3A3"></a><a class="anchor" name="global_class_Model_Identifier"></a><section id="global_class_Model_Identifier">
-         <h5>Primitief datatype Identifier</h5>
-         
-         <table>
-            <colgroup width="30%"></colgroup>
-            <colgroup width="70%"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>Identifier</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>Externe unieke object-identifier gepubliceerd door de verantwoordelijke instantie,
-                     die kan worden gebruikt door externe toepassingen om te verwijzen naar het ruimtelijke
-                     object. (bron: INSPIRE)
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-         
-      </section>
-      <a class="anchor" name="graph_EAID_CB527581_F329_49f9_9CB7_FBAA4B62837D"></a><a class="anchor" name="global_class_Model_EX_Extent"></a><section id="global_class_Model_EX_Extent">
-         <h5>Primitief datatype EX_Extent</h5>
-         
-         <table>
-            <colgroup width="30%"></colgroup>
-            <colgroup width="70%"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>EX_Extent</td>
-               </tr>
-               <tr>
-                  <th>Definitie</th>
-                  <td>Information about spatial, vertical, and temporal extent. (bron: INSPIRE)</td>
                </tr>
             </tbody>
          </table>
@@ -3307,6 +3337,32 @@
             </table>
             
          </section>
+         <a class="anchor" name="detail_association_Model_Bodemhorizont"></a><section id="detail_association_Model_Bodemhorizont"><strong>Relatiesoort details <a href="#global_class_Model_Bodemhorizont">Bodemhorizont</a> is een</strong>
+            
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>is een</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Gerelateerd objecttype</th>
+                     <td>
+                        <a class="link" href="#global_class_INSPIRE_SoilHorizon">SoilHorizon</a>
+                        
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
          
       </section>
       
@@ -3357,6 +3413,32 @@
                   <tr>
                      <th>Indicatie afleidbaar</th>
                      <td>Nee</td>
+                  </tr>
+               </tbody>
+            </table>
+            
+         </section>
+         <a class="anchor" name="detail_association_Model_Bodemlaag"></a><section id="detail_association_Model_Bodemlaag"><strong>Relatiesoort details <a href="#global_class_Model_Bodemlaag">Bodemlaag</a> is een</strong>
+            
+            
+            <table>
+               <colgroup width="30%"></colgroup>
+               <colgroup width="70%"></colgroup>
+               <tbody>
+                  <tr>
+                     <th>Naam</th>
+                     <td>is een</td>
+                  </tr>
+                  <tr>
+                     <th>Indicatie kardinaliteit</th>
+                     <td>1</td>
+                  </tr>
+                  <tr>
+                     <th>Gerelateerd objecttype</th>
+                     <td>
+                        <a class="link" href="#global_class_INSPIRE_SoilLayer">SoilLayer</a>
+                        
+                     </td>
                   </tr>
                </tbody>
             </table>

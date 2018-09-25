@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.47.2"
-      generator-date="2018-09-25T10:04:19Z">
+      generator-date="2018-09-25T19:03:19Z">
    <section type="DOMAIN" name="Model" id="global_package_Model">
       <section type="IMAGEMAPS" name="Model-imagemap" id="imagemap_package_Model">
          <section type="IMAGEMAP"
@@ -1191,6 +1191,20 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </item>
                      <item>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</item>
                   </part>
+                  <part>
+                     <item>
+                        <item>Bodemhorizont</item>
+                        <item>[ 1 ]</item>
+                        <item>
+                           <item type="detail" idref="detail_association_Model_Bodemhorizont">is een</item>
+                        </item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_SoilHorizon">SoilHorizon</item>
+                        </item>
+                        <item>[ 1 ]</item>
+                     </item>
+                     <item/>
+                  </part>
                </content>
                <content approach="target">
                   <itemtype/>
@@ -1205,6 +1219,20 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         </item>
                      </item>
                      <item>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item>Bodemhorizont</item>
+                        <item>[ 1 ]</item>
+                        <item>
+                           <item type="detail" idref="detail_association_Model_Bodemhorizont">is een</item>
+                        </item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_SoilHorizon">SoilHorizon</item>
+                        </item>
+                        <item>[ 1 ]</item>
+                     </item>
+                     <item/>
                   </part>
                </content>
             </section>
@@ -1289,6 +1317,20 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </item>
                      <item>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</item>
                   </part>
+                  <part>
+                     <item>
+                        <item>Bodemlaag</item>
+                        <item>[ 1 ]</item>
+                        <item>
+                           <item type="detail" idref="detail_association_Model_Bodemlaag">is een</item>
+                        </item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_SoilLayer">SoilLayer</item>
+                        </item>
+                        <item>[ 1 ]</item>
+                     </item>
+                     <item/>
+                  </part>
                </content>
                <content approach="target">
                   <itemtype/>
@@ -1303,6 +1345,20 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         </item>
                      </item>
                      <item>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item>Bodemlaag</item>
+                        <item>[ 1 ]</item>
+                        <item>
+                           <item type="detail" idref="detail_association_Model_Bodemlaag">is een</item>
+                        </item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_SoilLayer">SoilLayer</item>
+                        </item>
+                        <item>[ 1 ]</item>
+                     </item>
+                     <item/>
                   </part>
                </content>
             </section>
@@ -1628,36 +1684,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
          </section>
       </section>
       <section type="OVERVIEW-PRIMITIVEDATATYPE">
-         <section name="GM_MultiSolid"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_Model_GM_MultiSolid"
-                  uuid="EAID_08C404B5_1D49_47b9_B711_D4BD75A29803">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>GM_MultiSolid</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Multivolume. Verzameling van volumes die gezamenlijk één object vormen (instanties van GM_Solid). (bron: ISO 19107:2003 Spatial Schema)</item>
-               </part>
-            </content>
-         </section>
-         <section name="GM_MultiSurface"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_Model_GM_MultiSurface"
-                  uuid="EAID_80B2B8FF_BA21_442d_B7C3_65AD5BB61F08">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>GM_MultiSurface</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Multivlak. Verzameling van vlakken die gezamenlijk één object vormen (instanties van GM_Surface). (bron: ISO 19107:2003 Spatial Schema)</item>
-               </part>
-            </content>
-         </section>
          <section name="Identifier"
                   type="PRIMITIVEDATATYPE"
                   id="global_class_Model_Identifier"
@@ -1685,6 +1711,36 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
                   <item>Information about spatial, vertical, and temporal extent. (bron: INSPIRE)</item>
+               </part>
+            </content>
+         </section>
+         <section name="GM_MultiSolid"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_Model_GM_MultiSolid"
+                  uuid="EAID_08C404B5_1D49_47b9_B711_D4BD75A29803">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>GM_MultiSolid</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Multivolume. Verzameling van volumes die gezamenlijk één object vormen (instanties van GM_Solid). (bron: ISO 19107:2003 Spatial Schema)</item>
+               </part>
+            </content>
+         </section>
+         <section name="GM_MultiSurface"
+                  type="PRIMITIVEDATATYPE"
+                  id="global_class_Model_GM_MultiSurface"
+                  uuid="EAID_80B2B8FF_BA21_442d_B7C3_65AD5BB61F08">
+            <content>
+               <part type="CFG-DOC-NAAM">
+                  <item>Naam</item>
+                  <item>GM_MultiSurface</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>Multivlak. Verzameling van vlakken die gezamenlijk één object vormen (instanties van GM_Surface). (bron: ISO 19107:2003 Spatial Schema)</item>
                </part>
             </content>
          </section>
@@ -3361,6 +3417,43 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                   </content>
                </section>
+               <section name="is een"
+                        type="DETAIL-ASSOCIATION"
+                        id="detail_association_Model_Bodemhorizont"
+                        id-global="global_association_Model_Bodemhorizont">
+                  <content approach="association">
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>is een</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_SoilHorizon">SoilHorizon</item>
+                        </item>
+                     </part>
+                  </content>
+                  <content approach="target">
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>is een</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_SoilHorizon">SoilHorizon</item>
+                        </item>
+                     </part>
+                  </content>
+               </section>
             </section>
             <!--removed empty content-->
             <section name="Bodemlaag"
@@ -3411,6 +3504,43 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
                         <item>Nee</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="is een"
+                        type="DETAIL-ASSOCIATION"
+                        id="detail_association_Model_Bodemlaag"
+                        id-global="global_association_Model_Bodemlaag">
+                  <content approach="association">
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>is een</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_SoilLayer">SoilLayer</item>
+                        </item>
+                     </part>
+                  </content>
+                  <content approach="target">
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>is een</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_SoilLayer">SoilLayer</item>
+                        </item>
                      </part>
                   </content>
                </section>
