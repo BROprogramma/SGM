@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.47.2"
-      generator-date="2018-09-25T09:32:04Z">
+      generator-date="2018-09-25T09:41:19Z">
    <section type="DOMAIN" name="Model" id="global_package_Model"><!--removed empty content-->
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Bodemkaart"
@@ -679,8 +679,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item type="detail"
                               idref="detail_attribute_Model_Grondwatertrapvlak_identificatie">identificatie</item>
                      </item>
-                     <item>De unieke aanduiding een Grondwatertrapvlak.
-An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.</item>
+                     <item>De unieke aanduiding een Grondwatertrapvlak.</item>
                      <item>
                         <item type="global" idref="global_class_Model_Identifier">Identifier</item>
                      </item>
@@ -998,7 +997,7 @@ An external object identifier is a unique object identifier published by the res
                      <item>
                         <item type="detail" idref="detail_attribute_Model_Profiellaag_identificatie">identificatie</item>
                      </item>
-                     <item/>
+                     <item>De unieke aanduiding een Profiellaag.</item>
                      <item>
                         <item type="global" idref="global_class_Model_Identifier">Identifier</item>
                      </item>
@@ -1867,9 +1866,17 @@ An external object identifier is a unique object identifier published by the res
                         <item>Naam</item>
                         <item>bestaat uit</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Een bodemkaart bestaat uit ï¿½ï¿½n of meer bodemvlakken.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2558,10 +2565,6 @@ An external object identifier is a unique object identifier published by the res
                         <item>Herkomst definitie</item>
                         <item>BRO</item>
                      </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Een externe object-ID is een unieke object-identifier die door de verantwoordelijke instantie is gepubliceerd en die door externe toepassingen kan worden gebruikt om naar het ruimtelijke object te verwijzen. De identifier is een identifier van het ruimtelijke object en niet een identifier van het fenomeen in de echte wereld.</item>
-                     </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
                         <item>Nee</item>
@@ -2736,8 +2739,7 @@ An external object identifier is a unique object identifier published by the res
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De unieke aanduiding een Grondwatertrapvlak.
-An external object identifier is a unique object identifier published by the responsible body, which may be used by external applications to reference the spatial object. The identifier is an identifier of the spatial object, not an identifier of the real-world phenomenon.</item>
+                        <item>De unieke aanduiding een Grondwatertrapvlak.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -3040,6 +3042,18 @@ An external object identifier is a unique object identifier published by the res
                         <item>Naam</item>
                         <item>identificatie</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De unieke aanduiding een Profiellaag.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
                         <item>Nee</item>
@@ -3055,6 +3069,10 @@ An external object identifier is a unique object identifier published by the res
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
@@ -3075,9 +3093,17 @@ An external object identifier is a unique object identifier published by the res
                         <item>Naam</item>
                         <item>is onderdeel van</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Een profiellaag is onderdeel van een Standaard bodemprofiel</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -3094,6 +3120,10 @@ An external object identifier is a unique object identifier published by the res
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
                      </part>
                      <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
                         <item>Gerelateerd objecttype</item>
@@ -3202,15 +3232,19 @@ An external object identifier is a unique object identifier published by the res
                      </part>
                      <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
                         <item>Indicatie materiële historie</item>
-                        <item>Nee</item>
+                        <item>Ja</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
                         <item>Indicatie formele historie</item>
-                        <item>Nee</item>
+                        <item>Ja</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
@@ -3258,6 +3292,10 @@ An external object identifier is a unique object identifier published by the res
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
@@ -3340,6 +3378,10 @@ An external object identifier is a unique object identifier published by the res
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>organische stofgehalte</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
@@ -3742,6 +3784,10 @@ An external object identifier is a unique object identifier published by the res
                         <item>Naam</item>
                         <item>zuurgraad</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Veel voorkomende (modus) zuurgraad uitgedrukt als pH-KCl.</item>
@@ -3764,6 +3810,10 @@ An external object identifier is a unique object identifier published by the res
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>minimum zuurgraad</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
@@ -3788,6 +3838,10 @@ An external object identifier is a unique object identifier published by the res
                         <item>Naam</item>
                         <item>maximum zuurgraad</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
                         <item>Maximim waarde (p90) voor de variatie in zuurgraad.</item>
@@ -3810,6 +3864,10 @@ An external object identifier is a unique object identifier published by the res
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>cn verhouding</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
