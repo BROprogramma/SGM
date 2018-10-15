@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<book name="Bodem- en Grondwatertrappenkaart (SGM)"
-      subpath="Conceptual model/Bodem- en Grondwatertrappenkaart (SGM)/20180806"
+<book name="Bodemkaart (SGM)"
+      subpath="Conceptual model/Bodemkaart (SGM)/20180806"
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.47.3"
-      generator-date="2018-10-15T06:27:49Z">
+      generator-date="2018-10-15T11:26:37Z">
    <section type="DOMAIN" name="Model" id="global_package_Model">
       <section type="IMAGEMAPS" name="Model-imagemap" id="imagemap_package_Model">
          <section type="IMAGEMAP"
-                  name="Bodem- en Grondwatertrappenkaart 1:50.000 - overzicht"
+                  name="Bodemkaart 1:50.000 - overzicht"
                   id="EAID_6F1DEB4D_0857_407f_96D1_68CEB4BA18C6">
             <content>
                <part type="CFG-DOC-NAAM">
                   <item>Naam</item>
-                  <item>Bodem- en Grondwatertrappenkaart 1:50.000 - overzicht</item>
+                  <item>Bodemkaart 1:50.000 - overzicht</item>
                </part>
                <part type="CFG-DOC-DESCRIPTION">
                   <item>Omschrijving</item>
@@ -246,8 +246,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Bodemvlakcollectie</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -293,8 +292,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Bodemvlakcollectie</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -398,8 +396,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Bodemvlak</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -459,8 +456,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Bodemvlak</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -580,8 +576,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Standaard bodemprofiel</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -626,8 +621,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Standaard bodemprofiel</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -805,8 +799,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Profiellaag</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -835,8 +828,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Profiellaag</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -987,14 +979,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                </content>
             </section>
          </section>
-         <section name="Bodem en grondwatertrap registratie-object"
+         <section name="Bodem registratie-object"
                   type="OBJECTTYPE"
-                  id="global_class_Model_BodemEnGrondwatertrapRegistratieObject"
+                  id="global_class_Model_BodemRegistratieObject"
                   uuid="EAID_5403E30C_F3F4_4c09_907F_D48BE501C19C">
             <content>
                <part type="CFG-DOC-NAAM">
                   <item>Naam</item>
-                  <item>Bodem en grondwatertrap registratie-object</item>
+                  <item>Bodem registratie-object</item>
                </part>
                <part type="CFG-DOC-HERKOMST">
                   <item>Herkomst</item>
@@ -1550,12 +1542,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      uuid="EAID_A917BA6F_0EC3_4fc7_80D5_2F204F61DA5A"
                      idref="detail_class_Model_StaringreeksBouwsteen">StaringreeksBouwsteen</item>
                <item>Aanduiding van de soorten StaringsreeksBouwstaan.</item>
-            </part>
-            <part>
-               <item id="global_class_Model_Grondwatertrapklasse"
-                     uuid="EAID_D10ABF0F_9F0F_4799_998E_148DC39ACF94"
-                     idref="detail_class_Model_Grondwatertrapklasse">Grondwatertrapklasse</item>
-               <item>Opsomming van de toegestane waarden voor het aanduiden van de grondwatertrap. Elke waarde bestaat uit een codering en een bij de codering behorende omschrijving. De codering geeft een classificatie van de grondwatertrap, op basis van de gemiddeld hoogste grondwaterstand (in cm) en de gemiddeld laagste grondwaterstand (in cm).</item>
             </part>
             <part>
                <item id="global_class_Model_Landgebruik"
@@ -3601,23 +3587,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part>
                      <item>Definitie</item>
                      <item>Aanduiding van de soorten StaringsreeksBouwstaan.</item>
-                  </part>
-               </content>
-               <content>
-                  <itemtype type="CODE"/>
-                  <itemtype type="NAME"/>
-                  <itemtype type="DEFINITION"/>
-               </content>
-            </section>
-            <section name="Grondwatertrapklasse"
-                     type="DETAIL-CODELIST"
-                     id="detail_class_Model_Grondwatertrapklasse"
-                     id-global="global_class_Model_Grondwatertrapklasse"
-                     uuid="EAID_D10ABF0F_9F0F_4799_998E_148DC39ACF94">
-               <content>
-                  <part>
-                     <item>Definitie</item>
-                     <item>Opsomming van de toegestane waarden voor het aanduiden van de grondwatertrap. Elke waarde bestaat uit een codering en een bij de codering behorende omschrijving. De codering geeft een classificatie van de grondwatertrap, op basis van de gemiddeld hoogste grondwaterstand (in cm) en de gemiddeld laagste grondwaterstand (in cm).</item>
                   </part>
                </content>
                <content>
