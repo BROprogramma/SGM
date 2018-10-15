@@ -3,8 +3,8 @@
       subpath="Conceptual model/Bodem- en Grondwatertrappenkaart (SGM)/20180806"
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
-      generator-version="1.47.2"
-      generator-date="2018-09-25T19:15:19Z">
+      generator-version="1.47.3"
+      generator-date="2018-10-15T06:27:49Z">
    <section type="DOMAIN" name="Model" id="global_package_Model">
       <section type="IMAGEMAPS" name="Model-imagemap" id="imagemap_package_Model">
          <section type="IMAGEMAP"
@@ -37,166 +37,6 @@
          </section>
       </section>
       <section type="OVERVIEW-OBJECTTYPE">
-         <section name="Bodemkaart"
-                  type="OBJECTTYPE"
-                  id="global_class_Model_Bodemkaart"
-                  uuid="EAID_6C32C465_2A2D_4ebd_8809_CFA672B233B2">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Bodemkaart</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Model (kaart) met informatie over de bodemopbouw en het grondwaterstandsverloop in Nederland 1 : 50.000.</item>
-               </part>
-               <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                  <item>Herkomst definitie</item>
-                  <item>De specificaties voor de Bodemkaart van Nederland, schaal 1 : 50. 000. (referentie nog toevoegen)</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>De grondwatertrappen zijn gekoppeld aan de bodemvlakken via de geometrie.</item>
-               </part>
-            </content>
-            <section type="SHORT-ATTRIBUTES">
-               <content>
-                  <itemtype/>
-                  <itemtype type="ATTRIBUTE-NAME"/>
-                  <itemtype type="ATTRIBUTE-DEFINITION"/>
-                  <itemtype type="ATTRIBUTE-FORMAT"/>
-                  <itemtype type="ATTRIBUTE-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail" idref="detail_attribute_Model_Bodemkaart_identificatie">identificatie</item>
-                     </item>
-                     <item>De unieke aanduiding een BodemKaart.</item>
-                     <item>
-                        <item type="global" idref="global_class_Model_Identifier">Identifier</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail" idref="detail_attribute_Model_Bodemkaart_bereik">bereik</item>
-                     </item>
-                     <item>de omhullende begrenzing van het gebied waar het model geheel binnen valt</item>
-                     <item>
-                        <item type="global" idref="global_class_Model_EX_Extent">EX_Extent</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail" idref="detail_attribute_Model_Bodemkaart_schaal">schaal</item>
-                     </item>
-                     <item>De schaal waarop de gegevens zijn ingewonnen.</item>
-                     <item>
-                        <item type="global">Integer</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-               </content>
-            </section>
-            <section type="SHORT-ASSOCIATIONS">
-               <content approach="association">
-                  <itemtype/>
-                  <itemtype type="ASSOCIATION-NAME"/>
-                  <itemtype type="ASSOCIATION-DEFINITION"/>
-                  <part>
-                     <item>
-                        <item>Bodemkaart</item>
-                        <item>is specialisatie van</item>
-                        <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
-                        </item>
-                     </item>
-                     <item>Registratieobject.</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>Bodemkaart</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdeBodemvlak">bestaat uit: gerelateerdeBodemvlak</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
-                        </item>
-                        <item>[ 1 .. * ]</item>
-                     </item>
-                     <item>Een bodemkaart bestaat uit ï¿½ï¿½n of meer bodemvlakken.</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>Bodemkaart</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdeGrondwatertrapvlak">bestaat uit: gerelateerdeGrondwatertrapvlak</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Grondwatertrapvlak">Grondwatertrapvlak</item>
-                        </item>
-                        <item>[ 1 .. * ]</item>
-                     </item>
-                     <item>Een bodemkaart bestaat uit ï¿½ï¿½n grondwatertrapvlak.</item>
-                  </part>
-               </content>
-               <content approach="target">
-                  <itemtype/>
-                  <itemtype type="ROLE-NAME"/>
-                  <itemtype type="ROLE-DEFINITION"/>
-                  <part>
-                     <item>
-                        <item>Bodemkaart</item>
-                        <item>is specialisatie van</item>
-                        <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
-                        </item>
-                     </item>
-                     <item>Registratieobject.</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>Bodemkaart</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdeBodemvlak">bestaat uit: gerelateerdeBodemvlak</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
-                        </item>
-                        <item>[ 1 .. * ]</item>
-                     </item>
-                     <item>De unieke aanduiding van elke Bodemvlak waaruit de Bodemkaart bestaat.</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>Bodemkaart</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdeGrondwatertrapvlak">bestaat uit: gerelateerdeGrondwatertrapvlak</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Grondwatertrapvlak">Grondwatertrapvlak</item>
-                        </item>
-                        <item>[ 1 .. * ]</item>
-                     </item>
-                     <item>De unieke aanduiding van een Grondwatertrapvlak waaruit de bodemkaart bestaat.</item>
-                  </part>
-               </content>
-            </section>
-         </section>
          <section name="Bodemlichaam"
                   type="OBJECTTYPE"
                   id="global_class_Model_Bodemlichaam"
@@ -272,21 +112,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype type="ASSOCIATION-DEFINITION"/>
                   <part>
                      <item>
-                        <item>Bodemlichaam</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemlichaam_gerelateerdBodemprofiel">bevat: gerelateerdBodemprofiel</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item>Een Bodemlichaam bevat ï¿½ï¿½n Standaard bodemprofiel.</item>
-                  </part>
-                  <part>
-                     <item>
                         <item>
                            <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
                         </item>
@@ -305,21 +130,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype/>
                   <itemtype type="ROLE-NAME"/>
                   <itemtype type="ROLE-DEFINITION"/>
-                  <part>
-                     <item>
-                        <item>Bodemlichaam</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemlichaam_gerelateerdBodemprofiel">bevat: gerelateerdBodemprofiel</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item>De unieke aanduiding van ï¿½ï¿½n Standaard bodemprofiel dat het Bodemlichaam bevat.</item>
-                  </part>
                   <part>
                      <item>
                         <item>
@@ -448,14 +258,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak">beschrijft: gerelateerdBodemvlak</item>
+                                 idref="detail_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak">bestaat uit: gerelateerdBodemvlak</item>
                         </item>
                         <item>
                            <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
                         </item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item>Een Bodemvlakcollectie beschrijft ï¿½ï¿½n of meer bodemvlakken.</item>
+                     <item>Een Bodemvlakcollectie bestaat uit een of meer bodemvlakken.</item>
                   </part>
                   <part>
                      <item>
@@ -495,14 +305,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak">beschrijft: gerelateerdBodemvlak</item>
+                                 idref="detail_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak">bestaat uit: gerelateerdBodemvlak</item>
                         </item>
                         <item>
                            <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
                         </item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item>De unieke aanduiding van elk Bodemvlak dat beschreven is in de Bodemvlakcollectie.</item>
+                     <item>De unieke aanduiding van elk Bodemvlak waar de Bodemvlakcollectie uit bestaat.</item>
                   </part>
                   <part>
                      <item>
@@ -611,18 +421,18 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </part>
                   <part>
                      <item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemkaart">Bodemkaart</item>
-                        </item>
+                        <item>Bodemvlak</item>
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdeBodemvlak">bestaat uit: gerelateerdeBodemvlak</item>
+                                 idref="detail_association_Model_Bodemvlak_gerelateerdBodemprofiel">bevat: gerelateerdBodemprofiel</item>
                         </item>
-                        <item>Bodemvlak</item>
-                        <item>[ 1 .. * ]</item>
+                        <item>
+                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                        </item>
+                        <item>[ 1 ]</item>
                      </item>
-                     <item>Een bodemkaart bestaat uit ï¿½ï¿½n of meer bodemvlakken.</item>
+                     <item>Een Bodemvlak bevat een of meer standaard bodemprofielen.</item>
                   </part>
                   <part>
                      <item>
@@ -632,12 +442,12 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak">beschrijft: gerelateerdBodemvlak</item>
+                                 idref="detail_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak">bestaat uit: gerelateerdBodemvlak</item>
                         </item>
                         <item>Bodemvlak</item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item>Een Bodemvlakcollectie beschrijft ï¿½ï¿½n of meer bodemvlakken.</item>
+                     <item>Een Bodemvlakcollectie bestaat uit een of meer bodemvlakken.</item>
                   </part>
                </content>
                <content approach="target">
@@ -672,18 +482,18 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </part>
                   <part>
                      <item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemkaart">Bodemkaart</item>
-                        </item>
+                        <item>Bodemvlak</item>
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdeBodemvlak">bestaat uit: gerelateerdeBodemvlak</item>
+                                 idref="detail_association_Model_Bodemvlak_gerelateerdBodemprofiel">bevat: gerelateerdBodemprofiel</item>
                         </item>
-                        <item>Bodemvlak</item>
-                        <item>[ 1 .. * ]</item>
+                        <item>
+                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                        </item>
+                        <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van elke Bodemvlak waaruit de Bodemkaart bestaat.</item>
+                     <item>De unieke aanduiding van elk Standaard bodemprofiel dat een Bodemvlak bevat.</item>
                   </part>
                   <part>
                      <item>
@@ -693,144 +503,12 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak">beschrijft: gerelateerdBodemvlak</item>
+                                 idref="detail_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak">bestaat uit: gerelateerdBodemvlak</item>
                         </item>
                         <item>Bodemvlak</item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item>De unieke aanduiding van elk Bodemvlak dat beschreven is in de Bodemvlakcollectie.</item>
-                  </part>
-               </content>
-            </section>
-         </section>
-         <section name="Grondwatertrapvlak"
-                  type="OBJECTTYPE"
-                  id="global_class_Model_Grondwatertrapvlak"
-                  uuid="EAID_2F5C99E2_C8D7_4c0d_B6C3_7292ACD90AEE">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Grondwatertrapvlak</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Een begrensd gebied met overeenkomstige hydrologische kenmerken.</item>
-               </part>
-               <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                  <item>Herkomst definitie</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>De begrenzing is de 2D afbeelding van het 3D grondwaterlichaam op het aardoppervlak (maaiveld), zodat het als kaart is te gebruiken.</item>
-               </part>
-            </content>
-            <section type="SHORT-ATTRIBUTES">
-               <content>
-                  <itemtype/>
-                  <itemtype type="ATTRIBUTE-NAME"/>
-                  <itemtype type="ATTRIBUTE-DEFINITION"/>
-                  <itemtype type="ATTRIBUTE-FORMAT"/>
-                  <itemtype type="ATTRIBUTE-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_Model_Grondwatertrapvlak_identificatie">identificatie</item>
-                     </item>
-                     <item>De unieke aanduiding een Grondwatertrapvlak.</item>
-                     <item>
-                        <item type="global" idref="global_class_Model_Identifier">Identifier</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail" idref="detail_attribute_Model_Grondwatertrapvlak_klasse">klasse</item>
-                     </item>
-                     <item>De typering van het grondwatertrapvlak.</item>
-                     <item>
-                        <item type="global" idref="global_class_Model_Grondwatertrapklasse">Grondwatertrapklasse</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_Model_Grondwatertrapvlak_geometrie">geometrie</item>
-                     </item>
-                     <item>de geometrie bepaald voor het gronwatertrapkaartvlak</item>
-                     <item>
-                        <item type="global" idref="global_class_Model_GM_MultiSurface">GM_MultiSurface</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-               </content>
-            </section>
-            <section type="SHORT-ASSOCIATIONS">
-               <content approach="association">
-                  <itemtype/>
-                  <itemtype type="ASSOCIATION-NAME"/>
-                  <itemtype type="ASSOCIATION-DEFINITION"/>
-                  <part>
-                     <item>
-                        <item>Grondwatertrapvlak</item>
-                        <item>is specialisatie van</item>
-                        <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
-                        </item>
-                     </item>
-                     <item>Registratieobject.</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemkaart">Bodemkaart</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdeGrondwatertrapvlak">bestaat uit: gerelateerdeGrondwatertrapvlak</item>
-                        </item>
-                        <item>Grondwatertrapvlak</item>
-                        <item>[ 1 .. * ]</item>
-                     </item>
-                     <item>Een bodemkaart bestaat uit ï¿½ï¿½n grondwatertrapvlak.</item>
-                  </part>
-               </content>
-               <content approach="target">
-                  <itemtype/>
-                  <itemtype type="ROLE-NAME"/>
-                  <itemtype type="ROLE-DEFINITION"/>
-                  <part>
-                     <item>
-                        <item>Grondwatertrapvlak</item>
-                        <item>is specialisatie van</item>
-                        <item>
-                           <item type="global"
-                                 idref="global_class_Model_BodemEnGrondwatertrapRegistratieObject">Bodem en grondwatertrap registratie-object</item>
-                        </item>
-                     </item>
-                     <item>Registratieobject.</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemkaart">Bodemkaart</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdeGrondwatertrapvlak">bestaat uit: gerelateerdeGrondwatertrapvlak</item>
-                        </item>
-                        <item>Grondwatertrapvlak</item>
-                        <item>[ 1 .. * ]</item>
-                     </item>
-                     <item>De unieke aanduiding van een Grondwatertrapvlak waaruit de bodemkaart bestaat.</item>
+                     <item>De unieke aanduiding van elk Bodemvlak waar de Bodemvlakcollectie uit bestaat.</item>
                   </part>
                </content>
             </section>
@@ -910,33 +588,33 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </part>
                   <part>
                      <item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemlichaam">Bodemlichaam</item>
-                        </item>
+                        <item>Standaard bodemprofiel</item>
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Bodemlichaam_gerelateerdBodemprofiel">bevat: gerelateerdBodemprofiel</item>
+                                 idref="detail_association_Model_StandaardBodemprofiel_gerelateerdBodemprofiel">heeft gebruik maakt van: gerelateerdBodemprofiel</item>
                         </item>
-                        <item>Standaard bodemprofiel</item>
+                        <item>
+                           <item type="global" idref="global_class_Model_WaargenomenBodemprofiel">Waargenomen bodemprofiel</item>
+                        </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>Een Bodemlichaam bevat ï¿½ï¿½n Standaard bodemprofiel.</item>
+                     <item/>
                   </part>
                   <part>
                      <item>
                         <item>
-                           <item type="global" idref="global_class_Model_Profiellaag">Profiellaag</item>
+                           <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
                         </item>
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Profiellaag_gerelateerdeStandaardBodemprofiel">is onderdeel van: gerelateerdeStandaardBodemprofiel</item>
+                                 idref="detail_association_Model_Bodemvlak_gerelateerdBodemprofiel">bevat: gerelateerdBodemprofiel</item>
                         </item>
                         <item>Standaard bodemprofiel</item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>Een profiellaag is onderdeel van een Standaard bodemprofiel</item>
+                     <item>Een Bodemvlak bevat een of meer standaard bodemprofielen.</item>
                   </part>
                </content>
                <content approach="target">
@@ -956,33 +634,33 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </part>
                   <part>
                      <item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemlichaam">Bodemlichaam</item>
-                        </item>
+                        <item>Standaard bodemprofiel</item>
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Bodemlichaam_gerelateerdBodemprofiel">bevat: gerelateerdBodemprofiel</item>
+                                 idref="detail_association_Model_StandaardBodemprofiel_gerelateerdBodemprofiel">heeft gebruik maakt van: gerelateerdBodemprofiel</item>
                         </item>
-                        <item>Standaard bodemprofiel</item>
+                        <item>
+                           <item type="global" idref="global_class_Model_WaargenomenBodemprofiel">Waargenomen bodemprofiel</item>
+                        </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van ï¿½ï¿½n Standaard bodemprofiel dat het Bodemlichaam bevat.</item>
+                     <item>De unieke aanduiding van elk Waargenomen bodemprofiel waar het Standaard bodemprofiel gebruik van heeft gemaakt.</item>
                   </part>
                   <part>
                      <item>
                         <item>
-                           <item type="global" idref="global_class_Model_Profiellaag">Profiellaag</item>
+                           <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
                         </item>
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_Profiellaag_gerelateerdeStandaardBodemprofiel">is onderdeel van: gerelateerdeStandaardBodemprofiel</item>
+                                 idref="detail_association_Model_Bodemvlak_gerelateerdBodemprofiel">bevat: gerelateerdBodemprofiel</item>
                         </item>
                         <item>Standaard bodemprofiel</item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van elk StandaardBodemprofiel waar de Profiellaag onderdeel van is.</item>
+                     <item>De unieke aanduiding van elk Standaard bodemprofiel dat een Bodemvlak bevat.</item>
                   </part>
                </content>
             </section>
@@ -1030,6 +708,48 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item type="global" idref="global_class_Brocommon_Registratieobjectcode">Registratieobjectcode</item>
                      </item>
                      <item>1</item>
+                  </part>
+               </content>
+            </section>
+            <section type="SHORT-ASSOCIATIONS">
+               <content approach="association">
+                  <itemtype/>
+                  <itemtype type="ASSOCIATION-NAME"/>
+                  <itemtype type="ASSOCIATION-DEFINITION"/>
+                  <part>
+                     <item>
+                        <item>
+                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                        </item>
+                        <item>[ 1 ]</item>
+                        <item>
+                           <item type="detail"
+                                 idref="detail_association_Model_StandaardBodemprofiel_gerelateerdBodemprofiel">heeft gebruik maakt van: gerelateerdBodemprofiel</item>
+                        </item>
+                        <item>Waargenomen bodemprofiel</item>
+                        <item>[ 1 ]</item>
+                     </item>
+                     <item/>
+                  </part>
+               </content>
+               <content approach="target">
+                  <itemtype/>
+                  <itemtype type="ROLE-NAME"/>
+                  <itemtype type="ROLE-DEFINITION"/>
+                  <part>
+                     <item>
+                        <item>
+                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                        </item>
+                        <item>[ 1 ]</item>
+                        <item>
+                           <item type="detail"
+                                 idref="detail_association_Model_StandaardBodemprofiel_gerelateerdBodemprofiel">heeft gebruik maakt van: gerelateerdBodemprofiel</item>
+                        </item>
+                        <item>Waargenomen bodemprofiel</item>
+                        <item>[ 1 ]</item>
+                     </item>
+                     <item>De unieke aanduiding van elk Waargenomen bodemprofiel waar het Standaard bodemprofiel gebruik van heeft gemaakt.</item>
                   </part>
                </content>
             </section>
@@ -1096,15 +816,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Profiellaag</item>
                         <item>[ 1 ]</item>
                         <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Profiellaag_gerelateerdeStandaardBodemprofiel">is onderdeel van: gerelateerdeStandaardBodemprofiel</item>
+                           <item type="detail" idref="detail_association_Model_Profiellaag">komt overeen met</item>
                         </item>
                         <item>
-                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                           <item type="global" idref="global_class_INSPIRE_ProfileElement">ProfileElement</item>
                         </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>Een profiellaag is onderdeel van een Standaard bodemprofiel</item>
+                     <item/>
                   </part>
                </content>
                <content approach="target">
@@ -1127,15 +846,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Profiellaag</item>
                         <item>[ 1 ]</item>
                         <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Profiellaag_gerelateerdeStandaardBodemprofiel">is onderdeel van: gerelateerdeStandaardBodemprofiel</item>
+                           <item type="detail" idref="detail_association_Model_Profiellaag">komt overeen met</item>
                         </item>
                         <item>
-                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                           <item type="global" idref="global_class_INSPIRE_ProfileElement">ProfileElement</item>
                         </item>
                         <item>[ 1 ]</item>
                      </item>
-                     <item>De unieke aanduiding van elk StandaardBodemprofiel waar de Profiellaag onderdeel van is.</item>
+                     <item/>
                   </part>
                </content>
             </section>
@@ -1850,298 +1568,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
       <!--removed empty content-->
       <section type="DETAILS">
          <section type="DETAILS-OBJECTTYPE">
-            <section name="Bodemkaart"
-                     type="OBJECTTYPE"
-                     id="detail_class_Model_Bodemkaart"
-                     id-global="global_class_Model_Bodemkaart">
-               <section name="identificatie"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Bodemkaart_identificatie"
-                        id-global="global_attribute_Model_Bodemkaart_identificatie">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>identificatie</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De unieke aanduiding een BodemKaart.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Identifier</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="bereik"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Bodemkaart_bereik"
-                        id-global="global_attribute_Model_Bodemkaart_bereik">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>bereik</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>de omhullende begrenzing van het gebied waar het model geheel binnen valt</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>De begrenzing is aangegeven door een rechthoek met de linker bovenhoek en rechter onderhoek. De kaartschaal van de bodemkaart is 1:50.000, waarop de karteermethode en nauwkeurigheid (detaillering van de gebruikte classificatie) is afgestemd.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Ja</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>EX_Extent</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="schaal"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Bodemkaart_schaal"
-                        id-global="global_attribute_Model_Bodemkaart_schaal">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>schaal</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De schaal waarop de gegevens zijn ingewonnen.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Ja</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Integer</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="bestaat uit"
-                        type="DETAIL-ASSOCIATION"
-                        id="detail_association_Model_Bodemkaart_gerelateerdeBodemvlak"
-                        id-global="global_association_Model_Bodemkaart_gerelateerdeBodemvlak">
-                  <content approach="association">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>bestaat uit</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Een bodemkaart bestaat uit ï¿½ï¿½n of meer bodemvlakken.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Ja</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1 .. *</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
-                        </item>
-                     </part>
-                  </content>
-                  <content approach="target">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>bestaat uit</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De unieke aanduiding van elke Bodemvlak waaruit de Bodemkaart bestaat.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1 .. *</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
-                        </item>
-                     </part>
-                  </content>
-               </section>
-               <section name="bestaat uit"
-                        type="DETAIL-ASSOCIATION"
-                        id="detail_association_Model_Bodemkaart_gerelateerdeGrondwatertrapvlak"
-                        id-global="global_association_Model_Bodemkaart_gerelateerdeGrondwatertrapvlak">
-                  <content approach="association">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>bestaat uit</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Een bodemkaart bestaat uit ï¿½ï¿½n grondwatertrapvlak.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Ja</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1 .. *</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Grondwatertrapvlak">Grondwatertrapvlak</item>
-                        </item>
-                     </part>
-                  </content>
-                  <content approach="target">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>bestaat uit</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De unieke aanduiding van een Grondwatertrapvlak waaruit de bodemkaart bestaat.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1 .. *</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Grondwatertrapvlak">Grondwatertrapvlak</item>
-                        </item>
-                     </part>
-                  </content>
-               </section>
-            </section>
             <section name="Bodemlichaam"
                      type="OBJECTTYPE"
                      id="detail_class_Model_Bodemlichaam"
@@ -2296,79 +1722,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
                         <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="bevat"
-                        type="DETAIL-ASSOCIATION"
-                        id="detail_association_Model_Bodemlichaam_gerelateerdBodemprofiel"
-                        id-global="global_association_Model_Bodemlichaam_gerelateerdBodemprofiel">
-                  <content approach="association">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>bevat</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Een Bodemlichaam bevat ï¿½ï¿½n Standaard bodemprofiel.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Ja</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
-                        </item>
-                     </part>
-                  </content>
-                  <content approach="target">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>bevat</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De unieke aanduiding van ï¿½ï¿½n Standaard bodemprofiel dat het Bodemlichaam bevat.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
-                        </item>
                      </part>
                   </content>
                </section>
@@ -2608,14 +1961,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                   </content>
                </section>
-               <section name="beschrijft"
+               <section name="bestaat uit"
                         type="DETAIL-ASSOCIATION"
                         id="detail_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak"
                         id-global="global_association_Model_Bodemvlakcollectie_gerelateerdBodemvlak">
                   <content approach="association">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>beschrijft</item>
+                        <item>bestaat uit</item>
                      </part>
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
@@ -2623,7 +1976,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>Een Bodemvlakcollectie beschrijft ï¿½ï¿½n of meer bodemvlakken.</item>
+                        <item>Een Bodemvlakcollectie bestaat uit een of meer bodemvlakken.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2655,11 +2008,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <content approach="target">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>beschrijft</item>
+                        <item>bestaat uit</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De unieke aanduiding van elk Bodemvlak dat beschreven is in de Bodemvlakcollectie.</item>
+                        <item>De unieke aanduiding van elk Bodemvlak waar de Bodemvlakcollectie uit bestaat.</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
@@ -2861,19 +2214,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                   </content>
                </section>
-            </section>
-            <section name="Grondwatertrapvlak"
-                     type="OBJECTTYPE"
-                     id="detail_class_Model_Grondwatertrapvlak"
-                     id-global="global_class_Model_Grondwatertrapvlak">
-               <section name="identificatie"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Grondwatertrapvlak_identificatie"
-                        id-global="global_attribute_Model_Grondwatertrapvlak_identificatie">
-                  <content>
+               <section name="bevat"
+                        type="DETAIL-ASSOCIATION"
+                        id="detail_association_Model_Bodemvlak_gerelateerdBodemprofiel"
+                        id-global="global_association_Model_Bodemvlak_gerelateerdBodemprofiel">
+                  <content approach="association">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>identificatie</item>
+                        <item>bevat</item>
                      </part>
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
@@ -2881,58 +2229,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De unieke aanduiding een Grondwatertrapvlak.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Een externe object-ID is een unieke object-identifier die door de verantwoordelijke instantie is gepubliceerd en die door externe toepassingen kan worden gebruikt om naar het ruimtelijke object te verwijzen. De identifier is een identifier van het ruimtelijke object en niet een identifier van het fenomeen in de echte wereld.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Identifier</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="klasse"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Grondwatertrapvlak_klasse"
-                        id-global="global_attribute_Model_Grondwatertrapvlak_klasse">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>klasse</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De typering van het grondwatertrapvlak.</item>
+                        <item>Een Bodemvlak bevat een of meer standaard bodemprofielen.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -2940,6 +2237,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
                         <item>Nee</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
@@ -2954,64 +2255,31 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Indicatie authentiek</item>
                         <item>Authentiek</item>
                      </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Grondwatertrapklasse</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                        </item>
                      </part>
                   </content>
-               </section>
-               <section name="geometrie"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Grondwatertrapvlak_geometrie"
-                        id-global="global_attribute_Model_Grondwatertrapvlak_geometrie">
-                  <content>
+                  <content approach="target">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>geometrie</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
+                        <item>bevat</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>de geometrie bepaald voor het gronwatertrapkaartvlak</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Een ruimtelijke weergave van hydrologische informatie wordt ruimtelijk expliciet door gebieden met vergelijkbare waarden af te bakenen volgens de grondwater (of andere) eigenschap die wordt weergegeven.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Ja</item>
+                        <item>De unieke aanduiding van elk Standaard bodemprofiel dat een Bodemvlak bevat.</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1</item>
                      </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>GM_MultiSurface</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                        </item>
                      </part>
                   </content>
                </section>
@@ -3111,6 +2379,59 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
                         <item>Nee</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="heeft gebruik maakt van"
+                        type="DETAIL-ASSOCIATION"
+                        id="detail_association_Model_StandaardBodemprofiel_gerelateerdBodemprofiel"
+                        id-global="global_association_Model_StandaardBodemprofiel_gerelateerdBodemprofiel">
+                  <content approach="association">
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>heeft gebruik maakt van</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_Model_WaargenomenBodemprofiel">Waargenomen bodemprofiel</item>
+                        </item>
+                     </part>
+                  </content>
+                  <content approach="target">
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>heeft gebruik maakt van</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De unieke aanduiding van elk Waargenomen bodemprofiel waar het Standaard bodemprofiel gebruik van heeft gemaakt.</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_Model_WaargenomenBodemprofiel">Waargenomen bodemprofiel</item>
+                        </item>
                      </part>
                   </content>
                </section>
@@ -3226,62 +2547,30 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                   </content>
                </section>
-               <section name="is onderdeel van"
+               <section name="komt overeen met"
                         type="DETAIL-ASSOCIATION"
-                        id="detail_association_Model_Profiellaag_gerelateerdeStandaardBodemprofiel"
-                        id-global="global_association_Model_Profiellaag_gerelateerdeStandaardBodemprofiel">
+                        id="detail_association_Model_Profiellaag"
+                        id-global="global_association_Model_Profiellaag">
                   <content approach="association">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>is onderdeel van</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Een profiellaag is onderdeel van een Standaard bodemprofiel</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                        <item>Indicatie materiële historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
+                        <item>komt overeen met</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1</item>
                      </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
                      <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
                         <item>Gerelateerd objecttype</item>
                         <item>
-                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                           <item type="global" idref="global_class_INSPIRE_ProfileElement">ProfileElement</item>
                         </item>
                      </part>
                   </content>
                   <content approach="target">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>is onderdeel van</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De unieke aanduiding van elk StandaardBodemprofiel waar de Profiellaag onderdeel van is.</item>
+                        <item>komt overeen met</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
@@ -3290,7 +2579,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
                         <item>Gerelateerd objecttype</item>
                         <item>
-                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                           <item type="global" idref="global_class_INSPIRE_ProfileElement">ProfileElement</item>
                         </item>
                      </part>
                   </content>
