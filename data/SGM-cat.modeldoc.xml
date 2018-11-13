@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.47.6"
-      generator-date="2018-11-12T11:42:04Z">
+      generator-date="2018-11-13T11:04:22Z">
    <section type="DOMAIN" name="Model" id="global_package_Model">
       <section type="IMAGEMAPS" name="Model-imagemap" id="imagemap_package_Model">
          <section type="IMAGEMAP"
@@ -736,20 +736,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part>
                      <item>
                         <item>Profiellaag</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail" idref="detail_association_Model_Profiellaag">komt overeen m et</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_ProfileElement">ProfileElement</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item/>
-                  </part>
-                  <part>
-                     <item>
-                        <item>Profiellaag</item>
                         <item>[ 1 .. * ]</item>
                         <item>
                            <item type="detail"
@@ -767,20 +753,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype/>
                   <itemtype type="ROLE-NAME"/>
                   <itemtype type="ROLE-DEFINITION"/>
-                  <part>
-                     <item>
-                        <item>Profiellaag</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail" idref="detail_association_Model_Profiellaag">komt overeen m et</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_ProfileElement">ProfileElement</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item/>
-                  </part>
                   <part>
                      <item>
                         <item>Profiellaag</item>
@@ -882,20 +854,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </item>
                      <item>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</item>
                   </part>
-                  <part>
-                     <item>
-                        <item>Bodemhorizont</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail" idref="detail_association_Model_Bodemhorizont">komt overeen met</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilHorizon">SoilHorizon</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item/>
-                  </part>
                </content>
                <content approach="target">
                   <itemtype/>
@@ -910,20 +868,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         </item>
                      </item>
                      <item>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>Bodemhorizont</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail" idref="detail_association_Model_Bodemhorizont">komt overeen met</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilHorizon">SoilHorizon</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item/>
                   </part>
                </content>
             </section>
@@ -1080,20 +1024,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </item>
                      <item>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</item>
                   </part>
-                  <part>
-                     <item>
-                        <item>Bodemlaag</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail" idref="detail_association_Model_Bodemlaag">is een</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilLayer">SoilLayer</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item/>
-                  </part>
                </content>
                <content approach="target">
                   <itemtype/>
@@ -1108,20 +1038,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         </item>
                      </item>
                      <item>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>Bodemlaag</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail" idref="detail_association_Model_Bodemlaag">is een</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilLayer">SoilLayer</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item/>
                   </part>
                </content>
             </section>
@@ -2354,43 +2270,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                   </content>
                </section>
-               <section name="komt overeen m et"
-                        type="DETAIL-ASSOCIATION"
-                        id="detail_association_Model_Profiellaag"
-                        id-global="global_association_Model_Profiellaag">
-                  <content approach="association">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>komt overeen m et</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_ProfileElement">ProfileElement</item>
-                        </item>
-                     </part>
-                  </content>
-                  <content approach="target">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>komt overeen m et</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_ProfileElement">ProfileElement</item>
-                        </item>
-                     </part>
-                  </content>
-               </section>
                <section name="bestaat uit"
                         type="DETAIL-ASSOCIATION"
                         id="detail_association_Model_Profiellaag_gerelateerdeBodemprofiel"
@@ -2602,43 +2481,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                   </content>
                </section>
-               <section name="komt overeen met"
-                        type="DETAIL-ASSOCIATION"
-                        id="detail_association_Model_Bodemhorizont"
-                        id-global="global_association_Model_Bodemhorizont">
-                  <content approach="association">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>komt overeen met</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilHorizon">SoilHorizon</item>
-                        </item>
-                     </part>
-                  </content>
-                  <content approach="target">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>komt overeen met</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilHorizon">SoilHorizon</item>
-                        </item>
-                     </part>
-                  </content>
-               </section>
             </section>
             <!--removed empty content-->
             <section name="Kaartvlak"
@@ -2741,43 +2583,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
                         <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="is een"
-                        type="DETAIL-ASSOCIATION"
-                        id="detail_association_Model_Bodemlaag"
-                        id-global="global_association_Model_Bodemlaag">
-                  <content approach="association">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>is een</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilLayer">SoilLayer</item>
-                        </item>
-                     </part>
-                  </content>
-                  <content approach="target">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>is een</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilLayer">SoilLayer</item>
-                        </item>
                      </part>
                   </content>
                </section>
