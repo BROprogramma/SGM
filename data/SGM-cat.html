@@ -1,10 +1,10 @@
 <h2>Catalogus</h2>
 <p class="note" title="Over deze catalogus">
    Deze catalogus is automatisch samengesteld op basis van het UML model 
-   "Bodemkaart (SGM)" door Imvertor 1.47.6 op November 12, 2018 at 11:42:04.
+   "Bodemkaart (SGM)" door Imvertor 1.47.6 op November 13, 2018 at 11:35:46.
    <br>
    Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i></i> en geef de code 
-   <i>"Conceptualmodel-BodemkaartSGM-1.0-1-20180806-20181112-124206"</i> door. 
+   <i>"Conceptualmodel-BodemkaartSGM-1.0-1-20180806-20181113-123548"</i> door. 
    
 </p>
 <div class="imageinfo overview"><img src="data/Images/EAID_6F1DEB4D_0857_407f_96D1_68CEB4BA18C6.png" usemap="#imagemap-EAID_6F1DEB4D_0857_407f_96D1_68CEB4BA18C6"><map name="imagemap-EAID_6F1DEB4D_0857_407f_96D1_68CEB4BA18C6">
@@ -232,6 +232,23 @@
             <tr>
                <th>Rol naam met kardinaliteiten</th>
                <th>Definitie</th>
+            </tr>
+            <tr>
+               <td>
+                  Bodemvlakcollectie
+                  is specialisatie van
+                  
+                  <a class="link" href="#global_class_BROCommon_Registratieobject">Registratieobject</a>
+                  
+                  
+               </td>
+               <td>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij
+                  een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland
+                  en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid
+                  van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de
+                  basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond
+                  is opgenomen.
+               </td>
             </tr>
             <tr>
                <td>
@@ -538,6 +555,23 @@
             <tr>
                <td>
                   Standaard bodemprofiel
+                  is specialisatie van
+                  
+                  <a class="link" href="#global_class_BROCommon_Registratieobject">Registratieobject</a>
+                  
+                  
+               </td>
+               <td>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij
+                  een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland
+                  en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid
+                  van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de
+                  basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond
+                  is opgenomen.
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  Standaard bodemprofiel
                   [ 1 ]
                   
                   <a class="link" href="#detail_association_Model_StandaardBodemprofiel_gerelateerdBodemprofiel">heeft gebruik maakt van: gerelateerdBodemprofiel</a>
@@ -754,21 +788,6 @@
             <tr>
                <td>
                   Profiellaag
-                  [ 1 ]
-                  
-                  <a class="link" href="#detail_association_Model_Profiellaag">komt overeen m et</a>
-                  
-                  
-                  <a class="link" href="#global_class_INSPIRE_ProfileElement">ProfileElement</a>
-                  
-                  [ 1 ]
-                  
-               </td>
-               <td></td>
-            </tr>
-            <tr>
-               <td>
-                  Profiellaag
                   [ 1 .. * ]
                   
                   <a class="link" href="#detail_association_Model_Profiellaag_gerelateerdeBodemprofiel">bestaat uit: gerelateerdeBodemprofiel</a>
@@ -898,21 +917,6 @@
                </td>
                <td>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</td>
             </tr>
-            <tr>
-               <td>
-                  Bodemhorizont
-                  [ 1 ]
-                  
-                  <a class="link" href="#detail_association_Model_Bodemhorizont">komt overeen met</a>
-                  
-                  
-                  <a class="link" href="#global_class_INSPIRE_SoilHorizon">SoilHorizon</a>
-                  
-                  [ 1 ]
-                  
-               </td>
-               <td></td>
-            </tr>
          </tbody>
       </table>
       
@@ -999,6 +1003,23 @@
             <tr>
                <th>Rol naam met kardinaliteiten</th>
                <th>Definitie</th>
+            </tr>
+            <tr>
+               <td>
+                  Kaartvlak
+                  is specialisatie van
+                  
+                  <a class="link" href="#global_class_BROCommon_Registratieobject">Registratieobject</a>
+                  
+                  
+               </td>
+               <td>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij
+                  een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland
+                  en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid
+                  van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de
+                  basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond
+                  is opgenomen.
+               </td>
             </tr>
             <tr>
                <td>
@@ -1097,21 +1118,6 @@
                   
                </td>
                <td>Een laag als onderdeel van de profielopbouw die geologisch is bepaald.</td>
-            </tr>
-            <tr>
-               <td>
-                  Bodemlaag
-                  [ 1 ]
-                  
-                  <a class="link" href="#detail_association_Model_Bodemlaag">is een</a>
-                  
-                  
-                  <a class="link" href="#global_class_INSPIRE_SoilLayer">SoilLayer</a>
-                  
-                  [ 1 ]
-                  
-               </td>
-               <td></td>
             </tr>
          </tbody>
       </table>
@@ -2349,34 +2355,6 @@
          </table>
          
       </section>
-      <a class="anchor" name="detail_association_Model_Profiellaag"></a><section id="detail_association_Model_Profiellaag">
-         <h6>Relatiesoort details <a href="#global_class_Model_Profiellaag">Profiellaag</a> komt overeen m et
-         </h6>
-         
-         
-         <table>
-            <colgroup width="30%"></colgroup>
-            <colgroup width="70%"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>komt overeen m et</td>
-               </tr>
-               <tr>
-                  <th>Indicatie kardinaliteit</th>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <th>Gerelateerd objecttype</th>
-                  <td>
-                     <a class="link" href="#global_class_INSPIRE_ProfileElement">ProfileElement</a>
-                     
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-         
-      </section>
       <a class="anchor" name="detail_association_Model_Profiellaag_gerelateerdeBodemprofiel"></a><section id="detail_association_Model_Profiellaag_gerelateerdeBodemprofiel">
          <h6>Relatiesoort details <a href="#global_class_Model_Profiellaag">Profiellaag</a> bestaat uit
          </h6>
@@ -2579,34 +2557,6 @@
          </table>
          
       </section>
-      <a class="anchor" name="detail_association_Model_Bodemhorizont"></a><section id="detail_association_Model_Bodemhorizont">
-         <h6>Relatiesoort details <a href="#global_class_Model_Bodemhorizont">Bodemhorizont</a> komt overeen met
-         </h6>
-         
-         
-         <table>
-            <colgroup width="30%"></colgroup>
-            <colgroup width="70%"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>komt overeen met</td>
-               </tr>
-               <tr>
-                  <th>Indicatie kardinaliteit</th>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <th>Gerelateerd objecttype</th>
-                  <td>
-                     <a class="link" href="#global_class_INSPIRE_SoilHorizon">SoilHorizon</a>
-                     
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-         
-      </section>
       
    </section>
    
@@ -2715,34 +2665,6 @@
                <tr>
                   <th>Indicatie afleidbaar</th>
                   <td>Nee</td>
-               </tr>
-            </tbody>
-         </table>
-         
-      </section>
-      <a class="anchor" name="detail_association_Model_Bodemlaag"></a><section id="detail_association_Model_Bodemlaag">
-         <h6>Relatiesoort details <a href="#global_class_Model_Bodemlaag">Bodemlaag</a> is een
-         </h6>
-         
-         
-         <table>
-            <colgroup width="30%"></colgroup>
-            <colgroup width="70%"></colgroup>
-            <tbody>
-               <tr>
-                  <th>Naam</th>
-                  <td>is een</td>
-               </tr>
-               <tr>
-                  <th>Indicatie kardinaliteit</th>
-                  <td>1</td>
-               </tr>
-               <tr>
-                  <th>Gerelateerd objecttype</th>
-                  <td>
-                     <a class="link" href="#global_class_INSPIRE_SoilLayer">SoilLayer</a>
-                     
-                  </td>
                </tr>
             </tbody>
          </table>
