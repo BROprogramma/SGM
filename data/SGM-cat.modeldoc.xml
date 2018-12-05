@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.48.2"
-      generator-date="2018-12-05T16:17:52Z">
+      generator-date="2018-12-05T16:30:49Z">
    <section type="DOMAIN" name="brocommon" id="global_package_Brocommon"><!--removed empty content-->
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Registratieobject"
@@ -5444,19 +5444,41 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype type="ASSOCIATION-DEFINITION"/>
                   <part>
                      <item>
-                        <item>Profile element</item>
-                        <item>[ 1 .. * ]</item>
+                        <item>
+                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
+                        </item>
+                        <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_INSPIRE_ProfileElement_isPartOf">isDescribedBy: isPartOf</item>
+                                 idref="detail_association_Model_StandaardBodemprofiel_profielElement">bestaat uit: profielElement</item>
                         </item>
+                        <item>Profile element
+</item>
+                        <item>[ 1 .. * ]</item>
+                     </item>
+                     <item/>
+                  </part>
+                  <part>
+                     <item>
                         <item>
                            <item type="global" idref="global_class_INSPIRE_SoilProfile">Soil profile</item>
                         </item>
                         <item>[ 1 ]</item>
+                        <item>
+                           <item type="detail"
+                                 idref="detail_association_INSPIRE_SoilProfile_isDescribedBy">isDescribedBy: isDescribedBy</item>
+                        </item>
+                        <item>Profile element
+</item>
+                        <item>[ 1 .. * ]</item>
                      </item>
                      <item/>
                   </part>
+               </content>
+               <content approach="target">
+                  <itemtype/>
+                  <itemtype type="ROLE-NAME"/>
+                  <itemtype type="ROLE-DEFINITION"/>
                   <part>
                      <item>
                         <item>
@@ -5473,35 +5495,15 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </item>
                      <item/>
                   </part>
-               </content>
-               <content approach="target">
-                  <itemtype/>
-                  <itemtype type="ROLE-NAME"/>
-                  <itemtype type="ROLE-DEFINITION"/>
                   <part>
                      <item>
-                        <item>Profile element</item>
-                        <item>[ 1 .. * ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_INSPIRE_ProfileElement_isPartOf">isDescribedBy: isPartOf</item>
-                        </item>
                         <item>
                            <item type="global" idref="global_class_INSPIRE_SoilProfile">Soil profile</item>
                         </item>
                         <item>[ 1 ]</item>
-                     </item>
-                     <item>link to the soil profile which the profile element constitutes.</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>
-                           <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
-                        </item>
-                        <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_StandaardBodemprofiel_profielElement">bestaat uit: profielElement</item>
+                                 idref="detail_association_INSPIRE_SoilProfile_isDescribedBy">isDescribedBy: isDescribedBy</item>
                         </item>
                         <item>Profile element
 </item>
@@ -5861,16 +5863,17 @@ SOURCE WD ISO28258, modified</item>
                   <itemtype type="ASSOCIATION-DEFINITION"/>
                   <part>
                      <item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_ProfileElement">Profile element</item>
-                        </item>
-                        <item>[ 1 .. * ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_INSPIRE_ProfileElement_isPartOf">isDescribedBy: isPartOf</item>
-                        </item>
                         <item>Soil profile</item>
                         <item>[ 1 ]</item>
+                        <item>
+                           <item type="detail"
+                                 idref="detail_association_INSPIRE_SoilProfile_isDescribedBy">isDescribedBy: isDescribedBy</item>
+                        </item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_ProfileElement">Profile element
+</item>
+                        </item>
+                        <item>[ 1 .. * ]</item>
                      </item>
                      <item/>
                   </part>
@@ -5881,18 +5884,19 @@ SOURCE WD ISO28258, modified</item>
                   <itemtype type="ROLE-DEFINITION"/>
                   <part>
                      <item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_ProfileElement">Profile element</item>
-                        </item>
-                        <item>[ 1 .. * ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_INSPIRE_ProfileElement_isPartOf">isDescribedBy: isPartOf</item>
-                        </item>
                         <item>Soil profile</item>
                         <item>[ 1 ]</item>
+                        <item>
+                           <item type="detail"
+                                 idref="detail_association_INSPIRE_SoilProfile_isDescribedBy">isDescribedBy: isDescribedBy</item>
+                        </item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_ProfileElement">Profile element
+</item>
+                        </item>
+                        <item>[ 1 .. * ]</item>
                      </item>
-                     <item>link to the soil profile which the profile element constitutes.</item>
+                     <item/>
                   </part>
                </content>
             </section>
@@ -6927,51 +6931,6 @@ NOTE WRB restricts the use of qualifiers in different ways for the 32 reference 
                      </part>
                   </content>
                </section>
-               <section name="isDescribedBy"
-                        type="DETAIL-ASSOCIATION"
-                        id="detail_association_INSPIRE_ProfileElement_isPartOf"
-                        id-global="global_association_INSPIRE_ProfileElement_isPartOf">
-                  <content approach="association">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>isDescribedBy</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilProfile">Soil profile</item>
-                        </item>
-                     </part>
-                  </content>
-                  <content approach="target">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>isDescribedBy</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>link to the soil profile which the profile element constitutes.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_INSPIRE_SoilProfile">Soil profile</item>
-                        </item>
-                     </part>
-                  </content>
-               </section>
             </section>
             <section name="Soil horizon"
                      type="OBJECTTYPE"
@@ -7846,6 +7805,49 @@ EXAMPLE Lixic Vertic Ferralsol (Ferric, Rhodic); WRB version 2006 (update 2007) 
                      <part type="CFG-DOC-UNITOFMEASURE">
                         <item>Meeteenheid</item>
                         <item>BRO</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="isDescribedBy"
+                        type="DETAIL-ASSOCIATION"
+                        id="detail_association_INSPIRE_SoilProfile_isDescribedBy"
+                        id-global="global_association_INSPIRE_SoilProfile_isDescribedBy">
+                  <content approach="association">
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>isDescribedBy</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1 .. *</item>
+                     </part>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_ProfileElement">Profile element
+</item>
+                        </item>
+                     </part>
+                  </content>
+                  <content approach="target">
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>isDescribedBy</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1 .. *</item>
+                     </part>
+                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
+                        <item>Gerelateerd objecttype</item>
+                        <item>
+                           <item type="global" idref="global_class_INSPIRE_ProfileElement">Profile element
+</item>
+                        </item>
                      </part>
                   </content>
                </section>
