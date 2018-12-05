@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.48.2"
-      generator-date="2018-12-05T16:03:31Z">
+      generator-date="2018-12-05T16:17:52Z">
    <section type="DOMAIN" name="brocommon" id="global_package_Brocommon"><!--removed empty content-->
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Registratieobject"
@@ -41,7 +41,7 @@
                         <item type="detail"
                               idref="detail_attribute_Brocommon_Registratieobject_bROID">BRO-ID</item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                      <item>
                         <item type="global" idref="global_class_Brocommon_Registratieobjectcode">Registratieobjectcode</item>
                      </item>
@@ -524,6 +524,10 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
                         <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>TODO</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -1325,7 +1329,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Bodemvlakcollectie</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -1355,7 +1359,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Bodemvlakcollectie</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -1415,7 +1419,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <item>
                         <item type="detail" idref="detail_attribute_Model_Bodemvlak_bodemHelling">bodemHelling</item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                      <item>
                         <item type="global" idref="global_class_Model_Bodemhelling">Bodemhelling</item>
                      </item>
@@ -1436,7 +1440,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                   </part>
                   <part>
                      <item>
@@ -1480,7 +1484,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                   </part>
                   <part>
                      <item>
@@ -1569,7 +1573,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                   </part>
                </content>
                <content approach="target">
@@ -1584,7 +1588,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                   </part>
                </content>
             </section>
@@ -1627,7 +1631,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item type="detail"
                               idref="detail_attribute_Model_StandaardBodemprofiel_standaardProfielCode">standaardProfielCode</item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                      <item>
                         <item type="global">Integer</item>
                      </item>
@@ -1656,7 +1660,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Standaard bodemprofiel</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -1717,7 +1721,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Standaard bodemprofiel</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -2143,14 +2147,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                </content>
             </section>
          </section>
-         <section name="Bodem registratie-object"
+         <section name="Bodem registratieobject"
                   type="OBJECTTYPE"
-                  id="global_class_Model_BodemRegistratieObject"
+                  id="global_class_Model_BodemRegistratieobject"
                   uuid="EAID_5403E30C_F3F4_4c09_907F_D48BE501C19C">
             <content>
                <part type="CFG-DOC-NAAM">
                   <item>Naam</item>
-                  <item>Bodem registratie-object</item>
+                  <item>Bodem registratieobject</item>
                </part>
                <part type="CFG-DOC-HERKOMST">
                   <item>Herkomst</item>
@@ -2175,9 +2179,9 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_BodemRegistratieObject_citation">citation</item>
+                              idref="detail_attribute_Model_BodemRegistratieobject_citation">citation</item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                      <item>
                         <item type="global"
                               idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
@@ -2193,7 +2197,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype type="ASSOCIATION-DEFINITION"/>
                   <part>
                      <item>
-                        <item>Bodem registratie-object</item>
+                        <item>Bodem registratieobject</item>
                         <item>is specialisatie van</item>
                         <item>
                            <item type="global" idref="global_class_Brocommon_Registratieobject">Registratieobject</item>
@@ -2208,7 +2212,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype type="ROLE-DEFINITION"/>
                   <part>
                      <item>
-                        <item>Bodem registratie-object</item>
+                        <item>Bodem registratieobject</item>
                         <item>is specialisatie van</item>
                         <item>
                            <item type="global" idref="global_class_Brocommon_Registratieobject">Registratieobject</item>
@@ -2374,6 +2378,18 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <item>Naam</item>
                   <item>Kaartvlak</item>
                </part>
+               <part type="CFG-DOC-HERKOMST">
+                  <item>Herkomst</item>
+                  <item>BRO</item>
+               </part>
+               <part type="CFG-DOC-DEFINITIE">
+                  <item>Definitie</item>
+                  <item>TODO</item>
+               </part>
+               <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                  <item>Herkomst definitie</item>
+                  <item>BRO</item>
+               </part>
             </content>
             <section type="SHORT-ATTRIBUTES">
                <content>
@@ -2404,7 +2420,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Kaartvlak</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -2434,7 +2450,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Kaartvlak</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieObject">Bodem registratie-object</item>
+                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -2974,6 +2990,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Herkomst</item>
                         <item>BRO</item>
                      </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>TODO</item>
+                     </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
                         <item>BRO</item>
@@ -3203,6 +3223,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
                         <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>TODO</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -4360,14 +4384,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                </section>
             </section>
-            <section name="Bodem registratie-object"
+            <section name="Bodem registratieobject"
                      type="OBJECTTYPE"
-                     id="detail_class_Model_BodemRegistratieObject"
-                     id-global="global_class_Model_BodemRegistratieObject">
+                     id="detail_class_Model_BodemRegistratieobject"
+                     id-global="global_class_Model_BodemRegistratieobject">
                <section name="citation"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_BodemRegistratieObject_citation"
-                        id-global="global_attribute_Model_BodemRegistratieObject_citation">
+                        id="detail_attribute_Model_BodemRegistratieobject_citation"
+                        id-global="global_attribute_Model_BodemRegistratieobject_citation">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -4376,6 +4400,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
                         <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>TODO</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -4997,7 +5025,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <item id="global_class_ISO191152006MetadataCorrigendum_CI_DateTypeCode"
                      uuid="EAID_172E026F_2931_4a3e_A1D3_A0E19D07E9D2"
                      idref="detail_class_ISO191152006MetadataCorrigendum_CI_DateTypeCode">CI_DateTypeCode</item>
-               <item/>
+               <item>TODO</item>
             </part>
             <part>
                <item id="global_class_ISO191152006MetadataCorrigendum_CI_RoleCode"
@@ -5030,7 +5058,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item/>
+                     <item>TODO</item>
                   </part>
                </content>
                <content>
