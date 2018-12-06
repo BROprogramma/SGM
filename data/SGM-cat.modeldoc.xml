@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.48.2"
-      generator-date="2018-12-06T12:59:16Z">
+      generator-date="2018-12-06T14:43:04Z">
    <section type="DOMAIN" name="brocom" id="global_package_Brocom"><!--removed empty content-->
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Registratieobject"
@@ -1453,7 +1453,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         </item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item/>
+                     <item>Een Bodemvlak bevat een of meer standaard bodemprofielen.</item>
                   </part>
                   <part>
                      <item>
@@ -1704,7 +1704,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_BodemEenheid_standaardBodemprofiel">standaardBodemprofiel: standaardBodemprofiel</item>
+                                 idref="detail_association_Model_BodemEenheid_standaardBodemprofiel">wordt beschreven door: standaardBodemprofiel</item>
                         </item>
                         <item>Standaard bodemprofiel</item>
                         <item>[ 0 .. * ]</item>
@@ -1766,7 +1766,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_BodemEenheid_standaardBodemprofiel">standaardBodemprofiel: standaardBodemprofiel</item>
+                                 idref="detail_association_Model_BodemEenheid_standaardBodemprofiel">wordt beschreven door: standaardBodemprofiel</item>
                         </item>
                         <item>Standaard bodemprofiel</item>
                         <item>[ 0 .. * ]</item>
@@ -2310,7 +2310,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_BodemEenheid_standaardBodemprofiel">standaardBodemprofiel: standaardBodemprofiel</item>
+                                 idref="detail_association_Model_BodemEenheid_standaardBodemprofiel">wordt beschreven door: standaardBodemprofiel</item>
                         </item>
                         <item>
                            <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
@@ -2331,7 +2331,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>BodemEenheid</item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item/>
+                     <item>Een Bodemvlak bevat een of meer standaard bodemprofielen.</item>
                   </part>
                </content>
                <content approach="target">
@@ -2344,7 +2344,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>[ 1 ]</item>
                         <item>
                            <item type="detail"
-                                 idref="detail_association_Model_BodemEenheid_standaardBodemprofiel">standaardBodemprofiel: standaardBodemprofiel</item>
+                                 idref="detail_association_Model_BodemEenheid_standaardBodemprofiel">wordt beschreven door: standaardBodemprofiel</item>
                         </item>
                         <item>
                            <item type="global" idref="global_class_Model_StandaardBodemprofiel">Standaard bodemprofiel</item>
@@ -3044,9 +3044,37 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>bevat</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>Een Bodemvlak bevat een of meer standaard bodemprofielen.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1 .. *</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
                      </part>
                      <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
                         <item>Gerelateerd objecttype</item>
@@ -3398,9 +3426,33 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Naam</item>
                         <item>bestaat uit</item>
                      </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1 .. *</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
                      </part>
                      <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
                         <item>Gerelateerd objecttype</item>
@@ -4671,18 +4723,42 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                   </content>
                </section>
-               <section name="standaardBodemprofiel"
+               <section name="wordt beschreven door"
                         type="DETAIL-ASSOCIATION"
                         id="detail_association_Model_BodemEenheid_standaardBodemprofiel"
                         id-global="global_association_Model_BodemEenheid_standaardBodemprofiel">
                   <content approach="association">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>standaardBodemprofiel</item>
+                        <item>wordt beschreven door</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>0 .. *</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
                      </part>
                      <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
                         <item>Gerelateerd objecttype</item>
@@ -4694,7 +4770,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <content approach="target">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>standaardBodemprofiel</item>
+                        <item>wordt beschreven door</item>
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
