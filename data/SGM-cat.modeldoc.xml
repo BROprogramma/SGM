@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.48.2"
-      generator-date="2018-12-05T16:30:49Z">
+      generator-date="2018-12-06T09:12:04Z">
    <section type="DOMAIN" name="brocommon" id="global_package_Brocommon"><!--removed empty content-->
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Registratieobject"
@@ -1329,7 +1329,8 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Bodemvlakcollectie</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
+                           <item type="global"
+                                 idref="global_class_Model_BodemEnGrondwatertrapModelRegistratieObject">BodemEnGrondwatertrapModelRegistratieObject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -1359,7 +1360,8 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Bodemvlakcollectie</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
+                           <item type="global"
+                                 idref="global_class_Model_BodemEnGrondwatertrapModelRegistratieObject">BodemEnGrondwatertrapModelRegistratieObject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -1660,7 +1662,8 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Standaard bodemprofiel</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
+                           <item type="global"
+                                 idref="global_class_Model_BodemEnGrondwatertrapModelRegistratieObject">BodemEnGrondwatertrapModelRegistratieObject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -1721,7 +1724,8 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Standaard bodemprofiel</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
+                           <item type="global"
+                                 idref="global_class_Model_BodemEnGrondwatertrapModelRegistratieObject">BodemEnGrondwatertrapModelRegistratieObject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -1911,7 +1915,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSER">
                      <item>
                         <value>
-                           <item type="detail" idref="detail_class_Model_ChemischeBodemkenmerkenType">chemische bodemkenmerken</item>
+                           <item type="detail" idref="detail_class_Model_ChemischeBodemkenmerken">chemische bodemkenmerken</item>
                         </value>
                      </item>
                      <item>
@@ -1925,7 +1929,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_ChemischeBodemkenmerkenType_zuurgraad">zuurgraad</item>
+                              idref="detail_attribute_Model_ChemischeBodemkenmerken_zuurgraad">zuurgraad</item>
                      </item>
                      <item>Veel voorkomende (modus) zuurgraad uitgedrukt als pH-KCl.</item>
                      <item>
@@ -1936,7 +1940,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_ChemischeBodemkenmerkenType_minimumZuurgraad">minimum zuurgraad</item>
+                              idref="detail_attribute_Model_ChemischeBodemkenmerken_minimumZuurgraad">minimum zuurgraad</item>
                      </item>
                      <item>Minimum waarde (p10) voor de variatie in zuurgraad.</item>
                      <item>
@@ -1947,7 +1951,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_ChemischeBodemkenmerkenType_maximumZuurgraad">maximum zuurgraad</item>
+                              idref="detail_attribute_Model_ChemischeBodemkenmerken_maximumZuurgraad">maximum zuurgraad</item>
                      </item>
                      <item>Maximim waarde (p90) voor de variatie in zuurgraad.</item>
                      <item>
@@ -1958,7 +1962,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_ChemischeBodemkenmerkenType_cnVerhouding">cn verhouding</item>
+                              idref="detail_attribute_Model_ChemischeBodemkenmerken_cnVerhouding">cn verhouding</item>
                      </item>
                      <item>Veel voorkomende verhouding tussen de hoeveelheid koolstof en stikstof in de organische stof.</item>
                      <item>
@@ -1969,7 +1973,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSER">
                      <item>
                         <value>
-                           <item type="detail" idref="detail_class_Model_FysischeBodemKenmerkenType">fysische bodemkenmerken</item>
+                           <item type="detail" idref="detail_class_Model_FysischeBodemKenmerken">fysische bodemkenmerken</item>
                         </value>
                      </item>
                      <item>
@@ -1983,7 +1987,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_organischeStofgehalte">organische stofgehalte</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_organischeStofgehalte">organische stofgehalte</item>
                      </item>
                      <item>Veel voorkomend (modus) gehalte aan organische stof in massaprocenten van de totale massa grond.</item>
                      <item>
@@ -1994,7 +1998,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_minimumOrganischeStofgehalte">minimum organische stofgehalte</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_minimumOrganischeStofgehalte">minimum organische stofgehalte</item>
                      </item>
                      <item>Minimum waarde (p10) voor de variatie in het organische stofgehalte in massaprocenten van de totale massa grond.</item>
                      <item>
@@ -2005,7 +2009,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_maximumOrganischeStofgehalte">maximum organische stofgehalte</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_maximumOrganischeStofgehalte">maximum organische stofgehalte</item>
                      </item>
                      <item>Maximum waarde (p90) voor de variatie in het organische stofgehalte in massaprocenten van de totale massa grond.</item>
                      <item>
@@ -2016,7 +2020,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_veensoort">veensoort</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_veensoort">veensoort</item>
                      </item>
                      <item>Een nadere typering van het als veen omschreven bestanddeel van grond.</item>
                      <item>
@@ -2027,7 +2031,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_lutumgehalte">lutumgehalte</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_lutumgehalte">lutumgehalte</item>
                      </item>
                      <item>Veel voorkomend (modus) gehalte aan minerale delen met een korrelgrootte kleiner dan 2 ï¿½m.</item>
                      <item>
@@ -2038,7 +2042,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_minimumLutumgehalte">minimum lutumgehalte</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_minimumLutumgehalte">minimum lutumgehalte</item>
                      </item>
                      <item>Minimum waarde (p10) voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 2 ï¿½m.</item>
                      <item>
@@ -2049,7 +2053,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_maximumLutumgehalte">maximum lutumgehalte</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_maximumLutumgehalte">maximum lutumgehalte</item>
                      </item>
                      <item>Maximum waarde (p90) voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 2 ï¿½m.</item>
                      <item>
@@ -2060,7 +2064,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_siltgehalte">siltgehalte</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_siltgehalte">siltgehalte</item>
                      </item>
                      <item>Veel voorkomend (modus) gehalte aan minerale delen met een korrelgrootte tussen 2 en 50 ï¿½m.</item>
                      <item>
@@ -2071,7 +2075,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_zandmediaan">zandmediaan</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_zandmediaan">zandmediaan</item>
                      </item>
                      <item>Veel voorkomende (modus) mediaan van de zandfractie (uitgedrukt in micrometer).</item>
                      <item>
@@ -2082,7 +2086,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_minimumZandmediaan">minimum zandmediaan</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_minimumZandmediaan">minimum zandmediaan</item>
                      </item>
                      <item>Minimum waarde (p10) voor de variatie in zandmediaan (uitgedrukt in micrometer).</item>
                      <item>
@@ -2093,7 +2097,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_maximumZandmediaan">maximum zandmediaan</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_maximumZandmediaan">maximum zandmediaan</item>
                      </item>
                      <item>Maximum waarde (p90) voor de variatie in zandmediaan (uitgedrukt in micrometer).</item>
                      <item>
@@ -2104,7 +2108,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part type="COMPOSED">
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_FysischeBodemKenmerkenType_dichtheid">dichtheid</item>
+                              idref="detail_attribute_Model_FysischeBodemKenmerken_dichtheid">dichtheid</item>
                      </item>
                      <item>Veel voorkomende waarde voor de volumieke massa (g/cm3).</item>
                      <item>
@@ -2147,14 +2151,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                </content>
             </section>
          </section>
-         <section name="Bodem registratieobject"
+         <section name="BodemEnGrondwatertrapModelRegistratieObject"
                   type="OBJECTTYPE"
-                  id="global_class_Model_BodemRegistratieobject"
+                  id="global_class_Model_BodemEnGrondwatertrapModelRegistratieObject"
                   uuid="EAID_5403E30C_F3F4_4c09_907F_D48BE501C19C">
             <content>
                <part type="CFG-DOC-NAAM">
                   <item>Naam</item>
-                  <item>Bodem registratieobject</item>
+                  <item>BodemEnGrondwatertrapModelRegistratieObject</item>
                </part>
                <part type="CFG-DOC-HERKOMST">
                   <item>Herkomst</item>
@@ -2179,7 +2183,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Model_BodemRegistratieobject_citation">citation</item>
+                              idref="detail_attribute_Model_BodemEnGrondwatertrapModelRegistratieObject_citation">citation</item>
                      </item>
                      <item>TODO</item>
                      <item>
@@ -2197,7 +2201,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype type="ASSOCIATION-DEFINITION"/>
                   <part>
                      <item>
-                        <item>Bodem registratieobject</item>
+                        <item>BodemEnGrondwatertrapModelRegistratieObject</item>
                         <item>is specialisatie van</item>
                         <item>
                            <item type="global" idref="global_class_Brocommon_Registratieobject">Registratieobject</item>
@@ -2212,7 +2216,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype type="ROLE-DEFINITION"/>
                   <part>
                      <item>
-                        <item>Bodem registratieobject</item>
+                        <item>BodemEnGrondwatertrapModelRegistratieObject</item>
                         <item>is specialisatie van</item>
                         <item>
                            <item type="global" idref="global_class_Brocommon_Registratieobject">Registratieobject</item>
@@ -2420,7 +2424,8 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Kaartvlak</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
+                           <item type="global"
+                                 idref="global_class_Model_BodemEnGrondwatertrapModelRegistratieObject">BodemEnGrondwatertrapModelRegistratieObject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -2450,7 +2455,8 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Kaartvlak</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Model_BodemRegistratieobject">Bodem registratieobject</item>
+                           <item type="global"
+                                 idref="global_class_Model_BodemEnGrondwatertrapModelRegistratieObject">BodemEnGrondwatertrapModelRegistratieObject</item>
                         </item>
                      </item>
                      <item>Registratieobject.</item>
@@ -2677,7 +2683,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <item id="global_class_Model_StaringreeksBouwsteen"
                      uuid="EAID_A917BA6F_0EC3_4fc7_80D5_2F204F61DA5A"
                      idref="detail_class_Model_StaringreeksBouwsteen">StaringreeksBouwsteen</item>
-               <item>Aanduiding van de soorten StaringsreeksBouwstaan.</item>
+               <item>Aanduiding van de soorten StaringsreeksBouwsteen.</item>
             </part>
             <part>
                <item id="global_class_Model_Landgebruik"
@@ -3537,14 +3543,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                   </content>
                </section>
-               <section name="ChemischeBodemkenmerkenType"
+               <section name="ChemischeBodemkenmerken"
                         type="DETAIL-COMPOSITE"
-                        id="detail_class_Model_ChemischeBodemkenmerkenType"
-                        id-global="global_class_Model_ChemischeBodemkenmerkenType">
+                        id="detail_class_Model_ChemischeBodemkenmerken"
+                        id-global="global_class_Model_ChemischeBodemkenmerken">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>ChemischeBodemkenmerkenType</item>
+                        <item>ChemischeBodemkenmerken</item>
                      </part>
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
@@ -3561,11 +3567,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </content>
                   <section name="zuurgraad"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_ChemischeBodemkenmerkenType_zuurgraad"
-                           id-global="global_attribute_Model_ChemischeBodemkenmerkenType_zuurgraad">
+                           id="detail_attribute_Model_ChemischeBodemkenmerken_zuurgraad"
+                           id-global="global_attribute_Model_ChemischeBodemkenmerken_zuurgraad">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_ChemischeBodemkenmerkenType">ChemischeBodemkenmerkenType</item>
+                           <item type="global" idref="global_class_Model_ChemischeBodemkenmerken">ChemischeBodemkenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -3611,11 +3617,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="minimum zuurgraad"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_ChemischeBodemkenmerkenType_minimumZuurgraad"
-                           id-global="global_attribute_Model_ChemischeBodemkenmerkenType_minimumZuurgraad">
+                           id="detail_attribute_Model_ChemischeBodemkenmerken_minimumZuurgraad"
+                           id-global="global_attribute_Model_ChemischeBodemkenmerken_minimumZuurgraad">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_ChemischeBodemkenmerkenType">ChemischeBodemkenmerkenType</item>
+                           <item type="global" idref="global_class_Model_ChemischeBodemkenmerken">ChemischeBodemkenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -3661,11 +3667,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="maximum zuurgraad"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_ChemischeBodemkenmerkenType_maximumZuurgraad"
-                           id-global="global_attribute_Model_ChemischeBodemkenmerkenType_maximumZuurgraad">
+                           id="detail_attribute_Model_ChemischeBodemkenmerken_maximumZuurgraad"
+                           id-global="global_attribute_Model_ChemischeBodemkenmerken_maximumZuurgraad">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_ChemischeBodemkenmerkenType">ChemischeBodemkenmerkenType</item>
+                           <item type="global" idref="global_class_Model_ChemischeBodemkenmerken">ChemischeBodemkenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -3711,11 +3717,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="cn verhouding"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_ChemischeBodemkenmerkenType_cnVerhouding"
-                           id-global="global_attribute_Model_ChemischeBodemkenmerkenType_cnVerhouding">
+                           id="detail_attribute_Model_ChemischeBodemkenmerken_cnVerhouding"
+                           id-global="global_attribute_Model_ChemischeBodemkenmerken_cnVerhouding">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_ChemischeBodemkenmerkenType">ChemischeBodemkenmerkenType</item>
+                           <item type="global" idref="global_class_Model_ChemischeBodemkenmerken">ChemischeBodemkenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -3760,14 +3766,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </content>
                   </section>
                </section>
-               <section name="FysischeBodemKenmerkenType"
+               <section name="FysischeBodemKenmerken"
                         type="DETAIL-COMPOSITE"
-                        id="detail_class_Model_FysischeBodemKenmerkenType"
-                        id-global="global_class_Model_FysischeBodemKenmerkenType">
+                        id="detail_class_Model_FysischeBodemKenmerken"
+                        id-global="global_class_Model_FysischeBodemKenmerken">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>FysischeBodemKenmerkenType</item>
+                        <item>FysischeBodemKenmerken</item>
                      </part>
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
@@ -3784,11 +3790,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </content>
                   <section name="organische stofgehalte"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_organischeStofgehalte"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_organischeStofgehalte">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_organischeStofgehalte"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_organischeStofgehalte">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -3834,11 +3840,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="minimum organische stofgehalte"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_minimumOrganischeStofgehalte"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_minimumOrganischeStofgehalte">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_minimumOrganischeStofgehalte"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_minimumOrganischeStofgehalte">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -3884,11 +3890,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="maximum organische stofgehalte"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_maximumOrganischeStofgehalte"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_maximumOrganischeStofgehalte">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_maximumOrganischeStofgehalte"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_maximumOrganischeStofgehalte">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -3934,11 +3940,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="veensoort"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_veensoort"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_veensoort">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_veensoort"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_veensoort">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -3984,11 +3990,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="lutumgehalte"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_lutumgehalte"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_lutumgehalte">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_lutumgehalte"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_lutumgehalte">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -4034,11 +4040,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="minimum lutumgehalte"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_minimumLutumgehalte"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_minimumLutumgehalte">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_minimumLutumgehalte"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_minimumLutumgehalte">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -4084,11 +4090,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="maximum lutumgehalte"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_maximumLutumgehalte"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_maximumLutumgehalte">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_maximumLutumgehalte"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_maximumLutumgehalte">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -4134,11 +4140,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="siltgehalte"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_siltgehalte"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_siltgehalte">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_siltgehalte"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_siltgehalte">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -4184,11 +4190,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="zandmediaan"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_zandmediaan"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_zandmediaan">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_zandmediaan"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_zandmediaan">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -4234,11 +4240,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="minimum zandmediaan"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_minimumZandmediaan"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_minimumZandmediaan">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_minimumZandmediaan"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_minimumZandmediaan">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -4284,11 +4290,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="maximum zandmediaan"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_maximumZandmediaan"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_maximumZandmediaan">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_maximumZandmediaan"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_maximumZandmediaan">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -4334,11 +4340,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                   <section name="dichtheid"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_Model_FysischeBodemKenmerkenType_dichtheid"
-                           id-global="global_attribute_Model_FysischeBodemKenmerkenType_dichtheid">
+                           id="detail_attribute_Model_FysischeBodemKenmerken_dichtheid"
+                           id-global="global_attribute_Model_FysischeBodemKenmerken_dichtheid">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_Model_FysischeBodemKenmerkenType">FysischeBodemKenmerkenType</item>
+                           <item type="global" idref="global_class_Model_FysischeBodemKenmerken">FysischeBodemKenmerken</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -4384,14 +4390,14 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </section>
                </section>
             </section>
-            <section name="Bodem registratieobject"
+            <section name="BodemEnGrondwatertrapModelRegistratieObject"
                      type="OBJECTTYPE"
-                     id="detail_class_Model_BodemRegistratieobject"
-                     id-global="global_class_Model_BodemRegistratieobject">
+                     id="detail_class_Model_BodemEnGrondwatertrapModelRegistratieObject"
+                     id-global="global_class_Model_BodemEnGrondwatertrapModelRegistratieObject">
                <section name="citation"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_BodemRegistratieobject_citation"
-                        id-global="global_attribute_Model_BodemRegistratieobject_citation">
+                        id="detail_attribute_Model_BodemEnGrondwatertrapModelRegistratieObject_citation"
+                        id-global="global_attribute_Model_BodemEnGrondwatertrapModelRegistratieObject_citation">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -4986,7 +4992,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item>Aanduiding van de soorten StaringsreeksBouwstaan.</item>
+                     <item>Aanduiding van de soorten StaringsreeksBouwsteen.</item>
                   </part>
                </content>
                <content>
