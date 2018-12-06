@@ -4,12 +4,12 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.48.2"
-      generator-date="2018-12-06T11:22:43Z">
-   <section type="DOMAIN" name="brocommon" id="global_package_Brocommon"><!--removed empty content-->
+      generator-date="2018-12-06T12:59:16Z">
+   <section type="DOMAIN" name="brocom" id="global_package_Brocom"><!--removed empty content-->
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Registratieobject"
                   type="OBJECTTYPE"
-                  id="global_class_Brocommon_Registratieobject"
+                  id="global_class_Brocom_Registratieobject"
                   uuid="EAID_F38E5EF3_4CDB_4f03_8F86_11BA665753AC">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -38,56 +38,55 @@
                   <itemtype type="ATTRIBUTE-CARD"/>
                   <part>
                      <item>
-                        <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_bROID">BRO-ID</item>
+                        <item type="detail" idref="detail_attribute_Brocom_Registratieobject_bROID">BRO-ID</item>
                      </item>
                      <item>TODO</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Registratieobjectcode">Registratieobjectcode</item>
+                        <item type="global" idref="global_class_Brocom_Registratieobjectcode">Registratieobjectcode</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_bronhouder">bronhouder</item>
+                              idref="detail_attribute_Brocom_Registratieobject_bronhouder">bronhouder</item>
                      </item>
                      <item>TODO</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Organisatie">Organisatie</item>
+                        <item type="global" idref="global_class_Brocom_Organisatie">Organisatie</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder">object-ID bronhouder</item>
+                              idref="detail_attribute_Brocom_Registratieobject_objectIDBronhouder">object-ID bronhouder</item>
                      </item>
                      <item>De identificatie die door of voor de bronhouder is gebruikt om het object in de eigen administratie te kunnen vinden, voordat het was geregistreerd in de basisregistratie ondergrond.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Tekst200">Tekst200</item>
+                        <item type="global" idref="global_class_Brocom_Tekst200">Tekst200</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_dataleverancier">dataleverancier</item>
+                              idref="detail_attribute_Brocom_Registratieobject_dataleverancier">dataleverancier</item>
                      </item>
                      <item>TODO</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Organisatie">Organisatie</item>
+                        <item type="global" idref="global_class_Brocom_Organisatie">Organisatie</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Registratieobject_kwaliteitsregime">kwaliteitsregime</item>
+                              idref="detail_attribute_Brocom_Registratieobject_kwaliteitsregime">kwaliteitsregime</item>
                      </item>
                      <item>De aanduiding van de kwaliteitseis waaraan de gegevens van het object voldoen.</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Kwaliteitsregime">Kwaliteitsregime</item>
+                        <item type="global" idref="global_class_Brocom_Kwaliteitsregime">Kwaliteitsregime</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -100,7 +99,7 @@
       <section type="OVERVIEW-UNION">
          <section name="Onvolledige datum"
                   type="UNION"
-                  id="global_class_Brocommon_OnvolledigeDatum"
+                  id="global_class_Brocom_OnvolledigeDatum"
                   uuid="EAID_5927F2E2_DAFC_4012_8B32_ABE2DEA88CC7">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -126,44 +125,42 @@
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_OnvolledigeDatum_volledigeDatum">volledige datum</item>
+                              idref="detail_attribute_Brocom_OnvolledigeDatum_volledigeDatum">volledige datum</item>
                      </item>
                      <item/>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Datum">Datum</item>
+                        <item type="global" idref="global_class_Brocom_Datum">Datum</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_OnvolledigeDatum_jaarEnMaand">jaar en maand</item>
+                              idref="detail_attribute_Brocom_OnvolledigeDatum_jaarEnMaand">jaar en maand</item>
                      </item>
                      <item/>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Tekst7">Tekst7</item>
+                        <item type="global" idref="global_class_Brocom_Tekst7">Tekst7</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
-                        <item type="detail"
-                              idref="detail_attribute_Brocommon_OnvolledigeDatum_jaartal">jaartal</item>
+                        <item type="detail" idref="detail_attribute_Brocom_OnvolledigeDatum_jaartal">jaartal</item>
                      </item>
                      <item/>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Aantal4">Aantal4</item>
+                        <item type="global" idref="global_class_Brocom_Aantal4">Aantal4</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
-                        <item type="detail"
-                              idref="detail_attribute_Brocommon_OnvolledigeDatum_onbekend">onbekend</item>
+                        <item type="detail" idref="detail_attribute_Brocom_OnvolledigeDatum_onbekend">onbekend</item>
                      </item>
                      <item/>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_RedenGeenWaarde">RedenGeenWaarde</item>
+                        <item type="global" idref="global_class_Brocom_RedenGeenWaarde">RedenGeenWaarde</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -172,7 +169,7 @@
          </section>
          <section name="Organisatie"
                   type="UNION"
-                  id="global_class_Brocommon_Organisatie"
+                  id="global_class_Brocom_Organisatie"
                   uuid="EAID_A7F7FF67_D80C_43e5_8E58_2718E4961888">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -197,22 +194,22 @@
                   <itemtype type="UNIONELEMENT-CARD"/>
                   <part>
                      <item>
-                        <item type="detail" idref="detail_attribute_Brocommon_Organisatie_kvKNummer">KvK-nummer</item>
+                        <item type="detail" idref="detail_attribute_Brocom_Organisatie_kvKNummer">KvK-nummer</item>
                      </item>
                      <item/>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_KvKNummer">KvK-nummer</item>
+                        <item type="global" idref="global_class_Brocom_KvKNummer">KvK-nummer</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_Brocommon_Organisatie_europeesHandelsnummer">Europees handelsnummer</item>
+                              idref="detail_attribute_Brocom_Organisatie_europeesHandelsnummer">Europees handelsnummer</item>
                      </item>
                      <item/>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Tekst40">Tekst40</item>
+                        <item type="global" idref="global_class_Brocom_Tekst40">Tekst40</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -224,7 +221,7 @@
       <section type="OVERVIEW-PRIMITIVEDATATYPE">
          <section name="Aantal4"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Aantal4"
+                  id="global_class_Brocom_Aantal4"
                   uuid="EAID_061FCC9B_4159_4925_B293_479933E4B94E">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -239,7 +236,7 @@
          </section>
          <section name="AantalN"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_AantalN"
+                  id="global_class_Brocom_AantalN"
                   uuid="EAID_6F94DCB1_72B2_495f_B34B_A3A66AC227B9">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -254,7 +251,7 @@
          </section>
          <section name="Datum"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Datum"
+                  id="global_class_Brocom_Datum"
                   uuid="EAID_6CBCC4CF_75A4_4aa8_B0D3_CDF0E162A733">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -274,7 +271,7 @@ Wanneer een attribuut een domein van het type Datum heeft is het voldoende de na
          </section>
          <section name="DatumTijd"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_DatumTijd"
+                  id="global_class_Brocom_DatumTijd"
                   uuid="EAID_94D7AC0C_5C5A_4a83_B06B_8A85E34D1096">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -294,7 +291,7 @@ Wanneer een attribuut een domein van het type DatumTijd heeft is het voldoende d
          </section>
          <section name="KvK-nummer"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_KvKNummer"
+                  id="global_class_Brocom_KvKNummer"
                   uuid="EAID_D9D390B5_D93D_4544_B382_31127020D446">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -313,7 +310,7 @@ Wanneer een attribuut een domein van het type DatumTijd heeft is het voldoende d
          </section>
          <section name="Meetwaarde"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Meetwaarde"
+                  id="global_class_Brocom_Meetwaarde"
                   uuid="EAID_6EDC19D7_5615_4a7c_9E25_364DA1A6387D">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -334,7 +331,7 @@ Wanneer een attribuut een domein van het type meetwaarde heeft wordt de opbouw, 
          </section>
          <section name="NummerN"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_NummerN"
+                  id="global_class_Brocom_NummerN"
                   uuid="EAID_BD2D83BE_A1CC_4642_8B73_43691B200657">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -349,7 +346,7 @@ Wanneer een attribuut een domein van het type meetwaarde heeft wordt de opbouw, 
          </section>
          <section name="Tekst7"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Tekst7"
+                  id="global_class_Brocom_Tekst7"
                   uuid="EAID_93E27C49_F4D2_4a9a_AA17_41EF527E8C4B">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -369,7 +366,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
          </section>
          <section name="Tekst100"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Tekst100"
+                  id="global_class_Brocom_Tekst100"
                   uuid="EAID_917E6074_8106_4ccd_A5D9_4C04E48AA3DE">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -385,7 +382,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
          </section>
          <section name="Tekst40"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Tekst40"
+                  id="global_class_Brocom_Tekst40"
                   uuid="EAID_565B25BE_1432_4cdc_93EE_DAB938128454">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -401,7 +398,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
          </section>
          <section name="Tekst200"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Tekst200"
+                  id="global_class_Brocom_Tekst200"
                   uuid="EAID_DBB93A87_1A2F_4b2a_A750_F85453B0FC6B">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -417,7 +414,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
          </section>
          <section name="TekstN"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_TekstN"
+                  id="global_class_Brocom_TekstN"
                   uuid="EAID_20B6833C_7961_44ba_977E_B079D3F7E13B">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -433,7 +430,7 @@ Een domein van het type tekst wordt volledig gespecificeerd door met de aanduidi
          </section>
          <section name="Registratieobjectcode"
                   type="PRIMITIVEDATATYPE"
-                  id="global_class_Brocommon_Registratieobjectcode"
+                  id="global_class_Brocom_Registratieobjectcode"
                   uuid="EAID_D1BED222_6580_43bc_8EA6_B1EDD7B9807E">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -459,21 +456,21 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
       <section type="OVERVIEW-CODELIST">
          <content>
             <part>
-               <item id="global_class_Brocommon_CoRdinaattransformatie"
+               <item id="global_class_Brocom_CoRdinaattransformatie"
                      uuid="EAID_677E06D0_82C7_4a23_A84D_E89DB09A3B85"
-                     idref="detail_class_Brocommon_CoRdinaattransformatie">Coördinaattransformatie</item>
+                     idref="detail_class_Brocom_CoRdinaattransformatie">Coördinaattransformatie</item>
                <item>De methode die de basisregistratie ondergrond heeft gebruikt voor het omzetten van de aangeleverde coördinaten.</item>
             </part>
             <part>
-               <item id="global_class_Brocommon_Referentiestelsel"
+               <item id="global_class_Brocom_Referentiestelsel"
                      uuid="EAID_7310B2DC_51A7_4cfb_B575_71876819F4C7"
-                     idref="detail_class_Brocommon_Referentiestelsel">Referentiestelsel</item>
+                     idref="detail_class_Brocom_Referentiestelsel">Referentiestelsel</item>
                <item>Het referentiestelsel van de aangeleverde coördinaten.</item>
             </part>
             <part>
-               <item id="global_class_Brocommon_Registratiestatus"
+               <item id="global_class_Brocom_Registratiestatus"
                      uuid="EAID_318BC6BC_6350_4150_8C60_4A2568E5447A"
-                     idref="detail_class_Brocommon_Registratiestatus">Registratiestatus</item>
+                     idref="detail_class_Brocom_Registratiestatus">Registratiestatus</item>
                <item>De actuele fase van registratie waarin het registratieobject zich bevindt.</item>
             </part>
          </content>
@@ -481,27 +478,27 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
       <section type="OVERVIEW-ENUMERATION">
          <content>
             <part>
-               <item id="global_class_Brocommon_IndicatieJaNee"
+               <item id="global_class_Brocom_IndicatieJaNee"
                      uuid="EAID_B7F5C8DE_127B_4d71_B374_DD7AE282F9F9"
-                     idref="detail_class_Brocommon_IndicatieJaNee">IndicatieJaNee</item>
+                     idref="detail_class_Brocom_IndicatieJaNee">IndicatieJaNee</item>
                <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden. Uitbreiding van de keuzelijst is niet mogelijk.</item>
             </part>
             <part>
-               <item id="global_class_Brocommon_IndicatieJaNeeOnbekend"
+               <item id="global_class_Brocom_IndicatieJaNeeOnbekend"
                      uuid="EAID_E7AD23AF_4BA9_4ada_B28B_F7787C1E6869"
-                     idref="detail_class_Brocommon_IndicatieJaNeeOnbekend">IndicatieJaNeeOnbekend</item>
+                     idref="detail_class_Brocom_IndicatieJaNeeOnbekend">IndicatieJaNeeOnbekend</item>
                <item>Een domein in de vorm van een keuzelijst met een limitatieve opsomming van waarden. Uitbreiding van de keuzelijst is niet mogelijk.</item>
             </part>
             <part>
-               <item id="global_class_Brocommon_Kwaliteitsregime"
+               <item id="global_class_Brocom_Kwaliteitsregime"
                      uuid="EAID_FCED883E_1623_4af4_9E55_A428314EAD66"
-                     idref="detail_class_Brocommon_Kwaliteitsregime">Kwaliteitsregime</item>
+                     idref="detail_class_Brocom_Kwaliteitsregime">Kwaliteitsregime</item>
                <item>De aanduiding van de kwaliteitseis waaraan de gegevens van het registratieobject voldoen.</item>
             </part>
             <part>
-               <item id="global_class_Brocommon_RedenGeenWaarde"
+               <item id="global_class_Brocom_RedenGeenWaarde"
                      uuid="EAID_1A8599A8_4DCB_447f_ABDC_7518776893F7"
-                     idref="detail_class_Brocommon_RedenGeenWaarde">RedenGeenWaarde</item>
+                     idref="detail_class_Brocom_RedenGeenWaarde">RedenGeenWaarde</item>
                <item>Geen datum bekend, met als vaste waarde onbekend.</item>
             </part>
          </content>
@@ -510,12 +507,12 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
          <section type="DETAILS-OBJECTTYPE">
             <section name="Registratieobject"
                      type="OBJECTTYPE"
-                     id="detail_class_Brocommon_Registratieobject"
-                     id-global="global_class_Brocommon_Registratieobject">
+                     id="detail_class_Brocom_Registratieobject"
+                     id-global="global_class_Brocom_Registratieobject">
                <section name="BRO-ID"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_bROID"
-                        id-global="global_attribute_Brocommon_Registratieobject_bROID">
+                        id="detail_attribute_Brocom_Registratieobject_bROID"
+                        id-global="global_attribute_Brocom_Registratieobject_bROID">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -565,8 +562,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="bronhouder"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_bronhouder"
-                        id-global="global_attribute_Brocommon_Registratieobject_bronhouder">
+                        id="detail_attribute_Brocom_Registratieobject_bronhouder"
+                        id-global="global_attribute_Brocom_Registratieobject_bronhouder">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -616,8 +613,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="object-ID bronhouder"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_objectIDBronhouder"
-                        id-global="global_attribute_Brocommon_Registratieobject_objectIDBronhouder">
+                        id="detail_attribute_Brocom_Registratieobject_objectIDBronhouder"
+                        id-global="global_attribute_Brocom_Registratieobject_objectIDBronhouder">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -671,8 +668,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="dataleverancier"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_dataleverancier"
-                        id-global="global_attribute_Brocommon_Registratieobject_dataleverancier">
+                        id="detail_attribute_Brocom_Registratieobject_dataleverancier"
+                        id-global="global_attribute_Brocom_Registratieobject_dataleverancier">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -726,8 +723,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="kwaliteitsregime"
                         type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Brocommon_Registratieobject_kwaliteitsregime"
-                        id-global="global_attribute_Brocommon_Registratieobject_kwaliteitsregime">
+                        id="detail_attribute_Brocom_Registratieobject_kwaliteitsregime"
+                        id-global="global_attribute_Brocom_Registratieobject_kwaliteitsregime">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -786,12 +783,12 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
          <section type="DETAILS-UNION">
             <section name="Onvolledige datum"
                      type="KEUZE"
-                     id="detail_class_Brocommon_OnvolledigeDatum"
-                     id-global="global_class_Brocommon_OnvolledigeDatum">
+                     id="detail_class_Brocom_OnvolledigeDatum"
+                     id-global="global_class_Brocom_OnvolledigeDatum">
                <section name="volledige datum"
                         type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_Brocommon_OnvolledigeDatum_volledigeDatum"
-                        id-global="global_attribute_Brocommon_OnvolledigeDatum_volledigeDatum">
+                        id="detail_attribute_Brocom_OnvolledigeDatum_volledigeDatum"
+                        id-global="global_attribute_Brocom_OnvolledigeDatum_volledigeDatum">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -809,8 +806,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="jaar en maand"
                         type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_Brocommon_OnvolledigeDatum_jaarEnMaand"
-                        id-global="global_attribute_Brocommon_OnvolledigeDatum_jaarEnMaand">
+                        id="detail_attribute_Brocom_OnvolledigeDatum_jaarEnMaand"
+                        id-global="global_attribute_Brocom_OnvolledigeDatum_jaarEnMaand">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -828,8 +825,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="jaartal"
                         type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_Brocommon_OnvolledigeDatum_jaartal"
-                        id-global="global_attribute_Brocommon_OnvolledigeDatum_jaartal">
+                        id="detail_attribute_Brocom_OnvolledigeDatum_jaartal"
+                        id-global="global_attribute_Brocom_OnvolledigeDatum_jaartal">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -847,8 +844,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="onbekend"
                         type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_Brocommon_OnvolledigeDatum_onbekend"
-                        id-global="global_attribute_Brocommon_OnvolledigeDatum_onbekend">
+                        id="detail_attribute_Brocom_OnvolledigeDatum_onbekend"
+                        id-global="global_attribute_Brocom_OnvolledigeDatum_onbekend">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -867,12 +864,12 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
             </section>
             <section name="Organisatie"
                      type="KEUZE"
-                     id="detail_class_Brocommon_Organisatie"
-                     id-global="global_class_Brocommon_Organisatie">
+                     id="detail_class_Brocom_Organisatie"
+                     id-global="global_class_Brocom_Organisatie">
                <section name="KvK-nummer"
                         type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_Brocommon_Organisatie_kvKNummer"
-                        id-global="global_attribute_Brocommon_Organisatie_kvKNummer">
+                        id="detail_attribute_Brocom_Organisatie_kvKNummer"
+                        id-global="global_attribute_Brocom_Organisatie_kvKNummer">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -890,8 +887,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="Europees handelsnummer"
                         type="DETAIL-UNIONELEMENT"
-                        id="detail_attribute_Brocommon_Organisatie_europeesHandelsnummer"
-                        id-global="global_attribute_Brocommon_Organisatie_europeesHandelsnummer">
+                        id="detail_attribute_Brocom_Organisatie_europeesHandelsnummer"
+                        id-global="global_attribute_Brocom_Organisatie_europeesHandelsnummer">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -914,8 +911,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
          <section type="DETAILS-CODELIST">
             <section name="Coördinaattransformatie"
                      type="DETAIL-CODELIST"
-                     id="detail_class_Brocommon_CoRdinaattransformatie"
-                     id-global="global_class_Brocommon_CoRdinaattransformatie"
+                     id="detail_class_Brocom_CoRdinaattransformatie"
+                     id-global="global_class_Brocom_CoRdinaattransformatie"
                      uuid="EAID_677E06D0_82C7_4a23_A84D_E89DB09A3B85">
                <content>
                   <part>
@@ -956,8 +953,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
             </section>
             <section name="Referentiestelsel"
                      type="DETAIL-CODELIST"
-                     id="detail_class_Brocommon_Referentiestelsel"
-                     id-global="global_class_Brocommon_Referentiestelsel"
+                     id="detail_class_Brocom_Referentiestelsel"
+                     id-global="global_class_Brocom_Referentiestelsel"
                      uuid="EAID_7310B2DC_51A7_4cfb_B575_71876819F4C7">
                <content>
                   <part>
@@ -988,8 +985,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
             </section>
             <section name="Registratiestatus"
                      type="DETAIL-CODELIST"
-                     id="detail_class_Brocommon_Registratiestatus"
-                     id-global="global_class_Brocommon_Registratiestatus"
+                     id="detail_class_Brocom_Registratiestatus"
+                     id-global="global_class_Brocom_Registratiestatus"
                      uuid="EAID_318BC6BC_6350_4150_8C60_4A2568E5447A">
                <content>
                   <part>
@@ -1022,8 +1019,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
          <section type="DETAILS-ENUMERATION">
             <section name="IndicatieJaNee"
                      type="DETAIL-ENUMERATION"
-                     id="detail_class_Brocommon_IndicatieJaNee"
-                     id-global="global_class_Brocommon_IndicatieJaNee"
+                     id="detail_class_Brocom_IndicatieJaNee"
+                     id-global="global_class_Brocom_IndicatieJaNee"
                      uuid="EAID_B7F5C8DE_127B_4d71_B374_DD7AE282F9F9">
                <content>
                   <part>
@@ -1049,8 +1046,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
             </section>
             <section name="IndicatieJaNeeOnbekend"
                      type="DETAIL-ENUMERATION"
-                     id="detail_class_Brocommon_IndicatieJaNeeOnbekend"
-                     id-global="global_class_Brocommon_IndicatieJaNeeOnbekend"
+                     id="detail_class_Brocom_IndicatieJaNeeOnbekend"
+                     id-global="global_class_Brocom_IndicatieJaNeeOnbekend"
                      uuid="EAID_E7AD23AF_4BA9_4ada_B28B_F7787C1E6869">
                <content>
                   <part>
@@ -1081,8 +1078,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
             </section>
             <section name="Kwaliteitsregime"
                      type="DETAIL-ENUMERATION"
-                     id="detail_class_Brocommon_Kwaliteitsregime"
-                     id-global="global_class_Brocommon_Kwaliteitsregime"
+                     id="detail_class_Brocom_Kwaliteitsregime"
+                     id-global="global_class_Brocom_Kwaliteitsregime"
                      uuid="EAID_FCED883E_1623_4af4_9E55_A428314EAD66">
                <content>
                   <part>
@@ -1108,8 +1105,8 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
             </section>
             <section name="RedenGeenWaarde"
                      type="DETAIL-ENUMERATION"
-                     id="detail_class_Brocommon_RedenGeenWaarde"
-                     id-global="global_class_Brocommon_RedenGeenWaarde"
+                     id="detail_class_Brocom_RedenGeenWaarde"
+                     id-global="global_class_Brocom_RedenGeenWaarde"
                      uuid="EAID_1A8599A8_4DCB_447f_ABDC_7518776893F7">
                <content>
                   <part>
@@ -1819,7 +1816,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </item>
                      <item>verwijzing naar de identificatie van het registratie object (RO) booronderzoek in de BRO</item>
                      <item>
-                        <item type="global" idref="global_class_Brocommon_Registratieobjectcode">Registratieobjectcode</item>
+                        <item type="global" idref="global_class_Brocom_Registratieobjectcode">Registratieobjectcode</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -2204,7 +2201,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>BodemEnGrondwatertrapModelRegistratieObject</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Brocommon_Registratieobject">Registratieobject</item>
+                           <item type="global" idref="global_class_Brocom_Registratieobject">Registratieobject</item>
                         </item>
                      </item>
                      <item>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond is opgenomen.</item>
@@ -2219,7 +2216,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>BodemEnGrondwatertrapModelRegistratieObject</item>
                         <item>is specialisatie van</item>
                         <item>
-                           <item type="global" idref="global_class_Brocommon_Registratieobject">Registratieobject</item>
+                           <item type="global" idref="global_class_Brocom_Registratieobject">Registratieobject</item>
                         </item>
                      </item>
                      <item>Het geheel van gegevens dat betrekking heeft op het recht van een bepaalde partij een bepaalde mijnbouwactiviteit in een bepaald deel van de ondergrond van Nederland en zijn Exclusieve Economische Zone uit te voeren, en dat onder de verantwoordelijkheid van het ministerie van Economische Zaken en Klimaat aan de registerbeheerder van de basisregistratie ondergrond is aangeleverd en door de laatste in de registratie ondergrond is opgenomen.</item>
