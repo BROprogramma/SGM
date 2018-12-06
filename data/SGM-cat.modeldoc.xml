@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.48.2"
-      generator-date="2018-12-06T14:43:04Z">
+      generator-date="2018-12-06T14:47:34Z">
    <section type="DOMAIN" name="brocom" id="global_package_Brocom"><!--removed empty content-->
       <section type="OVERVIEW-OBJECTTYPE">
          <section name="Registratieobject"
@@ -1694,7 +1694,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         </item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                   </part>
                   <part>
                      <item>
@@ -1709,7 +1709,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Standaard bodemprofiel</item>
                         <item>[ 0 .. * ]</item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                   </part>
                </content>
                <content approach="target">
@@ -2317,7 +2317,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         </item>
                         <item>[ 0 .. * ]</item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                   </part>
                   <part>
                      <item>
@@ -3429,6 +3429,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
                         <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>TODO</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
@@ -4736,6 +4740,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         <item>Herkomst</item>
                         <item>BRO</item>
                      </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>TODO</item>
+                     </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
                         <item>BRO</item>
@@ -5535,7 +5543,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
 </item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item/>
+                     <item>TODO</item>
                   </part>
                   <part>
                      <item>
