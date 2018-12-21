@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.49.1"
-      generator-date="2018-12-21T13:02:37Z">
+      generator-date="2018-12-21T13:21:34Z">
    <section type="DOMAIN" name="INSPIRE" id="global_package_INSPIRE"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
       <section type="OVERVIEW-STRUCTUREDDATATYPE">
          <section name="FAO horizon notation type"
@@ -2909,7 +2909,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                      <item>
                         <item type="detail" idref="detail_attribute_Model_Bodemkaart_citation">citation</item>
                      </item>
-                     <item/>
+                     <item>CI_Citation wordt gebruikt voor het verschaffen van informatie over een publicatie (wetenschappelijk, handleiding, ...) of citeerbare informatie te verschaffen over een bron (gegevensverzameling, dienst, ...).</item>
                      <item>
                         <item type="global"
                               idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
@@ -3630,6 +3630,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
                         <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>CI_Citation wordt gebruikt voor het verschaffen van informatie over een publicatie (wetenschappelijk, handleiding, ...) of citeerbare informatie te verschaffen over een bron (gegevensverzameling, dienst, ...).</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
