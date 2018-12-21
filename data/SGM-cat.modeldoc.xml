@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.49.1"
-      generator-date="2018-12-21T13:21:34Z">
+      generator-date="2018-12-21T13:42:16Z">
    <section type="DOMAIN" name="INSPIRE" id="global_package_INSPIRE"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
       <section type="OVERVIEW-STRUCTUREDDATATYPE">
          <section name="FAO horizon notation type"
@@ -3368,7 +3368,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <item>
                         <item type="detail" idref="detail_attribute_Model_Kaartvlak_identificatie">identificatie</item>
                      </item>
-                     <item/>
+                     <item>De unieke aanduiding van een Kaartvlak.</item>
                      <item>
                         <item type="global" idref="global_class_Brocom_ID">ID</item>
                      </item>
@@ -4344,6 +4344,10 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
                         <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De unieke aanduiding van een Kaartvlak.</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
