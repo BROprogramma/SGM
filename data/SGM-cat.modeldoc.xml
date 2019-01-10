@@ -3,8 +3,8 @@
       subpath="Conceptual model/Bodemkaart (SGM)/20181205"
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
-      generator-version="1.49.1"
-      generator-date="2018-12-21T14:20:16Z">
+      generator-version="1.50.1"
+      generator-date="2019-01-10T09:36:10Z">
    <section type="DOMAIN" name="INSPIRE" id="global_package_INSPIRE"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
       <section type="OVERVIEW-STRUCTUREDDATATYPE">
          <section name="FAO horizon notation type"
@@ -421,256 +421,97 @@ EXAMPLE Lixic Vertic Ferralsol (Ferric, Rhodic), WRB 2006, update 2007.</item>
             </section>
          </section>
       </section>
-      <section type="OVERVIEW-PRIMITIVEDATATYPE">
-         <section name="FAO horizon master value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_FAOHorizonMasterValue"
-                  uuid="EAID_05D6F1BA_74E6_4e24_BE52_9F747366D7D7">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>FAO horizon master value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>A code list of the master part of the horizon designation.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>The allowed values for this code list comprise only the values specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.</item>
-               </part>
-            </content>
-         </section>
-         <section name="WRB qualifier place value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_WRBQualifierPlaceValue"
-                  uuid="EAID_234DFA9B_8943_4af5_A108_4211459DC090">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>WRB qualifier place value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>list of values to indicate the placement of the Qualifier with regard to the WRB reference soil group (RSG). The placement can be in front of the RSG i.e. 'prefix' or it can be behind the RSG i.e. 'suffix'. The allowed values for this code list comprise only the values ”prefix” and “suffix”, according to naming rules of the World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United
-Nations, Rome, 2007.</item>
-               </part>
-            </content>
-         </section>
-         <section name="Event environment value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_EventEnvironmentValue"
-                  uuid="EAID_2A52D445_F9A0_450b_A085_F79C84BB8600">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Event environment value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Terms for the geologic environments within which geologic events take place.</item>
-               </part>
-            </content>
-         </section>
-         <section name="WRB specifiers"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_WRBSpecifiers"
-                  uuid="EAID_5101B97A_0598_4a0a_BC81_E17A09169ADE">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>WRB specifiers</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>list of possible specifiers. The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>SOURCE World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
-Specifiers are name elements in WRB restricting the meaning of qualifiers.</item>
-               </part>
-            </content>
-         </section>
-         <section name="Layer type value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_LayerTypeValue"
-                  uuid="EAID_56A213F1_98A6_4f2c_A1C2_693C1896E475">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Layer type value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>classification of a layer according to the concept that fits the purpose.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>EXAMPLE Topsoil: meaning the upper part of the natural soil that is generally dark coloured and has a higher content of organic matter and nutrients when compared to the (mineral ) horizons below excluding the humus layer.</item>
-               </part>
-            </content>
-         </section>
-         <section name="Other horizon notation type value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_OtherHorizonNotationTypeValue"
-                  uuid="EAID_6DE1B4D3_FDD2_4763_9938_65B7EE3D1FDC">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Other horizon notation type value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>a classification of a soil horizon according to a specific classification system.
-The allowed values for this coded list comprise the values defined by data providers.</item>
-               </part>
-            </content>
-         </section>
-         <section name="Other soil name type value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_OtherSoilNameTypeValue"
-                  uuid="EAID_7BE9C3DD_1DC8_4f6a_9E85_81A83D3FB1F0">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Other soil name type value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>an identification of the soil profile according to a specific classification scheme.
-The allowed values for this coded list comprise the values defined by data providers.</item>
-               </part>
-            </content>
-         </section>
-         <section name="FAO horizon subordinate value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_FAOHorizonSubordinateValue"
-                  uuid="EAID_835B8CBE_E9C0_4dd1_9903_BECC077ED72E">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>FAO horizon subordinate value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>A code list of designations of subordinate distinctions and features within the master horizons and layers which are based on profile characteristics observable in the field and are applied during the description of the soil at the site.
-The allowed values for this code list comprise only the values specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Lower case letters are used as suffixes to designate specific kinds of master horizons and layers, and other features.
-SOURCE Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77, table 85</item>
-               </part>
-            </content>
-         </section>
-         <section name="WRB reference soil group (RSG)"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_WRBReferenceSoilGroupRSG"
-                  uuid="EAID_8BD0BDE6_6133_4d52_AD2B_07683E06D421">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>WRB reference soil group (RSG)</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>list of possible reference soil groups (i.e. first level of classification of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Reference Soil Groups are distinguished by the presence (or absence) of specific diagnostic horizons, properties and/or materials.
-NOTE The WRB soil classification system comprises 32 different RSGs.
-SOURCE World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.</item>
-               </part>
-            </content>
-         </section>
-         <section name="Layer genesis process state value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_LayerGenesisProcessStateValue"
-                  uuid="EAID_BEECDA65_14AF_43e7_8B98_DD6228F26F82">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Layer genesis process state value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>an indication whether the process specified in layerGenesisProcess is ongoing or ceased in the past.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Process state gives an idea whether current non-pedogenic processes affect the soil or not. E.g. on current floodplains, input of sediments during seasonal flooding events is received, with comparatively young soil development in it, while in older fluvial sediments that are no longer under a regime of seasonal or irregular flooding, soil development might be more advanced.</item>
-               </part>
-            </content>
-         </section>
-         <section name="FAO prime value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_FAOPrimeValue"
-                  uuid="EAID_BF016374_3234_4de8_897B_8A0BC543E562">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>FAO prime value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>A prime and double prime may be used to connotate the master horizon symbol of the lower of two (prime) or three (double prime) horizons having identical Arabic-numeral prefixes and letter combinations.
-The allowed values for this code list comprise only the values specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Identical designations may be appropriate for two or more horizons or layers separated by at least one horizon or layer of a more different kind in the same pedon. The sequence A-E-Bt-E-Btx-C is an example - the soil has two E horizons. To make communication easier, a prime is used with the master horizon symbol of the lower of two horizons having identical letter designations: A-E-Bt-E’-Btx-C. The prime is applied to the capital letter designation, and any lower case symbol follows it: B’t. The prime is not used unless all letters of the designations of two different layers are identical. Prime can be used for both minerals and organic soils.</item>
-               </part>
-            </content>
-         </section>
-         <section name="Event process value"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_EventProcessValue"
-                  uuid="EAID_C2F13817_F801_4e8a_80F9_B146D6F8D061">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Event process value</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Terms specifying the process or processes that occurred during an event.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>EXAMPLE: deposition, extrusion, intrusion, cooling.</item>
-               </part>
-            </content>
-         </section>
-         <section name="WRB qualifiers"
-                  type="PRIMITIVEDATATYPE"
-                  id="global_class_INSPIRE_WRBQualifiers"
-                  uuid="EAID_CAAF6669_6C4D_43f8_94BB_92371C646D37">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>WRB qualifiers</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>list of possible qualifiers (i.e. prefix and suffix qualifiers of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>SOURCE World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.
-NOTE WRB restricts the use of qualifiers in different ways for the 32 reference soil groups.</item>
-               </part>
-            </content>
-         </section>
-      </section>
+      <!--removed empty content-->
       <section type="OVERVIEW-CODELIST">
          <content>
+            <part>
+               <item id="global_class_INSPIRE_FAOHorizonMasterValue"
+                     uuid="EAID_05D6F1BA_74E6_4e24_BE52_9F747366D7D7"
+                     idref="detail_class_INSPIRE_FAOHorizonMasterValue">FAO horizon master value</item>
+               <item>A code list of the master part of the horizon designation.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_WRBQualifierPlaceValue"
+                     uuid="EAID_234DFA9B_8943_4af5_A108_4211459DC090"
+                     idref="detail_class_INSPIRE_WRBQualifierPlaceValue">WRB qualifier place value</item>
+               <item>list of values to indicate the placement of the Qualifier with regard to the WRB reference soil group (RSG). The placement can be in front of the RSG i.e. 'prefix' or it can be behind the RSG i.e. 'suffix'. The allowed values for this code list comprise only the values ”prefix” and “suffix”, according to naming rules of the World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United
+Nations, Rome, 2007.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_EventEnvironmentValue"
+                     uuid="EAID_2A52D445_F9A0_450b_A085_F79C84BB8600"
+                     idref="detail_class_INSPIRE_EventEnvironmentValue">Event environment value</item>
+               <item>Terms for the geologic environments within which geologic events take place.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_WRBSpecifiers"
+                     uuid="EAID_5101B97A_0598_4a0a_BC81_E17A09169ADE"
+                     idref="detail_class_INSPIRE_WRBSpecifiers">WRB specifiers</item>
+               <item>list of possible specifiers. The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_LayerTypeValue"
+                     uuid="EAID_56A213F1_98A6_4f2c_A1C2_693C1896E475"
+                     idref="detail_class_INSPIRE_LayerTypeValue">Layer type value</item>
+               <item>classification of a layer according to the concept that fits the purpose.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_OtherHorizonNotationTypeValue"
+                     uuid="EAID_6DE1B4D3_FDD2_4763_9938_65B7EE3D1FDC"
+                     idref="detail_class_INSPIRE_OtherHorizonNotationTypeValue">Other horizon notation type value</item>
+               <item>a classification of a soil horizon according to a specific classification system.
+The allowed values for this coded list comprise the values defined by data providers.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_OtherSoilNameTypeValue"
+                     uuid="EAID_7BE9C3DD_1DC8_4f6a_9E85_81A83D3FB1F0"
+                     idref="detail_class_INSPIRE_OtherSoilNameTypeValue">Other soil name type value</item>
+               <item>an identification of the soil profile according to a specific classification scheme.
+The allowed values for this coded list comprise the values defined by data providers.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_FAOHorizonSubordinateValue"
+                     uuid="EAID_835B8CBE_E9C0_4dd1_9903_BECC077ED72E"
+                     idref="detail_class_INSPIRE_FAOHorizonSubordinateValue">FAO horizon subordinate value</item>
+               <item>A code list of designations of subordinate distinctions and features within the master horizons and layers which are based on profile characteristics observable in the field and are applied during the description of the soil at the site.
+The allowed values for this code list comprise only the values specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_WRBReferenceSoilGroupRSG"
+                     uuid="EAID_8BD0BDE6_6133_4d52_AD2B_07683E06D421"
+                     idref="detail_class_INSPIRE_WRBReferenceSoilGroupRSG">WRB reference soil group (RSG)</item>
+               <item>list of possible reference soil groups (i.e. first level of classification of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
+            </part>
             <part>
                <item id="global_class_INSPIRE_LithologyValue"
                      uuid="EAID_A908DA67_6D7B_4add_B491_7F40827CF671"
                      idref="detail_class_INSPIRE_LithologyValue">Lithology value</item>
                <item>Terms describing the lithology.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_LayerGenesisProcessStateValue"
+                     uuid="EAID_BEECDA65_14AF_43e7_8B98_DD6228F26F82"
+                     idref="detail_class_INSPIRE_LayerGenesisProcessStateValue">Layer genesis process state value</item>
+               <item>an indication whether the process specified in layerGenesisProcess is ongoing or ceased in the past.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_FAOPrimeValue"
+                     uuid="EAID_BF016374_3234_4de8_897B_8A0BC543E562"
+                     idref="detail_class_INSPIRE_FAOPrimeValue">FAO prime value</item>
+               <item>A prime and double prime may be used to connotate the master horizon symbol of the lower of two (prime) or three (double prime) horizons having identical Arabic-numeral prefixes and letter combinations.
+The allowed values for this code list comprise only the values specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_EventProcessValue"
+                     uuid="EAID_C2F13817_F801_4e8a_80F9_B146D6F8D061"
+                     idref="detail_class_INSPIRE_EventProcessValue">Event process value</item>
+               <item>Terms specifying the process or processes that occurred during an event.</item>
+            </part>
+            <part>
+               <item id="global_class_INSPIRE_WRBQualifiers"
+                     uuid="EAID_CAAF6669_6C4D_43f8_94BB_92371C646D37"
+                     idref="detail_class_INSPIRE_WRBQualifiers">WRB qualifiers</item>
+               <item>list of possible qualifiers (i.e. prefix and suffix qualifiers of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
             </part>
          </content>
       </section>
@@ -1404,6 +1245,163 @@ SOURCE World reference base for soil resources 2006, first update 2007, World So
          </section>
          <!--removed empty content-->
          <section type="DETAILS-CODELIST">
+            <section name="FAO horizon master value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_FAOHorizonMasterValue"
+                     id-global="global_class_INSPIRE_FAOHorizonMasterValue"
+                     uuid="EAID_05D6F1BA_74E6_4e24_BE52_9F747366D7D7">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>A code list of the master part of the horizon designation.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="WRB qualifier place value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_WRBQualifierPlaceValue"
+                     id-global="global_class_INSPIRE_WRBQualifierPlaceValue"
+                     uuid="EAID_234DFA9B_8943_4af5_A108_4211459DC090">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>list of values to indicate the placement of the Qualifier with regard to the WRB reference soil group (RSG). The placement can be in front of the RSG i.e. 'prefix' or it can be behind the RSG i.e. 'suffix'. The allowed values for this code list comprise only the values ”prefix” and “suffix”, according to naming rules of the World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United
+Nations, Rome, 2007.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="Event environment value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_EventEnvironmentValue"
+                     id-global="global_class_INSPIRE_EventEnvironmentValue"
+                     uuid="EAID_2A52D445_F9A0_450b_A085_F79C84BB8600">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>Terms for the geologic environments within which geologic events take place.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="WRB specifiers"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_WRBSpecifiers"
+                     id-global="global_class_INSPIRE_WRBSpecifiers"
+                     uuid="EAID_5101B97A_0598_4a0a_BC81_E17A09169ADE">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>list of possible specifiers. The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="Layer type value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_LayerTypeValue"
+                     id-global="global_class_INSPIRE_LayerTypeValue"
+                     uuid="EAID_56A213F1_98A6_4f2c_A1C2_693C1896E475">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>classification of a layer according to the concept that fits the purpose.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="Other horizon notation type value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_OtherHorizonNotationTypeValue"
+                     id-global="global_class_INSPIRE_OtherHorizonNotationTypeValue"
+                     uuid="EAID_6DE1B4D3_FDD2_4763_9938_65B7EE3D1FDC">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>a classification of a soil horizon according to a specific classification system.
+The allowed values for this coded list comprise the values defined by data providers.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="Other soil name type value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_OtherSoilNameTypeValue"
+                     id-global="global_class_INSPIRE_OtherSoilNameTypeValue"
+                     uuid="EAID_7BE9C3DD_1DC8_4f6a_9E85_81A83D3FB1F0">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>an identification of the soil profile according to a specific classification scheme.
+The allowed values for this coded list comprise the values defined by data providers.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="FAO horizon subordinate value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_FAOHorizonSubordinateValue"
+                     id-global="global_class_INSPIRE_FAOHorizonSubordinateValue"
+                     uuid="EAID_835B8CBE_E9C0_4dd1_9903_BECC077ED72E">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>A code list of designations of subordinate distinctions and features within the master horizons and layers which are based on profile characteristics observable in the field and are applied during the description of the soil at the site.
+The allowed values for this code list comprise only the values specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="WRB reference soil group (RSG)"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_WRBReferenceSoilGroupRSG"
+                     id-global="global_class_INSPIRE_WRBReferenceSoilGroupRSG"
+                     uuid="EAID_8BD0BDE6_6133_4d52_AD2B_07683E06D421">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>list of possible reference soil groups (i.e. first level of classification of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
             <section name="Lithology value"
                      type="DETAIL-CODELIST"
                      id="detail_class_INSPIRE_LithologyValue"
@@ -1413,6 +1411,75 @@ SOURCE World reference base for soil resources 2006, first update 2007, World So
                   <part>
                      <item>Definitie</item>
                      <item>Terms describing the lithology.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="Layer genesis process state value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_LayerGenesisProcessStateValue"
+                     id-global="global_class_INSPIRE_LayerGenesisProcessStateValue"
+                     uuid="EAID_BEECDA65_14AF_43e7_8B98_DD6228F26F82">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>an indication whether the process specified in layerGenesisProcess is ongoing or ceased in the past.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="FAO prime value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_FAOPrimeValue"
+                     id-global="global_class_INSPIRE_FAOPrimeValue"
+                     uuid="EAID_BF016374_3234_4de8_897B_8A0BC543E562">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>A prime and double prime may be used to connotate the master horizon symbol of the lower of two (prime) or three (double prime) horizons having identical Arabic-numeral prefixes and letter combinations.
+The allowed values for this code list comprise only the values specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="Event process value"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_EventProcessValue"
+                     id-global="global_class_INSPIRE_EventProcessValue"
+                     uuid="EAID_C2F13817_F801_4e8a_80F9_B146D6F8D061">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>Terms specifying the process or processes that occurred during an event.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="WRB qualifiers"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_INSPIRE_WRBQualifiers"
+                     id-global="global_class_INSPIRE_WRBQualifiers"
+                     uuid="EAID_CAAF6669_6C4D_43f8_94BB_92371C646D37">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>list of possible qualifiers (i.e. prefix and suffix qualifiers of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
                   </part>
                </content>
                <content>
@@ -3129,17 +3196,11 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </part>
                   <part type="COMPOSER">
                      <item>
-                        <value>
-                           <item type="detail" idref="detail_class_Model_BodemEenheid">bodemeenheid</item>
-                        </value>
+                        <item type="detail" idref="detail_class_Model_BodemEenheid">bodemeenheid</item>
                      </item>
-                     <item>
-                        <value>De bodemkundige typering van de bodem.</value>
-                     </item>
+                     <item>De bodemkundige typering van de bodem.</item>
                      <item/>
-                     <item>
-                        <value>1 .. *</value>
-                     </item>
+                     <item>1 .. *</item>
                   </part>
                   <part type="COMPOSED">
                      <item>
@@ -3458,12 +3519,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                <item>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper dan 40 cm.</item>
             </part>
             <part>
-               <item id="global_class_Model_Afzettingskarakteristiek"
-                     uuid="EAID_221C871A_13AD_44e3_9308_22DE99CA2535"
-                     idref="detail_class_Model_Afzettingskarakteristiek">Afzettingskarakteristiek</item>
-               <item>Aanduiding van de soorten afzettingskarakteristiek.</item>
-            </part>
-            <part>
                <item id="global_class_Model_BodemkenmerkenOnderlaag"
                      uuid="EAID_5463CF56_01BC_4f0c_88A7_11F479050C47"
                      idref="detail_class_Model_BodemkenmerkenOnderlaag">BodemkenmerkenOnderlaag</item>
@@ -3486,6 +3541,12 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      uuid="EAID_803E52C2_E581_448f_A721_83925F3746D1"
                      idref="detail_class_Model_BodemkundigBelang">BodemkundigBelang</item>
                <item>Typen van bodemkundig belang.</item>
+            </part>
+            <part>
+               <item id="global_class_Model_Afzettingskarakteristiek"
+                     uuid="EAID_221C871A_13AD_44e3_9308_22DE99CA2535"
+                     idref="detail_class_Model_Afzettingskarakteristiek">Afzettingskarakteristiek</item>
+               <item>Aanduiding van de soorten afzettingskarakteristiek.</item>
             </part>
             <part>
                <item id="global_class_Model_Veensoort"
@@ -4493,23 +4554,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype type="DEFINITION"/>
                </content>
             </section>
-            <section name="Afzettingskarakteristiek"
-                     type="DETAIL-CODELIST"
-                     id="detail_class_Model_Afzettingskarakteristiek"
-                     id-global="global_class_Model_Afzettingskarakteristiek"
-                     uuid="EAID_221C871A_13AD_44e3_9308_22DE99CA2535">
-               <content>
-                  <part>
-                     <item>Definitie</item>
-                     <item>Aanduiding van de soorten afzettingskarakteristiek.</item>
-                  </part>
-               </content>
-               <content>
-                  <itemtype type="CODE"/>
-                  <itemtype type="NAME"/>
-                  <itemtype type="DEFINITION"/>
-               </content>
-            </section>
             <section name="BodemkenmerkenOnderlaag"
                      type="DETAIL-CODELIST"
                      id="detail_class_Model_BodemkenmerkenOnderlaag"
@@ -4570,6 +4614,23 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <part>
                      <item>Definitie</item>
                      <item>Typen van bodemkundig belang.</item>
+                  </part>
+               </content>
+               <content>
+                  <itemtype type="CODE"/>
+                  <itemtype type="NAME"/>
+                  <itemtype type="DEFINITION"/>
+               </content>
+            </section>
+            <section name="Afzettingskarakteristiek"
+                     type="DETAIL-CODELIST"
+                     id="detail_class_Model_Afzettingskarakteristiek"
+                     id-global="global_class_Model_Afzettingskarakteristiek"
+                     uuid="EAID_221C871A_13AD_44e3_9308_22DE99CA2535">
+               <content>
+                  <part>
+                     <item>Definitie</item>
+                     <item>Aanduiding van de soorten afzettingskarakteristiek.</item>
                   </part>
                </content>
                <content>
