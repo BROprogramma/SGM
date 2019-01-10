@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.50.1"
-      generator-date="2019-01-10T09:36:10Z">
+      generator-date="2019-01-10T09:56:46Z">
    <section type="DOMAIN" name="INSPIRE" id="global_package_INSPIRE"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
       <section type="OVERVIEW-STRUCTUREDDATATYPE">
          <section name="FAO horizon notation type"
@@ -1648,27 +1648,27 @@ The allowed values for this code list comprise only the values specified in Guid
                   <part>
                      <item/>
                      <item>download</item>
-                     <item/>
+                     <item>Online instructions provide the information necessary to acquire data</item>
                   </part>
                   <part>
                      <item/>
                      <item>information</item>
-                     <item/>
+                     <item>Online instructions provide more information about the data</item>
                   </part>
                   <part>
                      <item/>
                      <item>offlineAccess</item>
-                     <item/>
+                     <item>Online instructions provide the ability to transfer data from one storage device or system to another</item>
                   </part>
                   <part>
                      <item/>
                      <item>order</item>
-                     <item/>
+                     <item>Online instructions provide the ability to acquire data</item>
                   </part>
                   <part>
                      <item/>
                      <item>search</item>
-                     <item/>
+                     <item>Online instructions provide the ability to seek out information about a dataset</item>
                   </part>
                </content>
             </section>
