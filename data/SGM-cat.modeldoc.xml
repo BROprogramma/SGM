@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.50.1"
-      generator-date="2019-01-10T09:56:46Z">
+      generator-date="2019-01-15T16:12:19Z">
    <section type="DOMAIN" name="INSPIRE" id="global_package_INSPIRE"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
       <section type="OVERVIEW-STRUCTUREDDATATYPE">
          <section name="FAO horizon notation type"
@@ -1576,52 +1576,52 @@ The allowed values for this code list comprise only the values specified in Guid
                   <part>
                      <item/>
                      <item>resourceProvider</item>
-                     <item/>
+                     <item>Party that supplies the data</item>
                   </part>
                   <part>
                      <item/>
                      <item>custodian</item>
-                     <item/>
+                     <item>Guardian or keeper responsible for maintaining the data</item>
                   </part>
                   <part>
                      <item/>
                      <item>owner</item>
-                     <item/>
+                     <item>Person who owns the data</item>
                   </part>
                   <part>
                      <item/>
                      <item>user</item>
-                     <item/>
+                     <item>Person who uses the data</item>
                   </part>
                   <part>
                      <item/>
                      <item>distributor</item>
-                     <item/>
+                     <item>Person or organisation who distributes the data</item>
                   </part>
                   <part>
                      <item/>
                      <item>originator</item>
-                     <item/>
+                     <item>Responsible party who created the dataset or metadata</item>
                   </part>
                   <part>
                      <item/>
                      <item>pointOfContact</item>
-                     <item/>
+                     <item>Responsible party who can be contacted for acquiring knowledge about or acquisition of the data.</item>
                   </part>
                   <part>
                      <item/>
                      <item>principalInvestigator</item>
-                     <item/>
+                     <item>Key person responsible for gathering information and conducting research</item>
                   </part>
                   <part>
                      <item/>
                      <item>processor</item>
-                     <item/>
+                     <item>Responsible party who has processed the data in a manner in which the data has been modified.</item>
                   </part>
                   <part>
                      <item/>
                      <item>publisher</item>
-                     <item/>
+                     <item>Responsible party who published the data</item>
                   </part>
                   <part>
                      <item/>
@@ -1690,17 +1690,17 @@ The allowed values for this code list comprise only the values specified in Guid
                   <part>
                      <item/>
                      <item>documentDigital</item>
-                     <item/>
+                     <item>Piece of written or printed matter that provides a record or evidence of events, an agreement, ownership, identification, etc..</item>
                   </part>
                   <part>
                      <item/>
                      <item>documentHardcopy</item>
-                     <item/>
+                     <item>Representation of a map which is printed on paper, photographic material, or other media and can be interpreted directly by the human user</item>
                   </part>
                   <part>
                      <item/>
                      <item>imageDigital</item>
-                     <item/>
+                     <item>Permanent record of the likeness of any natural or man-made features, objects, and activities reproduced on photographic materials. This image can be acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar.</item>
                   </part>
                   <part>
                      <item/>
@@ -1720,7 +1720,7 @@ The allowed values for this code list comprise only the values specified in Guid
                   <part>
                      <item/>
                      <item>modelDigital</item>
-                     <item/>
+                     <item>Representation in three dimensions of geospatial data</item>
                   </part>
                   <part>
                      <item/>
@@ -1730,7 +1730,7 @@ The allowed values for this code list comprise only the values specified in Guid
                   <part>
                      <item/>
                      <item>profileDigital</item>
-                     <item/>
+                     <item>Vertical cross-section of geospatial data</item>
                   </part>
                   <part>
                      <item/>
@@ -3048,109 +3048,6 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </content>
             </section>
          </section>
-         <section name="Bodemlichaam"
-                  type="OBJECTTYPE"
-                  id="global_class_Model_Bodemlichaam"
-                  uuid="EAID_937AC71F_F454_49a3_8257_4ED3B68B25F1">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Bodemlichaam</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>Begrensd 3D-object met gelijke bodemkenmerken.</item>
-               </part>
-               <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                  <item>Herkomst definitie</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Is het in 2D begrensde gebied dat max 1,5 m beneden maaiveld is doorgetrokken met daarin de lagen van het standaardprofiel.
-
-N.B. Dit geldt niet voor vlakken die 'niet geclassificeerd' zijn
-zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is geen bodemlichaam.</item>
-               </part>
-            </content>
-            <section type="SHORT-ATTRIBUTES">
-               <content>
-                  <itemtype/>
-                  <itemtype type="ATTRIBUTE-NAME"/>
-                  <itemtype type="ATTRIBUTE-DEFINITION"/>
-                  <itemtype type="ATTRIBUTE-FORMAT"/>
-                  <itemtype type="ATTRIBUTE-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail" idref="detail_attribute_Model_Bodemlichaam_identificatie">identificatie</item>
-                     </item>
-                     <item>De unieke aanduiding van een Bodemlichaam.</item>
-                     <item>
-                        <item type="global" idref="global_class_Brocom_ID">ID</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail" idref="detail_attribute_Model_Bodemlichaam_geometrie">geometrie</item>
-                     </item>
-                     <item>De geometrie bepaald voor het bodemobject.</item>
-                     <item>
-                        <item type="global"
-                              idref="http://www.opengeospatial.org/standards/gml"
-                              idref-type="external">GM_MultiSolid</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-               </content>
-            </section>
-            <section type="SHORT-ASSOCIATIONS">
-               <content approach="association">
-                  <itemtype/>
-                  <itemtype type="ASSOCIATION-NAME"/>
-                  <itemtype type="ASSOCIATION-DEFINITION"/>
-                  <part>
-                     <item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemvlak_gerelateerdBodemlichaam">behoort tot: gerelateerdBodemlichaam</item>
-                        </item>
-                        <item>Bodemlichaam</item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item>Een bodemvlak behoort tot een bodemlichaam.</item>
-                  </part>
-               </content>
-               <content approach="target">
-                  <itemtype/>
-                  <itemtype type="ROLE-NAME"/>
-                  <itemtype type="ROLE-DEFINITION"/>
-                  <part>
-                     <item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemvlak">Bodemvlak</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemvlak_gerelateerdBodemlichaam">behoort tot: gerelateerdBodemlichaam</item>
-                        </item>
-                        <item>Bodemlichaam</item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item>De unieke aanduiding van elk Bodemlichaam waaruit het Bodemvlak bestaat.</item>
-                  </part>
-               </content>
-            </section>
-         </section>
          <section name="Bodemvlak"
                   type="OBJECTTYPE"
                   id="global_class_Model_Bodemvlak"
@@ -3191,6 +3088,17 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <item>TODO</item>
                      <item>
                         <item type="global" idref="global_class_Model_Bodemhelling">Bodemhelling</item>
+                     </item>
+                     <item>1</item>
+                  </part>
+                  <part>
+                     <item>
+                        <item type="detail"
+                              idref="detail_attribute_Model_Bodemvlak_gerelateerdBodemlichaam">gerelateerdBodemlichaam</item>
+                     </item>
+                     <item>De geometrie, als een begrensd 3D-object, bepaald voor het bodemobject met gelijke bodemkenmerken.</item>
+                     <item>
+                        <item type="global" idref="global_class_Solid">GM_Solid</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -3273,21 +3181,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </item>
                      <item>TODO</item>
                   </part>
-                  <part>
-                     <item>
-                        <item>Bodemvlak</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemvlak_gerelateerdBodemlichaam">behoort tot: gerelateerdBodemlichaam</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemlichaam">Bodemlichaam</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item>Een bodemvlak behoort tot een bodemlichaam.</item>
-                  </part>
                </content>
                <content approach="target">
                   <itemtype/>
@@ -3302,21 +3195,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                         </item>
                      </item>
                      <item>TODO</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item>Bodemvlak</item>
-                        <item>[ 1 ]</item>
-                        <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemvlak_gerelateerdBodemlichaam">behoort tot: gerelateerdBodemlichaam</item>
-                        </item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemlichaam">Bodemlichaam</item>
-                        </item>
-                        <item>[ 1 ]</item>
-                     </item>
-                     <item>De unieke aanduiding van elk Bodemlichaam waaruit het Bodemvlak bestaat.</item>
                   </part>
                </content>
             </section>
@@ -3427,23 +3305,13 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   <itemtype type="ATTRIBUTE-CARD"/>
                   <part>
                      <item>
-                        <item type="detail" idref="detail_attribute_Model_Kaartvlak_identificatie">identificatie</item>
-                     </item>
-                     <item>De unieke aanduiding van een Kaartvlak.</item>
-                     <item>
-                        <item type="global" idref="global_class_Brocom_ID">ID</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
                         <item type="detail" idref="detail_attribute_Model_Kaartvlak_geometrie">geometrie</item>
                      </item>
                      <item>De geometrie bepaald voor het Kaartvlak.</item>
                      <item>
                         <item type="global"
                               idref="http://www.opengeospatial.org/standards/gml"
-                              idref-type="external">GM_MultiSurface</item>
+                              idref-type="external">GM_Polygon</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -3808,113 +3676,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                   </content>
                </section>
             </section>
-            <section name="Bodemlichaam"
-                     type="OBJECTTYPE"
-                     id="detail_class_Model_Bodemlichaam"
-                     id-global="global_class_Model_Bodemlichaam">
-               <section name="identificatie"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Bodemlichaam_identificatie"
-                        id-global="global_attribute_Model_Bodemlichaam_identificatie">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>identificatie</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De unieke aanduiding van een Bodemlichaam.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Een externe object-ID is een unieke object-identifier die door de verantwoordelijke instantie is gepubliceerd en die door externe toepassingen kan worden gebruikt om naar het ruimtelijke object te verwijzen. De identifier is een identifier van het ruimtelijke object en niet een identifier van het fenomeen in de echte wereld.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>ID</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="geometrie"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Bodemlichaam_geometrie"
-                        id-global="global_attribute_Model_Bodemlichaam_geometrie">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>geometrie</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De geometrie bepaald voor het bodemobject.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Een ruimtelijke weergave van bodeminformatie wordt ruimtelijk expliciet door gebieden met vergelijkbare waarden af te bakenen volgens de bodem (of andere) eigenschap die wordt weergegeven.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Ja</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Ja</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>GM_MultiSolid</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                  </content>
-               </section>
-            </section>
             <section name="Bodemvlak"
                      type="OBJECTTYPE"
                      id="detail_class_Model_Bodemvlak"
@@ -3963,6 +3724,61 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
                         <item>Bodemhelling</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
+                        <item>Indicatie afleidbaar</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-UNITOFMEASURE">
+                        <item>Meeteenheid</item>
+                        <item>BRO</item>
+                     </part>
+                  </content>
+               </section>
+               <section name="gerelateerdBodemlichaam"
+                        type="DETAIL-ATTRIBUTE"
+                        id="detail_attribute_Model_Bodemvlak_gerelateerdBodemlichaam"
+                        id-global="global_attribute_Model_Bodemvlak_gerelateerdBodemlichaam">
+                  <content>
+                     <part type="CFG-DOC-NAAM">
+                        <item>Naam</item>
+                        <item>gerelateerdBodemlichaam</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMST">
+                        <item>Herkomst</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-DEFINITIE">
+                        <item>Definitie</item>
+                        <item>De geometrie, als een begrensd 3D-object, bepaald voor het bodemobject met gelijke bodemkenmerken.</item>
+                     </part>
+                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                        <item>Herkomst definitie</item>
+                        <item>BRO</item>
+                     </part>
+                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                        <item>Mogelijk geen waarde</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                        <item>Indicatie materiële historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                        <item>Indicatie formele historie</item>
+                        <item>Nee</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                        <item>Indicatie kardinaliteit</item>
+                        <item>1</item>
+                     </part>
+                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                        <item>Indicatie authentiek</item>
+                        <item>Authentiek</item>
+                     </part>
+                     <part type="CFG-DOC-FORMAAT">
+                        <item>Formaat</item>
+                        <item>GM_Solid</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
@@ -4255,83 +4071,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </content>
                   </section>
                </section>
-               <section name="behoort tot"
-                        type="DETAIL-ASSOCIATION"
-                        id="detail_association_Model_Bodemvlak_gerelateerdBodemlichaam"
-                        id-global="global_association_Model_Bodemvlak_gerelateerdBodemlichaam">
-                  <content approach="association">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>behoort tot</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Een bodemvlak behoort tot een bodemlichaam.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Het betreft de in kaartgebrachte bodemlichamen.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Ja</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Ja</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemlichaam">Bodemlichaam</item>
-                        </item>
-                     </part>
-                  </content>
-                  <content approach="target">
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>behoort tot</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De unieke aanduiding van elk Bodemlichaam waaruit het Bodemvlak bestaat.</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
-                        <item>Gerelateerd objecttype</item>
-                        <item>
-                           <item type="global" idref="global_class_Model_Bodemlichaam">Bodemlichaam</item>
-                        </item>
-                     </part>
-                  </content>
-               </section>
             </section>
             <section name="Vlak van bodemkundig belang"
                      type="OBJECTTYPE"
@@ -4393,61 +4132,6 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      type="OBJECTTYPE"
                      id="detail_class_Model_Kaartvlak"
                      id-global="global_class_Model_Kaartvlak">
-               <section name="identificatie"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Kaartvlak_identificatie"
-                        id-global="global_attribute_Model_Kaartvlak_identificatie">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>identificatie</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>De unieke aanduiding van een Kaartvlak.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                        <item>Indicatie materiële historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>ID</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-UNITOFMEASURE">
-                        <item>Meeteenheid</item>
-                        <item>BRO</item>
-                     </part>
-                  </content>
-               </section>
                <section name="geometrie"
                         type="DETAIL-ATTRIBUTE"
                         id="detail_attribute_Model_Kaartvlak_geometrie"
@@ -4487,7 +4171,7 @@ zoals bebouwing, water, moeras, groeven, sterk opgehoogd. Bij deze vlakken is ge
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
-                        <item>GM_MultiSurface</item>
+                        <item>GM_Polygon</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
