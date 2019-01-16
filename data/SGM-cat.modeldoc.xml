@@ -4,12 +4,12 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.50.1"
-      generator-date="2019-01-15T16:55:40Z">
-   <section type="DOMAIN" name="INSPIRE" id="global_package_INSPIRE"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
+      generator-date="2019-01-16T08:01:56Z">
+   <section type="DOMAIN" name="INSPIRE Soil" id="global_package_INSPIRESoil"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
       <section type="OVERVIEW-STRUCTUREDDATATYPE">
          <section name="FAO horizon notation type"
                   type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRE_FAOHorizonNotationType"
+                  id="global_class_INSPIRESoil_FAOHorizonNotationType"
                   uuid="EAID_F54C7F1B_0582_4dd7_9E8E_398DE0DB6F15">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -47,7 +47,7 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonDiscontinuity">FAOHorizonDiscontinuity</item>
+                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonDiscontinuity">FAOHorizonDiscontinuity</item>
                      </item>
                      <item>number used to indicate a discontinuity in the horizon notation.</item>
                      <item>
@@ -58,22 +58,22 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonMaster">FAOHorizonMaster</item>
+                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonMaster">FAOHorizonMaster</item>
                      </item>
                      <item>symbol of the master part of the horizon notation.</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_FAOHorizonMasterValue">FAO horizon master value</item>
+                        <item type="global" idref="global_class_INSPIRESoil_FAOHorizonMasterValue">FAO horizon master value</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOPrime">FAOPrime</item>
+                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOPrime">FAOPrime</item>
                      </item>
                      <item>A prime and double prime may be used to connotate master horizon symbol of the lower of two respectively three horizons having identical Arabic-numeral prefixes and letter combinations.</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_FAOPrimeValue">FAO prime value
+                        <item type="global" idref="global_class_INSPIRESoil_FAOPrimeValue">FAO prime value
 </item>
                      </item>
                      <item>1</item>
@@ -81,11 +81,12 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonSubordinate">FAOHorizonSubordinate</item>
+                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonSubordinate">FAOHorizonSubordinate</item>
                      </item>
                      <item>Designations of subordinate distinctions and features within the master horizons and layers are based on profile characteristics observable in the field and are applied during the description of the soil at the site.</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_FAOHorizonSubordinateValue">FAO horizon subordinate value
+                        <item type="global"
+                              idref="global_class_INSPIRESoil_FAOHorizonSubordinateValue">FAO horizon subordinate value
 </item>
                      </item>
                      <item>0 .. *</item>
@@ -93,7 +94,7 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonVertical">FAOHorizonVertical</item>
+                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonVertical">FAOHorizonVertical</item>
                      </item>
                      <item>Order number of the vertical subdivision in the horizon notation.</item>
                      <item>
@@ -104,7 +105,7 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_FAOHorizonNotationType_isOriginalClassification">isOriginalClassification</item>
+                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_isOriginalClassification">isOriginalClassification</item>
                      </item>
                      <item>Boolean value to indicate whether the FAO horizon notation was the original notation to describe the horizon.</item>
                      <item>
@@ -117,7 +118,7 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
          </section>
          <section name="Other horizon notation type"
                   type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRE_OtherHorizonNotationType"
+                  id="global_class_INSPIRESoil_OtherHorizonNotationType"
                   uuid="EAID_88B6949D_16C9_496e_A88B_C017A4232B47">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -147,19 +148,19 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_OtherHorizonNotationType_horizonNotation">horizonNotation</item>
+                              idref="detail_attribute_INSPIRESoil_OtherHorizonNotationType_horizonNotation">horizonNotation</item>
                      </item>
                      <item>notation characterizing the soil horizon according to a specified classification system.</item>
                      <item>
                         <item type="global"
-                              idref="global_class_INSPIRE_OtherHorizonNotationTypeValue">Other horizon notation type value</item>
+                              idref="global_class_INSPIRESoil_OtherHorizonNotationTypeValue">Other horizon notation type value</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_OtherHorizonNotationType_isOriginalClassification">isOriginalClassification</item>
+                              idref="detail_attribute_INSPIRESoil_OtherHorizonNotationType_isOriginalClassification">isOriginalClassification</item>
                      </item>
                      <item>Boolean value to indicate whether the specified horizon notation system was the original notation system to describe the horizon.</item>
                      <item>
@@ -172,7 +173,7 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
          </section>
          <section name="Other soil name type"
                   type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRE_OtherSoilNameType"
+                  id="global_class_INSPIRESoil_OtherSoilNameType"
                   uuid="EAID_89D28DE8_A62A_4579_9182_5A4F5739E969">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -202,18 +203,18 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_OtherSoilNameType_soilName">soilName</item>
+                              idref="detail_attribute_INSPIRESoil_OtherSoilNameType_soilName">soilName</item>
                      </item>
                      <item>name of the soil profile according to a specific classification scheme.</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_OtherSoilNameTypeValue">Other soil name type value</item>
+                        <item type="global" idref="global_class_INSPIRESoil_OtherSoilNameTypeValue">Other soil name type value</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_OtherSoilNameType_isOriginalClassification">isOriginalClassification</item>
+                              idref="detail_attribute_INSPIRESoil_OtherSoilNameType_isOriginalClassification">isOriginalClassification</item>
                      </item>
                      <item>Boolean value to indicate whether the specified classification scheme was the original classification scheme to describe the profile.</item>
                      <item>
@@ -226,7 +227,7 @@ SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food 
          </section>
          <section name="Particle size fraction type"
                   type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRE_ParticleSizeFractionType"
+                  id="global_class_INSPIRESoil_ParticleSizeFractionType"
                   uuid="EAID_5125CF99_72BB_4d09_9B57_A48C1810F15E">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -259,7 +260,7 @@ SOURCE2 GLOSSARY OF SOIL SCIENCE TERMS</item>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_ParticleSizeFractionType_fractionContent">fractionContent</item>
+                              idref="detail_attribute_INSPIRESoil_ParticleSizeFractionType_fractionContent">fractionContent</item>
                      </item>
                      <item>Percentage of the defined fraction.</item>
                      <item>
@@ -270,11 +271,11 @@ SOURCE2 GLOSSARY OF SOIL SCIENCE TERMS</item>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_ParticleSizeFractionType_fractionParticleSizeRange">fractionParticleSizeRange</item>
+                              idref="detail_attribute_INSPIRESoil_ParticleSizeFractionType_fractionParticleSizeRange">fractionParticleSizeRange</item>
                      </item>
                      <item>upper and lower limit of the particle size of the defined fraction (expressed in µm)</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_RangeType">Range type</item>
+                        <item type="global" idref="global_class_INSPIRESoil_RangeType">Range type</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -283,7 +284,7 @@ SOURCE2 GLOSSARY OF SOIL SCIENCE TERMS</item>
          </section>
          <section name="WRB qualifier group type"
                   type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRE_WRBQualifierGroupType"
+                  id="global_class_INSPIRESoil_WRBQualifierGroupType"
                   uuid="EAID_C0001766_987B_4f5f_8C4C_274C1E0C17CF">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -309,18 +310,18 @@ SOURCE2 GLOSSARY OF SOIL SCIENCE TERMS</item>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_WRBQualifierGroupType_qualifierPlace">qualifierPlace</item>
+                              idref="detail_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPlace">qualifierPlace</item>
                      </item>
                      <item>attribute to indicate the placement of the Qualifier with regard to the WRB reference soil group (RSG). The placement can be in front of the RSG i.e. 'prefix' or it can be behind the RSG i.e. 'suffix'.</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_WRBQualifierPlaceValue">WRB qualifier place value</item>
+                        <item type="global" idref="global_class_INSPIRESoil_WRBQualifierPlaceValue">WRB qualifier place value</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_WRBQualifierGroupType_qualifierPosition">qualifierPosition</item>
+                              idref="detail_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPosition">qualifierPosition</item>
                      </item>
                      <item>number to indicate the position of a qualifier with regard to the WRB reference soil group (RSG) it belongs to and with regard to its placement to that (RSG) i.e. as a prefix or a suffix.</item>
                      <item>
@@ -331,22 +332,22 @@ SOURCE2 GLOSSARY OF SOIL SCIENCE TERMS</item>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_WRBQualifierGroupType_wRBqualifier">WRBqualifier</item>
+                              idref="detail_attribute_INSPIRESoil_WRBQualifierGroupType_wRBqualifier">WRBqualifier</item>
                      </item>
                      <item>name element of WRB, 2nd level of classification</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_WRBQualifiers">WRB qualifiers</item>
+                        <item type="global" idref="global_class_INSPIRESoil_WRBQualifiers">WRB qualifiers</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_WRBQualifierGroupType_wRBspecifier">WRBspecifier</item>
+                              idref="detail_attribute_INSPIRESoil_WRBQualifierGroupType_wRBspecifier">WRBspecifier</item>
                      </item>
                      <item>code that indicates the degree of expression of a qualifier or the depth range of which the qualifier applies.</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_WRBSpecifiers">WRB specifiers</item>
+                        <item type="global" idref="global_class_INSPIRESoil_WRBSpecifiers">WRB specifiers</item>
                      </item>
                      <item>0 .. 2</item>
                   </part>
@@ -355,7 +356,7 @@ SOURCE2 GLOSSARY OF SOIL SCIENCE TERMS</item>
          </section>
          <section name="WRB soil name type"
                   type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRE_WRBSoilNameType"
+                  id="global_class_INSPIRESoil_WRBSoilNameType"
                   uuid="EAID_3E881747_D033_40f8_AF83_C24DEF0D0DF8">
             <content>
                <part type="CFG-DOC-NAAM">
@@ -387,29 +388,29 @@ EXAMPLE Lixic Vertic Ferralsol (Ferric, Rhodic), WRB 2006, update 2007.</item>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_WRBSoilNameType_wRBQualifierGroup">WRBQualifierGroup</item>
+                              idref="detail_attribute_INSPIRESoil_WRBSoilNameType_wRBQualifierGroup">WRBQualifierGroup</item>
                      </item>
                      <item>data type to define the a group of a qualifier and its possible specifier(s), its place and position with regard to the WRBReferenceSoilGroup it belongs to.</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_WRBQualifierGroupType">WRB qualifier group type</item>
+                        <item type="global" idref="global_class_INSPIRESoil_WRBQualifierGroupType">WRB qualifier group type</item>
                      </item>
                      <item>0 .. *</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_WRBSoilNameType_wRBReferenceSoilGroup">WRBReferenceSoilGroup</item>
+                              idref="detail_attribute_INSPIRESoil_WRBSoilNameType_wRBReferenceSoilGroup">WRBReferenceSoilGroup</item>
                      </item>
                      <item>first level of classification of the World Reference Base for Soil Resources.</item>
                      <item>
-                        <item type="global" idref="global_class_INSPIRE_WRBReferenceSoilGroupRSG">WRB reference soil group (RSG)</item>
+                        <item type="global" idref="global_class_INSPIRESoil_WRBReferenceSoilGroupRSG">WRB reference soil group (RSG)</item>
                      </item>
                      <item>1</item>
                   </part>
                   <part>
                      <item>
                         <item type="detail"
-                              idref="detail_attribute_INSPIRE_WRBSoilNameType_isOriginalClassification">isOriginalClassification</item>
+                              idref="detail_attribute_INSPIRESoil_WRBSoilNameType_isOriginalClassification">isOriginalClassification</item>
                      </item>
                      <item>Boolean value to indicate whether the WRB classification system was the original classification system to describe the soil profile.</item>
                      <item>
@@ -425,92 +426,92 @@ EXAMPLE Lixic Vertic Ferralsol (Ferric, Rhodic), WRB 2006, update 2007.</item>
       <section type="OVERVIEW-CODELIST">
          <content>
             <part>
-               <item id="global_class_INSPIRE_FAOHorizonMasterValue"
+               <item id="global_class_INSPIRESoil_FAOHorizonMasterValue"
                      uuid="EAID_05D6F1BA_74E6_4e24_BE52_9F747366D7D7"
-                     idref="detail_class_INSPIRE_FAOHorizonMasterValue">FAO horizon master value</item>
+                     idref="detail_class_INSPIRESoil_FAOHorizonMasterValue">FAO horizon master value</item>
                <item>A code list of the master part of the horizon designation.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_WRBQualifierPlaceValue"
+               <item id="global_class_INSPIRESoil_WRBQualifierPlaceValue"
                      uuid="EAID_234DFA9B_8943_4af5_A108_4211459DC090"
-                     idref="detail_class_INSPIRE_WRBQualifierPlaceValue">WRB qualifier place value</item>
+                     idref="detail_class_INSPIRESoil_WRBQualifierPlaceValue">WRB qualifier place value</item>
                <item>list of values to indicate the placement of the Qualifier with regard to the WRB reference soil group (RSG). The placement can be in front of the RSG i.e. 'prefix' or it can be behind the RSG i.e. 'suffix'. The allowed values for this code list comprise only the values ”prefix” and “suffix”, according to naming rules of the World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United
 Nations, Rome, 2007.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_EventEnvironmentValue"
+               <item id="global_class_INSPIRESoil_EventEnvironmentValue"
                      uuid="EAID_2A52D445_F9A0_450b_A085_F79C84BB8600"
-                     idref="detail_class_INSPIRE_EventEnvironmentValue">Event environment value</item>
+                     idref="detail_class_INSPIRESoil_EventEnvironmentValue">Event environment value</item>
                <item>Terms for the geologic environments within which geologic events take place.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_WRBSpecifiers"
+               <item id="global_class_INSPIRESoil_WRBSpecifiers"
                      uuid="EAID_5101B97A_0598_4a0a_BC81_E17A09169ADE"
-                     idref="detail_class_INSPIRE_WRBSpecifiers">WRB specifiers</item>
+                     idref="detail_class_INSPIRESoil_WRBSpecifiers">WRB specifiers</item>
                <item>list of possible specifiers. The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_LayerTypeValue"
+               <item id="global_class_INSPIRESoil_LayerTypeValue"
                      uuid="EAID_56A213F1_98A6_4f2c_A1C2_693C1896E475"
-                     idref="detail_class_INSPIRE_LayerTypeValue">Layer type value</item>
+                     idref="detail_class_INSPIRESoil_LayerTypeValue">Layer type value</item>
                <item>classification of a layer according to the concept that fits the purpose.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_OtherHorizonNotationTypeValue"
+               <item id="global_class_INSPIRESoil_OtherHorizonNotationTypeValue"
                      uuid="EAID_6DE1B4D3_FDD2_4763_9938_65B7EE3D1FDC"
-                     idref="detail_class_INSPIRE_OtherHorizonNotationTypeValue">Other horizon notation type value</item>
+                     idref="detail_class_INSPIRESoil_OtherHorizonNotationTypeValue">Other horizon notation type value</item>
                <item>a classification of a soil horizon according to a specific classification system.
 The allowed values for this coded list comprise the values defined by data providers.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_OtherSoilNameTypeValue"
+               <item id="global_class_INSPIRESoil_OtherSoilNameTypeValue"
                      uuid="EAID_7BE9C3DD_1DC8_4f6a_9E85_81A83D3FB1F0"
-                     idref="detail_class_INSPIRE_OtherSoilNameTypeValue">Other soil name type value</item>
+                     idref="detail_class_INSPIRESoil_OtherSoilNameTypeValue">Other soil name type value</item>
                <item>an identification of the soil profile according to a specific classification scheme.
 The allowed values for this coded list comprise the values defined by data providers.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_FAOHorizonSubordinateValue"
+               <item id="global_class_INSPIRESoil_FAOHorizonSubordinateValue"
                      uuid="EAID_835B8CBE_E9C0_4dd1_9903_BECC077ED72E"
-                     idref="detail_class_INSPIRE_FAOHorizonSubordinateValue">FAO horizon subordinate value</item>
+                     idref="detail_class_INSPIRESoil_FAOHorizonSubordinateValue">FAO horizon subordinate value</item>
                <item>A code list of designations of subordinate distinctions and features within the master horizons and layers which are based on profile characteristics observable in the field and are applied during the description of the soil at the site.
 The allowed values for this code list comprise only the values specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_WRBReferenceSoilGroupRSG"
+               <item id="global_class_INSPIRESoil_WRBReferenceSoilGroupRSG"
                      uuid="EAID_8BD0BDE6_6133_4d52_AD2B_07683E06D421"
-                     idref="detail_class_INSPIRE_WRBReferenceSoilGroupRSG">WRB reference soil group (RSG)</item>
+                     idref="detail_class_INSPIRESoil_WRBReferenceSoilGroupRSG">WRB reference soil group (RSG)</item>
                <item>list of possible reference soil groups (i.e. first level of classification of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_LithologyValue"
+               <item id="global_class_INSPIRESoil_LithologyValue"
                      uuid="EAID_A908DA67_6D7B_4add_B491_7F40827CF671"
-                     idref="detail_class_INSPIRE_LithologyValue">Lithology value</item>
+                     idref="detail_class_INSPIRESoil_LithologyValue">Lithology value</item>
                <item>Terms describing the lithology.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_LayerGenesisProcessStateValue"
+               <item id="global_class_INSPIRESoil_LayerGenesisProcessStateValue"
                      uuid="EAID_BEECDA65_14AF_43e7_8B98_DD6228F26F82"
-                     idref="detail_class_INSPIRE_LayerGenesisProcessStateValue">Layer genesis process state value</item>
+                     idref="detail_class_INSPIRESoil_LayerGenesisProcessStateValue">Layer genesis process state value</item>
                <item>an indication whether the process specified in layerGenesisProcess is ongoing or ceased in the past.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_FAOPrimeValue"
+               <item id="global_class_INSPIRESoil_FAOPrimeValue"
                      uuid="EAID_BF016374_3234_4de8_897B_8A0BC543E562"
-                     idref="detail_class_INSPIRE_FAOPrimeValue">FAO prime value</item>
+                     idref="detail_class_INSPIRESoil_FAOPrimeValue">FAO prime value</item>
                <item>A prime and double prime may be used to connotate the master horizon symbol of the lower of two (prime) or three (double prime) horizons having identical Arabic-numeral prefixes and letter combinations.
 The allowed values for this code list comprise only the values specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006, pp. 67-77.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_EventProcessValue"
+               <item id="global_class_INSPIRESoil_EventProcessValue"
                      uuid="EAID_C2F13817_F801_4e8a_80F9_B146D6F8D061"
-                     idref="detail_class_INSPIRE_EventProcessValue">Event process value</item>
+                     idref="detail_class_INSPIRESoil_EventProcessValue">Event process value</item>
                <item>Terms specifying the process or processes that occurred during an event.</item>
             </part>
             <part>
-               <item id="global_class_INSPIRE_WRBQualifiers"
+               <item id="global_class_INSPIRESoil_WRBQualifiers"
                      uuid="EAID_CAAF6669_6C4D_43f8_94BB_92371C646D37"
-                     idref="detail_class_INSPIRE_WRBQualifiers">WRB qualifiers</item>
+                     idref="detail_class_INSPIRESoil_WRBQualifiers">WRB qualifiers</item>
                <item>list of possible qualifiers (i.e. prefix and suffix qualifiers of the World Reference Base for Soil Resources). The allowed values for this code list comprise only the values specified in “World reference base for soil resources 2006, first update 2007”.</item>
             </part>
          </content>
@@ -520,12 +521,12 @@ The allowed values for this code list comprise only the values specified in Guid
          <section type="DETAILS-STRUCTUREDDATATYPE">
             <section name="FAO horizon notation type"
                      type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRE_FAOHorizonNotationType"
-                     id-global="global_class_INSPIRE_FAOHorizonNotationType">
+                     id="detail_class_INSPIRESoil_FAOHorizonNotationType"
+                     id-global="global_class_INSPIRESoil_FAOHorizonNotationType">
                <section name="FAOHorizonDiscontinuity"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonDiscontinuity"
-                        id-global="global_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonDiscontinuity">
+                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonDiscontinuity"
+                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonDiscontinuity">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -559,8 +560,8 @@ NOTE a discontinuity is a boundary between two geogenic layers.</item>
                </section>
                <section name="FAOHorizonMaster"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonMaster"
-                        id-global="global_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonMaster">
+                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonMaster"
+                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonMaster">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -590,8 +591,8 @@ NOTE a discontinuity is a boundary between two geogenic layers.</item>
                </section>
                <section name="FAOPrime"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOPrime"
-                        id-global="global_attribute_INSPIRE_FAOHorizonNotationType_fAOPrime">
+                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOPrime"
+                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOPrime">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -623,8 +624,8 @@ SOURCE: Guidelines for soil description, 4th edition, Food and Agriculture Organ
                </section>
                <section name="FAOHorizonSubordinate"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonSubordinate"
-                        id-global="global_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonSubordinate">
+                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonSubordinate"
+                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonSubordinate">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -656,8 +657,8 @@ SOURCE Guidelines for soil description, 4th edition, Food and Agriculture Organi
                </section>
                <section name="FAOHorizonVertical"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonVertical"
-                        id-global="global_attribute_INSPIRE_FAOHorizonNotationType_fAOHorizonVertical">
+                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonVertical"
+                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonVertical">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -689,8 +690,8 @@ NOTE the use of the word vertical is misleading in the Guidelines for soil descr
                </section>
                <section name="isOriginalClassification"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_FAOHorizonNotationType_isOriginalClassification"
-                        id-global="global_attribute_INSPIRE_FAOHorizonNotationType_isOriginalClassification">
+                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_isOriginalClassification"
+                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_isOriginalClassification">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -721,12 +722,12 @@ NOTE the use of the word vertical is misleading in the Guidelines for soil descr
             </section>
             <section name="Other horizon notation type"
                      type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRE_OtherHorizonNotationType"
-                     id-global="global_class_INSPIRE_OtherHorizonNotationType">
+                     id="detail_class_INSPIRESoil_OtherHorizonNotationType"
+                     id-global="global_class_INSPIRESoil_OtherHorizonNotationType">
                <section name="horizonNotation"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_OtherHorizonNotationType_horizonNotation"
-                        id-global="global_attribute_INSPIRE_OtherHorizonNotationType_horizonNotation">
+                        id="detail_attribute_INSPIRESoil_OtherHorizonNotationType_horizonNotation"
+                        id-global="global_attribute_INSPIRESoil_OtherHorizonNotationType_horizonNotation">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -758,8 +759,8 @@ The notation in several classification systems can be the same as well: “Ap”
                </section>
                <section name="isOriginalClassification"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_OtherHorizonNotationType_isOriginalClassification"
-                        id-global="global_attribute_INSPIRE_OtherHorizonNotationType_isOriginalClassification">
+                        id="detail_attribute_INSPIRESoil_OtherHorizonNotationType_isOriginalClassification"
+                        id-global="global_attribute_INSPIRESoil_OtherHorizonNotationType_isOriginalClassification">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -790,12 +791,12 @@ The notation in several classification systems can be the same as well: “Ap”
             </section>
             <section name="Other soil name type"
                      type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRE_OtherSoilNameType"
-                     id-global="global_class_INSPIRE_OtherSoilNameType">
+                     id="detail_class_INSPIRESoil_OtherSoilNameType"
+                     id-global="global_class_INSPIRESoil_OtherSoilNameType">
                <section name="soilName"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_OtherSoilNameType_soilName"
-                        id-global="global_attribute_INSPIRE_OtherSoilNameType_soilName">
+                        id="detail_attribute_INSPIRESoil_OtherSoilNameType_soilName"
+                        id-global="global_attribute_INSPIRESoil_OtherSoilNameType_soilName">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -825,8 +826,8 @@ The notation in several classification systems can be the same as well: “Ap”
                </section>
                <section name="isOriginalClassification"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_OtherSoilNameType_isOriginalClassification"
-                        id-global="global_attribute_INSPIRE_OtherSoilNameType_isOriginalClassification">
+                        id="detail_attribute_INSPIRESoil_OtherSoilNameType_isOriginalClassification"
+                        id-global="global_attribute_INSPIRESoil_OtherSoilNameType_isOriginalClassification">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -857,12 +858,12 @@ The notation in several classification systems can be the same as well: “Ap”
             </section>
             <section name="Particle size fraction type"
                      type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRE_ParticleSizeFractionType"
-                     id-global="global_class_INSPIRE_ParticleSizeFractionType">
+                     id="detail_class_INSPIRESoil_ParticleSizeFractionType"
+                     id-global="global_class_INSPIRESoil_ParticleSizeFractionType">
                <section name="fractionContent"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_ParticleSizeFractionType_fractionContent"
-                        id-global="global_attribute_INSPIRE_ParticleSizeFractionType_fractionContent">
+                        id="detail_attribute_INSPIRESoil_ParticleSizeFractionType_fractionContent"
+                        id-global="global_attribute_INSPIRESoil_ParticleSizeFractionType_fractionContent">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -894,8 +895,8 @@ EXAMPLE percentage value (weight/weight)</item>
                </section>
                <section name="Range type"
                         type="DETAIL-COMPOSITE"
-                        id="detail_class_INSPIRE_RangeType"
-                        id-global="global_class_INSPIRE_RangeType">
+                        id="detail_class_INSPIRESoil_RangeType"
+                        id-global="global_class_INSPIRESoil_RangeType">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -916,11 +917,11 @@ EXAMPLE percentage value (weight/weight)</item>
                   </content>
                   <section name="upperValue"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_INSPIRE_RangeType_upperValue"
-                           id-global="global_attribute_INSPIRE_RangeType_upperValue">
+                           id="detail_attribute_INSPIRESoil_RangeType_upperValue"
+                           id-global="global_attribute_INSPIRESoil_RangeType_upperValue">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_INSPIRE_RangeType">Range type</item>
+                           <item type="global" idref="global_class_INSPIRESoil_RangeType">Range type</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -966,11 +967,11 @@ EXAMPLE percentage value (weight/weight)</item>
                   </section>
                   <section name="lowerValue"
                            type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_INSPIRE_RangeType_lowerValue"
-                           id-global="global_attribute_INSPIRE_RangeType_lowerValue">
+                           id="detail_attribute_INSPIRESoil_RangeType_lowerValue"
+                           id-global="global_attribute_INSPIRESoil_RangeType_lowerValue">
                      <content>
                         <part type="COMPOSER">
-                           <item type="global" idref="global_class_INSPIRE_RangeType">Range type</item>
+                           <item type="global" idref="global_class_INSPIRESoil_RangeType">Range type</item>
                         </part>
                         <part type="CFG-DOC-NAAM">
                            <item>Naam</item>
@@ -1018,12 +1019,12 @@ EXAMPLE percentage value (weight/weight)</item>
             </section>
             <section name="WRB qualifier group type"
                      type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRE_WRBQualifierGroupType"
-                     id-global="global_class_INSPIRE_WRBQualifierGroupType">
+                     id="detail_class_INSPIRESoil_WRBQualifierGroupType"
+                     id-global="global_class_INSPIRESoil_WRBQualifierGroupType">
                <section name="qualifierPlace"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_WRBQualifierGroupType_qualifierPlace"
-                        id-global="global_attribute_INSPIRE_WRBQualifierGroupType_qualifierPlace">
+                        id="detail_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPlace"
+                        id-global="global_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPlace">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1049,8 +1050,8 @@ EXAMPLE percentage value (weight/weight)</item>
                </section>
                <section name="qualifierPosition"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_WRBQualifierGroupType_qualifierPosition"
-                        id-global="global_attribute_INSPIRE_WRBQualifierGroupType_qualifierPosition">
+                        id="detail_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPosition"
+                        id-global="global_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPosition">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1081,8 +1082,8 @@ If there are one or more suffix qualifiers: one of the qualifiers is in position
                </section>
                <section name="WRBqualifier"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_WRBQualifierGroupType_wRBqualifier"
-                        id-global="global_attribute_INSPIRE_WRBQualifierGroupType_wRBqualifier">
+                        id="detail_attribute_INSPIRESoil_WRBQualifierGroupType_wRBqualifier"
+                        id-global="global_attribute_INSPIRESoil_WRBQualifierGroupType_wRBqualifier">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1112,8 +1113,8 @@ If there are one or more suffix qualifiers: one of the qualifiers is in position
                </section>
                <section name="WRBspecifier"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_WRBQualifierGroupType_wRBspecifier"
-                        id-global="global_attribute_INSPIRE_WRBQualifierGroupType_wRBspecifier">
+                        id="detail_attribute_INSPIRESoil_WRBQualifierGroupType_wRBspecifier"
+                        id-global="global_attribute_INSPIRESoil_WRBQualifierGroupType_wRBspecifier">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1148,12 +1149,12 @@ SOURCE World reference base for soil resources 2006, first update 2007, World So
             </section>
             <section name="WRB soil name type"
                      type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRE_WRBSoilNameType"
-                     id-global="global_class_INSPIRE_WRBSoilNameType">
+                     id="detail_class_INSPIRESoil_WRBSoilNameType"
+                     id-global="global_class_INSPIRESoil_WRBSoilNameType">
                <section name="WRBQualifierGroup"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_WRBSoilNameType_wRBQualifierGroup"
-                        id-global="global_attribute_INSPIRE_WRBSoilNameType_wRBQualifierGroup">
+                        id="detail_attribute_INSPIRESoil_WRBSoilNameType_wRBQualifierGroup"
+                        id-global="global_attribute_INSPIRESoil_WRBSoilNameType_wRBQualifierGroup">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1179,8 +1180,8 @@ SOURCE World reference base for soil resources 2006, first update 2007, World So
                </section>
                <section name="WRBReferenceSoilGroup"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_WRBSoilNameType_wRBReferenceSoilGroup"
-                        id-global="global_attribute_INSPIRE_WRBSoilNameType_wRBReferenceSoilGroup">
+                        id="detail_attribute_INSPIRESoil_WRBSoilNameType_wRBReferenceSoilGroup"
+                        id-global="global_attribute_INSPIRESoil_WRBSoilNameType_wRBReferenceSoilGroup">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1212,8 +1213,8 @@ SOURCE World reference base for soil resources 2006, first update 2007, World So
                </section>
                <section name="isOriginalClassification"
                         type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRE_WRBSoilNameType_isOriginalClassification"
-                        id-global="global_attribute_INSPIRE_WRBSoilNameType_isOriginalClassification">
+                        id="detail_attribute_INSPIRESoil_WRBSoilNameType_isOriginalClassification"
+                        id-global="global_attribute_INSPIRESoil_WRBSoilNameType_isOriginalClassification">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
@@ -1247,8 +1248,8 @@ SOURCE World reference base for soil resources 2006, first update 2007, World So
          <section type="DETAILS-CODELIST">
             <section name="FAO horizon master value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_FAOHorizonMasterValue"
-                     id-global="global_class_INSPIRE_FAOHorizonMasterValue"
+                     id="detail_class_INSPIRESoil_FAOHorizonMasterValue"
+                     id-global="global_class_INSPIRESoil_FAOHorizonMasterValue"
                      uuid="EAID_05D6F1BA_74E6_4e24_BE52_9F747366D7D7">
                <content>
                   <part>
@@ -1264,8 +1265,8 @@ SOURCE World reference base for soil resources 2006, first update 2007, World So
             </section>
             <section name="WRB qualifier place value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_WRBQualifierPlaceValue"
-                     id-global="global_class_INSPIRE_WRBQualifierPlaceValue"
+                     id="detail_class_INSPIRESoil_WRBQualifierPlaceValue"
+                     id-global="global_class_INSPIRESoil_WRBQualifierPlaceValue"
                      uuid="EAID_234DFA9B_8943_4af5_A108_4211459DC090">
                <content>
                   <part>
@@ -1282,8 +1283,8 @@ Nations, Rome, 2007.</item>
             </section>
             <section name="Event environment value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_EventEnvironmentValue"
-                     id-global="global_class_INSPIRE_EventEnvironmentValue"
+                     id="detail_class_INSPIRESoil_EventEnvironmentValue"
+                     id-global="global_class_INSPIRESoil_EventEnvironmentValue"
                      uuid="EAID_2A52D445_F9A0_450b_A085_F79C84BB8600">
                <content>
                   <part>
@@ -1299,8 +1300,8 @@ Nations, Rome, 2007.</item>
             </section>
             <section name="WRB specifiers"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_WRBSpecifiers"
-                     id-global="global_class_INSPIRE_WRBSpecifiers"
+                     id="detail_class_INSPIRESoil_WRBSpecifiers"
+                     id-global="global_class_INSPIRESoil_WRBSpecifiers"
                      uuid="EAID_5101B97A_0598_4a0a_BC81_E17A09169ADE">
                <content>
                   <part>
@@ -1316,8 +1317,8 @@ Nations, Rome, 2007.</item>
             </section>
             <section name="Layer type value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_LayerTypeValue"
-                     id-global="global_class_INSPIRE_LayerTypeValue"
+                     id="detail_class_INSPIRESoil_LayerTypeValue"
+                     id-global="global_class_INSPIRESoil_LayerTypeValue"
                      uuid="EAID_56A213F1_98A6_4f2c_A1C2_693C1896E475">
                <content>
                   <part>
@@ -1333,8 +1334,8 @@ Nations, Rome, 2007.</item>
             </section>
             <section name="Other horizon notation type value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_OtherHorizonNotationTypeValue"
-                     id-global="global_class_INSPIRE_OtherHorizonNotationTypeValue"
+                     id="detail_class_INSPIRESoil_OtherHorizonNotationTypeValue"
+                     id-global="global_class_INSPIRESoil_OtherHorizonNotationTypeValue"
                      uuid="EAID_6DE1B4D3_FDD2_4763_9938_65B7EE3D1FDC">
                <content>
                   <part>
@@ -1351,8 +1352,8 @@ The allowed values for this coded list comprise the values defined by data provi
             </section>
             <section name="Other soil name type value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_OtherSoilNameTypeValue"
-                     id-global="global_class_INSPIRE_OtherSoilNameTypeValue"
+                     id="detail_class_INSPIRESoil_OtherSoilNameTypeValue"
+                     id-global="global_class_INSPIRESoil_OtherSoilNameTypeValue"
                      uuid="EAID_7BE9C3DD_1DC8_4f6a_9E85_81A83D3FB1F0">
                <content>
                   <part>
@@ -1369,8 +1370,8 @@ The allowed values for this coded list comprise the values defined by data provi
             </section>
             <section name="FAO horizon subordinate value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_FAOHorizonSubordinateValue"
-                     id-global="global_class_INSPIRE_FAOHorizonSubordinateValue"
+                     id="detail_class_INSPIRESoil_FAOHorizonSubordinateValue"
+                     id-global="global_class_INSPIRESoil_FAOHorizonSubordinateValue"
                      uuid="EAID_835B8CBE_E9C0_4dd1_9903_BECC077ED72E">
                <content>
                   <part>
@@ -1387,8 +1388,8 @@ The allowed values for this code list comprise only the values specified in Guid
             </section>
             <section name="WRB reference soil group (RSG)"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_WRBReferenceSoilGroupRSG"
-                     id-global="global_class_INSPIRE_WRBReferenceSoilGroupRSG"
+                     id="detail_class_INSPIRESoil_WRBReferenceSoilGroupRSG"
+                     id-global="global_class_INSPIRESoil_WRBReferenceSoilGroupRSG"
                      uuid="EAID_8BD0BDE6_6133_4d52_AD2B_07683E06D421">
                <content>
                   <part>
@@ -1404,8 +1405,8 @@ The allowed values for this code list comprise only the values specified in Guid
             </section>
             <section name="Lithology value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_LithologyValue"
-                     id-global="global_class_INSPIRE_LithologyValue"
+                     id="detail_class_INSPIRESoil_LithologyValue"
+                     id-global="global_class_INSPIRESoil_LithologyValue"
                      uuid="EAID_A908DA67_6D7B_4add_B491_7F40827CF671">
                <content>
                   <part>
@@ -1421,8 +1422,8 @@ The allowed values for this code list comprise only the values specified in Guid
             </section>
             <section name="Layer genesis process state value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_LayerGenesisProcessStateValue"
-                     id-global="global_class_INSPIRE_LayerGenesisProcessStateValue"
+                     id="detail_class_INSPIRESoil_LayerGenesisProcessStateValue"
+                     id-global="global_class_INSPIRESoil_LayerGenesisProcessStateValue"
                      uuid="EAID_BEECDA65_14AF_43e7_8B98_DD6228F26F82">
                <content>
                   <part>
@@ -1438,8 +1439,8 @@ The allowed values for this code list comprise only the values specified in Guid
             </section>
             <section name="FAO prime value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_FAOPrimeValue"
-                     id-global="global_class_INSPIRE_FAOPrimeValue"
+                     id="detail_class_INSPIRESoil_FAOPrimeValue"
+                     id-global="global_class_INSPIRESoil_FAOPrimeValue"
                      uuid="EAID_BF016374_3234_4de8_897B_8A0BC543E562">
                <content>
                   <part>
@@ -1456,8 +1457,8 @@ The allowed values for this code list comprise only the values specified in Guid
             </section>
             <section name="Event process value"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_EventProcessValue"
-                     id-global="global_class_INSPIRE_EventProcessValue"
+                     id="detail_class_INSPIRESoil_EventProcessValue"
+                     id-global="global_class_INSPIRESoil_EventProcessValue"
                      uuid="EAID_C2F13817_F801_4e8a_80F9_B146D6F8D061">
                <content>
                   <part>
@@ -1473,8 +1474,8 @@ The allowed values for this code list comprise only the values specified in Guid
             </section>
             <section name="WRB qualifiers"
                      type="DETAIL-CODELIST"
-                     id="detail_class_INSPIRE_WRBQualifiers"
-                     id-global="global_class_INSPIRE_WRBQualifiers"
+                     id="detail_class_INSPIRESoil_WRBQualifiers"
+                     id-global="global_class_INSPIRESoil_WRBQualifiers"
                      uuid="EAID_CAAF6669_6C4D_43f8_94BB_92371C646D37">
                <content>
                   <part>
