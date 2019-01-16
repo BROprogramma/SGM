@@ -4,425 +4,8 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.50.1"
-      generator-date="2019-01-16T08:01:56Z">
-   <section type="DOMAIN" name="INSPIRE Soil" id="global_package_INSPIRESoil"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
-      <section type="OVERVIEW-STRUCTUREDDATATYPE">
-         <section name="FAO horizon notation type"
-                  type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRESoil_FAOHorizonNotationType"
-                  uuid="EAID_F54C7F1B_0582_4dd7_9E8E_398DE0DB6F15">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>FAO horizon notation type</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>A classification of a horizon according to the Horizon classification system specified in Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>A code system that denotes horizons in which the same dominant soil forming processes has been active similarly. This code summarizes many observations of the soil description and gives an impression about the genetic processes that have formed the soil under observation.
-NOTE The horizon notation according to FAO (2006) is a combination of several symbols:
-· A number that gives information about discontinuities, i.e. the number of the material in which the soil has formed, counted up from the soil surface, but not for the first material.
-· One or two capital letters that designate the type of master horizon (or transitional horizon), possibly separated by a slash
-· Lower case letters that designate subordinate characteristics of the horizon.
-· A number that designates horizontal subdivisions of otherwise similarly denoted horizon parts
-· A prime that enables to distinguish two horizons that have the same naming, but formed in different cycles of pedogenesis.
-EXAMPLE 2B' tg1
-SOURCE 1 Page 67 - 77 of the Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006. (ISBN 92-5-105521-1)</item>
-               </part>
-            </content>
-            <section type="SHORT-DATAELEMENTS">
-               <content>
-                  <itemtype/>
-                  <itemtype type="DATAELEMENT-NAME"/>
-                  <itemtype type="DATAELEMENT-DEFINITION"/>
-                  <itemtype type="DATAELEMENT-FORMAT"/>
-                  <itemtype type="DATAELEMENT-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonDiscontinuity">FAOHorizonDiscontinuity</item>
-                     </item>
-                     <item>number used to indicate a discontinuity in the horizon notation.</item>
-                     <item>
-                        <item type="global">Integer</item>
-                     </item>
-                     <item>0 .. 1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonMaster">FAOHorizonMaster</item>
-                     </item>
-                     <item>symbol of the master part of the horizon notation.</item>
-                     <item>
-                        <item type="global" idref="global_class_INSPIRESoil_FAOHorizonMasterValue">FAO horizon master value</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOPrime">FAOPrime</item>
-                     </item>
-                     <item>A prime and double prime may be used to connotate master horizon symbol of the lower of two respectively three horizons having identical Arabic-numeral prefixes and letter combinations.</item>
-                     <item>
-                        <item type="global" idref="global_class_INSPIRESoil_FAOPrimeValue">FAO prime value
-</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonSubordinate">FAOHorizonSubordinate</item>
-                     </item>
-                     <item>Designations of subordinate distinctions and features within the master horizons and layers are based on profile characteristics observable in the field and are applied during the description of the soil at the site.</item>
-                     <item>
-                        <item type="global"
-                              idref="global_class_INSPIRESoil_FAOHorizonSubordinateValue">FAO horizon subordinate value
-</item>
-                     </item>
-                     <item>0 .. *</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonVertical">FAOHorizonVertical</item>
-                     </item>
-                     <item>Order number of the vertical subdivision in the horizon notation.</item>
-                     <item>
-                        <item type="global">Integer</item>
-                     </item>
-                     <item>0 .. 1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_FAOHorizonNotationType_isOriginalClassification">isOriginalClassification</item>
-                     </item>
-                     <item>Boolean value to indicate whether the FAO horizon notation was the original notation to describe the horizon.</item>
-                     <item>
-                        <item type="global">Boolean</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-               </content>
-            </section>
-         </section>
-         <section name="Other horizon notation type"
-                  type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRESoil_OtherHorizonNotationType"
-                  uuid="EAID_88B6949D_16C9_496e_A88B_C017A4232B47">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Other horizon notation type</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>classification of a horizon according to a specific classification system.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>A code system denoting horizons in which the same dominant soil forming processes have been active in the same way. This code summarizes many observations of the soil description and gives an impression about the genetic processes that have formed the soil under observation.</item>
-               </part>
-            </content>
-            <section type="SHORT-DATAELEMENTS">
-               <content>
-                  <itemtype/>
-                  <itemtype type="DATAELEMENT-NAME"/>
-                  <itemtype type="DATAELEMENT-DEFINITION"/>
-                  <itemtype type="DATAELEMENT-FORMAT"/>
-                  <itemtype type="DATAELEMENT-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_OtherHorizonNotationType_horizonNotation">horizonNotation</item>
-                     </item>
-                     <item>notation characterizing the soil horizon according to a specified classification system.</item>
-                     <item>
-                        <item type="global"
-                              idref="global_class_INSPIRESoil_OtherHorizonNotationTypeValue">Other horizon notation type value</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_OtherHorizonNotationType_isOriginalClassification">isOriginalClassification</item>
-                     </item>
-                     <item>Boolean value to indicate whether the specified horizon notation system was the original notation system to describe the horizon.</item>
-                     <item>
-                        <item type="global">Boolean</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-               </content>
-            </section>
-         </section>
-         <section name="Other soil name type"
-                  type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRESoil_OtherSoilNameType"
-                  uuid="EAID_89D28DE8_A62A_4579_9182_5A4F5739E969">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Other soil name type</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>an identification of the soil profile according to a specific classification scheme.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>EXAMPLE Fluventic Haploxerept, according to Soil Taxonomy (USDA 2006).</item>
-               </part>
-            </content>
-            <section type="SHORT-DATAELEMENTS">
-               <content>
-                  <itemtype/>
-                  <itemtype type="DATAELEMENT-NAME"/>
-                  <itemtype type="DATAELEMENT-DEFINITION"/>
-                  <itemtype type="DATAELEMENT-FORMAT"/>
-                  <itemtype type="DATAELEMENT-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_OtherSoilNameType_soilName">soilName</item>
-                     </item>
-                     <item>name of the soil profile according to a specific classification scheme.</item>
-                     <item>
-                        <item type="global" idref="global_class_INSPIRESoil_OtherSoilNameTypeValue">Other soil name type value</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_OtherSoilNameType_isOriginalClassification">isOriginalClassification</item>
-                     </item>
-                     <item>Boolean value to indicate whether the specified classification scheme was the original classification scheme to describe the profile.</item>
-                     <item>
-                        <item type="global">Boolean</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-               </content>
-            </section>
-         </section>
-         <section name="Particle size fraction type"
-                  type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRESoil_ParticleSizeFractionType"
-                  uuid="EAID_5125CF99_72BB_4d09_9B57_A48C1810F15E">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>Particle size fraction type</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>share of the soil that is composed of mineral soil particles of the size within the size range specified.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>Mineral part of the soil, fractioned on the basis of size (diameter), limits of the particles. It is the fine earth fraction. That is, the portion of the soil that passes through a 2 mm diameter sieve opening.
-The grain (or particle) size distribution characterizes the soil mineral material, based on the share of each equivalent diameter class of the individual particles.
-SOURCE1 NRCS Natural Resources Conservation Service, Soil survey laboratory information manual, Soil survey investigation report n.45 version 1.0 May 1995 pag. 11
-SOURCE2 GLOSSARY OF SOIL SCIENCE TERMS</item>
-               </part>
-            </content>
-            <section type="SHORT-DATAELEMENTS">
-               <content>
-                  <itemtype/>
-                  <itemtype type="DATAELEMENT-NAME"/>
-                  <itemtype type="DATAELEMENT-DEFINITION"/>
-                  <itemtype type="DATAELEMENT-FORMAT"/>
-                  <itemtype type="DATAELEMENT-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_ParticleSizeFractionType_fractionContent">fractionContent</item>
-                     </item>
-                     <item>Percentage of the defined fraction.</item>
-                     <item>
-                        <item type="global">REAL</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_ParticleSizeFractionType_fractionParticleSizeRange">fractionParticleSizeRange</item>
-                     </item>
-                     <item>upper and lower limit of the particle size of the defined fraction (expressed in µm)</item>
-                     <item>
-                        <item type="global" idref="global_class_INSPIRESoil_RangeType">Range type</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-               </content>
-            </section>
-         </section>
-         <section name="WRB qualifier group type"
-                  type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRESoil_WRBQualifierGroupType"
-                  uuid="EAID_C0001766_987B_4f5f_8C4C_274C1E0C17CF">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>WRB qualifier group type</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>A data type to define the group of a qualifier and its possible specifier(s), its place and position with regard to the World Reference Base (WRB) Reference Soil Group (RSG) it belongs to according to World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.</item>
-               </part>
-            </content>
-            <section type="SHORT-DATAELEMENTS">
-               <content>
-                  <itemtype/>
-                  <itemtype type="DATAELEMENT-NAME"/>
-                  <itemtype type="DATAELEMENT-DEFINITION"/>
-                  <itemtype type="DATAELEMENT-FORMAT"/>
-                  <itemtype type="DATAELEMENT-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPlace">qualifierPlace</item>
-                     </item>
-                     <item>attribute to indicate the placement of the Qualifier with regard to the WRB reference soil group (RSG). The placement can be in front of the RSG i.e. 'prefix' or it can be behind the RSG i.e. 'suffix'.</item>
-                     <item>
-                        <item type="global" idref="global_class_INSPIRESoil_WRBQualifierPlaceValue">WRB qualifier place value</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPosition">qualifierPosition</item>
-                     </item>
-                     <item>number to indicate the position of a qualifier with regard to the WRB reference soil group (RSG) it belongs to and with regard to its placement to that (RSG) i.e. as a prefix or a suffix.</item>
-                     <item>
-                        <item type="global">Integer</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_WRBQualifierGroupType_wRBqualifier">WRBqualifier</item>
-                     </item>
-                     <item>name element of WRB, 2nd level of classification</item>
-                     <item>
-                        <item type="global" idref="global_class_INSPIRESoil_WRBQualifiers">WRB qualifiers</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_WRBQualifierGroupType_wRBspecifier">WRBspecifier</item>
-                     </item>
-                     <item>code that indicates the degree of expression of a qualifier or the depth range of which the qualifier applies.</item>
-                     <item>
-                        <item type="global" idref="global_class_INSPIRESoil_WRBSpecifiers">WRB specifiers</item>
-                     </item>
-                     <item>0 .. 2</item>
-                  </part>
-               </content>
-            </section>
-         </section>
-         <section name="WRB soil name type"
-                  type="STRUCTUREDDATATYPE"
-                  id="global_class_INSPIRESoil_WRBSoilNameType"
-                  uuid="EAID_3E881747_D033_40f8_AF83_C24DEF0D0DF8">
-            <content>
-               <part type="CFG-DOC-NAAM">
-                  <item>Naam</item>
-                  <item>WRB soil name type</item>
-               </part>
-               <part type="CFG-DOC-HERKOMST">
-                  <item>Herkomst</item>
-                  <item>BRO</item>
-               </part>
-               <part type="CFG-DOC-DEFINITIE">
-                  <item>Definitie</item>
-                  <item>an identification of the soil profile according to the profile to according to “World Reference Base for Soil Resources 2006, first update 2007”, World Soil Resources Reports No. 103. FAO, Rome.</item>
-               </part>
-               <part type="CFG-DOC-TOELICHTING">
-                  <item>Toelichting</item>
-                  <item>NOTE The structure of the WRBSoilNameType was based on the World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United
-Nations, Rome, 2007.
-EXAMPLE Lixic Vertic Ferralsol (Ferric, Rhodic), WRB 2006, update 2007.</item>
-               </part>
-            </content>
-            <section type="SHORT-DATAELEMENTS">
-               <content>
-                  <itemtype/>
-                  <itemtype type="DATAELEMENT-NAME"/>
-                  <itemtype type="DATAELEMENT-DEFINITION"/>
-                  <itemtype type="DATAELEMENT-FORMAT"/>
-                  <itemtype type="DATAELEMENT-CARD"/>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_WRBSoilNameType_wRBQualifierGroup">WRBQualifierGroup</item>
-                     </item>
-                     <item>data type to define the a group of a qualifier and its possible specifier(s), its place and position with regard to the WRBReferenceSoilGroup it belongs to.</item>
-                     <item>
-                        <item type="global" idref="global_class_INSPIRESoil_WRBQualifierGroupType">WRB qualifier group type</item>
-                     </item>
-                     <item>0 .. *</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_WRBSoilNameType_wRBReferenceSoilGroup">WRBReferenceSoilGroup</item>
-                     </item>
-                     <item>first level of classification of the World Reference Base for Soil Resources.</item>
-                     <item>
-                        <item type="global" idref="global_class_INSPIRESoil_WRBReferenceSoilGroupRSG">WRB reference soil group (RSG)</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-                  <part>
-                     <item>
-                        <item type="detail"
-                              idref="detail_attribute_INSPIRESoil_WRBSoilNameType_isOriginalClassification">isOriginalClassification</item>
-                     </item>
-                     <item>Boolean value to indicate whether the WRB classification system was the original classification system to describe the soil profile.</item>
-                     <item>
-                        <item type="global">Boolean</item>
-                     </item>
-                     <item>1</item>
-                  </part>
-               </content>
-            </section>
-         </section>
-      </section>
-      <!--removed empty content-->
+      generator-date="2019-01-16T08:43:13Z">
+   <section type="DOMAIN" name="INSPIRE Soil" id="global_package_INSPIRESoil"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
       <section type="OVERVIEW-CODELIST">
          <content>
             <part>
@@ -517,734 +100,7 @@ The allowed values for this code list comprise only the values specified in Guid
          </content>
       </section>
       <!--removed empty content-->
-      <section type="DETAILS"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
-         <section type="DETAILS-STRUCTUREDDATATYPE">
-            <section name="FAO horizon notation type"
-                     type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRESoil_FAOHorizonNotationType"
-                     id-global="global_class_INSPIRESoil_FAOHorizonNotationType">
-               <section name="FAOHorizonDiscontinuity"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonDiscontinuity"
-                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonDiscontinuity">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>FAOHorizonDiscontinuity</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>number used to indicate a discontinuity in the horizon notation.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>In mineral soils, Arabic numerals are used as prefixes to indicate discontinuities. Wherever needed, they are used preceding A, E, B, C and R. They are not used with I and W, although these symbols clearly indicate a discontinuity. These prefixes are distinct from Arabic numerals used as suffixes to denote vertical subdivisions.
-A discontinuity is a significant change in particle-size distribution or mineralogy that indicates a difference in the material from which the horizons formed or a significant difference in age or both, unless that difference in age is indicated by the suffix b. Symbols to identify discontinuities are used only when they will contribute substantially to the reader’s understanding of relationships among horizons. The stratification common in soils formed in alluvium is not designated as discontinuities unless particle-size distribution differs markedly from layer to layer even though genetic horizons have formed in the contrasting layers.
-Where a soil has formed entirely in one kind of material, a prefix is omitted from the symbol; the whole profile is material 1. Similarly, the uppermost material in a profile having two or more contrasting materials is understood to be material 1, but the number is omitted. Numbering starts with the second layer of contrasting material, which is designated 2. Underlying contrasting layers are numbered consecutively.
-SOURCE: Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006.
-NOTE a discontinuity is a boundary between two geogenic layers.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>0 .. 1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Integer</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="FAOHorizonMaster"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonMaster"
-                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonMaster">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>FAOHorizonMaster</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>symbol of the master part of the horizon notation.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>SOURCE Guidelines for soil description (4th ed.) FAO 2006 p. 67</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>FAO horizon master value</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="FAOPrime"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOPrime"
-                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOPrime">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>FAOPrime</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>A prime and double prime may be used to connotate master horizon symbol of the lower of two respectively three horizons having identical Arabic-numeral prefixes and letter combinations.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Identical designations may be appropriate for two or more horizons or layers separated by at least one horizon or layer of a different kind in the same pedon. The sequence A-E-Bt-E-Btx-C is an example - the soil has two E horizons. To make communication easier, a prime is used with the master horizon symbol of the lower of two horizons having identical letter designations: A-E-Bt-E’-Btx-C.The prime is applied to the capital letter designation, and any lower case symbol follows it: B’t. The prime is not used unless all letters of the designations of two different layers are identical. Prime can be used for both minerals or organic soils.
-SOURCE: Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>FAO prime value
-</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="FAOHorizonSubordinate"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonSubordinate"
-                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonSubordinate">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>FAOHorizonSubordinate</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Designations of subordinate distinctions and features within the master horizons and layers are based on profile characteristics observable in the field and are applied during the description of the soil at the site.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Lower case letters are used as suffixes to designate specific kinds of master horizons and layers, and other features.
-SOURCE Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006. table 85</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>0 .. *</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>FAO horizon subordinate value
-</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="FAOHorizonVertical"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonVertical"
-                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_fAOHorizonVertical">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>FAOHorizonVertical</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Order number of the vertical subdivision in the horizon notation.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>The number is used to designate the horizontal subdivision of a horizon identified by a single set of letter symbol on the basis of structure, texture, colour, etc.
-The number 1 is used to designate the upper part of the horizon. The number 2 the part of the horizon situated below, etc. If there is no horizontal subdivision made, no number is given.
-NOTE the use of the word vertical is misleading in the Guidelines for soil description, 4th edition, Food and Agriculture Organization of the United Nations, Rome, 2006., because the horizons are separated in two or several horizontal subdomains. Vertical denotes the order in vertical direction.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>0 .. 1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Integer</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="isOriginalClassification"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_FAOHorizonNotationType_isOriginalClassification"
-                        id-global="global_attribute_INSPIRESoil_FAOHorizonNotationType_isOriginalClassification">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>isOriginalClassification</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Boolean value to indicate whether the FAO horizon notation was the original notation to describe the horizon.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>This is to indicate whether the horizon notation has been determined in the field (or for derived profiles during the original derivation), or has been adapted, changed or assigned on the basis of the original horizon description later. This might be relevant data quality information.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Boolean</item>
-                     </part>
-                  </content>
-               </section>
-            </section>
-            <section name="Other horizon notation type"
-                     type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRESoil_OtherHorizonNotationType"
-                     id-global="global_class_INSPIRESoil_OtherHorizonNotationType">
-               <section name="horizonNotation"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_OtherHorizonNotationType_horizonNotation"
-                        id-global="global_attribute_INSPIRESoil_OtherHorizonNotationType_horizonNotation">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>horizonNotation</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>notation characterizing the soil horizon according to a specified classification system.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>NOTE This is also called horizon designation value, horizon designation or horizon symbol.
-EXAMPLE “ss” connotes slickensides in Soil taxonomy (FAO uses “I” for this).
-The notation in several classification systems can be the same as well: “Ap” is a A horizon which has been ploughed (according German Bodenkundliche Kartieranleitung, 5th ed).</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Other horizon notation type value</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="isOriginalClassification"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_OtherHorizonNotationType_isOriginalClassification"
-                        id-global="global_attribute_INSPIRESoil_OtherHorizonNotationType_isOriginalClassification">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>isOriginalClassification</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Boolean value to indicate whether the specified horizon notation system was the original notation system to describe the horizon.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>This is to indicate whether the horizon notation has been determined in the field (or for derived soil profiles during the original derivation), or has been adapted, changed or assigned on the basis of the original horizon description later. This might be relevant for data quality information.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Boolean</item>
-                     </part>
-                  </content>
-               </section>
-            </section>
-            <section name="Other soil name type"
-                     type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRESoil_OtherSoilNameType"
-                     id-global="global_class_INSPIRESoil_OtherSoilNameType">
-               <section name="soilName"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_OtherSoilNameType_soilName"
-                        id-global="global_attribute_INSPIRESoil_OtherSoilNameType_soilName">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>soilName</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>name of the soil profile according to a specific classification scheme.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>EXAMPLE Fluventic Haploxerept, according to Soil Taxonomy (USDA 2006).</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Other soil name type value</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="isOriginalClassification"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_OtherSoilNameType_isOriginalClassification"
-                        id-global="global_attribute_INSPIRESoil_OtherSoilNameType_isOriginalClassification">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>isOriginalClassification</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Boolean value to indicate whether the specified classification scheme was the original classification scheme to describe the profile.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>This is to indicate whether the soil assignation has been determined in the field (or for - derived soil profiles during the original derivation process), or has been adapted, changed or re-assigned on the basis of the original soil description or assignation later. This might be relevant for data quality information.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Boolean</item>
-                     </part>
-                  </content>
-               </section>
-            </section>
-            <section name="Particle size fraction type"
-                     type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRESoil_ParticleSizeFractionType"
-                     id-global="global_class_INSPIRESoil_ParticleSizeFractionType">
-               <section name="fractionContent"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_ParticleSizeFractionType_fractionContent"
-                        id-global="global_attribute_INSPIRESoil_ParticleSizeFractionType_fractionContent">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>fractionContent</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Percentage of the defined fraction.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>SOURCE NRCS Natural Resources Conservation Service, Soil survey laboratory information manual, Soil survey investigation report n.45 version 1.0 May 1995 pag. 11
-NOTE sum of the percentages of all the fractions should be equal to 100 percentage
-EXAMPLE percentage value (weight/weight)</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>REAL</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="Range type"
-                        type="DETAIL-COMPOSITE"
-                        id="detail_class_INSPIRESoil_RangeType"
-                        id-global="global_class_INSPIRESoil_RangeType">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>Range type</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>A range value defined by an upper limit and a lower limit.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                  </content>
-                  <section name="upperValue"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_INSPIRESoil_RangeType_upperValue"
-                           id-global="global_attribute_INSPIRESoil_RangeType_upperValue">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global" idref="global_class_INSPIRESoil_RangeType">Range type</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>upperValue</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>value defining the upper limit of a specific property.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>0 .. 1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Authentiek</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>Measure</item>
-                        </part>
-                     </content>
-                  </section>
-                  <section name="lowerValue"
-                           type="DETAIL-COMPOSITE-ATTRIBUTE"
-                           id="detail_attribute_INSPIRESoil_RangeType_lowerValue"
-                           id-global="global_attribute_INSPIRESoil_RangeType_lowerValue">
-                     <content>
-                        <part type="COMPOSER">
-                           <item type="global" idref="global_class_INSPIRESoil_RangeType">Range type</item>
-                        </part>
-                        <part type="CFG-DOC-NAAM">
-                           <item>Naam</item>
-                           <item>lowerValue</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMST">
-                           <item>Herkomst</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-DEFINITIE">
-                           <item>Definitie</item>
-                           <item>value defining the lower limit of a specific property.</item>
-                        </part>
-                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                           <item>Herkomst definitie</item>
-                           <item>BRO</item>
-                        </part>
-                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                           <item>Mogelijk geen waarde</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                           <item>Indicatie materiële historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                           <item>Indicatie formele historie</item>
-                           <item>Nee</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                           <item>Indicatie kardinaliteit</item>
-                           <item>0 .. 1</item>
-                        </part>
-                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                           <item>Indicatie authentiek</item>
-                           <item>Authentiek</item>
-                        </part>
-                        <part type="CFG-DOC-FORMAAT">
-                           <item>Formaat</item>
-                           <item>Measure</item>
-                        </part>
-                     </content>
-                  </section>
-               </section>
-            </section>
-            <section name="WRB qualifier group type"
-                     type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRESoil_WRBQualifierGroupType"
-                     id-global="global_class_INSPIRESoil_WRBQualifierGroupType">
-               <section name="qualifierPlace"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPlace"
-                        id-global="global_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPlace">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>qualifierPlace</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>attribute to indicate the placement of the Qualifier with regard to the WRB reference soil group (RSG). The placement can be in front of the RSG i.e. 'prefix' or it can be behind the RSG i.e. 'suffix'.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>WRB qualifier place value</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="qualifierPosition"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPosition"
-                        id-global="global_attribute_INSPIRESoil_WRBQualifierGroupType_qualifierPosition">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>qualifierPosition</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>number to indicate the position of a qualifier with regard to the WRB reference soil group (RSG) it belongs to and with regard to its placement to that (RSG) i.e. as a prefix or a suffix.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>If there are one or more prefix qualifiers: one of the qualifiers is in position 1, the other qualifiers are in position 2, 3, etc.; position 1 is the position closest to the RSG; position 2 is the position second closest to the RSG; etc
-If there are one or more suffix qualifiers: one of the qualifiers is in position 1, the other qualifiers are in position 2, 3, etc.; position 1 is the position closest to the RSG; position 2 is the position second closest to the RSG; etc</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Integer</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="WRBqualifier"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_WRBQualifierGroupType_wRBqualifier"
-                        id-global="global_attribute_INSPIRESoil_WRBQualifierGroupType_wRBqualifier">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>WRBqualifier</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>name element of WRB, 2nd level of classification</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>SOURCE World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>WRB qualifiers</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="WRBspecifier"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_WRBQualifierGroupType_wRBspecifier"
-                        id-global="global_attribute_INSPIRESoil_WRBQualifierGroupType_wRBspecifier">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>WRBspecifier</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>code that indicates the degree of expression of a qualifier or the depth range of which the qualifier applies.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Specifiers may be used to indicate depth of occurrence, or to express the intensity of soil characteristics.
-EXAMPLE Buried layers can be indicated by the specifier “Thapto”.
-NOTE 1 The specifier code is always added after the qualifier code. Exceptions are defined in the qualifier list of WRB.
-NOTE 2 Some specifiers can be combined with each other for one qualifier.
-SOURCE World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>0 .. 2</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>WRB specifiers</item>
-                     </part>
-                  </content>
-               </section>
-            </section>
-            <section name="WRB soil name type"
-                     type="GESTRUCTUREERD DATATYPE"
-                     id="detail_class_INSPIRESoil_WRBSoilNameType"
-                     id-global="global_class_INSPIRESoil_WRBSoilNameType">
-               <section name="WRBQualifierGroup"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_WRBSoilNameType_wRBQualifierGroup"
-                        id-global="global_attribute_INSPIRESoil_WRBSoilNameType_wRBQualifierGroup">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>WRBQualifierGroup</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>data type to define the a group of a qualifier and its possible specifier(s), its place and position with regard to the WRBReferenceSoilGroup it belongs to.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>0 .. *</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>WRB qualifier group type</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="WRBReferenceSoilGroup"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_WRBSoilNameType_wRBReferenceSoilGroup"
-                        id-global="global_attribute_INSPIRESoil_WRBSoilNameType_wRBReferenceSoilGroup">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>WRBReferenceSoilGroup</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>first level of classification of the World Reference Base for Soil Resources.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>Reference Soil Groups are distinguished by the presence (or absence) of specific diagnostic horizons, properties and/or materials.
-NOTE The WRB soil classification system comprises 32 different RSGs.
-SOURCE World reference base for soil resources 2006, first update 2007, World Soil Resources Reports No. 103, Food and Agriculture Organization of the United Nations, Rome, 2007.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>WRB reference soil group (RSG)</item>
-                     </part>
-                  </content>
-               </section>
-               <section name="isOriginalClassification"
-                        type="DETAIL-DATAELEMENT"
-                        id="detail_attribute_INSPIRESoil_WRBSoilNameType_isOriginalClassification"
-                        id-global="global_attribute_INSPIRESoil_WRBSoilNameType_isOriginalClassification">
-                  <content>
-                     <part type="CFG-DOC-NAAM">
-                        <item>Naam</item>
-                        <item>isOriginalClassification</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Boolean value to indicate whether the WRB classification system was the original classification system to describe the soil profile.</item>
-                     </part>
-                     <part type="CFG-DOC-TOELICHTING">
-                        <item>Toelichting</item>
-                        <item>This is to indicate whether the soil assignation according to WRB has been determined in the field (or for - derived - profiles during the original derivation process), or has been adapted, changed or re-assigned on the basis of the original soil description or assignation later. This might be relevant data quality information.</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>1</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>Boolean</item>
-                     </part>
-                  </content>
-               </section>
-            </section>
-         </section>
-         <!--removed empty content-->
+      <section type="DETAILS"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
          <section type="DETAILS-CODELIST">
             <section name="FAO horizon master value"
                      type="DETAIL-CODELIST"
@@ -2935,7 +1791,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
                <part type="CFG-DOC-DEFINITIE">
                   <item>Definitie</item>
-                  <item>TODO</item>
+                  <item>Abstract objecttype voor een begrensd gebied als onderdeel van de bodemkaart.</item>
                </part>
                <part type="CFG-DOC-HERKOMSTDEFINITIE">
                   <item>Herkomst definitie</item>
@@ -2975,13 +1831,12 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                         </item>
                         <item>[ 1 ]</item>
                         <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdBodemvlak">bestaat uit: gerelateerdBodemvlak</item>
+                           <item type="detail" idref="detail_association_Model_Bodemkaart_kaartvlak">bestaat uit: kaartvlak</item>
                         </item>
                         <item>Kaartvlak</item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item>Een Bodemvlakcollectie bestaat uit een of meer bodemvlakken.</item>
+                     <item/>
                   </part>
                </content>
                <content approach="target">
@@ -2995,13 +1850,12 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                         </item>
                         <item>[ 1 ]</item>
                         <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdBodemvlak">bestaat uit: gerelateerdBodemvlak</item>
+                           <item type="detail" idref="detail_association_Model_Bodemkaart_kaartvlak">bestaat uit: kaartvlak</item>
                         </item>
                         <item>Kaartvlak</item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item>De unieke aanduiding van elk Bodemvlak waar de Bodemvlakcollectie uit bestaat.</item>
+                     <item>Een begrensd gebied als onderdeel van de bodemkaart.</item>
                   </part>
                </content>
             </section>
@@ -3092,15 +1946,14 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                         <item>Bodemkaart</item>
                         <item>[ 1 ]</item>
                         <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdBodemvlak">bestaat uit: gerelateerdBodemvlak</item>
+                           <item type="detail" idref="detail_association_Model_Bodemkaart_kaartvlak">bestaat uit: kaartvlak</item>
                         </item>
                         <item>
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item>Een Bodemvlakcollectie bestaat uit een of meer bodemvlakken.</item>
+                     <item/>
                   </part>
                </content>
                <content approach="target">
@@ -3122,15 +1975,14 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                         <item>Bodemkaart</item>
                         <item>[ 1 ]</item>
                         <item>
-                           <item type="detail"
-                                 idref="detail_association_Model_Bodemkaart_gerelateerdBodemvlak">bestaat uit: gerelateerdBodemvlak</item>
+                           <item type="detail" idref="detail_association_Model_Bodemkaart_kaartvlak">bestaat uit: kaartvlak</item>
                         </item>
                         <item>
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                         <item>[ 1 .. * ]</item>
                      </item>
-                     <item>De unieke aanduiding van elk Bodemvlak waar de Bodemvlakcollectie uit bestaat.</item>
+                     <item>Een begrensd gebied als onderdeel van de bodemkaart.</item>
                   </part>
                </content>
             </section>
@@ -3266,7 +2118,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                      </item>
-                     <item>TODO</item>
+                     <item>Abstract objecttype voor een begrensd gebied als onderdeel van de bodemkaart.</item>
                   </part>
                </content>
                <content approach="target">
@@ -3281,7 +2133,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                      </item>
-                     <item>TODO</item>
+                     <item>Abstract objecttype voor een begrensd gebied als onderdeel van de bodemkaart.</item>
                   </part>
                </content>
             </section>
@@ -3341,7 +2193,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                      </item>
-                     <item>TODO</item>
+                     <item>Abstract objecttype voor een begrensd gebied als onderdeel van de bodemkaart.</item>
                   </part>
                </content>
                <content approach="target">
@@ -3356,7 +2208,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                            <item type="global" idref="global_class_Model_Kaartvlak">Kaartvlak</item>
                         </item>
                      </item>
-                     <item>TODO</item>
+                     <item>Abstract objecttype voor een begrensd gebied als onderdeel van de bodemkaart.</item>
                   </part>
                </content>
             </section>
@@ -3627,40 +2479,16 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </section>
                <section name="bestaat uit"
                         type="DETAIL-ASSOCIATION"
-                        id="detail_association_Model_Bodemkaart_gerelateerdBodemvlak"
-                        id-global="global_association_Model_Bodemkaart_gerelateerdBodemvlak">
+                        id="detail_association_Model_Bodemkaart_kaartvlak"
+                        id-global="global_association_Model_Bodemkaart_kaartvlak">
                   <content approach="association">
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
                         <item>bestaat uit</item>
                      </part>
-                     <part type="CFG-DOC-HERKOMST">
-                        <item>Herkomst</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-DEFINITIE">
-                        <item>Definitie</item>
-                        <item>Een Bodemvlakcollectie bestaat uit een of meer bodemvlakken.</item>
-                     </part>
-                     <part type="CFG-DOC-HERKOMSTDEFINITIE">
-                        <item>Herkomst definitie</item>
-                        <item>BRO</item>
-                     </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Ja</item>
-                     </part>
                      <part type="CFG-DOC-INDICATIEKARDINALITEIT">
                         <item>Indicatie kardinaliteit</item>
                         <item>1 .. *</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
                      </part>
                      <part type="CFG-DOC-GERELATEERDOBJECTTYPE">
                         <item>Gerelateerd objecttype</item>
@@ -3676,7 +2504,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>De unieke aanduiding van elk Bodemvlak waar de Bodemvlakcollectie uit bestaat.</item>
+                        <item>Een begrensd gebied als onderdeel van de bodemkaart.</item>
                      </part>
                      <part type="CFG-DOC-MOGELIJKGEENWAARDE">
                         <item>Mogelijk geen waarde</item>
