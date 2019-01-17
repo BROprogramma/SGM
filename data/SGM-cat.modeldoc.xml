@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.50.1"
-      generator-date="2019-01-17T10:40:31Z">
+      generator-date="2019-01-17T12:05:13Z">
    <section type="DOMAIN"
             name="ISO 19115:2006 Metadata (Corrigendum)"
             id="global_package_ISO191152006MetadataCorrigendum"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
@@ -2078,14 +2078,14 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                      </part>
                   </content>
                </section>
-               <section name="citation"
-                        type="DETAIL-ATTRIBUTE"
-                        id="detail_attribute_Model_Bodemkaart_citation"
-                        id-global="global_attribute_Model_Bodemkaart_citation">
+               <section name="CI_Citation"
+                        type="DETAIL-COMPOSITE"
+                        id="detail_class_ISO191152006MetadataCorrigendum_CI_Citation"
+                        id-global="global_class_ISO191152006MetadataCorrigendum_CI_Citation">
                   <content>
                      <part type="CFG-DOC-NAAM">
                         <item>Naam</item>
-                        <item>citation</item>
+                        <item>CI_Citation</item>
                      </part>
                      <part type="CFG-DOC-HERKOMST">
                         <item>Herkomst</item>
@@ -2093,45 +2093,2010 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                      </part>
                      <part type="CFG-DOC-DEFINITIE">
                         <item>Definitie</item>
-                        <item>CI_Citation wordt gebruikt voor het verschaffen van informatie over een publicatie (wetenschappelijk, handleiding, ...) of citeerbare informatie te verschaffen over een bron (gegevensverzameling, dienst, ...).</item>
+                        <item>Standardized resource reference</item>
                      </part>
                      <part type="CFG-DOC-HERKOMSTDEFINITIE">
                         <item>Herkomst definitie</item>
                         <item>BRO</item>
                      </part>
-                     <part type="CFG-DOC-MOGELIJKGEENWAARDE">
-                        <item>Mogelijk geen waarde</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
-                        <item>Indicatie materiële historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
-                        <item>Indicatie formele historie</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEKARDINALITEIT">
-                        <item>Indicatie kardinaliteit</item>
-                        <item>0 .. *</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAUTHENTIEK">
-                        <item>Indicatie authentiek</item>
-                        <item>Authentiek</item>
-                     </part>
-                     <part type="CFG-DOC-FORMAAT">
-                        <item>Formaat</item>
-                        <item>CI_Citation</item>
-                     </part>
-                     <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
-                        <item>Indicatie afleidbaar</item>
-                        <item>Nee</item>
-                     </part>
-                     <part type="CFG-DOC-UNITOFMEASURE">
-                        <item>Meeteenheid</item>
-                        <item>BRO</item>
-                     </part>
                   </content>
+                  <section name="title"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Citation_title"
+                           id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Citation_title">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global"
+                                 idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>title</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Name by which the cited information is known</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>CHARACTERSTRING</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="alternateTitle"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Citation_alternateTitle"
+                           id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Citation_alternateTitle">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global"
+                                 idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>alternateTitle</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Short name or other language name by which the cited information is known.
+-Example: "Digital Chart of the World" or "DCW"</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. *</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>CHARACTERSTRING</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="CI_Date"
+                           type="DETAIL-COMPOSITE"
+                           id="detail_class_ISO191152006MetadataCorrigendum_CI_Date"
+                           id-global="global_class_ISO191152006MetadataCorrigendum_CI_Date">
+                     <content>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>CI_Date</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>TODO</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                     </content>
+                     <section name="date"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Date_date"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Date_date">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_CI_Date">CI_Date</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>date</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>TODO</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>Datum</item>
+                           </part>
+                        </content>
+                     </section>
+                     <section name="dateType"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Date_dateType"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Date_dateType">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_CI_Date">CI_Date</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>dateType</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>TODO</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CI_DateTypeCode</item>
+                           </part>
+                        </content>
+                     </section>
+                  </section>
+                  <section name="edition"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Citation_edition"
+                           id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Citation_edition">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global"
+                                 idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>edition</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Version of the dataset</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. 1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>CHARACTERSTRING</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="editionDate"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Citation_editionDate"
+                           id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Citation_editionDate">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global"
+                                 idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>editionDate</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Date of the edition</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. 1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>Datum</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="MD_Identifier"
+                           type="DETAIL-COMPOSITE"
+                           id="detail_class_ISO191152006MetadataCorrigendum_MD_Identifier"
+                           id-global="global_class_ISO191152006MetadataCorrigendum_MD_Identifier">
+                     <content>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>MD_Identifier</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>TODO</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                     </content>
+                     <section name="authority"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_MD_Identifier_authority"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_MD_Identifier_authority">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_MD_Identifier">MD_Identifier</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>authority</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>Organization or party responsible for definition and maintenance of the code space or code.</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-TOELICHTING">
+                              <item>Toelichting</item>
+                              <item>Eigenlijk moet het datatype een CI_Citation zijn, maar dit leidt (momenteel) bij Imvertor tot een infinite recursion error, en het stereotype MIM-BRO::Gegevensgroep.</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>0 .. 1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CHARACTERSTRING</item>
+                           </part>
+                        </content>
+                     </section>
+                     <section name="code"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_MD_Identifier_code"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_MD_Identifier_code">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_MD_Identifier">MD_Identifier</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>code</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>Identifier code or name, often from a controlled list or pattern defined by a code space.</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CHARACTERSTRING</item>
+                           </part>
+                        </content>
+                     </section>
+                  </section>
+                  <section name="CI_ResponsibleParty"
+                           type="DETAIL-COMPOSITE"
+                           id="detail_class_ISO191152006MetadataCorrigendum_CI_ResponsibleParty"
+                           id-global="global_class_ISO191152006MetadataCorrigendum_CI_ResponsibleParty">
+                     <content>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>CI_ResponsibleParty</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Identification of, and means of communication with, person(s) and organisations associated with the dataset</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                     </content>
+                     <section name="individualName"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_CI_ResponsibleParty_individualName"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_ResponsibleParty_individualName">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_CI_ResponsibleParty">CI_ResponsibleParty</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>individualName</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>Name of the responsible person- SURNAME, given name, title separated by a delimiter</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>0 .. 1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CHARACTERSTRING</item>
+                           </part>
+                        </content>
+                     </section>
+                     <section name="organisationName"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_CI_ResponsibleParty_organisationName"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_ResponsibleParty_organisationName">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_CI_ResponsibleParty">CI_ResponsibleParty</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>organisationName</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>Name of the responsible organisation</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>0 .. 1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CHARACTERSTRING</item>
+                           </part>
+                        </content>
+                     </section>
+                     <section name="positionName"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_CI_ResponsibleParty_positionName"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_ResponsibleParty_positionName">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_CI_ResponsibleParty">CI_ResponsibleParty</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>positionName</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>Role or position of the responsible person</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>0 .. 1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CHARACTERSTRING</item>
+                           </part>
+                        </content>
+                     </section>
+                     <section name="CI_Contact"
+                              type="DETAIL-COMPOSITE"
+                              id="detail_class_ISO191152006MetadataCorrigendum_CI_Contact"
+                              id-global="global_class_ISO191152006MetadataCorrigendum_CI_Contact">
+                        <content>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>CI_Contact</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>Information required enabling contact with the responsible person and/or organisation</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                        </content>
+                        <section name="CI_Telephone"
+                                 type="DETAIL-COMPOSITE"
+                                 id="detail_class_ISO191152006MetadataCorrigendum_CI_Telephone"
+                                 id-global="global_class_ISO191152006MetadataCorrigendum_CI_Telephone">
+                           <content>
+                              <part type="CFG-DOC-NAAM">
+                                 <item>Naam</item>
+                                 <item>CI_Telephone</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMST">
+                                 <item>Herkomst</item>
+                                 <item>BRO</item>
+                              </part>
+                              <part type="CFG-DOC-DEFINITIE">
+                                 <item>Definitie</item>
+                                 <item>Telephone numbers for contacting the responsible individual or organisation</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                 <item>Herkomst definitie</item>
+                                 <item>BRO</item>
+                              </part>
+                           </content>
+                           <section name="voice"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Telephone_voice"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Telephone_voice">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_Telephone">CI_Telephone</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>voice</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Telephone number by which individuals can speak to the responsible organisation or individual</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. *</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="facsimile"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Telephone_facsimile"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Telephone_facsimile">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_Telephone">CI_Telephone</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>facsimile</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Telephone number of a facsimile machine for the responsible organisation or individual</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. *</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                        </section>
+                        <section name="CI_Address"
+                                 type="DETAIL-COMPOSITE"
+                                 id="detail_class_ISO191152006MetadataCorrigendum_CI_Address"
+                                 id-global="global_class_ISO191152006MetadataCorrigendum_CI_Address">
+                           <content>
+                              <part type="CFG-DOC-NAAM">
+                                 <item>Naam</item>
+                                 <item>CI_Address</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMST">
+                                 <item>Herkomst</item>
+                                 <item>BRO</item>
+                              </part>
+                              <part type="CFG-DOC-DEFINITIE">
+                                 <item>Definitie</item>
+                                 <item>Location of the responsible individual or organisation</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                 <item>Herkomst definitie</item>
+                                 <item>BRO</item>
+                              </part>
+                           </content>
+                           <section name="deliveryPoint"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Address_deliveryPoint"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Address_deliveryPoint">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_Address">CI_Address</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>deliveryPoint</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Address line for the physical address (Street name, box number, suite)</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. *</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="city"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Address_city"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Address_city">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_Address">CI_Address</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>city</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>City of the physical address</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. 1</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="administrativeArea"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Address_administrativeArea"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Address_administrativeArea">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_Address">CI_Address</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>administrativeArea</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>State, province of the physical address</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. 1</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="postalCode"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Address_postalCode"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Address_postalCode">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_Address">CI_Address</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>postalCode</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>ZIP or other postal code</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. 1</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="country"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Address_country"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Address_country">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_Address">CI_Address</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>country</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Country of the physical address</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. 1</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="electronicMailAddress"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Address_electronicMailAddress"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Address_electronicMailAddress">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_Address">CI_Address</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>electronicMailAddress</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Address of the electronic mailbox of the responsible organisation or individual</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. *</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                        </section>
+                        <section name="CI_OnlineResource"
+                                 type="DETAIL-COMPOSITE"
+                                 id="detail_class_ISO191152006MetadataCorrigendum_CI_OnlineResource"
+                                 id-global="global_class_ISO191152006MetadataCorrigendum_CI_OnlineResource">
+                           <content>
+                              <part type="CFG-DOC-NAAM">
+                                 <item>Naam</item>
+                                 <item>CI_OnlineResource</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMST">
+                                 <item>Herkomst</item>
+                                 <item>BRO</item>
+                              </part>
+                              <part type="CFG-DOC-DEFINITIE">
+                                 <item>Definitie</item>
+                                 <item>Information about online sources from which the dataset, specification, or community profile name and extended metadata elements can be obtained.</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                 <item>Herkomst definitie</item>
+                                 <item>BRO</item>
+                              </part>
+                           </content>
+                           <section name="URL"
+                                    type="DETAIL-COMPOSITE"
+                                    id="detail_class_ISO191152006MetadataCorrigendum_URL"
+                                    id-global="global_class_ISO191152006MetadataCorrigendum_URL">
+                              <content>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>URL</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>TODO</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="protocol"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_protocol"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_protocol">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_OnlineResource">CI_OnlineResource</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>protocol</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Connection protocol to be used</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. 1</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="applicationProfile"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_applicationProfile"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_applicationProfile">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_OnlineResource">CI_OnlineResource</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>applicationProfile</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Name of an application profile that can be used with the resource</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. 1</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="name"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_name"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_name">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_OnlineResource">CI_OnlineResource</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>name</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Name of the resource</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. 1</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="description"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_description"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_description">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_OnlineResource">CI_OnlineResource</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>description</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Description of what the resource is/does</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. 1</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CHARACTERSTRING</item>
+                                 </part>
+                              </content>
+                           </section>
+                           <section name="function"
+                                    type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                    id="detail_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_function"
+                                    id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_OnlineResource_function">
+                              <content>
+                                 <part type="COMPOSER">
+                                    <item type="global"
+                                          idref="global_class_ISO191152006MetadataCorrigendum_CI_OnlineResource">CI_OnlineResource</item>
+                                 </part>
+                                 <part type="CFG-DOC-NAAM">
+                                    <item>Naam</item>
+                                    <item>function</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMST">
+                                    <item>Herkomst</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-DEFINITIE">
+                                    <item>Definitie</item>
+                                    <item>Function performed by the resource</item>
+                                 </part>
+                                 <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                    <item>Herkomst definitie</item>
+                                    <item>BRO</item>
+                                 </part>
+                                 <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                    <item>Mogelijk geen waarde</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                    <item>Indicatie materiële historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                    <item>Indicatie formele historie</item>
+                                    <item>Nee</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                    <item>Indicatie kardinaliteit</item>
+                                    <item>0 .. 1</item>
+                                 </part>
+                                 <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                    <item>Indicatie authentiek</item>
+                                    <item>Authentiek</item>
+                                 </part>
+                                 <part type="CFG-DOC-FORMAAT">
+                                    <item>Formaat</item>
+                                    <item>CI_OnLineFunctionCode</item>
+                                 </part>
+                              </content>
+                           </section>
+                        </section>
+                        <section name="hoursOfService"
+                                 type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                 id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Contact_hoursOfService"
+                                 id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Contact_hoursOfService">
+                           <content>
+                              <part type="COMPOSER">
+                                 <item type="global"
+                                       idref="global_class_ISO191152006MetadataCorrigendum_CI_Contact">CI_Contact</item>
+                              </part>
+                              <part type="CFG-DOC-NAAM">
+                                 <item>Naam</item>
+                                 <item>hoursOfService</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMST">
+                                 <item>Herkomst</item>
+                                 <item>BRO</item>
+                              </part>
+                              <part type="CFG-DOC-DEFINITIE">
+                                 <item>Definitie</item>
+                                 <item>Time period (including time zone) when individuals can contact the organisation or individual</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                 <item>Herkomst definitie</item>
+                                 <item>BRO</item>
+                              </part>
+                              <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                 <item>Mogelijk geen waarde</item>
+                                 <item>Nee</item>
+                              </part>
+                              <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                 <item>Indicatie materiële historie</item>
+                                 <item>Nee</item>
+                              </part>
+                              <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                 <item>Indicatie formele historie</item>
+                                 <item>Nee</item>
+                              </part>
+                              <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                 <item>Indicatie kardinaliteit</item>
+                                 <item>0 .. 1</item>
+                              </part>
+                              <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                 <item>Indicatie authentiek</item>
+                                 <item>Authentiek</item>
+                              </part>
+                              <part type="CFG-DOC-FORMAAT">
+                                 <item>Formaat</item>
+                                 <item>CHARACTERSTRING</item>
+                              </part>
+                           </content>
+                        </section>
+                        <section name="contactInstructions"
+                                 type="DETAIL-COMPOSITE-ATTRIBUTE"
+                                 id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Contact_contactInstructions"
+                                 id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Contact_contactInstructions">
+                           <content>
+                              <part type="COMPOSER">
+                                 <item type="global"
+                                       idref="global_class_ISO191152006MetadataCorrigendum_CI_Contact">CI_Contact</item>
+                              </part>
+                              <part type="CFG-DOC-NAAM">
+                                 <item>Naam</item>
+                                 <item>contactInstructions</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMST">
+                                 <item>Herkomst</item>
+                                 <item>BRO</item>
+                              </part>
+                              <part type="CFG-DOC-DEFINITIE">
+                                 <item>Definitie</item>
+                                 <item>Supplemental instructions on how or when to contact the individual or organisation</item>
+                              </part>
+                              <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                                 <item>Herkomst definitie</item>
+                                 <item>BRO</item>
+                              </part>
+                              <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                                 <item>Mogelijk geen waarde</item>
+                                 <item>Nee</item>
+                              </part>
+                              <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                                 <item>Indicatie materiële historie</item>
+                                 <item>Nee</item>
+                              </part>
+                              <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                                 <item>Indicatie formele historie</item>
+                                 <item>Nee</item>
+                              </part>
+                              <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                                 <item>Indicatie kardinaliteit</item>
+                                 <item>0 .. 1</item>
+                              </part>
+                              <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                                 <item>Indicatie authentiek</item>
+                                 <item>Authentiek</item>
+                              </part>
+                              <part type="CFG-DOC-FORMAAT">
+                                 <item>Formaat</item>
+                                 <item>CHARACTERSTRING</item>
+                              </part>
+                           </content>
+                        </section>
+                     </section>
+                     <section name="role"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_CI_ResponsibleParty_role"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_ResponsibleParty_role">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_CI_ResponsibleParty">CI_ResponsibleParty</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>role</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>Function performed by the responsible party</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CI_RoleCode</item>
+                           </part>
+                        </content>
+                     </section>
+                  </section>
+                  <section name="presentationForm"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Citation_presentationForm"
+                           id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Citation_presentationForm">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global"
+                                 idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>presentationForm</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Mode in which the data is represented</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. *</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>CI_PresentationFormCode</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="CI_Series"
+                           type="DETAIL-COMPOSITE"
+                           id="detail_class_ISO191152006MetadataCorrigendum_CI_Series"
+                           id-global="global_class_ISO191152006MetadataCorrigendum_CI_Series">
+                     <content>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>CI_Series</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>TODO</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                     </content>
+                     <section name="name"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Series_name"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Series_name">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_CI_Series">CI_Series</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>name</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>TODO</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>0 .. 1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CHARACTERSTRING</item>
+                           </part>
+                        </content>
+                     </section>
+                     <section name="issueIdentification"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Series_issueIdentification"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Series_issueIdentification">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_CI_Series">CI_Series</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>issueIdentification</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>TODO</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>0 .. 1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CHARACTERSTRING</item>
+                           </part>
+                        </content>
+                     </section>
+                     <section name="page"
+                              type="DETAIL-COMPOSITE-ATTRIBUTE"
+                              id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Series_page"
+                              id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Series_page">
+                        <content>
+                           <part type="COMPOSER">
+                              <item type="global"
+                                    idref="global_class_ISO191152006MetadataCorrigendum_CI_Series">CI_Series</item>
+                           </part>
+                           <part type="CFG-DOC-NAAM">
+                              <item>Naam</item>
+                              <item>page</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMST">
+                              <item>Herkomst</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-DEFINITIE">
+                              <item>Definitie</item>
+                              <item>TODO</item>
+                           </part>
+                           <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                              <item>Herkomst definitie</item>
+                              <item>BRO</item>
+                           </part>
+                           <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                              <item>Mogelijk geen waarde</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                              <item>Indicatie materiële historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                              <item>Indicatie formele historie</item>
+                              <item>Nee</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                              <item>Indicatie kardinaliteit</item>
+                              <item>0 .. 1</item>
+                           </part>
+                           <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                              <item>Indicatie authentiek</item>
+                              <item>Authentiek</item>
+                           </part>
+                           <part type="CFG-DOC-FORMAAT">
+                              <item>Formaat</item>
+                              <item>CHARACTERSTRING</item>
+                           </part>
+                        </content>
+                     </section>
+                  </section>
+                  <section name="otherCitationDetails"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Citation_otherCitationDetails"
+                           id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Citation_otherCitationDetails">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global"
+                                 idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>otherCitationDetails</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Other information required to complete the citation</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. 1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>CHARACTERSTRING</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="collectiveTitle"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Citation_collectiveTitle"
+                           id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Citation_collectiveTitle">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global"
+                                 idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>collectiveTitle</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>Common title with holdings note.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. 1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>CHARACTERSTRING</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="ISBN"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Citation_iSBN"
+                           id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Citation_iSBN">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global"
+                                 idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>ISBN</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>International Standard Book Number.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. 1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>CHARACTERSTRING</item>
+                        </part>
+                     </content>
+                  </section>
+                  <section name="ISSN"
+                           type="DETAIL-COMPOSITE-ATTRIBUTE"
+                           id="detail_attribute_ISO191152006MetadataCorrigendum_CI_Citation_iSSN"
+                           id-global="global_attribute_ISO191152006MetadataCorrigendum_CI_Citation_iSSN">
+                     <content>
+                        <part type="COMPOSER">
+                           <item type="global"
+                                 idref="global_class_ISO191152006MetadataCorrigendum_CI_Citation">CI_Citation</item>
+                        </part>
+                        <part type="CFG-DOC-NAAM">
+                           <item>Naam</item>
+                           <item>ISSN</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMST">
+                           <item>Herkomst</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-DEFINITIE">
+                           <item>Definitie</item>
+                           <item>International Standard Serial Number.</item>
+                        </part>
+                        <part type="CFG-DOC-HERKOMSTDEFINITIE">
+                           <item>Herkomst definitie</item>
+                           <item>BRO</item>
+                        </part>
+                        <part type="CFG-DOC-MOGELIJKGEENWAARDE">
+                           <item>Mogelijk geen waarde</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEMATERIELEHISTORIE">
+                           <item>Indicatie materiële historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEFORMELEHISTORIE">
+                           <item>Indicatie formele historie</item>
+                           <item>Nee</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEKARDINALITEIT">
+                           <item>Indicatie kardinaliteit</item>
+                           <item>0 .. 1</item>
+                        </part>
+                        <part type="CFG-DOC-INDICATIEAUTHENTIEK">
+                           <item>Indicatie authentiek</item>
+                           <item>Authentiek</item>
+                        </part>
+                        <part type="CFG-DOC-FORMAAT">
+                           <item>Formaat</item>
+                           <item>CHARACTERSTRING</item>
+                        </part>
+                     </content>
+                  </section>
                </section>
                <section name="bestaat uit"
                         type="DETAIL-ASSOCIATION"
