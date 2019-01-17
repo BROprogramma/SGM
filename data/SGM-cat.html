@@ -1,10 +1,10 @@
 <h2>Catalogus</h2>
 <p class="note" title="Over deze catalogus">
    Deze catalogus is automatisch samengesteld op basis van het UML model 
-   "Bodemkaart (SGM)" door Imvertor 1.50.1 op January 16, 2019 at 08:45:55.
+   "Bodemkaart (SGM)" door Imvertor 1.50.1 op January 17, 2019 at 10:40:31.
    <br>
    Wanneer je technische fouten of onvolkomenheden aantreft, geef dit dan door aan <i></i> en geef de code 
-   <i>"Conceptualmodel-BodemkaartSGM-1.0-1-20181205-20190116-094557"</i> door. 
+   <i>"Conceptualmodel-BodemkaartSGM-1.0-1-20181205-20190117-114034"</i> door. 
    
 </p><a class="anchor" name="global_package_ISO191152006MetadataCorrigendum"></a><section id="global_package_ISO191152006MetadataCorrigendum">
    <h3>Domein ISO 19115:2006 Metadata (Corrigendum)</h3>
@@ -1876,7 +1876,7 @@
                   </td>
                   <td>De geometrie bepaald voor het Kaartvlak.</td>
                   <td>
-                     <a class="external-link" href="http://www.opengeospatial.org/standards/gml">GM_Polygon</a>
+                     <a class="external-link" href="http://www.opengeospatial.org/standards/gml">GM_Surface</a>
                      
                   </td>
                   <td>1</td>
@@ -2168,7 +2168,7 @@
                      <a class="link" href="#detail_attribute_Model_BodemEenheid_kenmerkenBovenlaag">kenmerken bovenlaag</a>
                      
                   </td>
-                  <td>De eigenschappen van de bovenlaag van de bodem.</td>
+                  <td>De bodem specifieke kenmerken in de eerste 40 cm van het bodemprofiel.</td>
                   <td>
                      <a class="link" href="#global_class_Model_BodemkenmerkenBovenlaag">BodemkenmerkenBovenlaag</a>
                      
@@ -2180,7 +2180,7 @@
                      <a class="link" href="#detail_attribute_Model_BodemEenheid_kenmerkenOnderlaag">kenmerken onderlaag</a>
                      
                   </td>
-                  <td>De eigenschappen van de onderlaag van de bodem</td>
+                  <td>De bodem specifieke kenmerken in het bodemprofiel dieper dan 40 cm.</td>
                   <td>
                      <a class="link" href="#global_class_Model_BodemkenmerkenOnderlaag">BodemkenmerkenOnderlaag</a>
                      
@@ -2338,14 +2338,14 @@
             </tr>
             <tr>
                <th><a class="anchor" name="global_class_Model_BodemkenmerkenBovenlaag"></a><a class="link" href="#detail_class_Model_BodemkenmerkenBovenlaag">BodemkenmerkenBovenlaag</a></th>
-               <td>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper
-                  dan 40 cm.
+               <td>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van
+                  het bodemprofiel.
                </td>
             </tr>
             <tr>
                <th><a class="anchor" name="global_class_Model_BodemkenmerkenOnderlaag"></a><a class="link" href="#detail_class_Model_BodemkenmerkenOnderlaag">BodemkenmerkenOnderlaag</a></th>
-               <td>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van
-                  het bodemprofiel.
+               <td>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper
+                  dan 40 cm.
                </td>
             </tr>
             <tr>
@@ -2409,7 +2409,7 @@
                   </tr>
                   <tr>
                      <th>Formaat</th>
-                     <td>GM_Polygon</td>
+                     <td>GM_Surface</td>
                   </tr>
                   <tr>
                      <th>Indicatie afleidbaar</th>
@@ -2889,7 +2889,7 @@
                      </tr>
                      <tr>
                         <th>Definitie</th>
-                        <td>De eigenschappen van de bovenlaag van de bodem.</td>
+                        <td>De bodem specifieke kenmerken in de eerste 40 cm van het bodemprofiel.</td>
                      </tr>
                      <tr>
                         <th>Herkomst definitie</th>
@@ -2938,7 +2938,7 @@
                      </tr>
                      <tr>
                         <th>Definitie</th>
-                        <td>De eigenschappen van de onderlaag van de bodem</td>
+                        <td>De bodem specifieke kenmerken in het bodemprofiel dieper dan 40 cm.</td>
                      </tr>
                      <tr>
                         <th>Herkomst definitie</th>
@@ -3160,8 +3160,8 @@
             <tbody>
                <tr>
                   <th>Definitie</th>
-                  <td>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper
-                     dan 40 cm.
+                  <td>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van
+                     het bodemprofiel.
                   </td>
                </tr>
             </tbody>
@@ -3187,8 +3187,8 @@
             <tbody>
                <tr>
                   <th>Definitie</th>
-                  <td>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van
-                     het bodemprofiel.
+                  <td>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper
+                     dan 40 cm.
                   </td>
                </tr>
             </tbody>

@@ -4,7 +4,7 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.50.1"
-      generator-date="2019-01-16T08:45:55Z">
+      generator-date="2019-01-17T10:40:31Z">
    <section type="DOMAIN"
             name="ISO 19115:2006 Metadata (Corrigendum)"
             id="global_package_ISO191152006MetadataCorrigendum"><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content--><!--removed empty content-->
@@ -1469,7 +1469,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                      <item>
                         <item type="global"
                               idref="http://www.opengeospatial.org/standards/gml"
-                              idref-type="external">GM_Polygon</item>
+                              idref-type="external">GM_Surface</item>
                      </item>
                      <item>1</item>
                   </part>
@@ -1731,7 +1731,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                         <item type="detail"
                               idref="detail_attribute_Model_BodemEenheid_kenmerkenBovenlaag">kenmerken bovenlaag</item>
                      </item>
-                     <item>De eigenschappen van de bovenlaag van de bodem.</item>
+                     <item>De bodem specifieke kenmerken in de eerste 40 cm van het bodemprofiel.</item>
                      <item>
                         <item type="global" idref="global_class_Model_BodemkenmerkenBovenlaag">BodemkenmerkenBovenlaag</item>
                      </item>
@@ -1742,7 +1742,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                         <item type="detail"
                               idref="detail_attribute_Model_BodemEenheid_kenmerkenOnderlaag">kenmerken onderlaag</item>
                      </item>
-                     <item>De eigenschappen van de onderlaag van de bodem</item>
+                     <item>De bodem specifieke kenmerken in het bodemprofiel dieper dan 40 cm.</item>
                      <item>
                         <item type="global" idref="global_class_Model_BodemkenmerkenOnderlaag">BodemkenmerkenOnderlaag</item>
                      </item>
@@ -1893,13 +1893,13 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                <item id="global_class_Model_BodemkenmerkenBovenlaag"
                      uuid="EAID_21FF9CA4_F85D_4d76_B3FC_6AD3B00C742C"
                      idref="detail_class_Model_BodemkenmerkenBovenlaag">BodemkenmerkenBovenlaag</item>
-               <item>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper dan 40 cm.</item>
+               <item>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van het bodemprofiel.</item>
             </part>
             <part>
                <item id="global_class_Model_BodemkenmerkenOnderlaag"
                      uuid="EAID_5463CF56_01BC_4f0c_88A7_11F479050C47"
                      idref="detail_class_Model_BodemkenmerkenOnderlaag">BodemkenmerkenOnderlaag</item>
-               <item>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van het bodemprofiel.</item>
+               <item>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper dan 40 cm.</item>
             </part>
             <part>
                <item id="global_class_Model_BodemvlakcollectieSoort"
@@ -1967,7 +1967,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                      </part>
                      <part type="CFG-DOC-FORMAAT">
                         <item>Formaat</item>
-                        <item>GM_Polygon</item>
+                        <item>GM_Surface</item>
                      </part>
                      <part type="CFG-DOC-INDICATIEAFLEIDBAAR">
                         <item>Indicatie afleidbaar</item>
@@ -2441,7 +2441,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                         </part>
                         <part type="CFG-DOC-DEFINITIE">
                            <item>Definitie</item>
-                           <item>De eigenschappen van de bovenlaag van de bodem.</item>
+                           <item>De bodem specifieke kenmerken in de eerste 40 cm van het bodemprofiel.</item>
                         </part>
                         <part type="CFG-DOC-HERKOMSTDEFINITIE">
                            <item>Herkomst definitie</item>
@@ -2491,7 +2491,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                         </part>
                         <part type="CFG-DOC-DEFINITIE">
                            <item>Definitie</item>
-                           <item>De eigenschappen van de onderlaag van de bodem</item>
+                           <item>De bodem specifieke kenmerken in het bodemprofiel dieper dan 40 cm.</item>
                         </part>
                         <part type="CFG-DOC-HERKOMSTDEFINITIE">
                            <item>Herkomst definitie</item>
@@ -2684,7 +2684,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper dan 40 cm.</item>
+                     <item>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van het bodemprofiel.</item>
                   </part>
                </content>
                <content>
@@ -2701,7 +2701,7 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                <content>
                   <part>
                      <item>Definitie</item>
-                     <item>Opsomming van de toegestane waarden van specifieke kenmerken in de eerste 40 cm van het bodemprofiel.</item>
+                     <item>Opsomming van de toegestane waarden van specifieke kenmerken in het bodemprofiel dieper dan 40 cm.</item>
                   </part>
                </content>
                <content>
