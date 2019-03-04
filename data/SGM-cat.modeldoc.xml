@@ -3,8 +3,8 @@
       subpath="Conceptual model/Bodemkaart (SGM)/20190304"
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
-      generator-version="1.50.2"
-      generator-date="2019-03-04T09:49:29Z">
+      generator-version="1.51.4"
+      generator-date="2019-03-04T09:56:31Z">
    <chapter title="CHAPTER-CATALOG" type="cat">
       <section type="DOMAIN"
                name="ISO 19115:2006 Metadata (Corrigendum)"
@@ -4149,22 +4149,26 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>creation</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>publication</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>revision</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
             </content>
@@ -4181,62 +4185,74 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>resourceProvider</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Party that supplies the data</item>
                </part>
                <part>
-                  <item/>
                   <item>custodian</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Guardian or keeper responsible for maintaining the data</item>
                </part>
                <part>
-                  <item/>
                   <item>owner</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Person who owns the data</item>
                </part>
                <part>
-                  <item/>
                   <item>user</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Person who uses the data</item>
                </part>
                <part>
-                  <item/>
                   <item>distributor</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Person or organisation who distributes the data</item>
                </part>
                <part>
-                  <item/>
                   <item>originator</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Responsible party who created the dataset or metadata</item>
                </part>
                <part>
-                  <item/>
                   <item>pointOfContact</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Responsible party who can be contacted for acquiring knowledge about or acquisition of the data.</item>
                </part>
                <part>
-                  <item/>
                   <item>principalInvestigator</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Key person responsible for gathering information and conducting research</item>
                </part>
                <part>
-                  <item/>
                   <item>processor</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Responsible party who has processed the data in a manner in which the data has been modified.</item>
                </part>
                <part>
-                  <item/>
                   <item>publisher</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Responsible party who published the data</item>
                </part>
                <part>
-                  <item/>
                   <item>author</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
             </content>
@@ -4253,32 +4269,38 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>download</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Online instructions provide the information necessary to acquire data</item>
                </part>
                <part>
-                  <item/>
                   <item>information</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Online instructions provide more information about the data</item>
                </part>
                <part>
-                  <item/>
                   <item>offlineAccess</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Online instructions provide the ability to transfer data from one storage device or system to another</item>
                </part>
                <part>
-                  <item/>
                   <item>order</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Online instructions provide the ability to acquire data</item>
                </part>
                <part>
-                  <item/>
                   <item>search</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Online instructions provide the ability to seek out information about a dataset</item>
                </part>
             </content>
@@ -4295,77 +4317,92 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>documentDigital</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Piece of written or printed matter that provides a record or evidence of events, an agreement, ownership, identification, etc..</item>
                </part>
                <part>
-                  <item/>
                   <item>documentHardcopy</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Representation of a map which is printed on paper, photographic material, or other media and can be interpreted directly by the human user</item>
                </part>
                <part>
-                  <item/>
                   <item>imageDigital</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Permanent record of the likeness of any natural or man-made features, objects, and activities reproduced on photographic materials. This image can be acquired through the sensing of visual or any other segment of the electromagnetic spectrum by sensors, such as thermal infrared, and high resolution radar.</item>
                </part>
                <part>
-                  <item/>
                   <item>imageHardcopy</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>mapDigital</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>mapHardcopy</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>modelDigital</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Representation in three dimensions of geospatial data</item>
                </part>
                <part>
-                  <item/>
                   <item>modelHardcopy</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>profileDigital</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Vertical cross-section of geospatial data</item>
                </part>
                <part>
-                  <item/>
                   <item>profileHardcopy</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>tableDigital</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>tableHardcopy</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>videoDigital</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
                <part>
-                  <item/>
                   <item>videoHardcopy</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item/>
                </part>
             </content>
@@ -4382,32 +4419,38 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>nietGetransformeerd</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn aangeleverd in ETRS89; transformatie was niet nodig.</item>
                </part>
                <part>
-                  <item/>
                   <item>RDNAPTRANS2008</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie RDNAPTRANS™, versie 2008. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP en ETRS89 afkomstig van het Kadaster.</item>
                </part>
                <part>
-                  <item/>
                   <item>RDNAPTRANS2008MV0</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn getransformeerd van RD naar ETRS89, gebruikmakend van de transformatie RDNAPTRANS™, versie 2008. De positie van het aardoppervlak is onbekend, bij transformatie is uitgegaan van 0 m NAP. RDNAPTRANS™ is de officiële transformatie tussen RD/NAP en ETRS89 afkomstig van het Kadaster.</item>
                </part>
                <part>
-                  <item/>
                   <item>7parameterTransformatie</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie en zijn tijdsafhankelijk. Voor elk jaar is een parameterset beschikbaar voor de berekening van coördinaten in ETRS89 in Nederland, waarna een transformatieprocedure naar de juiste dag volgt.</item>
                </part>
                <part>
-                  <item/>
                   <item>7parameterTransformatie1989</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De gegevens zijn getransformeerd van WGS84 naar ETRS89, gebruikmakend van de 7-parameter transformatie. De transformatieparameters zijn afkomstig van de Dienst der Hydrografie en zijn tijdsafhankelijk. Bij transformatie is gebruik gemaakt van de parameterset 1989.0.</item>
                </part>
             </content>
@@ -4424,22 +4467,26 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>ETRS89</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>European Terrestrial Reference System 1989 (EPSG 4258).</item>
                </part>
                <part>
-                  <item/>
                   <item>RD</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Rijks Driehoeksmeting – Amersfoort RD New (EPSG 28992).</item>
                </part>
                <part>
-                  <item/>
                   <item>WGS84</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>World Geodetic System 1984 (EPSG 4326).</item>
                </part>
             </content>
@@ -4456,22 +4503,26 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>geregistreerd</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Het registeren van de gegevens van het object is gestart. De gegevens uit het eerste brondocument zijn in de registratie ondergrond vastgelegd. Er zijn daarna geen nieuwe gegevens geregistreerd.</item>
                </part>
                <part>
-                  <item/>
                   <item>aangevuld</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Het registeren van de gegevens van het object heeft na de start van de registratie een vervolg gekregen. De gegevens in de registratie ondergrond zijn minimaal een keer aangevuld met nieuwe gegevens.</item>
                </part>
                <part>
-                  <item/>
                   <item>voltooid</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Het registeren van de gegevens van het object is voltooid. Alle gegevens zijn in de registratie ondergrond vastgelegd en er kunnen geen nieuwe gegevens meer worden geregistreerd.</item>
                </part>
             </content>
@@ -4488,8 +4539,9 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
             </content>
          </section>
@@ -4505,8 +4557,9 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
             </content>
          </section>
@@ -4522,8 +4575,9 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
             </content>
          </section>
@@ -4539,8 +4593,9 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
             </content>
          </section>
@@ -4556,8 +4611,9 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
             </content>
          </section>
@@ -4573,8 +4629,9 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
             </content>
          </section>
@@ -4590,8 +4647,9 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
             </content>
          </section>
@@ -4609,17 +4667,20 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>ja</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Ja</item>
                </part>
                <part>
-                  <item/>
                   <item>nee</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Nee</item>
                </part>
             </content>
@@ -4636,22 +4697,26 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>ja</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Ja</item>
                </part>
                <part>
-                  <item/>
                   <item>nee</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Nee</item>
                </part>
                <part>
-                  <item/>
                   <item>onbekend</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>Onbekend</item>
                </part>
             </content>
@@ -4668,17 +4733,20 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>IMBRO</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De strikte kwaliteitseis die na beëindiging van de transitieperiode geldt voor alle objecten die nadien geregistreerd zijn.</item>
                </part>
                <part>
-                  <item/>
                   <item>IMBRO/A</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>De minder strikte kwaliteitseis die tot beëindiging van de transitieperiode gebruikt kan zijn.</item>
                </part>
             </content>
@@ -4695,12 +4763,14 @@ De basisregistratie ondergrond kent bij registratie automatisch de juiste waarde
                </part>
             </content>
             <content>
-               <itemtype type="CODE"/>
                <itemtype type="NAME"/>
+               <itemtype type="IMBRO"/>
+               <itemtype type="IMBROA"/>
                <itemtype type="DEFINITION"/>
                <part>
-                  <item/>
                   <item>onbekend</item>
+                  <item>✔</item>
+                  <item>✔</item>
                   <item>TODO.</item>
                </part>
             </content>
