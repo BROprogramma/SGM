@@ -98,6 +98,13 @@ informatiemodellen, MIM[^2] (KKG
 metamodel) verder duidelijk is geworden kunnen we die relaties leggen en het
 model daarop laten aansluiten.
 
+### Versiebeheer
+
+De beheerder van een model maakt zijn waardenlijsten (codelijsten en/of referentielijsten) bekend op een algemeen bekend formaat (PDF en als downloadable bestand) en maakt deze toegankelijk via www.basisregistratieondergrond.nl. De waardenlijsten worden meegeleverd bij de modellevering.
+
+Als er wijzigingen zijn in een waardelijst, wordt er uiterlijk twee maanden vóór inwerkingtreding een notificatie op die website gezet, zodat gebruikers nog tijd hebben om hun eigen omgeving op de wijzigingen aan te passen.
+
+
 ### De bodemkaart als bodemkundig model
 
 De Bodemkaart van Nederland, schaal 1 : 50 000 vormt de basis voor het
