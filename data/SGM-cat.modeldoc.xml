@@ -4,16 +4,16 @@
       type="BASISMODEL"
       id="EAPK_463AC63A_EB84_484b_ACFD_D983E52EE36B"
       generator-version="1.47.6"
-      generator-date="2019-05-08T07:52:01Z">
+      generator-date="2019-05-08T07:53:31Z">
    <section type="DOMAIN" name="Model" id="global_package_Model">
       <section type="IMAGEMAPS" name="Model-imagemap" id="imagemap_package_Model">
          <section type="IMAGEMAP"
-                  name="Codelijsten - overzicht"
-                  id="EAID_2793BB12_5218_46ab_B17A_9F4C5C392B77">
+                  name="Bodemkaart 1 op 50.000 - overzicht"
+                  id="EAID_6F1DEB4D_0857_407f_96D1_68CEB4BA18C6">
             <content>
                <part type="CFG-DOC-NAAM">
                   <item>Naam</item>
-                  <item>Codelijsten - overzicht</item>
+                  <item>Bodemkaart 1 op 50.000 - overzicht</item>
                </part>
                <part type="CFG-DOC-DESCRIPTION">
                   <item>Omschrijving</item>
