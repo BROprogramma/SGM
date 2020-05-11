@@ -1,45 +1,30 @@
 var respecConfig = {
-  specStatus: "GN-WV",
+  specStatus: "GN-DEF",
   specType: "IM",
-  editors: [
-    {
-      name: "Linda van den Brink",
-      company: "Geonovum",
-      companyURL: "https://www.geonovum.nl",
-    },
-     {
-      name: "Arnoud de Boer",
-      company: "Geonovum",
-      companyURL: "https://www.geonovum.nl",
-    }
-  ],
+   publishDate: "2020-03-31", 
+  logos: [
+  {src: 'logo_bro.png',
+    href: "http://basisregistratieondergrond.nl",
+    alt: "Basisregistratie Ondergrond",
+    width: 260,
+    height: 458,
+    id: 'BRO'},
+  {
+    src: 'logo_minbzk.png',
+    href: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
+    alt: "Ministerie BZK",
+    width: 260,
+    height: 458,
+    id: 'BZK',
+  }]  ,
+  editors: [],
   authors: [
     {
-      name: "Folkert de Vries",
-      company: "Wageningen University & Research",
-      companyURL: "https://www.wur.nl",
-    },
-    {
-      name: "Fokke Brouwer",
-      company: "Wageningen University & Research",
-      companyURL: "https://www.wur.nl",
-    },
-    {
-      name: "Nanny Heidema",
-      company: "Wageningen University & Research",
-      companyURL: "https://www.wur.nl",
-    },
-    {
-      name: "Jandirk Bulens",
-      company: "Wageningen University & Research",
-      companyURL: "https://www.wur.nl",
-    },
-    {
-      name: "Wies Vullings",
-      company: "Wageningen University & Research",
-      companyURL: "https://www.wur.nl",
-    },
-  ],
+      name: "TNO Geologische Dienst Nederland",
+	  mailto: "support@broservicedesk.nl",
+	  note: "088 – 8664 999",
+      companyURL: "http://www.tno.nl",
+    }],
   shortName: "bro-sgm",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/SGM",
