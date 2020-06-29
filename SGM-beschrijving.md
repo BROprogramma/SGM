@@ -26,6 +26,8 @@ https://broprogramma.github.io/SGM/media/landschap_profiel.jpg
 
 https://broprogramma.github.io/SGM/media/landschap_profiel.jpg
 
+https://broprogramma.github.io/SGM/media/landschap_profiel.jpg
+
 Figuur 3 Vier bodemeenheden in hun landschappelijk verband. De eenheden op de
 rug, op de helling en in het dal zijn verschillend. Elke eenheid (Hd21, Hn23,
 pZg23 en Vc) wordt op de bodemkaart onderscheiden met een eigen code en kleur.
@@ -177,7 +179,7 @@ bovengrond en ondergrond aangeduid (bijvoorbeeld kHn21: veldpodzolgronden met
 een kleidek (k…) of Hn21x: veldpodzolgronden met keileem in de ondergrond,
 beginnend tussen 40 en 120 cm (…x).
 
-Afgeleide profielen
+#### Afgeleide profielen
 
 De Bodemkaart van Nederland, schaal 1 : 50.000, onderscheidt meer dan 1700
 unieke eenheden, verdeeld over iets meer dan 52.000 verschillende kaartvlakken.
@@ -287,6 +289,8 @@ van oppervlaktewater in het bodemkundige model lokaal afwijken van de begrenzing
 in GIS-bestanden met de topografie.
 
 ![https://broprogramma.github.io/SGM/media/fig3.png](media/aa022d9b4f00d26086eb6277bdc916be.png)
+
+https://broprogramma.github.io/SGM/media/fig3.png
 
 https://broprogramma.github.io/SGM/media/fig3.png
 
