@@ -41,21 +41,40 @@
     <h3>Leeswijzer</h3>
 	    <p><a href ="#inleiding">Hoofdstuk 1</a> geeft het doel en de doelgroep van een catalogus.</p>
 	    <p><a href ="#algemene-kenmerken-en-begrippen">Hoofdstuk 2</a> behandelt enkele algemene aspecten van het BRO-systeem en begrippen van algemene aard.</p>
-	    <p><a href ="#grondwatersamenstellingsonderzoek">Hoofdstuk 3</a> plaatst het object in de gegevenssystematiek van de basisregistratie ondergrond en vertelt wat de benadering is geweest bij het opstellen van de <a href="#cat">gegevensdefinitie</a>.</p>
-	    <p><a href ="#intro-gegevensdefinitie">Hoofdstuk 4</a> vertelt hoe de catalogus is opgebouwd en welke aspecten van de gegevens daarin worden beschreven.</p>
+	    <p><a href ="#intro-gegevensdefinitie">Hoofdstuk 3</a> vertelt hoe de catalogus is opgebouwd en welke aspecten van de gegevens daarin worden beschreven.</p>
+	    <p><a href ="#gegevensdefinitie">Hoofdstuk 4 en 5</a> beschrijft de entiteiten van het bodemkundig model.</p>
+	     <p><a href ="#bodemkundig-model-nl">Hoofdstuk 6</a> geeft een toelichting op het bodemkundig model.</p>
     </section>
-  </section>
-  <section id='algemene-kenmerken-en-begrippen' data-include='https://docs.geostandaarden.nl/bro/gen/algemene-kenmerken-en-begrippen.html'
+  </section>	
+  <!-- hoofdstuk 2 -->
+<section id='algemene-kenmerken-en-begrippen' data-include='https://docs.geostandaarden.nl/bro/gen/algemene-kenmerken-en-begrippen.html'
     class='generic'></section>
-    <section id="domeinmodel">
-    <h3>Domeinmodel</h3>
-    <section data-include="https://docs.geostandaarden.nl/bro/gen/domeinmodel-gen.html" class="generic">
+<!-- hoofdstuk 3 -->	
+<section id="intro-gegevensdefinitie">
+    <h2>De inhoud van de catalogus</h2>
+    <div id="intro-cat-inleiding" data-include="https://docs.geostandaarden.nl/bro/gen/intro-cat-inleiding.html" class="generic"></div>
+    <section id="type-formaten">
+      <h3>Domeinen</h3>
+      <!-- hier alleen de domeinuitleg includeren voor domeinen die in het registratieobject gebruikt worden -->
+      <p>Een domein beschrijft welke waarden een attribuut mag hebben. Domeinen zijn van een bepaald type en de typen die in de catalogus worden gebruikt worden hieronder toegelicht. Sommige domeinen zijn samengesteld en die worden als laatste besproken.</p>
+      <section id="aantal" data-include="https://docs.geostandaarden.nl/bro/gen/aantal.html" class="generic"></section>
+      <section id="code" data-include="https://docs.geostandaarden.nl/bro/gen/code.html" class="generic"></section>
+      <section id="datumtijd" data-include="https://docs.geostandaarden.nl/bro/gen/datumtijd.html" class="generic"></section>
+      <section id="meetwaarde" data-include="https://docs.geostandaarden.nl/bro/gen/meetwaarde.html" class="generic"></section>
+      <section id="tekst" data-include="https://docs.geostandaarden.nl/bro/gen/tekst.html" class="generic"></section>
+      <section id="enumeratie" data-include="https://docs.geostandaarden.nl/bro/gen/enumeratie.html" class="generic"></section>
+      <section id="codelijst" data-include="https://docs.geostandaarden.nl/bro/gen/codelijst.html" class="generic"></section>
+      <section id="organisatie" data-include="https://docs.geostandaarden.nl/bro/gen/organisatie.html" class="generic"></section>    
     </section>
-  </section>
+    <section data-include="https://docs.geostandaarden.nl/bro/gen/domeinmodel-gen.html" class="generic"></section>
+    <section id="verplichte-gegevens-waarden" data-include="https://docs.geostandaarden.nl/bro/gen/verplichte-gegevens-waarden.html" class="generic"></section>
+</section>
+
 	
 	<!-- MODEL -->
+<section id="gegevensdefinitie">
   <div data-include="data/SGM-cat.respec.html" data-include-replace="true" class="normative"></div>
-  
+	</section>
   <!--section id="catalogus" data-include="data/SGM-cat.respec.html" class="normative"></section-->
   <section id="bodemkundig-model-nl" data-format="markdown" data-include="SGM-beschrijving.md">
   </section>
