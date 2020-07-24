@@ -1,36 +1,32 @@
 var respecConfig = {
   specStatus: "GN-WV",
   specType: "IM",
-  subtitle: "BRO gegevenscatalogus",
+  maxTocLevel: 4,
+ // subtitle: "BRO gegevenscatalogus",
    //publishDate: "2020-03-31", 
-  logos: [
-  {src: 'logo_bro.png',
-    href: "http://basisregistratieondergrond.nl",
-    alt: "Basisregistratie Ondergrond",
-    width: 252,
-    height: 130,
-    id: 'BRO'},
-  {
-    src: 'logo_minbzk.png',
+    logos: [ {
+    src: 'https://docs.geostandaarden.nl/bro/gen/logo_minbzk.png',
     href: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
     alt: "Ministerie BZK",
-    width: 229,
-    height: 130,
-    id: 'BZK',
+    width: 776,
+    height: 163,
+    id: 'logo_minbzk',
   }]  ,
-  editors: [],
-  authors: [
-    {
-      name: "TNO Geologische Dienst Nederland",
-	  mailto: "support@broservicedesk.nl",
-	  note: "088 – 8664 999",
-      companyURL: "http://www.tno.nl",
+   editors: [    {
+      name: "Geonovum",	
+      companyURL: "https://www.geonovum.nl/geo-standaarden/bro-basisregistratie-ondergrond",
     }],
-  shortName: "bro-sgm",
+  authors: [
+    {  name: "Geonovum",
+      companyURL: "https://www.geonovum.nl/geo-standaarden/bro-basisregistratie-ondergrond",
+    }
+	],
+
+  shortName: "SGM",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/SGM",
-  //previousPublishDate: "2017-01-01",
-  //previousStatus: "GN-CV",
+  previousPublishDate: "2019-05-08",
+  previousStatus: "GN-DEF",
   localBiblio: {
     "Bakker-Schelling1989": {
       title:
