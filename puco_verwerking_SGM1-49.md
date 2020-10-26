@@ -1,4 +1,4 @@
-_Opgelost:_
+## Opgelost
 melding: Backwardscompatible maken	
 oplossing: Relatie Bodemkaart bestaat uit één of meer BodemvlakCollecties is geschrapt en hersteld naar Bodemkaart bestaat uit één of meer Kaartvlakken.
 oplossing: Relatie Bodemvlakcollectie bestaat uit één of meer Kaartvlakken is omgedraaid naar Kaartvlak maakt onderdeel uit van één BodemvlakCollectie
@@ -15,7 +15,7 @@ melding: "4.3.10.9 kalkgehalte: - waardebereik BRO tot BRO  moet of ingevuld 
 melding: 4.3.10.10 Fe-dith: -waardebereik BRO to BRO  moet of ingevuld of leeg" 
 oplossing: Aangepast. Waardebereik is leeg voor beide attributen
 	
-_Niet opgelost:_	
+## Niet opgelost:
 melding: Backwardscompatible maken	
 reden niet opgelost: Attribuut Standaardprofielverwijziging van het attribuut RegistratieObjectcode is niet hersteld.
 
