@@ -1,5 +1,5 @@
 ## Opgelost
-#### melding: Backwardscompatible maken	
+##### melding: Backwardscompatible maken	
 oplossing: Relatie Bodemkaart bestaat uit één of meer BodemvlakCollecties is geschrapt en hersteld naar Bodemkaart bestaat uit één of meer Kaartvlakken.
 oplossing: Relatie Bodemvlakcollectie bestaat uit één of meer Kaartvlakken is omgedraaid naar Kaartvlak maakt onderdeel uit van één BodemvlakCollectie
 oplossing: Kardinaliteit van de attributen 'kenmerken bovenlaag' en 'kenmerken onderlaag' is hersteld van 0..2 naar 0..*
