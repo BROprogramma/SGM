@@ -1,5 +1,5 @@
 var respecConfig = {
-  specStatus: "GN-VV",
+  specStatus: "GN-WV",
   specType: "IM",
   maxTocLevel: 4,
  // subtitle: "BRO gegevenscatalogus",
@@ -21,12 +21,11 @@ var respecConfig = {
       companyURL: "https://www.geonovum.nl/geo-standaarden/bro-basisregistratie-ondergrond",
     }
 	],
-
   shortName: "SGM",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/SGM",
-  previousPublishDate: "2019-05-08",
-  previousStatus: "GN-DEF",
+  previousPublishDate: "2020-10-26",
+  previousStatus: "GN-VV",
   localBiblio: {
     "Bakker-Schelling1989": {
       title:
