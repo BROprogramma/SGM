@@ -1,0 +1,15 @@
+Opgelost t.o.v. vorige conceptversie:
+
+- namespace aangepast naar  xmlns:sgm="http://www.broservices.nl/xsd/sgm/1.1"
+- SoilAndGroundWaterRegistrationObject hernoemd naar SoilMap
+- Datatype MeasuredValue hernoemd naar Measure
+- relatie 'NormalSoilProfile' van SoilArea hernoemd naar relatedSoilProfile
+- voor relatedSoilProfile is het mogelijk om zowel 
+  inline de gegevens van een gerelateerd bodemprofiel op te nemen via <NormalSoilProfile>, als 
+  by reference door opnemen verwijzing ernaar in <relatedSoilProfile> in het xlink:href attribuut
+  Een dummy-voorbeeldbestand met de structuur is opgenomen in map van sgm.xsd.
+
+Niet opgelost:
+
+- error inzake gml:OwnershipAttributeGroup: bevindt zich in externe xsd's. 
+SGM heeft het kenmerk zelf niet, maar overerft deze uit de INSPIRE en GML xsd's.
