@@ -4,12 +4,13 @@
         xmlns:gml="http://www.opengis.net/gml/3.2"
         targetNamespace="http://www.broservices.nl/xsd/brocommon/3.0"
         elementFormDefault="qualified"
-        version="3.0.4"><!--
-This schema is provided by BRO as a local copy, as a convenience to the user. This schema may itself reference a local copy of the schema originally referenced by URI. The local reference takes the form of a relative path, and is introduced by BRO.
--->
-   <import namespace="http://www.opengis.net/gml/3.2"
-           schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+        version="3.0.4">
+   <import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
    <annotation>
+      <documentation>This schema is provided by BRO as a local copy, as a convenience to the user. 
+		  This schema may itself reference a local copy of a schema originally referenced by URI. 
+		  The local reference takes the form of a relative path, and is introduced by BRO.
+	  </documentation>
       <documentation>
             This XSD describes the complex types, simple types common to the entire BRO.
             Version:2.5.6

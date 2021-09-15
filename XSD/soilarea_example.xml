@@ -36,8 +36,17 @@
  xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0"
  xmlns:gsr="http://www.isotc211.org/2005/gsr"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.broservices.nl/xsd/sgm/1.1 file:/D:/BRO/SGM2/technisch%20ontwerp/xsd/sgm/unknown/v20201026/Sgm.xsd" gml:id="ID000">
-    <sgm:geometry>geometry0</sgm:geometry>
+ xsi:schemaLocation="http://www.broservices.nl/xsd/sgm/1.1 sgm.xsd" 
+ gml:id="ID000">
+    <sgm:geometry>
+		<gml:Polygon gml:id="ID001" srsName="?" srsDimension="2">
+			<gml:exterior>
+				<gml:LinearRing>
+					<gml:posList>1 1 2 2 3 3 4 4 1 1</gml:posList>
+				</gml:LinearRing>
+			</gml:exterior>
+		</gml:Polygon>
+    </sgm:geometry>
     <sgm:mapAreaCollection/>
     <sgm:soilSlope codeSpace="">soilSlope0</sgm:soilSlope>
     <sgm:soilUnit>
@@ -49,20 +58,24 @@
         <sgm:mainSoilClassification codeSpace="">mainSoilClassification1</sgm:mainSoilClassification>
     </sgm:soilUnit>
     <sgm:relatedSoilbody>relatedSoilbody0</sgm:relatedSoilbody>
-    <sgm:relatedSoilProfile xlink:href="NormalSoilProfile001.xml""></sgm:relatedSoilProfile>
+    <sgm:relatedSoilProfile xlink:href="NormalSoilProfile001.xml"></sgm:relatedSoilProfile>
     <sgm:relatedSoilProfile>
         <sgm:NormalSoilProfile gml:id="NormalSoilProfile001">
-        <INSPIRE:WRBSoilName/>
-        <INSPIRE:validFrom/>
-        <INSPIRE:beginLifespanVersion/>
-        <INSPIRE:isDescribedBy/>
-        <sgm:number></sgm:number>
-        <sgm:soilcode>
-            <sgm:soilClassification codeSpace=""></sgm:soilClassification>
-            <sgm:mainSoilClassification codeSpace=""></sgm:mainSoilClassification>
-        </sgm:soilcode>
-        <sgm:profileElement></sgm:profileElement>
-    </sgm:NormalSoilProfile></sgm:relatedSoilProfile>    
+			<INSPIRE:WRBSoilName>
+				<INSPIRE:WRBSoilNameType>
+					<INSPIRE:WRBReferenceSoilGroup xlink:href="http://inspire.ec.europa.eu/codelist/WRBReferenceSoilGroupValue/acrisol"/>
+					<INSPIRE:isOriginalClassification>true</INSPIRE:isOriginalClassification>
+				</INSPIRE:WRBSoilNameType>
+			</INSPIRE:WRBSoilName>
+			<INSPIRE:validFrom>2021-01-01T08:00:00+01:00</INSPIRE:validFrom>
+			<INSPIRE:beginLifespanVersion>2021-01-01T08:00:00+01:00</INSPIRE:beginLifespanVersion>
+			<INSPIRE:isDescribedBy/>
+			<sgm:number>1</sgm:number>
+			<sgm:soilcode>
+				<sgm:soilClassification codeSpace=""></sgm:soilClassification>
+				<sgm:mainSoilClassification codeSpace=""></sgm:mainSoilClassification>
+			</sgm:soilcode>
+			<sgm:profileElement></sgm:profileElement>
+		</sgm:NormalSoilProfile>
+    </sgm:relatedSoilProfile>
 </sgm:SoilArea>
-
-

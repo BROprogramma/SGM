@@ -2,43 +2,31 @@
 <xs:schema xmlns:INSPIRE="http://inspire.ec.europa.eu/schemas/so/4.0"
    xmlns:bro="http://www.broservices.nl/xsd/brocommon/3.0"
    xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0"
-   xmlns:dlogger="http://www.armatiek.nl/functions/dlogger-proxy"
-   xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
-   xmlns:imf="http://www.imvertor.org/xsl/functions"
-   xmlns:imvert="http://www.imvertor.org/schema/system"
-   xmlns:math="http://www.w3.org/2005/xpath-functions/math"
-   xmlns:sgm="http://www.broservices.nl/xsd/sgm/1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   targetNamespace="http://www.broservices.nl/xsd/sgm/1.1" elementFormDefault="qualified"
-   attributeFormDefault="unqualified" version="1.1-1">
+   xmlns:gml="http://www.opengis.net/gml/3.2" 
+   xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+   xmlns:sgm="http://www.broservices.nl/xsd/sgm/1.1" 
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://www.broservices.nl/xsd/sgm/1.1" 
+   elementFormDefault="qualified"
+   attributeFormDefault="unqualified" 
+   version="1.1-1">
    <xs:annotation>
-      <xs:appinfo source="http://www.imvertor.org/model-info/project">Logical model</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/application">sgm</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/release">20201026</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/version">1.1</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/phase">1</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/uri">http://www.broservices.nl/xsd/sgm</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/model-info/generated">2021-07-21T14:24:24Z</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/file-location">sgm/unknown/v20201026/Sgm.xsd</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">July 21, 2021 at 14:24:24</xs:appinfo>
-      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">1.64.2</xs:appinfo>
-      <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
-        This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
-    </xs:documentation>
-      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Name: sgm</xs:documentation>
+      <xs:documentation>This schema is provided by BRO as a local copy, as a convenience to the user. 
+		  This schema may itself reference a local copy of a schema originally referenced by URI. 
+		  The local reference takes the form of a relative path, and is introduced by BRO.
+	  </xs:documentation>
    </xs:annotation>
    <xs:annotation>
       <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
          <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
       </xs:appinfo>
    </xs:annotation>
-   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0"
-      schemaLocation="https://schema.broservices.nl/xsd/brocommon/3.0/brocommon.xsd"/>
-   <xs:import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0"
-      schemaLocation="http://standards.iso.org/iso/19115/-3/cit/1.0/cit.xsd"/>
-   <xs:import namespace="http://inspire.ec.europa.eu/schemas/so/4.0"
-      schemaLocation="http://inspire.ec.europa.eu/schemas/so/4.0/Soil.xsd"/>
-   <xs:import namespace="http://www.opengis.net/gml/3.2"
-      schemaLocation="https://schema.broservices.nl/profile/gml/1.0/gml-profile.xsd"/>
+
+   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
+   <xs:import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0" schemaLocation="http://standards.iso.org/iso/19115/-3/cit/1.0/cit.xsd"/>
+   <xs:import namespace="http://inspire.ec.europa.eu/schemas/so/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/so/4.0/Soil.xsd"/>
+   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+
    <xs:element name="MapAreaCollection" type="sgm:MapAreaCollectionType"
       substitutionGroup="gml:AbstractFeature">
       <xs:annotation>
