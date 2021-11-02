@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:INSPIRE="http://inspire.ec.europa.eu/schemas/so/4.0"
+   xmlns:bro="http://www.broservices.nl/xsd/brocommon/3.0"
+   xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0"
+   xmlns:dlogger="http://www.armatiek.nl/functions/dlogger-proxy"
+   xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+   xmlns:imf="http://www.imvertor.org/xsl/functions"
+   xmlns:imvert="http://www.imvertor.org/schema/system"
+   xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+   xmlns:sgm="http://www.broservices.nl/xsd/sgm/1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://www.broservices.nl/xsd/sgm/1.1" elementFormDefault="qualified"
+   attributeFormDefault="unqualified" version="1.1-1">
+   <xs:annotation>
+      <xs:appinfo source="http://www.imvertor.org/model-info/project">Logical model</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/application">sgm</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/release">20201026</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/version">1.1</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/phase">1</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/uri">http://www.broservices.nl/xsd/sgm</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/generated">2021-11-01T09:24:53Z</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/file-location">sgm/unknown/v20201026/Sgm.xsd</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">November 1, 2021 at 09:24:53</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">1.64.2</xs:appinfo>
+      <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
+        This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
+    </xs:documentation>
+      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Name: sgm</xs:documentation>
+   </xs:annotation>
+   <xs:annotation>
+      <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
+         <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
+      </xs:appinfo>
+   </xs:annotation>
+   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0"
+      schemaLocation="brocommon.xsd"/>
+   <xs:import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0"
+      schemaLocation="https://standards.iso.org/iso/19115/-3/cit/1.0/cit.xsd"/>
+   <xs:import namespace="http://inspire.ec.europa.eu/schemas/so/4.0"
+      schemaLocation="https://inspire.ec.europa.eu/schemas/so/4.0/Soil.xsd"/>
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+      schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+   <xs:element name="MapAreaCollection" type="sgm:MapAreaCollectionType"
+      substitutionGroup="gml:AbstractFeature">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een verzameling van één of meer bij elkaar horende bodemvlakken, met een bodemkundige beschrijving, en vlakken van bodemkundig belang, zonder een bodemkundige beschrijving.
+Explanation: Een collectie is een logische verzameling bodemkaartvlakken die als een geheel zijn gedocumenteerd. Als voorbeeld is dit de bodemkaart 1:50.000. Het model geeft tot een diepte van 1,2 m onder maaiveld informatie over de verbreiding van bodemkundige kenmerken.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="MapAreaCollectionType">
+      <xs:complexContent>
+         <xs:extension base="gml:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="classification" minOccurs="1" maxOccurs="1"
+                  type="sgm:SoilAreaCollectionClassificationType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>SoilAreaCollectionClassification</CodeListName>
+                        <CodeListURI>urn:bro:sgm:SoilAreaCollectionClassification</CodeListURI>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De soort deelverzameling van het model.
+Explanation: Biijvoorbeeld kaartbladnummer of actualisatieproject</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="citation" type="cit:CI_Citation_PropertyType" minOccurs="0"
+                  maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: CI_Citation wordt gebruikt voor het verschaffen van informatie over een publicatie (wetenschappelijk, handleiding, ...) of citeerbare informatie te verschaffen over een bron (gegevensverzameling, dienst, ...).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="MapAreaCollectionPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="sgm:MapAreaCollection"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="SoilMap" type="sgm:SoilMapType" substitutionGroup="bro:RegistrationObject">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een bodemkundig model van de Nederlandse bodem, bestaande uit een verzameling van bodemvlakcollecties.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="SoilMapType">
+      <xs:complexContent>
+         <xs:extension base="bro:RegistrationObjectType">
+            <xs:sequence>
+               <xs:element name="name" minOccurs="1" maxOccurs="1" type="xs:string">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De naam van de deelverzameling.
+Explanation: Bijvoorbeeld het kaartbladnummer of naam van het project.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="classification" minOccurs="1" maxOccurs="1"
+                  type="sgm:SoilAreaCollectionClassificationType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>SoilAreaCollectionClassification</CodeListName>
+                        <CodeListURI>urn:bro:sgm:SoilAreaCollectionClassification</CodeListURI>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De soort deelverzameling van het model.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="citation" type="cit:CI_Citation_PropertyType" minOccurs="0"
+                  maxOccurs="unbounded">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: CI_Citation wordt gebruikt voor het verschaffen van informatie over een publicatie (wetenschappelijk, handleiding, ...) of citeerbare informatie te verschaffen over een bron (gegevensverzameling, dienst, ...).</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="1" maxOccurs="unbounded" name="mapArea" nillable="false"
+                  type="sgm:MapAreaPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Bodemkaart bestaat uit een of meer Kaartvlakken.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="SoilMapPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="sgm:SoilMap"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="SoilHorizon" type="sgm:SoilHorizonType" substitutionGroup="INSPIRE:SoilHorizon">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Laag in de grond met kenmerken en eigenschappen die verschillen van de erboven en/of eronder liggende lagen; in het algemeen ligt een horizont min of meer evenwijdig aan het maaiveld.
+Explanation: De lagen waaruit de bodem is opgebouwd, worden in de bodemkunde horizonten genoemd. Horizonten ontstaan als gevolg van bodemvormende processen en worden van elkaar onderscheiden op basis van verschillen in onder meer grondsoort, kleur, gehalte aan humus, ijzer en kalk, structuur, consistentie of een combinatie daarvan.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="SoilHorizonType">
+      <xs:complexContent>
+         <xs:extension base="INSPIRE:SoilHorizonType">
+            <xs:sequence>
+               <xs:element name="staringSeriesBlock" minOccurs="1" maxOccurs="1"
+                  type="sgm:StaringSeriesBlockType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>StaringSeriesBlock</CodeListName>
+                        <CodeListURI>urn:bro:sgm:StaringSeriesBlock</CodeListURI>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indeling van het bodemmateriaal in klassen waaraan hydrofysische karakteristieken zijn gekoppeld.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="1" maxOccurs="1" name="chemicalSoilCharacteristics"
+                  nillable="false" type="sgm:ChemicalSoilCharacteristicsType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De chemische kenmerken van de bodemhorizont.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="1" maxOccurs="1" name="physicalSoilCharacteristics"
+                  nillable="false" type="sgm:PhysicalSoilCharacteristicsType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De fysische kenmerken van de bodemhorizont.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="SoilHorizonPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="sgm:SoilHorizon"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="SoilLayer" type="sgm:SoilLayerType" substitutionGroup="INSPIRE:SoilLayer">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Profiellaag.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="SoilLayerType">
+      <xs:complexContent>
+         <xs:extension base="INSPIRE:SoilLayerType">
+            <xs:sequence>
+               <xs:element name="depositCharacteristic" minOccurs="1" maxOccurs="1"
+                  type="sgm:DepositionalCharacteristicType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>DepositionalCharacteristic</CodeListName>
+                        <CodeListURI>urn:bro:sgm:DepositionalCharacteristic</CodeListURI>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geologische typering van minerale sedimenten.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="SoilLayerPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="sgm:SoilLayer"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="MapArea" type="sgm:MapAreaType" abstract="true"
+      substitutionGroup="gml:AbstractFeature">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Abstract objecttype voor het definiëren van de gemeenschappelijke kenmerken voor Vlak van bodemkundig belang en Bodemvlak.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="MapAreaType" abstract="true">
+      <xs:complexContent>
+         <xs:extension base="gml:AbstractFeatureType">
+            <xs:sequence>
+               <xs:element name="geometry" type="sgm:GM_SurfaceType" minOccurs="1" maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geometrie bepaald voor het Kaartvlak.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="1" maxOccurs="1" name="mapAreaCollection" nillable="false"
+                  type="sgm:MapAreaCollectionPropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een Bodemvlakcollectie bestaat uit één of meer gerelateerde Kaartvlakken.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="MapAreaPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="sgm:MapArea"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="SoilArea" type="sgm:SoilAreaType" substitutionGroup="sgm:MapArea">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een begrensd gebied met overeenkomstige bodemkundige kenmerken.
+Explanation: De begrenzing is de 2D afbeelding van het 3D bodemlichaam (soil body in INSPIRE) op het aardoppervlak (maaiveld), zodat het als kaart is te gebruiken</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="SoilAreaType">
+      <xs:complexContent>
+         <xs:extension base="sgm:MapAreaType">
+            <xs:sequence>
+               <xs:element name="soilSlope" minOccurs="1" maxOccurs="1" type="sgm:SoilSlopeType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>SoilSlope</CodeListName>
+                        <CodeListURI>urn:bro:sgm:SoilSlope</CodeListURI>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De indeling voor de overheersende helling in het bodemvlak in procenten.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="1" maxOccurs="unbounded" name="soilUnit" nillable="false"
+                  type="sgm:SoilUnitType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Bodemklasse onderscheidend in kenmerken onderlaag en kenmerken bovenlaag.
+Explanation: Bodemeenheid is bodemklasse met eventuele uitbreiding van daarvoor geplaatst BodemkenmerkenBovenlaag en erachter geplaatst BodemkenmerkenOnderlaag.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="relatedSoilbody" type="sgm:GM_SolidType" minOccurs="1"
+                  maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geometrie, als een begrensd 3D-object, bepaald voor het bodemobject met gelijke bodemkenmerken.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="1" maxOccurs="unbounded" name="relatedSoilProfile"
+                  nillable="false" type="sgm:NormalSoilProfilePropertyType">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een Bodemvlak wordt getypeerd door één of meer gerelateerde Afgeleide profielen.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="SoilAreaPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="sgm:SoilArea"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="AreaOfPedologicalInterest" type="sgm:AreaOfPedologicalInterestType"
+      substitutionGroup="sgm:MapArea">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vlak waarvoor geen bodemkundige beschrijving mogelijk is (stedelijk gebied, water, etc), maar wel relevant voor de interpretatie van de bodem in de directe omgeving.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="AreaOfPedologicalInterestType">
+      <xs:complexContent>
+         <xs:extension base="sgm:MapAreaType">
+            <xs:sequence>
+               <xs:element name="pedologicalInterest" minOccurs="1" maxOccurs="1"
+                  type="sgm:PedologicalInterestType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>PedologicalInterest</CodeListName>
+                        <CodeListURI>urn:bro:sgm:PedologicalInterest</CodeListURI>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding van het type vlak waarmee aangegeven wordt wat mogelijk het belang ervan is voor omliggende bodemvlakken</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="AreaOfPedologicalInterestPropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="sgm:AreaOfPedologicalInterest"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+   </xs:complexType>
+   <xs:element name="NormalSoilProfile" type="sgm:NormalSoilProfileType"
+      substitutionGroup="INSPIRE:DerivedSoilProfile">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Beschrijving van de bodem die wordt gekenmerkt door een verticale opeenvolging van profielelementen (horizonten en lagen).
+Explanation: Een representatief bodemprofiel van een bodemeenheid. Een afgeleid profiel is geconstrueerd uit waarnemingen en analyses aan wanden en boorgaten gelegen in kaartvlakken die tot dezelfde bodemeenheid behoren. Een vaak gebruikte andere naam is standaardprofiel of geschematiseerde profielschets.</xs:documentation>
+      </xs:annotation>
+   </xs:element>
+   <xs:complexType name="NormalSoilProfileType">
+      <xs:complexContent>
+         <xs:extension base="INSPIRE:DerivedSoilProfileType">
+            <xs:sequence>
+               <xs:element name="number" type="xs:integer" minOccurs="1" maxOccurs="1">
+                  <xs:annotation>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Unieke aanduiding van een afgeleid profiel.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="1" maxOccurs="1" name="soilcode" nillable="false"
+                  type="sgm:SoilUnitType">
+                  <xs:annotation>
+                     <xs:appinfo source="http://www.imvertor.org/data-info/uri">urn:bro:sgm:SoilUnit</xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Bodemklasse onderscheidend in kenmerken onderlaag en kenmerken bovenlaag.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="landuse" minOccurs="0" maxOccurs="3" type="sgm:LandUseType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>LandUse</CodeListName>
+                        <CodeListURI>urn:bro:sgm:Landuse</CodeListURI>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indeling van het land naar het type gebruik.
+Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor alle typen landgebruik.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element name="region" minOccurs="0" maxOccurs="1" type="sgm:RegionType">
+                  <xs:annotation>
+                     <xs:appinfo>
+                        <CodeListName>Region</CodeListName>
+                        <CodeListURI>urn:bro:sgm:Region</CodeListURI>
+                     </xs:appinfo>
+                     <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geografisch gebied.</xs:documentation>
+                  </xs:annotation>
+               </xs:element>
+               <xs:element minOccurs="1" maxOccurs="unbounded" name="profileElement"
+                  nillable="false" type="INSPIRE:ProfileElementPropertyType"/>
+            </xs:sequence>
+         </xs:extension>
+      </xs:complexContent>
+   </xs:complexType>
+   <xs:complexType name="NormalSoilProfilePropertyType">
+      <xs:sequence minOccurs="0">
+         <xs:element ref="sgm:NormalSoilProfile"/>
+      </xs:sequence>
+      <xs:attributeGroup ref="gml:AssociationAttributeGroup"/>
+   </xs:complexType>
+   <xs:complexType name="ChemicalSoilCharacteristicsType">
+      <xs:sequence>
+         <xs:element name="organicMatterContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het gehalte aan organische stof, uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="minimumOrganicMatterContent" type="sgm:MeasureType" minOccurs="1"
+            maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in het organische stofgehalte, uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="maximumOrganicMatterContent" type="sgm:MeasureType" minOccurs="1"
+            maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in het organische stofgehalte, uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="acidity" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van de zuurgraad uitgedrukt als pH-KCl.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="minimumAcidity" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in zuurgraad uitgedrukt als pH-KCl.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="maximumAcidity" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in zuurgraad uitgedrukt als pH-KCl.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="cnRatio" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Veel gebruikte verhouding tussen de hoeveelheid koolstof en stikstof in de organische stof.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="peatClassification" minOccurs="0" maxOccurs="1" type="sgm:PeatTypeType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <CodeListName>PeatType</CodeListName>
+                  <CodeListURI>urn:bro:sgm:PeatType</CodeListURI>
+               </xs:appinfo>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een nadere typering van het als veen omschreven bestanddeel van grond.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="calcicContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het kalkgehalte (CACO3), uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="FeDith" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane Fe2O3-gehalte, geëxtraheerd met dithioniet-citraat-bicarbonaat en uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="PhysicalSoilCharacteristicsType">
+      <xs:sequence>
+         <xs:element name="loamContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het gehalte aan minerale delen met een korrelgrootte kleiner dan 50 µm.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="minimumLoamContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 50 µm.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="maximumLoamContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 50 µm.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="lutiteContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het gehalte aan minerale delen met een korrelgrootte kleiner dan 2 µm.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="minimumLutiteContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 2 µm.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="maximumLutiteContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 2 µm.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="sandMedian" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van de zandfractie (uitgedrukt in µm).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="minimumSandMedian" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in zandmediaan (uitgedrukt in µm).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="maximumSandMedian" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in zandmediaan (uitgedrukt in µm).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="siltContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het gehalte aan minerale delen met een korrelgrootte tussen 50 µm en 2 mm.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="density" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+            <xs:annotation>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde voor de volumieke massa (g/cm3).</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="SoilUnitType">
+      <xs:sequence>
+         <xs:element name="soilClassification" minOccurs="1" maxOccurs="1"
+            type="sgm:SoilClassificationType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <CodeListName>SoilClassification</CodeListName>
+                  <CodeListURI>urn:bro:sgm:SoilClassification</CodeListURI>
+               </xs:appinfo>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De indeling van de bodemtypen op specifiek niveau.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="mainSoilClassification" minOccurs="1" maxOccurs="1"
+            type="sgm:MainSoilClassificationType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <CodeListName>MainSoilClassification</CodeListName>
+                  <CodeListURI>urn:bro:sgm:MainSoilClassification</CodeListURI>
+               </xs:appinfo>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: indeling van bodemtypen op generiek niveau</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="soilCharacteristicsUpperLayer" minOccurs="0" maxOccurs="unbounded"
+            type="sgm:SoilCharacteristicsUpperLayerType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <CodeListName>SoilCharacteristicsUpperLayer</CodeListName>
+                  <CodeListURI>urn:bro:sgm:SoilCharacteristicsUpperLayer</CodeListURI>
+               </xs:appinfo>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De bodemspecifieke kenmerken in de eerste 40 à 50 cm van het bodemprofiel.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+         <xs:element name="soilCharacteristicsBottomLayer" minOccurs="0" maxOccurs="unbounded"
+            type="sgm:SoilCharacteristicsBottomLayerType">
+            <xs:annotation>
+               <xs:appinfo>
+                  <CodeListName>SoilCharacteristicsBottomLayer</CodeListName>
+                  <CodeListURI>urn:bro:sgm:SoilCharacteristicsBottomLayer</CodeListURI>
+               </xs:appinfo>
+               <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De bodemspecifieke kenmerken in het bodemprofiel tussen 40 en 120 cm.</xs:documentation>
+            </xs:annotation>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:simpleType name="GM_SolidType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Volume. 3-dimensionaal geometrietype. (bron: ISO 19107:2003 Spatial Schema)</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:simpleType name="GM_SurfaceType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vlak. 2-dimensionale geometrie. (bron: ISO 19107:2003 Spatial Schema)</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:simpleType name="MeasureType">
+      <xs:annotation>
+         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: zie inleiding catalogus</xs:documentation>
+      </xs:annotation>
+      <xs:restriction base="xs:string"/>
+   </xs:simpleType>
+   <xs:complexType name="DepositionalCharacteristicType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
+               fixed="urn:bro:bhrp:DepositionalCharacteristic"/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="SoilSlopeType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="MainSoilClassificationType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="SoilClassificationType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="SoilCharacteristicsUpperLayerType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="SoilCharacteristicsBottomLayerType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="PedologicalInterestType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="SoilAreaCollectionClassificationType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="LandUseType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="RegionType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="StaringSeriesBlockType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+   <xs:complexType name="PeatTypeType">
+      <xs:simpleContent>
+         <xs:restriction base="gml:CodeWithAuthorityType">
+            <xs:attribute name="codeSpace" type="xs:anyURI" use="required" fixed=""/>
+         </xs:restriction>
+      </xs:simpleContent>
+   </xs:complexType>
+</xs:schema>
