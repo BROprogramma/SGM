@@ -205,7 +205,7 @@ Explanation: De lagen waaruit de bodem is opgebouwd, worden in de bodemkunde hor
       <xs:complexContent>
          <xs:extension base="gml:AbstractFeatureType">
             <xs:sequence>
-               <xs:element name="geometry" type="sgm:GM_SurfaceType" minOccurs="1" maxOccurs="1">
+               <xs:element name="geometry" type="gml:SurfaceType" minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geometrie bepaald voor het Kaartvlak.</xs:documentation>
                   </xs:annotation>
@@ -252,7 +252,7 @@ Explanation: De begrenzing is de 2D afbeelding van het 3D bodemlichaam (soil bod
 Explanation: Bodemeenheid is bodemklasse met eventuele uitbreiding van daarvoor geplaatst BodemkenmerkenBovenlaag en erachter geplaatst BodemkenmerkenOnderlaag.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="relatedSoilbody" type="sgm:GM_SolidType" minOccurs="1"
+               <xs:element name="relatedSoilbody" type="gml:SolidType" minOccurs="0"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geometrie, als een begrensd 3D-object, bepaald voor het bodemobject met gelijke bodemkenmerken.</xs:documentation>
@@ -360,39 +360,39 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
    </xs:complexType>
    <xs:complexType name="ChemicalSoilCharacteristicsType">
       <xs:sequence>
-         <xs:element name="organicMatterContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="organicMatterContent" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het gehalte aan organische stof, uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="minimumOrganicMatterContent" type="sgm:MeasureType" minOccurs="1"
+         <xs:element name="minimumOrganicMatterContent" type="gml:MeasureType" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in het organische stofgehalte, uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="maximumOrganicMatterContent" type="sgm:MeasureType" minOccurs="1"
+         <xs:element name="maximumOrganicMatterContent" type="gml:MeasureType" minOccurs="1"
             maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in het organische stofgehalte, uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="acidity" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="acidity" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van de zuurgraad uitgedrukt als pH-KCl.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="minimumAcidity" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="minimumAcidity" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in zuurgraad uitgedrukt als pH-KCl.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="maximumAcidity" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="maximumAcidity" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in zuurgraad uitgedrukt als pH-KCl.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="cnRatio" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="cnRatio" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Veel gebruikte verhouding tussen de hoeveelheid koolstof en stikstof in de organische stof.</xs:documentation>
             </xs:annotation>
@@ -406,12 +406,12 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een nadere typering van het als veen omschreven bestanddeel van grond.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="calcicContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="calcicContent" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het kalkgehalte (CACO3), uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="FeDith" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="FeDith" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane Fe2O3-gehalte, geëxtraheerd met dithioniet-citraat-bicarbonaat en uitgedrukt in massaprocenten op de totale massa grond waaruit delen groter dan 2 mm zijn verwijderd.</xs:documentation>
             </xs:annotation>
@@ -420,57 +420,57 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
    </xs:complexType>
    <xs:complexType name="PhysicalSoilCharacteristicsType">
       <xs:sequence>
-         <xs:element name="loamContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="loamContent" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het gehalte aan minerale delen met een korrelgrootte kleiner dan 50 µm.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="minimumLoamContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="minimumLoamContent" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 50 µm.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="maximumLoamContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="maximumLoamContent" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 50 µm.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="lutiteContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="lutiteContent" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het gehalte aan minerale delen met een korrelgrootte kleiner dan 2 µm.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="minimumLutiteContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="minimumLutiteContent" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 2 µm.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="maximumLutiteContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="maximumLutiteContent" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in het gehalte aan minerale delen met een korrelgrootte kleiner dan 2 µm.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="sandMedian" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="sandMedian" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van de zandfractie (uitgedrukt in µm).</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="minimumSandMedian" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="minimumSandMedian" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 10-percentiel voor de variatie in zandmediaan (uitgedrukt in µm).</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="maximumSandMedian" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="maximumSandMedian" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Het 90-percentiel voor de variatie in zandmediaan (uitgedrukt in µm).</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="siltContent" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="siltContent" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde van het gehalte aan minerale delen met een korrelgrootte tussen 50 µm en 2 mm.</xs:documentation>
             </xs:annotation>
          </xs:element>
-         <xs:element name="density" type="sgm:MeasureType" minOccurs="1" maxOccurs="1">
+         <xs:element name="density" type="gml:MeasureType" minOccurs="1" maxOccurs="1">
             <xs:annotation>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Mediane waarde voor de volumieke massa (g/cm3).</xs:documentation>
             </xs:annotation>
@@ -520,26 +520,8 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
             </xs:annotation>
          </xs:element>
       </xs:sequence>
-   </xs:complexType>
-   <xs:simpleType name="GM_SolidType">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Volume. 3-dimensionaal geometrietype. (bron: ISO 19107:2003 Spatial Schema)</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string"/>
-   </xs:simpleType>
-   <xs:simpleType name="GM_SurfaceType">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Vlak. 2-dimensionale geometrie. (bron: ISO 19107:2003 Spatial Schema)</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string"/>
-   </xs:simpleType>
-   <xs:simpleType name="MeasureType">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: zie inleiding catalogus</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string"/>
-   </xs:simpleType>
-   <xs:complexType name="DepositionalCharacteristicType">
+   </xs:complexType> 
+    <xs:complexType name="DepositionalCharacteristicType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
             <xs:attribute name="codeSpace" type="xs:anyURI" use="required"

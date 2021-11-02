@@ -3,6 +3,10 @@
 - locaties van domeinwaardenlijsten toegevoegd: urn:ogc:sgm:«nameCodeList»
 - units of measure toegevoegd bij de meetwaarden.
 - http:// aangepast naar https:// voor de xsd-import van INSPIRE-SOIL en CIT10
+- elementen met type="sgm:Measuretype" vervangen door elementen met type="gml:MeasureType"
+- elementen met type="sgm:GM_SolidType" vervangen door elementen met type="gml:SolidType"
+- elementen met type="sgm:GM_SurfaceType" vervangen door elementen met type="gml:SurfaceType"
+- element simple types MeasureType, GM_SolidType en GM_SurfaceType verwijdert.
 
 14-09-2021
 ----------
