@@ -205,7 +205,7 @@ Explanation: De lagen waaruit de bodem is opgebouwd, worden in de bodemkunde hor
       <xs:complexContent>
          <xs:extension base="gml:AbstractFeatureType">
             <xs:sequence>
-               <xs:element name="geometry" type="gml:SurfaceType" minOccurs="1" maxOccurs="1">
+               <xs:element name="geometry" type="gml:SurfacePropertyType" minOccurs="1" maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geometrie bepaald voor het Kaartvlak.</xs:documentation>
                   </xs:annotation>
