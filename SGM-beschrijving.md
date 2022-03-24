@@ -11,6 +11,10 @@ opgenomen, met name in de registratieobjecten bodemkundig boormonsteronderzoek
 hiervoor van belang. In deze objecten wordt profielopbouw met fysische en
 chemische analyses geregistreerd.
 
+Het Ministerie van Landbouw, Natuur en Voedselkwaliteit (LNV) is de bronhouder,
+en Wageningen Environmental Research (WENR) is de dataleverancier van het
+bodemkaart model (SGM).
+
 Bodem en bodemkartering
 -----------------------
 
@@ -21,6 +25,8 @@ de rivieren (rivierklei en –zand), de zee (zeeklei en –zand) en door het lan
 (smeltwaterafzettingen, keileem), soms is het ter plaatse ontstaan (veen).
 
 ![Landschap profiel](media/7d921eeeb7b043e83e309a2bec22858b.jpg)
+
+Landschap profiel
 
 Figuur 3 Vier bodemeenheden in hun landschappelijk verband. De eenheden op de
 rug, op de helling en in het dal zijn verschillend. Elke eenheid (Hd21, Hn23,
@@ -85,12 +91,14 @@ Bodemkundig boormonsteronderzoek in de catalogus nu niet meegenomen. In dit
 model volgen we de internationale standaard van INSPIRE[^1] zoals beschreven in
 de ‘technical guideline’, omdat dat aansluit op het model ‘bodemkaart’ zoals
 deze in Nederland wordt gebruikt. Pas als de samenhang op basis van het
-Metamodel voor informatiemodellen, MIM[^2] (KKG metamodel) verder duidelijk is geworden kunnen we die relaties leggen en het
-model daarop laten aansluiten.
+Metamodel voor informatiemodellen, MIM[^2] (KKG metamodel) verder duidelijk is
+geworden kunnen we die relaties leggen en het model daarop laten aansluiten.
 
-[^1]: [INSPIRE Data Specification Theme SOIL, oktober 2018](https://inspire.ec.europa.eu/Themes/127/2892)
+[^1]: [INSPIRE Data Specification Theme SOIL, oktober
+2018](https://inspire.ec.europa.eu/Themes/127/2892)
 
-[^2]: [Metamodel voor Informatiemodellen, juni 2017](https://docs.geostandaarden.nl/mim/def-st-mim10-20170614/doc.pdf)
+[^2]: [Metamodel voor Informatiemodellen, juni
+2017](https://docs.geostandaarden.nl/mim/def-st-mim10-20170614/doc.pdf)
 
 ### Versiebeheer
 
@@ -278,6 +286,8 @@ van oppervlaktewater in het bodemkundige model lokaal afwijken van de begrenzing
 in GIS-bestanden met de topografie.
 
 ![Bodemkaart en actualisaties](media/aa022d9b4f00d26086eb6277bdc916be.png)
+
+Bodemkaart en actualisaties
 
 Figuur 4 Overzicht van jaar van opname eerste uitgave van de bodemkaart en van
 de actualisaties
