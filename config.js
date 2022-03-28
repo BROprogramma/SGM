@@ -1,9 +1,9 @@
 var respecConfig = {
-  specStatus: "GN-WV",
+  specStatus: "GN-VV",
   specType: "IM",
   maxTocLevel: 4,
  // subtitle: "BRO gegevenscatalogus",
-   //publishDate: "2020-03-31", 
+   publishDate: "2022-03-28", 
     logos: [ {
     src: 'https://docs.geostandaarden.nl/bro/gen/logo_minbzk.png',
     href: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
