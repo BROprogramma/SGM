@@ -24,7 +24,7 @@ var respecConfig = {
   shortName: "SGM",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/SGM",
-  previousPublishDate: "2023-03-28",
+  previousPublishDate: "2023-02-23",
   previousStatus: "GN-CV",
   localBiblio: {
     "Bakker-Schelling1989": {
