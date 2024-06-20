@@ -2,8 +2,7 @@ var respecConfig = {
   specStatus: "GN-WV",
   specType: "IM",
   maxTocLevel: 4,
- // subtitle: "BRO gegevenscatalogus",
-   //publishDate: "2020-03-31", 
+ // publishDate: "2023-06-07",
     logos: [ {
     src: 'https://docs.geostandaarden.nl/bro/gen/logo_minbzk.png',
     href: "https://www.geobasisregistraties.nl/basisregistraties/ondergrond",
@@ -24,8 +23,10 @@ var respecConfig = {
   shortName: "SGM",
   pubDomain: "bro",
   github: "https://github.com/BROprogramma/SGM",
-  previousPublishDate: "2020-10-26",
-  previousStatus: "GN-VV",
+  //previousPublishDate: "2023-05-04",
+  //previousStatus: "GN-VV",
+ previousPublishDate: "2023-06-07",
+  previousStatus: "GN-DEF",
   localBiblio: {
     "Bakker-Schelling1989": {
       title:

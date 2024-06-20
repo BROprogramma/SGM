@@ -2,31 +2,43 @@
 <xs:schema xmlns:INSPIRE="http://inspire.ec.europa.eu/schemas/so/4.0"
    xmlns:bro="http://www.broservices.nl/xsd/brocommon/3.0"
    xmlns:cit="http://standards.iso.org/iso/19115/-3/cit/1.0"
-   xmlns:gml="http://www.opengis.net/gml/3.2" 
-   xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
-   xmlns:sgm="http://www.broservices.nl/xsd/sgm/1.1" 
-   xmlns:xs="http://www.w3.org/2001/XMLSchema"
-   targetNamespace="http://www.broservices.nl/xsd/sgm/1.1" 
-   elementFormDefault="qualified"
-   attributeFormDefault="unqualified" 
-   version="1.1-1">
+   xmlns:dlogger="http://www.armatiek.nl/functions/dlogger-proxy"
+   xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:gmlsf="http://www.opengis.net/gmlsf/2.0"
+   xmlns:imf="http://www.imvertor.org/xsl/functions"
+   xmlns:imvert="http://www.imvertor.org/schema/system"
+   xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+   xmlns:sgm="http://www.broservices.nl/xsd/sgm/1.1" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   targetNamespace="http://www.broservices.nl/xsd/sgm/1.1" elementFormDefault="qualified"
+   attributeFormDefault="unqualified" version="1.1-1">
    <xs:annotation>
-      <xs:documentation>This schema is provided by BRO as a local copy, as a convenience to the user. 
-		  This schema may itself reference a local copy of a schema originally referenced by URI. 
-		  The local reference takes the form of a relative path, and is introduced by BRO.
-	  </xs:documentation>
+      <xs:appinfo source="http://www.imvertor.org/model-info/project">Logical model</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/application">sgm</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/release">20201026</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/version">1.1</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/phase">1</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/uri">http://www.broservices.nl/xsd/sgm</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/model-info/generated">2021-11-01T09:24:53Z</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/file-location">sgm/unknown/v20201026/Sgm.xsd</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generated">November 1, 2021 at 09:24:53</xs:appinfo>
+      <xs:appinfo source="http://www.imvertor.org/xml-schema-info/generator">1.64.2</xs:appinfo>
+      <xs:documentation source="http://www.imvertor.org/schema-info/conversion">
+        This schema is based on an UML specification, which is transformed by the Imvertor software. Imvertor modules are in the public domain, see http://www.imvertor.org.
+    </xs:documentation>
+      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Name: sgm</xs:documentation>
    </xs:annotation>
    <xs:annotation>
       <xs:appinfo source="http://schemas.opengis.net/gmlsfProfile/2.0/gmlsfLevels.xsd">
          <gmlsf:ComplianceLevel>0</gmlsf:ComplianceLevel>
       </xs:appinfo>
    </xs:annotation>
-
-   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0" schemaLocation="brocommon.xsd"/>
-   <xs:import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0" schemaLocation="http://standards.iso.org/iso/19115/-3/cit/1.0/cit.xsd"/>
-   <xs:import namespace="http://inspire.ec.europa.eu/schemas/so/4.0" schemaLocation="http://inspire.ec.europa.eu/schemas/so/4.0/Soil.xsd"/>
-   <xs:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
-
+   <xs:import namespace="http://www.broservices.nl/xsd/brocommon/3.0"
+      schemaLocation="brocommon.xsd"/>
+   <xs:import namespace="http://standards.iso.org/iso/19115/-3/cit/1.0"
+      schemaLocation="https://standards.iso.org/iso/19115/-3/cit/1.0/cit.xsd"/>
+   <xs:import namespace="http://inspire.ec.europa.eu/schemas/so/4.0"
+      schemaLocation="https://inspire.ec.europa.eu/schemas/so/4.0/Soil.xsd"/>
+   <xs:import namespace="http://www.opengis.net/gml/3.2"
+      schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
    <xs:element name="MapAreaCollection" type="sgm:MapAreaCollectionType"
       substitutionGroup="gml:AbstractFeature">
       <xs:annotation>
@@ -43,7 +55,7 @@ Explanation: Een collectie is een logische verzameling bodemkaartvlakken die als
                   <xs:annotation>
                      <xs:appinfo>
                         <CodeListName>SoilAreaCollectionClassification</CodeListName>
-                        <CodeListURI/>
+                        <CodeListURI>urn:bro:sgm:SoilAreaCollectionClassification</CodeListURI>
                      </xs:appinfo>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De soort deelverzameling van het model.
 Explanation: Biijvoorbeeld kaartbladnummer of actualisatieproject</xs:documentation>
@@ -85,7 +97,7 @@ Explanation: Bijvoorbeeld het kaartbladnummer of naam van het project.</xs:docum
                   <xs:annotation>
                      <xs:appinfo>
                         <CodeListName>SoilAreaCollectionClassification</CodeListName>
-                        <CodeListURI/>
+                        <CodeListURI>urn:bro:sgm:SoilAreaCollectionClassification</CodeListURI>
                      </xs:appinfo>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De soort deelverzameling van het model.</xs:documentation>
                   </xs:annotation>
@@ -127,7 +139,7 @@ Explanation: De lagen waaruit de bodem is opgebouwd, worden in de bodemkunde hor
                   <xs:annotation>
                      <xs:appinfo>
                         <CodeListName>StaringSeriesBlock</CodeListName>
-                        <CodeListURI/>
+                        <CodeListURI>urn:bro:sgm:StaringSeriesBlock</CodeListURI>
                      </xs:appinfo>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indeling van het bodemmateriaal in klassen waaraan hydrofysische karakteristieken zijn gekoppeld.</xs:documentation>
                   </xs:annotation>
@@ -168,7 +180,7 @@ Explanation: De lagen waaruit de bodem is opgebouwd, worden in de bodemkunde hor
                   <xs:annotation>
                      <xs:appinfo>
                         <CodeListName>DepositionalCharacteristic</CodeListName>
-                        <CodeListURI/>
+                        <CodeListURI>urn:bro:sgm:DepositionalCharacteristic</CodeListURI>
                      </xs:appinfo>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geologische typering van minerale sedimenten.</xs:documentation>
                   </xs:annotation>
@@ -228,7 +240,7 @@ Explanation: De begrenzing is de 2D afbeelding van het 3D bodemlichaam (soil bod
                   <xs:annotation>
                      <xs:appinfo>
                         <CodeListName>SoilSlope</CodeListName>
-                        <CodeListURI/>
+                        <CodeListURI>urn:bro:sgm:SoilSlope</CodeListURI>
                      </xs:appinfo>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De indeling voor de overheersende helling in het bodemvlak in procenten.</xs:documentation>
                   </xs:annotation>
@@ -240,7 +252,7 @@ Explanation: De begrenzing is de 2D afbeelding van het 3D bodemlichaam (soil bod
 Explanation: Bodemeenheid is bodemklasse met eventuele uitbreiding van daarvoor geplaatst BodemkenmerkenBovenlaag en erachter geplaatst BodemkenmerkenOnderlaag.</xs:documentation>
                   </xs:annotation>
                </xs:element>
-               <xs:element name="relatedSoilbody" type="sgm:GM_SolidType" minOccurs="1"
+               <xs:element name="relatedSoilbody" type="gml:SolidType" minOccurs="0"
                   maxOccurs="1">
                   <xs:annotation>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De geometrie, als een begrensd 3D-object, bepaald voor het bodemobject met gelijke bodemkenmerken.</xs:documentation>
@@ -277,7 +289,7 @@ Explanation: Bodemeenheid is bodemklasse met eventuele uitbreiding van daarvoor 
                   <xs:annotation>
                      <xs:appinfo>
                         <CodeListName>PedologicalInterest</CodeListName>
-                        <CodeListURI/>
+                        <CodeListURI>urn:bro:sgm:PedologicalInterest</CodeListURI>
                      </xs:appinfo>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Aanduiding van het type vlak waarmee aangegeven wordt wat mogelijk het belang ervan is voor omliggende bodemvlakken</xs:documentation>
                   </xs:annotation>
@@ -311,6 +323,7 @@ Explanation: Een representatief bodemprofiel van een bodemeenheid. Een afgeleid 
                <xs:element minOccurs="1" maxOccurs="1" name="soilcode" nillable="false"
                   type="sgm:SoilUnitType">
                   <xs:annotation>
+                     <xs:appinfo source="http://www.imvertor.org/data-info/uri">urn:bro:sgm:SoilUnit</xs:appinfo>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Bodemklasse onderscheidend in kenmerken onderlaag en kenmerken bovenlaag.</xs:documentation>
                   </xs:annotation>
                </xs:element>
@@ -318,7 +331,7 @@ Explanation: Een representatief bodemprofiel van een bodemeenheid. Een afgeleid 
                   <xs:annotation>
                      <xs:appinfo>
                         <CodeListName>LandUse</CodeListName>
-                        <CodeListURI/>
+                        <CodeListURI>urn:bro:sgm:Landuse</CodeListURI>
                      </xs:appinfo>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Indeling van het land naar het type gebruik.
 Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor alle typen landgebruik.</xs:documentation>
@@ -328,7 +341,7 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
                   <xs:annotation>
                      <xs:appinfo>
                         <CodeListName>Region</CodeListName>
-                        <CodeListURI/>
+                        <CodeListURI>urn:bro:sgm:Region</CodeListURI>
                      </xs:appinfo>
                      <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Geografisch gebied.</xs:documentation>
                   </xs:annotation>
@@ -388,7 +401,7 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
             <xs:annotation>
                <xs:appinfo>
                   <CodeListName>PeatType</CodeListName>
-                  <CodeListURI/>
+                  <CodeListURI>urn:bro:sgm:PeatType</CodeListURI>
                </xs:appinfo>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Een nadere typering van het als veen omschreven bestanddeel van grond.</xs:documentation>
             </xs:annotation>
@@ -471,7 +484,7 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
             <xs:annotation>
                <xs:appinfo>
                   <CodeListName>SoilClassification</CodeListName>
-                  <CodeListURI/>
+                  <CodeListURI>urn:bro:sgm:SoilClassification</CodeListURI>
                </xs:appinfo>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De indeling van de bodemtypen op specifiek niveau.</xs:documentation>
             </xs:annotation>
@@ -481,7 +494,7 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
             <xs:annotation>
                <xs:appinfo>
                   <CodeListName>MainSoilClassification</CodeListName>
-                  <CodeListURI/>
+                  <CodeListURI>urn:bro:sgm:MainSoilClassification</CodeListURI>
                </xs:appinfo>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: indeling van bodemtypen op generiek niveau</xs:documentation>
             </xs:annotation>
@@ -491,7 +504,7 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
             <xs:annotation>
                <xs:appinfo>
                   <CodeListName>SoilCharacteristicsUpperLayer</CodeListName>
-                  <CodeListURI/>
+                  <CodeListURI>urn:bro:sgm:SoilCharacteristicsUpperLayer</CodeListURI>
                </xs:appinfo>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De bodemspecifieke kenmerken in de eerste 40 à 50 cm van het bodemprofiel.</xs:documentation>
             </xs:annotation>
@@ -501,20 +514,14 @@ Explanation: Indien Landgebruik is leeg, dan geldt het afgeleid profiel voor all
             <xs:annotation>
                <xs:appinfo>
                   <CodeListName>SoilCharacteristicsBottomLayer</CodeListName>
-                  <CodeListURI/>
+                  <CodeListURI>urn:bro:sgm:SoilCharacteristicsBottomLayer</CodeListURI>
                </xs:appinfo>
                <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: De bodemspecifieke kenmerken in het bodemprofiel tussen 40 en 120 cm.</xs:documentation>
             </xs:annotation>
          </xs:element>
       </xs:sequence>
-   </xs:complexType>
-   <xs:simpleType name="GM_SolidType">
-      <xs:annotation>
-         <xs:documentation source="http://www.imvertor.org/model-info/technical-documentation">Definition: Volume. 3-dimensionaal geometrietype. (bron: ISO 19107:2003 Spatial Schema)</xs:documentation>
-      </xs:annotation>
-      <xs:restriction base="xs:string"/>
-   </xs:simpleType>
-   <xs:complexType name="DepositionalCharacteristicType">
+   </xs:complexType> 
+    <xs:complexType name="DepositionalCharacteristicType">
       <xs:simpleContent>
          <xs:restriction base="gml:CodeWithAuthorityType">
             <xs:attribute name="codeSpace" type="xs:anyURI" use="required"
