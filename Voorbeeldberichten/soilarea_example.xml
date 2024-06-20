@@ -36,7 +36,7 @@
  xmlns:spec="http://www.opengis.net/samplingSpecimen/2.0"
  xmlns:gsr="http://www.isotc211.org/2005/gsr"
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://www.broservices.nl/xsd/sgm/1.1 sgm.xsd" 
+ xsi:schemaLocation="http://www.broservices.nl/xsd/sgm/1.1 ../XSD/sgm.xsd" 
  gml:id="ID000">
     <sgm:geometry>
 		<gml:Polygon gml:id="ID001" srsName="?" srsDimension="2">
